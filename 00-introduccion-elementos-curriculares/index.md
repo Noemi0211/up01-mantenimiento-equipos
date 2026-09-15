@@ -130,16 +130,6 @@ Comprueban, uno a uno, que el resultado de aprendizaje se consigue. En esta unid
   <li><span class="ce-letter">h</span> Se han ejecutado funciones básicas de usuario (conexión, desconexión, optimización del espacio de almacenamiento, utilización de periféricos, comunicación con otros usuarios y conexión con otros sistemas o redes, entre otras).</li>
 </ul>
 
-<div class="callout callout--summary">
-  <p><strong>Relación con los bloques:</strong></p>
-  <ul>
-    <li>Criterios <strong>a), b), c), d)</strong> → Bloques 01 (Hardware) y 04 (Redes LAN).</li>
-    <li>Criterio <strong>e)</strong> → Bloque 02 (Software).</li>
-    <li>Criterio <strong>f)</strong> → Bloque 03 (Ciberseguridad).</li>
-    <li>Criterios <strong>g), h)</strong> → Bloques 04 y 05 (Redes y acceso a Internet).</li>
-  </ul>
-</div>
-
 > 💡 **Idea clave:** los criterios de evaluación indican *qué se va a observar* para comprobar que has aprendido. Léelos como una guía de estudio.
 
 > 📌 **Resumen:** ocho criterios (a-h) que cubren pruebas de funcionamiento, puertos, hardware/software, red, sistema operativo, seguridad y funciones de usuario.
@@ -173,87 +163,9 @@ Contenido oficial de la unidad (elemento curricular **a**):
   </li>
 </ol>
 
-<table>
-  <thead>
-    <tr>
-      <th>Contenido básico</th>
-      <th>Bloque</th>
-      <th>Peso orientativo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Elementos de hardware</td>
-      <td>01 · Hardware</td>
-      <td>40 %</td>
-    </tr>
-    <tr>
-      <td>Elementos de software y sistemas operativos</td>
-      <td>02 · Software</td>
-      <td>20 %</td>
-    </tr>
-    <tr>
-      <td>Sistemas de seguridad y confidencialidad</td>
-      <td>03 · Ciberseguridad</td>
-      <td>20 %</td>
-    </tr>
-    <tr>
-      <td>Redes locales e intercambio de recursos</td>
-      <td>04 · Redes LAN</td>
-      <td>10 %</td>
-    </tr>
-    <tr>
-      <td>Accesibilidad a Internet</td>
-      <td>05 · Acceso a Internet</td>
-      <td>10 %</td>
-    </tr>
-  </tbody>
-</table>
-
 > 💡 **Idea clave:** el bloque 01 (Hardware) concentra la mayor parte del contenido de esta unidad.
 
 > 📌 **Resumen:** cinco contenidos básicos que se desarrollan en seis bloques temáticos progresivos.
-
----
-
-## Temporalización orientativa
-
-Propuesta de distribución de sesiones (ajustable al calendario real del módulo):
-
-<ul class="timeline">
-  <li>
-    <strong>Sesión 0 · Presentación de la unidad (1 hora)</strong>
-    <p>Elementos curriculares, guía de estudio y uso de los materiales (bloque 00).</p>
-  </li>
-  <li>
-    <strong>Bloque 01 · Hardware (4-5 horas)</strong>
-    <p>Componentes, memorias, periféricos, puertos y refrigeración.</p>
-  </li>
-  <li>
-    <strong>Bloque 02 · Software (2-3 horas)</strong>
-    <p>Software de sistema, aplicaciones y utilidades.</p>
-  </li>
-  <li>
-    <strong>Bloque 03 · Ciberseguridad (2-3 horas)</strong>
-    <p>Malware, ingeniería social, herramientas de protección y buenas prácticas.</p>
-  </li>
-  <li>
-    <strong>Bloque 04 · Redes LAN (1-2 horas)</strong>
-    <p>Componentes de red, compartición de recursos y tipos de redes.</p>
-  </li>
-  <li>
-    <strong>Bloque 05 · Acceso a Internet (1-2 horas)</strong>
-    <p>Conexiones, seguridad y resolución de problemas.</p>
-  </li>
-  <li>
-    <strong>Sesión final · Repaso y evaluación (1-2 horas)</strong>
-    <p>Síntesis, dudas y prueba de la unidad.</p>
-  </li>
-</ul>
-
-> 💡 **Idea clave:** la temporalización es orientativa. La distribución real se adapta al ritmo del grupo y a los instrumentos de evaluación disponibles en Aules.
-
-> 📌 **Resumen:** aproximadamente 12-16 horas de clase: presentación (1 h), cinco bloques temáticos (10-14 h) y sesión de repaso y evaluación (1-2 h).
 
 ---
 

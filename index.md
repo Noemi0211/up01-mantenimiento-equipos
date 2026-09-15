@@ -14,7 +14,7 @@ En esta unidad aprenderás los fundamentos para mantener en condiciones óptimas
 
 | Bloque | Título | Contenido |
 |:---:|:---|:---|
-| [00](00-introduccion-elementos-curriculares/index.html) | Introducción y elementos curriculares | Objetivos, resultados de aprendizaje, criterios de evaluación, contenidos, temporalización y evaluación |
+| [00](00-introduccion-elementos-curriculares/index.html) | Introducción y elementos curriculares | Objetivos, resultados de aprendizaje, criterios de evaluación, contenidos y evaluación |
 | 01 | Hardware | Componentes, memoria, periféricos, puertos de comunicación y refrigeración |
 | 02 | Software | Software de sistema, de aplicación y utilidades |
 | 03 | Ciberseguridad | Malware, ingeniería social, herramientas de protección y buenas prácticas |
