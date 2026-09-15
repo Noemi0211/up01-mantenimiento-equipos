@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plantilla base del curso UP01 Mantenimiento básico de equipos. CFGS Documentación y Administración Sanitarias.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-SA 4.0">
+  <title>[[TITULO_PAGINA]] · UP01 Mantenimiento básico de equipos</title>
+
+  <!-- Google Fonts: Syne + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos compartida -->
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <!-- Iconos (favicon inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="[[URL_RAIZ]]index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+    <div class="header__right">
+      <!-- Reservado: selector de idioma, enlaces externos, etc. -->
+    </div>
+  </header>
+
+  <!-- ================= ESTRUCTURA LAYOUT ================= -->
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Bloques del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="[[URL_RAIZ]]00-introduccion-elementos-curriculares/index.html"><span>00</span> Introducción y elementos curriculares</a></li>
+            <li class="sidebar__block"><a href="[[URL_RAIZ]]01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="[[URL_RAIZ]]02-software/index.html"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="[[URL_RAIZ]]03-ciberseguridad/index.html"><span>03</span> Ciberseguridad</a></li>
+            <li class="sidebar__block"><a href="[[URL_RAIZ]]04-redes-lan/index.html"><span>04</span> Redes locales (LAN)</a></li>
+            <li class="sidebar__block"><a href="[[URL_RAIZ]]05-acceso-internet/index.html"><span>05</span> Acceso a Internet</a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <!-- Enlaces a las secciones de la página actual (definidos por página) -->
+          [[NAV_INTERNA]]
+        </div>
+      </nav>
+
+      <div class="sidebar__footer">
+        Material Moodle bilingüe de Vibecoding<br>
+        HTML generado desde Markdown · CC BY-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+      [[CONTENIDO]]
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material Moodle bilingüe de Vibecoding · HTML generado desde Markdown · CC BY-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <!-- JS compartido -->
+  <script src="[[URL_RAIZ]]js/navegacion.js"></script>
+</body>
+</html>

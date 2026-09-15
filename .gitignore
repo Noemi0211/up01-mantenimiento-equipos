@@ -1,0 +1,15 @@
+# ── Documento fuente ─────────────────────────────────────────────────
+# Licencia original BY-NC-SA: no se publica en el sitio.
+ApuntesOPI_UP_01_Mantenimiento 26-27.pdf
+
+# ── Salidas de proceso (se conservan las carpetas, no su contenido) ──
+docs/*
+!docs/.gitkeep
+output/*
+!output/.gitkeep
+
+# ── Sistema / editor ────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.log

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque 00. Introducción y elementos curriculares de la UP01 Mantenimiento básico de equipos. CFGS Documentación y Administración Sanitarias.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-SA 4.0">
+  <title>Bloque 00 · Introducción y elementos curriculares · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Bloques del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="index.html"><span>00</span> Introducción y elementos curriculares</a></li>
+            <li class="sidebar__block"><a href="#"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="#"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="#"><span>03</span> Ciberseguridad</a></li>
+            <li class="sidebar__block"><a href="#"><span>04</span> Redes locales (LAN)</a></li>
+            <li class="sidebar__block"><a href="#"><span>05</span> Acceso a Internet</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#presentacion">Presentación de la unidad</a>
+          <a class="sidebar__link" href="#objetivos">Objetivos</a>
+          <a class="sidebar__link" href="#resultados-aprendizaje">Resultados de aprendizaje</a>
+          <a class="sidebar__link" href="#criterios-evaluacion">Criterios de evaluación</a>
+          <a class="sidebar__link" href="#contenidos">Contenidos básicos</a>
+          <a class="sidebar__link" href="#temporalizacion">Temporalización</a>
+          <a class="sidebar__link" href="#metodologia">Metodología</a>
+          <a class="sidebar__link" href="#evaluacion">Instrumentos de evaluación</a>
+          <a class="sidebar__link" href="#guia-estudio">Guía rápida de estudio</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material Moodle bilingüe de Vibecoding<br>
+        HTML generado desde Markdown · CC BY-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">Bloque 00 · Presentación</div>
+        <h1>Introducción y elementos curriculares</h1>
+        <p>Guía de inicio de la UP01: qué vas a aprender, cómo se evalúa y cómo aprovechar los materiales de la unidad.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">UP01 · Mantenimiento básico de equipos</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ PRESENTACIÓN ============ -->
+      <section id="presentacion">
+        <h2>Presentación de la unidad</h2>
+        <p>La ofimática es el conjunto de herramientas, técnicas y conocimientos que permiten <strong>automatizar y optimizar tareas administrativas</strong> mediante el uso de equipos informáticos y aplicaciones digitales.</p>
+        <p>Aunque está relacionada con la informática, la ofimática se centra en el <strong>uso práctico de la tecnología</strong> para gestionar información, comunicarse y realizar tareas profesionales de forma eficiente.</p>
+        <p>En el ámbito sanitario, los sistemas informáticos forman parte esencial del trabajo diario. La gestión de citas, las historias clínicas electrónicas, la comunicación entre profesionales y la documentación administrativa dependen del correcto funcionamiento de los equipos, las aplicaciones y las redes.</p>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> un técnico en documentación sanitaria no trabaja «con ordenadores»: trabaja <em>dentro</em> de un sistema informático que debe comprender y cuidar.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>En todo el curso los conceptos se aplican a <strong>admisión, consultas médicas, laboratorios, archivo y administración</strong>, donde los equipos conectados gestionan información clínica y administrativa.</p>
+        </div>
+
+        <div class="callout callout--example">
+          <p>En el mostrador de admisión de un hospital, cada mañana se consultan agendas, se registran pacientes y se imprimen etiquetas. Todo ello depende de equipos, aplicaciones y redes funcionando correctamente.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>La ofimática aplica la tecnología informática a las tareas administrativas. En sanidad, su correcto funcionamiento es imprescindible para la atención al paciente.</p>
+        </div>
+
+        <!-- IMAGEN: portada-modulo -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Portada del módulo «UP01 · Mantenimiento básico de equipos»</strong><br>
+          <small>Fuente: PDF original, página 1 · Ver inventario-imagenes/inventario-general.md · Bloque 00</small>
+        </div>
+      </section>
+
+      <!-- ============ OBJETIVOS ============ -->
+      <section id="objetivos">
+        <h2>Objetivos de la unidad</h2>
+        <p>Al finalizar la unidad serás capaz de:</p>
+        <ol>
+          <li><strong>Identificar</strong> los componentes físicos (hardware) y lógicos (software) de un sistema informático.</li>
+          <li><strong>Utilizar</strong> adecuadamente los sistemas operativos y las aplicaciones más habituales.</li>
+          <li><strong>Conectar y manejar</strong> periféricos y puertos de comunicación.</li>
+          <li><strong>Trabajar</strong> en entornos de red compartiendo recursos e información.</li>
+          <li><strong>Aplicar</strong> medidas básicas de ciberseguridad y protección de datos.</li>
+          <li><strong>Acceder</strong> a Internet de forma segura y eficiente.</li>
+        </ol>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__icon">🧩</div>
+            <h3>Identificar</h3>
+            <p>Componentes hardware y software de un equipo.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">⚙️</div>
+            <h3>Utilizar</h3>
+            <p>Sistemas operativos y aplicaciones ofimáticas.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">🔌</div>
+            <h3>Conectar</h3>
+            <p>Periféricos y puertos de comunicación.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">🌐</div>
+            <h3>Compartir</h3>
+            <p>Recursos e información en red.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">🛡️</div>
+            <h3>Proteger</h3>
+            <p>Ciberseguridad básica y protección de datos.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">🚀</div>
+            <h3>Acceder</h3>
+            <p>Internet de forma segura y eficiente.</p>
+          </div>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Seis capacidades: <strong>identificar, utilizar, conectar, compartir, proteger y acceder</strong>. Todas ellas son competencias básicas del personal técnico en documentación y administración sanitarias.</p>
+        </div>
+      </section>
+
+      <!-- ============ RESULTADOS DE APRENDIZAJE ============ -->
+      <section id="resultados-aprendizaje">
+        <h2>Resultados de aprendizaje</h2>
+        <h3>RA1 · Mantenimiento de equipos, aplicaciones y red</h3>
+        <div class="callout callout--key">
+          <p><strong>«Mantiene en condiciones óptimas de funcionamiento los equipos, aplicaciones y red, instalando y actualizando los componentes hardware y software necesarios.»</strong></p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <div>
+              <h4>Equipos</h4>
+              <p>Identificar y mantener los componentes físicos del sistema informático.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <div>
+              <h4>Aplicaciones</h4>
+              <p>Instalar, actualizar y utilizar el software necesario para la actividad profesional.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <div>
+              <h4>Red</h4>
+              <p>Asegurar el funcionamiento de la red local y el acceso a los recursos compartidos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Un centro de salud «funciona» cuando sus <strong>equipos</strong>, sus <strong>aplicaciones</strong> y su <strong>red</strong> funcionan. El mantenimiento no es tarea informática exclusiva: todos los profesionales colaboran en él.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p><strong>RA1</strong> integra tres frentes: equipos (hardware), aplicaciones (software) y red (conectividad).</p>
+        </div>
+      </section>
+
+      <!-- ============ CRITERIOS DE EVALUACIÓN ============ -->
+      <section id="criterios-evaluacion">
+        <h2>Criterios de evaluación</h2>
+        <p>Comprueban, uno a uno, que el resultado de aprendizaje se consigue. En esta unidad, los criterios <strong>a)</strong> a <strong>h)</strong> son:</p>
+
+        <ul class="ce-list">
+          <li><span class="ce-letter">a</span> Se han realizado pruebas de funcionamiento de los equipos informáticos.</li>
+          <li><span class="ce-letter">b</span> Se han comprobado las conexiones de los puertos de comunicación.</li>
+          <li><span class="ce-letter">c</span> Se han identificado los elementos básicos (hardware y software) de un sistema en red.</li>
+          <li><span class="ce-letter">d</span> Se han caracterizado los procedimientos generales de operaciones en un sistema de red.</li>
+          <li><span class="ce-letter">e</span> Se han utilizado las funciones básicas del sistema operativo.</li>
+          <li><span class="ce-letter">f</span> Se han aplicado medidas de seguridad y confidencialidad, identificando el programa cortafuegos y el antivirus.</li>
+          <li><span class="ce-letter">g</span> Se ha compartido información con otros usuarios de la red.</li>
+          <li><span class="ce-letter">h</span> Se han ejecutado funciones básicas de usuario (conexión, desconexión, optimización del espacio de almacenamiento, utilización de periféricos, comunicación con otros usuarios y conexión con otros sistemas o redes, entre otras).</li>
+        </ul>
+
+        <div class="callout callout--summary">
+          <p><strong>Relación con los bloques:</strong></p>
+          <ul>
+            <li>Criterios <strong>a), b), c), d)</strong> → Bloques 01 (Hardware) y 04 (Redes LAN).</li>
+            <li>Criterio <strong>e)</strong> → Bloque 02 (Software).</li>
+            <li>Criterio <strong>f)</strong> → Bloque 03 (Ciberseguridad).</li>
+            <li>Criterios <strong>g), h)</strong> → Bloques 04 y 05 (Redes y acceso a Internet).</li>
+          </ul>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> los criterios de evaluación indican <em>qué se va a observar</em> para comprobar que has aprendido. Léelos como una guía de estudio.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Ocho criterios (a–h) que cubren pruebas de funcionamiento, puertos, hardware/software, red, sistema operativo, seguridad y funciones de usuario.</p>
+        </div>
+      </section>
+
+      <!-- ============ CONTENIDOS BÁSICOS ============ -->
+      <section id="contenidos">
+        <h2>Contenidos básicos</h2>
+        <p>Contenido oficial de la unidad (elemento curricular <strong>a</strong>):</p>
+
+        <ul class="timeline">
+          <li>
+            <strong>Elementos de hardware</strong>
+            <p>Componentes esenciales, procesamiento, almacenamiento, memoria, refrigeración, periféricos y puertos de comunicación.</p>
+          </li>
+          <li>
+            <strong>Elementos de software</strong>
+            <p>Software de sistema, de aplicación, utilidades e interacción hardware-software.</p>
+          </li>
+          <li>
+            <strong>Sistemas operativos</strong>
+            <p>Funciones básicas de usuario: conexión, desconexión, optimización del almacenamiento y uso de periféricos.</p>
+          </li>
+          <li>
+            <strong>Redes locales</strong>
+            <p>Componentes, configuraciones principales, intercambio y actualización de recursos.</p>
+          </li>
+          <li>
+            <strong>Accesibilidad a Internet</strong>
+            <p>Formas de conexión, seguridad en el acceso y resolución de problemas frecuentes.</p>
+          </li>
+        </ul>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Contenido básico</th>
+                <th>Bloque</th>
+                <th>Peso orientativo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Elementos de hardware</td>
+                <td>01 · Hardware</td>
+                <td>40 %</td>
+              </tr>
+              <tr>
+                <td>Elementos de software y sistemas operativos</td>
+                <td>02 · Software</td>
+                <td>20 %</td>
+              </tr>
+              <tr>
+                <td>Sistemas de seguridad y confidencialidad</td>
+                <td>03 · Ciberseguridad</td>
+                <td>20 %</td>
+              </tr>
+              <tr>
+                <td>Redes locales e intercambio de recursos</td>
+                <td>04 · Redes LAN</td>
+                <td>10 %</td>
+              </tr>
+              <tr>
+                <td>Accesibilidad a Internet</td>
+                <td>05 · Acceso a Internet</td>
+                <td>10 %</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> el bloque 01 (Hardware) concentra la mayor parte del contenido de esta unidad.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Cinco contenidos básicos que se desarrollan en seis bloques temáticos progresivos.</p>
+        </div>
+      </section>
+
+      <!-- ============ TEMPORALIZACIÓN ============ -->
+      <section id="temporalizacion">
+        <h2>Temporalización orientativa</h2>
+        <p>Propuesta de distribución de sesiones (ajustable al calendario real del módulo):</p>
+
+        <ul class="timeline">
+          <li>
+            <strong>Sesión 0 · Presentación de la unidad (1 hora)</strong>
+            <p>Elementos curriculares, guía de estudio y uso de los materiales (bloque 00).</p>
+          </li>
+          <li>
+            <strong>Bloque 01 · Hardware (4-5 horas)</strong>
+            <p>Componentes, memorias, periféricos, puertos y refrigeración.</p>
+          </li>
+          <li>
+            <strong>Bloque 02 · Software (2-3 horas)</strong>
+            <p>Software de sistema, aplicaciones y utilidades.</p>
+          </li>
+          <li>
+            <strong>Bloque 03 · Ciberseguridad (2-3 horas)</strong>
+            <p>Malware, ingeniería social, herramientas de protección y buenas prácticas.</p>
+          </li>
+          <li>
+            <strong>Bloque 04 · Redes LAN (1-2 horas)</strong>
+            <p>Componentes de red, compartición de recursos y tipos de redes.</p>
+          </li>
+          <li>
+            <strong>Bloque 05 · Acceso a Internet (1-2 horas)</strong>
+            <p>Conexiones, seguridad y resolución de problemas.</p>
+          </li>
+          <li>
+            <strong>Sesión final · Repaso y evaluación (1-2 horas)</strong>
+            <p>Síntesis, dudas y prueba de la unidad.</p>
+          </li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> la temporalización es orientativa. La distribución real se adapta al ritmo del grupo y a los instrumentos de evaluación disponibles en Aules.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Aproximadamente <strong>12-16 horas</strong> de clase: presentación (1 h), cinco bloques temáticos (10-14 h) y sesión de repaso y evaluación (1-2 h).</p>
+        </div>
+      </section>
+
+      <!-- ============ METODOLOGÍA ============ -->
+      <section id="metodologia">
+        <h2>Metodología</h2>
+
+        <div class="card-grid">
+          <div class="card">
+            <div class="card__icon">🧠</div>
+            <h3>Aprendizaje progresivo</h3>
+            <p>Cada bloque parte de lo general hacia lo concreto, con microcontenidos fáciles de digerir.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">🩺</div>
+            <h3>Contexto profesional</h3>
+            <p>Todos los conceptos se vinculan al entorno sanitario real (citas, historias clínicas, laboratorios).</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">💬</div>
+            <h3>Reflexión guiada</h3>
+            <p>Preguntas para reflexionar que activan el pensamiento crítico antes de dar la respuesta.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">🛠️</div>
+            <h3>Aula-taller</h3>
+            <p>Actividades prácticas de identificación, conexión y configuración de equipos y red.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">🤝</div>
+            <h3>Trabajo cooperativo</h3>
+            <p>Actividades en parejas o pequeños grupos para compartir recursos e información.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon">📱</div>
+            <h3>Aula virtual</h3>
+            <p>Materiales accesibles desde Aules/Moodle y GitHub Pages en cualquier dispositivo.</p>
+          </div>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> aprenderás haciendo, en contexto sanitario y con apoyo digital. Los materiales web acompañan, no sustituyen, el trabajo en el aula.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Método activo, contextualizado en sanidad, con microcontenidos, reflexión, práctica de taller y soporte en el aula virtual.</p>
+        </div>
+      </section>
+
+      <!-- ============ INSTRUMENTOS DE EVALUACIÓN ============ -->
+      <section id="evaluacion">
+        <h2>Instrumentos de evaluación</h2>
+        <p>El resultado de aprendizaje se comprueba combinando varios instrumentos:</p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Instrumento</th>
+                <th>Qué evalúa</th>
+                <th>Dónde</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cuestionarios</td>
+                <td>Criterios a), c), d), e), f)</td>
+                <td>Moodle / Aules</td>
+              </tr>
+              <tr>
+                <td>Actividades prácticas de taller</td>
+                <td>Criterios a), b), g), h)</td>
+                <td>Aula-taller</td>
+              </tr>
+              <tr>
+                <td>Preguntas para reflexionar</td>
+                <td>Comprensión y aplicación profesional</td>
+                <td>Materiales web</td>
+              </tr>
+              <tr>
+                <td>Observación directa y rúbricas</td>
+                <td>Funciones básicas de usuario y manejo de periféricos</td>
+                <td>Aula-taller</td>
+              </tr>
+              <tr>
+                <td>Trabajos individuales o en grupo</td>
+                <td>Síntesis y comunicación de contenidos</td>
+                <td>Aula / Aules</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--health">
+          <p>En el puesto de trabajo, la evaluación continuará cada día: comprobar el equipo, conectar periféricos, proteger la información y acceder a los recursos de red son tareas que se evalúan en la práctica real.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Evaluación variada (cuestionarios, prácticas, observación y trabajos) que atiende tanto a conceptos como a procedimientos y actitudes.</p>
+        </div>
+      </section>
+
+      <!-- ============ GUÍA DE ESTUDIO ============ -->
+      <section id="guia-estudio">
+        <h2>Guía rápida de estudio</h2>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step__num">1</div>
+            <div>
+              <h4>Lee cada microcontenido</h4>
+              <p>Primero la explicación, después la idea clave y la aplicación sanitaria.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">2</div>
+            <div>
+              <h4>Responde antes de ver la respuesta</h4>
+              <p>Las «preguntas para reflexionar» están pensadas para pensar primero.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">3</div>
+            <div>
+              <h4>Comprueba el resumen</h4>
+              <p>Al final de cada concepto encontrarás un resumen con lo esencial.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">4</div>
+            <div>
+              <h4>Repasa con los mapas conceptuales</h4>
+              <p>Los bloques terminan con un mapa que conecta todos los conceptos.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">5</div>
+            <div>
+              <h4>Practica en el taller</h4>
+              <p>Identifica componentes reales, conecta periféricos y comparte recursos en red.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__num">6</div>
+            <div>
+              <h4>Propón dudas y avanza al bloque 01</h4>
+              <p>Cuando domines esta guía, pasa al primer bloque de contenido: Hardware.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> el material está pensado para estudiarse en <strong>microsesiones</strong>. Quince minutos en cada microcontenido rinden más que una larga lectura sin pausas.</p>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="../index.html">
+          <small>Anterior</small>
+          ← Índice general del curso
+        </a>
+        <div class="page-nav__item page-nav__item--next">
+          <small>Siguiente</small>
+          Bloque 01 · Hardware (próximamente)
+        </div>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material Moodle bilingüe de Vibecoding · HTML generado desde Markdown · CC BY-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+</body>
+</html>
