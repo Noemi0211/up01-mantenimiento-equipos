@@ -8,7 +8,7 @@ Transformar el documento `ApuntesOPI_UP_01_Mantenimiento 26-27.pdf` en una colec
 
 Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desde **Markdown**.
 
-> NO generar cuestionarios. Se incorporarán después desde Aules.
+> Cuestionarios: se entregan como **bancos de preguntas en formato GIFT** (`<bloque>/cuestionarios/*.gift`) + guía de importación y configuración en Aules (instrucciones-aules.md). La configuración estándar es: intentos múltiples, **mejor nota** en el libro de calificaciones, preguntas aleatorias por apartado y fecha de cierre. NO se incrustan preguntas en el HTML; en su lugar se inserta un aviso «Cuestionario en Aules» al final de cada apartado.
 
 ## 2 · Estado actual y fases
 
@@ -40,6 +40,7 @@ Apuntes 26-27/
 ├── 00-introduccion-elementos-curriculares/   # index.md + index.html + inventario-imagenes.md + images/
 ├── 01-hardware/ 02-software/ 03-ciberseguridad/ 04-redes-lan/ 05-acceso-internet/
 │     (cada una: markdown fuente + html final + inventario de imágenes propio + images/)
+│     cuestionarios/  (solo si el bloque lo requiere): *.gift + instrucciones-aules.md
 ```
 
 - `docs/` · `output/` · `images/` (raíz) quedan reservados para salidas de proceso.

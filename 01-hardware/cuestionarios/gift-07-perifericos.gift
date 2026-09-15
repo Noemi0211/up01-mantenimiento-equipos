@@ -1,0 +1,131 @@
+﻿$CATEGORY: OFI/UP01/HW/07-perifericos
+
+::HW07_01_QueSon::¿Qué son los periféricos?{
+=Dispositivos externos que se conectan al ordenador para introducir información, mostrar resultados o intercambiar datos.
+~Componentes internos de la placa base.
+~Programas de gestión de datos.
+~Partes del sistema operativo.
+}
+
+::HW07_02_Entrada::El teclado, el ratón y el escáner son periféricos de…{
+=Entrada.
+~Salida.
+~Entrada/salida.
+~Almacenamiento.
+}
+
+::HW07_03_Salida::El monitor, la impresora y los altavoces son periféricos de…{
+=Salida.
+~Entrada.
+~Entrada/salida.
+~Red.
+}
+
+::HW07_04_EntradaSalida::La pantalla táctil es un periférico de…{
+=Entrada/salida.
+~Entrada únicamente.
+~Salida únicamente.
+~Refrigeración.
+}
+
+::HW07_05_Teclado::En un centro sanitario, el teclado se utiliza principalmente para…{
+=Introducir datos de pacientes, informes y citas.
+~Mostrar imágenes médicas.
+~Imprimir etiquetas.
+~Almacenar historias clínicas.
+}
+
+::HW07_06_Escaner::¿Qué función tiene el escáner?{
+=Digitalizar documentos físicos.
+~Reproducir sonido.
+~Mostrar la información en pantalla.
+~Refrigerar el equipo.
+}
+
+::HW07_07_LectorSanidad::El lector de tarjetas sanitarias se utiliza para…{
+=Identificar de forma segura a pacientes y profesionales.
+~Imprimir informes médicos.
+~Reproducir vídeos de formación.
+~Conectar el equipo a la red.
+}
+
+::HW07_08_MicrofonoSanidad::¿Para qué se usa un micrófono en el ámbito sanitario?{
+=Para videoconferencias, telemedicina y dictado de informes.
+~Para digitalizar documentos físicos.
+~Para mostrar imágenes radiológicas.
+~Para imprimir etiquetas de pacientes.
+}
+
+::HW07_09_Monitor::¿Cuál es la función del monitor?{
+=Mostrar visualmente la información procesada.
+~Introducir datos en el sistema.
+~Guardar información de forma permanente.
+~Suministrar energía al equipo.
+}
+
+::HW07_10_ImpresoraSanidad::La impresora del mostrador de admisión produce…{
+=Recetas, informes, etiquetas y listados.
+~Imágenes radiológicas digitales.
+~Sonido de videoconferencias.
+~Copias de seguridad de la red.
+}
+
+::HW07_11_Multifuncion::Una impresora multifunción es capaz de…{
+=Imprimir y escanear (y en algunos modelos enviar fax).
+~Solo mostrar imágenes en pantalla.
+~Solo reproducir audio.
+~Solo guardar archivos en la nube.
+}
+
+::HW07_12_USBExterno::Los pendrives y discos duros externos son periféricos de…{
+=Entrada/salida y almacenamiento.
+~Salida únicamente.
+~Refrigeración.
+~Procesamiento.
+}
+
+::HW07_13_VDatosPaciente::Un profesional de documentación sanitaria digitaliza un consentimiento informado. El periférico de entrada que está usando es…{
+=El escáner.
+~La impresora.
+~El monitor.
+~El proyector.
+}
+
+::HW07_14_VDatosVision::Un médico consulta una resonancia magnética en pantalla. El periférico de salida implicado es…{
+=El monitor.
+~El teclado.
+~El ratón.
+~El escáner.
+}
+
+::HW07_15_Proyeccion::Para mostrar diapositivas en una sesión clínica a un grupo grande de profesionales se usa…{
+=El proyector.
+~El lector de tarjetas.
+~El micrófono.
+~El escáner.
+}
+
+::HW07_16_Clasificacion::Clasifica correctamente: teclado (entrada), monitor (salida), pantalla táctil (entrada/salida).{
+=Es correcto.
+~Incorrecto: la pantalla táctil es solo de salida.
+~Incorrecto: el teclado es de salida.
+~Incorrecto: el monitor es de entrada.
+}
+
+::HW07_17_VerdaderoFalso::Los altavoces son periféricos de entrada.{
+=F
+}
+
+::HW07_18_ProteccionDatos::¿Por qué hay que proteger los dispositivos de almacenamiento portátiles en sanidad?{
+=Porque pueden contener información sensible cuya pérdida o acceso no autorizado comprometería la seguridad.
+~Porque son muy caros de sustituir.
+~Porque ralentizan el sistema operativo.
+~Porque necesitan ventilación especial.
+}
+
+::HW07_19_IdentificacionPaciente::El periférico que identifica al paciente en el mostrador de admisión mediante su tarjeta es…{
+=El lector de tarjetas sanitarias.
+~La impresora multifunción.
+~El proyector.
+~El altavoz.
+}

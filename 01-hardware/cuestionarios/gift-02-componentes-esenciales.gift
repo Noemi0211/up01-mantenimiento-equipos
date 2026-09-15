@@ -1,0 +1,103 @@
+﻿$CATEGORY: OFI/UP01/HW/02-componentes-esenciales
+
+::HW02_01_PlacaBase::¿Qué es la placa base?{
+=La placa principal sobre la que se conectan los componentes y se establece la comunicación entre ellos.
+~La pieza que suministra energía eléctrica al equipo.
+~El componente que procesa imágenes y gráficos.
+~El módulo donde se almacena de forma permanente la información.
+}
+
+::HW02_02_UnionComponentes::La función principal de la placa base es…{
+=Conectar todos los componentes y permitir la comunicación entre ellos.
+~Proporcionar la corriente eléctrica a los periféricos.
+~Almacenar los documentos del usuario.
+~Ejecutar los cálculos del sistema operativo.
+}
+
+::HW02_03_FuenteAlimentacion::¿Cuál es la función de la fuente de alimentación?{
+=Convertir la corriente de la red en los diferentes voltajes que necesita el equipo.
+~Conectar los componentes entre sí.
+~Procesar los gráficos del sistema.
+~Guardar las instrucciones de arranque.
+}
+
+::HW02_04_FuenteEnergia::Además de convertir la corriente, la fuente de alimentación…{
+=Suministra energía de forma estable y protege frente a variaciones de tensión.
+~Ejecuta las aplicaciones del usuario.
+~Almacena la configuración del equipo.
+~Conecta el equipo a la red local.
+}
+
+::HW02_05_UbicacionPlaca::¿Dónde se ubica la placa base dentro del ordenador?{
+=Ocupa gran parte del interior de la carcasa.
+~En la parte delantera de la caja, junto al botón de encendido.
+~Solo dentro del monitor.
+~Dentro de la fuente de alimentación.
+}
+
+::HW02_06_UbicacionFuente::¿Dónde se sitúa habitualmente la fuente de alimentación?{
+=En la parte superior o inferior de la caja del ordenador.
+~Debajo del teclado.
+~Dentro de cada periférico externo.
+~En el centro de la placa base.
+}
+
+::HW02_07_SanidadPlaca::¿Qué papel tiene la placa base en el uso sanitario de los ordenadores?{
+=Permite la comunicación entre todos los componentes de los equipos de admisión, consultas, laboratorios y servicios administrativos.
+~Solo alimenta los monitores de las salas de espera.
+~Genera las imágenes médicas de radiología.
+~Redacta los informes clínicos automáticamente.
+}
+
+::HW02_08_PuentesFuente::Una fuente de alimentación de mala calidad…{
+=Puede provocar averías en otros componentes del equipo.
+~Mejora siempre el rendimiento del procesador.
+~Aumenta la capacidad de la memoria RAM.
+~No influye en nada del funcionamiento del equipo.
+}
+
+::HW02_09_CaidaFuente::¿Qué podría ocurrir en un centro sanitario si falla la fuente de alimentación de un equipo?{
+=Apagados inesperados con posible pérdida de información o interrupción del servicio.
+~El equipo funcionaría con más rapidez.
+~Se ejecutarían más aplicaciones a la vez.
+~La fotografía seguiría imprimiéndose con normalidad.
+}
+
+::HW02_10_AmbosEsenciales::¿Cuáles son los componentes esenciales básicos para el funcionamiento de cualquier ordenador?{
+=La placa base y la fuente de alimentación.
+~El monitor y la impresora.
+~El teclado y el ratón.
+~La cámara y los altavoces.
+}
+
+::HW02_11_LedPlaca::Algunas placas base incorporan indicadores LED que…{
+=Ayudan a localizar averías durante el arranque.
+~Reducen el consumo de electricidad de la red.
+~Imprimen los informes de mantenimiento.
+~Conectan el equipo a Internet.
+}
+
+::HW02_12_Voltajes::La corriente eléctrica de la red se transforma en diferentes __________ en la fuente de alimentación.{
+=Voltajes.
+~Velocidades.
+~Bytes.
+~Píxeles.
+}
+
+::HW02_13_VerdaderoCEO::La fuente de alimentación está situada siempre sobre el procesador.{
+=F
+}
+
+::HW02_14_ComunicacionGlobal::En el ordenador, la comunicación entre procesador, memoria, almacenamiento y periféricos se realiza gracias a…{
+=La placa base.
+~La fuente de alimentación.
+~El ventilador.
+~El cable del monitor.
+}
+
+::HW02_15_Mantenimiento::En mantenimiento básico, conocer la placa base y la fuente de alimentación permite…{
+=Detectar componentes dañados y comunicar averías con precisión.
+~Sustituir por completo el sistema operativo.
+~Eliminar los archivos temporales automáticamente.
+~Reparar cualquier aplicación de gestión sanitaria.
+}

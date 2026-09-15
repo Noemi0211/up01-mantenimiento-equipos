@@ -15,13 +15,13 @@ En esta unidad aprenderás los fundamentos para mantener en condiciones óptimas
 | Bloque | Título | Contenido |
 |:---:|:---|:---|
 | [00](00-introduccion-elementos-curriculares/index.html) | Introducción y elementos curriculares | Objetivos, resultados de aprendizaje, criterios de evaluación, contenidos y evaluación |
-| 01 | Hardware | Componentes, memoria, periféricos, puertos de comunicación y refrigeración |
+| [01](01-hardware/index.html) | Hardware | Componentes, memoria, periféricos, puertos de comunicación y refrigeración |
 | 02 | Software | Software de sistema, de aplicación y utilidades |
 | 03 | Ciberseguridad | Malware, ingeniería social, herramientas de protección y buenas prácticas |
 | 04 | Redes locales (LAN) | Componentes de red, compartición de recursos y tipos de redes |
 | 05 | Acceso a Internet | Formas de conexión, seguridad y problemas frecuentes |
 
-> Los bloques 01 a 05 se publicarán de forma progresiva.
+> Los bloques 02 a 05 se publicarán de forma progresiva.
 
 ## Materiales
 

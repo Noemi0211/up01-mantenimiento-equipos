@@ -1,0 +1,104 @@
+﻿$CATEGORY: OFI/UP01/HW/03-procesamiento
+
+::HW03_01_Cerebro::¿Qué componente se considera el «cerebro» del ordenador?{
+=La CPU o procesador.
+~La tarjeta gráfica.
+~La memoria RAM.
+~El disco duro.
+~La fuente de alimentación.
+}
+
+::HW03_02_FuncionCPU::La función principal de la CPU es…{
+=Ejecutar instrucciones y realizar cálculos.
+~Generar imágenes y gráficos.
+~Guardar datos de forma permanente.
+~Suministrar energía al equipo.
+}
+
+::HW03_03_UbicacionCPU::¿Dónde se instala la CPU?{
+=En un zócalo específico de la placa base.
+~En la fuente de alimentación.
+~Sobre el disco duro.
+~En la parte externa de la carcasa.
+}
+
+::HW03_04_ProcesadorZozalo::Para disipar el calor, la CPU suele estar cubierta por…{
+=Un disipador y un ventilador.
+~Una memoria RAM adicional.
+~Un cable HDMI.
+~Una pegatina antitérmica.
+}
+
+::HW03_05_Transistores::¿Qué caracteriza a los procesadores actuales?{
+=Contienen miles de millones de transistores.
+~Están fabricados solo con discos magnéticos.
+~No generan calor durante el funcionamiento.
+~Solo funcionan en ordenadores portátiles.
+}
+
+::HW03_06_GPUQueEs::¿Qué es la GPU?{
+=La tarjeta gráfica encargada de procesar imágenes y gráficos.
+~La memoria principal que maneja los programas.
+~El componente que suministra la energía.
+~El hardware donde se guardan las copias de seguridad.
+}
+
+::HW03_07_GPUUsos::Además de juegos y gráficos, la GPU se emplea actualmente en…{
+=Inteligencia artificial y cálculo paralelo especializado.
+~Almacenamiento magnético.
+~Refrigeración sólida.
+~Gestoras de contraseña.
+}
+
+::HW03_08_UbicacionGPU::¿Dónde se conecta la tarjeta gráfica?{
+=En una ranura PCIe de la placa base.
+~En el zócalo del procesador.
+~En un puerto USB externo.
+~En el chip de la memoria ROM.
+}
+
+::HW03_09_GPUMedicina::¿Por qué es importante una GPU potente en radiología y diagnóstico por imagen?{
+=Permite visualizar imágenes médicas de alta resolución de forma rápida y precisa.
+~Porque imprime los informes de los pacientes.
+~Porque acelera el arranque del sistema operativo.
+~Porque sustituye al procesador en los cálculos básicos.
+}
+
+::HW03_10_CPUOctalento::¿Qué consecuencias tendría una CPU poco potente gestionando cientos de pacientes al día?{
+=Las aplicaciones funcionarían más lentamente y aumentarían los tiempos de espera.
+~Las historias clínicas se guardarían mejor.
+~El disco duro tendría más espacio libre.
+~Los informes se imprimirían con mayor calidad.
+}
+
+::HW03_11_Paralelo::La CPU realiza cálculos y la GPU…{
+=Acelera el procesamiento de imágenes y los cálculos paralelos especializados.
+~Almacena los archivos de texto.
+~Cifra las contraseñas de la red.
+~Regula la temperatura del centro.
+}
+
+::HW03_12_QuienEjecuta::¿Quién ejecuta el programa de gestión de pacientes en el equipo?{
+=El procesador o CPU.
+~La impresora.
+~El ventilador.
+~El cable de red.
+}
+
+::HW03_13_VerdaderoFalso::La GPU es un componente de entrada de datos.{
+=F
+}
+
+::HW03_14_ProcesamientoSanidad::Las aplicaciones de historia clínica electrónica, facturación sanitaria y ofimática son ejecutadas por…{
+=El hardware de procesamiento.
+~El hardware de salida.
+~El sistema de refrigeración.
+~Los puertos de comunicación.
+}
+
+::HW03_15_DiferenciaCPU_GPU::La diferencia fundamental entre CPU y GPU es que la CPU…{
+=Ejecuta instrucciones y coordina el sistema, mientras que la GPU genera imágenes y acelera cálculos paralelos.
+~Almacena los archivos y la GPU los imprime.
+~Suministra energía y la GPU la regula.
+~Conecta la red y la GPU guarda datos.
+}

@@ -1,0 +1,103 @@
+﻿$CATEGORY: OFI/UP01/HW/01-que-es-hardware
+
+::HW01_01_QueEsHardware::¿Qué es el hardware?{
+=El conjunto de componentes físicos y tangibles de un sistema informático.
+~Los programas y aplicaciones que se instalan en el ordenador.
+~Los documentos almacenados en el disco duro.
+~Las instrucciones que ejecuta el sistema operativo.
+}
+
+::HW01_02_ParteFisica::La parte física de un ordenador, aquella que se puede ver y tocar, se denomina…{
+=Hardware.
+~Software.
+~Datos.
+~Firmware.
+}
+
+::HW01_03_EjemploHardware::¿Cuál de los siguientes elementos es hardware?{
+=El teclado.
+~El sistema operativo.
+~El procesador de textos.
+~El antivirus.
+}
+
+::HW01_04_NoHardware::¿Cuál de las siguientes opciones NO es hardware?{
+=Una hoja de cálculo.
+~La placa base.
+~La memoria RAM.
+~El disco duro.
+}
+
+::HW01_05_ComponentesInternos::Los componentes internos del equipo, como el procesador o la memoria, forman parte de…{
+=El hardware interno.
+~El software de sistema.
+~Los periféricos externos.
+~La memoria virtual.
+}
+
+::HW01_06_SinHardware::¿Qué ocurriría en un ordenador sin hardware?{
+=No podría ejecutar ninguna instrucción ni mostrar resultados.
+~Podría funcionar únicamente con aplicaciones web.
+~El software se encargaría de todo el proceso.
+~Seguiría ejecutando el sistema operativo sin problemas.
+}
+
+::HW01_07_ComponentesVisibles::Todos los elementos que podemos ver y tocar en un equipo informático reciben el nombre de…{
+=Hardware.
+~Software.
+~App.
+~Interfaz.
+}
+
+::HW01_08_SanidadHardware::En un mostrador de admisión de un centro sanitario, ¿cuáles de los siguientes elementos son hardware?{
+=El ordenador, el lector de tarjetas sanitarias y la impresora de etiquetas.
+~El programa de gestión de citas y la historia clínica electrónica.
+~El correo corporativo y las aplicaciones ofimáticas.
+~Las políticas de seguridad y los protocolos internos.
+}
+
+::HW01_09_DefinicionClave::Completa la frase: el hardware es la parte __________ del sistema informático.{
+=Física y tangible.
+~Lógica y visible.
+~Virtual y descargable.
+~Electrónica y volátil.
+}
+
+::HW01_10_HardwareInterno::¿Cuál de estos componentes es hardware interno de un ordenador?{
+=El procesador.
+~El monitor.
+~La impresora.
+~El ratón.
+}
+
+::HW01_11_HardwareExterno::¿Cuál de estos componentes es hardware externo (periférico)?{
+=El teclado.
+~La memoria RAM.
+~El microprocesador.
+~La placa base.
+}
+
+::HW01_12_VerdaderoFalso::Para que un sistema informático funcione necesitamos hardware y software trabajando juntos.{
+=T
+}
+
+::HW01_13_SoftwareEjemplo::¿Cuál de los siguientes es un ejemplo de software, no de hardware?{
+=Un navegador web.
+~Una memoria USB.
+~Un escáner.
+~Un ventilador.
+}
+
+::HW01_14_Mantenimiento::Comprender el hardware resulta esencial en el mantenimiento básico de equipos porque permite…{
+=Identificar las partes del equipo, detectar posibles incidencias y comunicarlas con precisión.
+~Solo reducir el ruido de los ventiladores.
+~Eliminar la necesidad de copias de seguridad.
+~Sustituir por completo la función del software.
+}
+
+::HW01_15_UnidadDocente::En la UP01 Mantenimiento básico de equipos, el estudio del hardware se aborda desde el apartado…{
+=2 · Hardware.
+~3 · Software.
+~4 · Ciberseguridad.
+~5 · Redes locales.
+}

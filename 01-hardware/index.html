@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque 01. Elementos de hardware. UP01 Mantenimiento básico de equipos. CFGS Documentación y Administración Sanitarias.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-SA 4.0">
+  <title>Bloque 01 · Elementos de hardware · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Bloques del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../00-introduccion-elementos-curriculares/index.html"><span>00</span> Introducción y elementos curriculares</a></li>
+            <li class="sidebar__block"><a href="index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="#"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="#"><span>03</span> Ciberseguridad</a></li>
+            <li class="sidebar__block"><a href="#"><span>04</span> Redes locales (LAN)</a></li>
+            <li class="sidebar__block"><a href="#"><span>05</span> Acceso a Internet</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#que-es-hardware">1 · ¿Qué es el hardware?</a>
+          <a class="sidebar__link" href="#componentes-esenciales">2 · Componentes esenciales</a>
+          <a class="sidebar__link" href="#hardware-procesamiento">3 · Hardware de procesamiento</a>
+          <a class="sidebar__link" href="#hardware-almacenamiento">4 · Hardware de almacenamiento</a>
+          <a class="sidebar__link" href="#tipos-memoria">5 · Tipos de memoria</a>
+          <a class="sidebar__link" href="#refrigeracion">6 · Sistemas de refrigeración</a>
+          <a class="sidebar__link" href="#perifericos">7 · Periféricos</a>
+          <a class="sidebar__link" href="#puertos-comunicacion">8 · Puertos de comunicación</a>
+          <a class="sidebar__link" href="#mapa-hardware">9 · Mapa conceptual</a>
+          <a class="sidebar__link" href="#resumen-bloque">10 · Resumen del bloque</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material Moodle bilingüe de Vibecoding<br>
+        HTML generado desde Markdown · CC BY-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">Bloque 01 · Hardware</div>
+        <h1>Elementos de hardware</h1>
+        <p>Los componentes físicos del ordenador: componentes esenciales, procesamiento, almacenamiento, memoria, refrigeración, periféricos y puertos de comunicación.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">UP01 · Mantenimiento básico de equipos</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 1 · ¿QUÉ ES EL HARDWARE? ============ -->
+      <section id="que-es-hardware">
+        <h2>1 · ¿Qué es el hardware?</h2>
+        <p>El <strong>hardware</strong> es el conjunto de componentes físicos de un sistema informático, es decir, todas las partes que podemos <strong>ver y tocar</strong>.</p>
+        <p>Incluye desde los elementos internos del ordenador (procesador, memoria o disco duro) hasta dispositivos externos como el teclado, el monitor o la impresora.</p>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> si se puede tocar, es hardware. Es la parte física del sistema informático.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>El hardware permite ejecutar aplicaciones esenciales: gestión de historias clínicas electrónicas, gestión de citas, atención al paciente, comunicación interna y almacenamiento seguro de información.</p>
+        </div>
+
+        <div class="callout callout--example">
+          <p>El ordenador de un mostrador de admisión, el lector de tarjetas sanitarias y la impresora de etiquetas son hardware.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Podría funcionar un ordenador únicamente con software?</strong> No: necesita hardware para ejecutar las instrucciones.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Hardware = componentes físicos y tangibles (internos y externos) que sostienen todo el sistema informático.</p>
+        </div>
+
+        <!-- IMAGEN: placa-base -->
+        <!-- IMAGEN: memoria-ram -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Conjunto de componentes de hardware de un ordenador</strong><br>
+          <small>Fuente: PDF original · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-01 ¿Qué es el hardware?»</strong> en la plataforma Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · COMPONENTES ESENCIALES ============ -->
+      <section id="componentes-esenciales">
+        <h2>2 · Componentes esenciales</h2>
+        <p>Los <strong>componentes esenciales</strong> son aquellos que permiten el funcionamiento básico de cualquier ordenador.</p>
+
+        <h3>2.1 · Placa base</h3>
+        <p>La <strong>placa base</strong> es la placa principal del ordenador. Sobre ella se conectan el resto de componentes y se establece la comunicación entre todos ellos.</p>
+        <ul>
+          <li><strong>Función:</strong> conectar todos los componentes y permitir la comunicación entre procesador, memoria, almacenamiento y periféricos.</li>
+          <li><strong>Ubicación:</strong> ocupa gran parte del interior de la carcasa.</li>
+          <li><strong>Curiosidad:</strong> algunas placas incorporan indicadores LED que ayudan a localizar averías durante el arranque.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Permite la comunicación entre todos los componentes de los equipos utilizados en admisión, consultas médicas, laboratorios y servicios administrativos.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué podría ocurrir en un centro sanitario si falla la placa base de un ordenador?</strong> El equipo dejaría de funcionar correctamente, impidiendo el acceso a citas, historiales clínicos y aplicaciones de gestión.</p>
+        </div>
+
+        <h3>2.2 · Fuente de alimentación</h3>
+        <p>La <strong>fuente de alimentación</strong> convierte la corriente eléctrica procedente de la red en los diferentes <strong>voltajes</strong> que necesitan los componentes internos del ordenador.</p>
+        <ul>
+          <li><strong>Función:</strong> suministrar energía eléctrica estable y proteger frente a algunas variaciones de tensión.</li>
+          <li><strong>Ubicación:</strong> habitualmente en la parte superior o inferior de la caja del ordenador.</li>
+          <li><strong>Curiosidad:</strong> una fuente de mala calidad puede provocar averías en otros componentes.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Proporciona energía a los equipos que gestionan historias clínicas, citas médicas y documentación sanitaria.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante que la fuente de alimentación sea fiable en un centro sanitario?</strong> Porque una avería puede provocar apagados inesperados, pérdida de información o interrupción de servicios.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Placa base (comunica todo) + fuente de alimentación (da energía estable) son la base física de cualquier equipo.</p>
+        </div>
+
+        <!-- IMAGEN: placa-base -->
+        <!-- IMAGEN: fuente-alimentacion -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Placa base y fuente de alimentación</strong><br>
+          <small>Fuente: PDF original, página 7 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-02 Componentes esenciales»</strong> en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · HARDWARE DE PROCESAMIENTO ============ -->
+      <section id="hardware-procesamiento">
+        <h2>3 · Hardware de procesamiento</h2>
+        <p>Los componentes de procesamiento son los encargados de <strong>ejecutar instrucciones y realizar cálculos</strong>.</p>
+
+        <h3>3.1 · Procesador (CPU)</h3>
+        <p>La <strong>CPU</strong> (Central Processing Unit) se considera el <strong>cerebro del ordenador</strong>.</p>
+        <ul>
+          <li><strong>Función:</strong> ejecutar instrucciones, realizar cálculos y coordinar el funcionamiento del sistema.</li>
+          <li><strong>Ubicación:</strong> en un zócalo específico de la placa base, cubierto por un disipador y un ventilador.</li>
+          <li><strong>Curiosidad:</strong> los procesadores actuales contienen miles de millones de transistores.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Ejecuta programas de gestión de pacientes, historia clínica electrónica, facturación sanitaria y aplicaciones de ofimática.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué consecuencias tendría usar un equipo con una CPU poco potente para gestionar cientos de pacientes al día?</strong> Las aplicaciones funcionarían más lentamente, aumentando los tiempos de espera y reduciendo la productividad.</p>
+        </div>
+
+        <h3>3.2 · Tarjeta gráfica (GPU)</h3>
+        <p>La <strong>GPU</strong> (Graphics Processing Unit) es el componente encargado de <strong>procesar imágenes y gráficos</strong>.</p>
+        <ul>
+          <li><strong>Función:</strong> generar imágenes y acelerar cálculos paralelos especializados.</li>
+          <li><strong>Ubicación:</strong> se conecta a una ranura PCIe de la placa base.</li>
+          <li><strong>Curiosidad:</strong> actualmente se utiliza también en inteligencia artificial.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Es fundamental en radiología, diagnóstico por imagen y visualización de TAC o resonancias magnéticas.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante una GPU potente en radiología?</strong> Porque permite visualizar imágenes médicas de alta resolución de forma rápida y precisa.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>La CPU ejecuta y calcula; la GPU genera y acelera imágenes. Ambas procesan información.</p>
+        </div>
+
+        <!-- IMAGEN: cpu-procesador -->
+        <!-- IMAGEN: gpu-tarjeta-grafica -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Procesador (CPU) y tarjeta gráfica (GPU)</strong><br>
+          <small>Fuente: PDF original, página 8 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-03 Hardware de procesamiento»</strong> en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · HARDWARE DE ALMACENAMIENTO ============ -->
+      <section id="hardware-almacenamiento">
+        <h2>4 · Hardware de almacenamiento</h2>
+        <p>Estos componentes permiten <strong>guardar información</strong> de manera temporal o permanente.</p>
+
+        <h3>4.1 · Disco duro (HDD)</h3>
+        <p>El <strong>HDD</strong> (Hard Disk Drive) utiliza <strong>discos magnéticos</strong> para almacenar información.</p>
+        <ul>
+          <li><strong>Función:</strong> guardar datos de forma permanente.</li>
+          <li><strong>Ubicación:</strong> en una bahía de almacenamiento, conectado mediante cables SATA.</li>
+          <li><strong>Tipo:</strong> almacenamiento permanente (no volátil).</li>
+          <li><strong>Curiosidad:</strong> permite almacenar mucha información a un coste reducido.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Se utiliza para copias de seguridad, archivos históricos y grandes volúmenes de documentación sanitaria.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué tipo de información sanitaria es más adecuado almacenar en un HDD?</strong> Copias de seguridad y documentos que no necesitan consultarse continuamente.</p>
+        </div>
+
+        <h3>4.2 · Unidad de estado sólido (SSD)</h3>
+        <p>El <strong>SSD</strong> (Solid State Drive) utiliza <strong>memoria flash</strong> para almacenar información.</p>
+        <ul>
+          <li><strong>Función:</strong> guardar de manera permanente el sistema operativo, los programas y los archivos.</li>
+          <li><strong>Ubicación:</strong> mediante SATA o directamente en una ranura M.2.</li>
+          <li><strong>Tipo:</strong> almacenamiento permanente (no volátil).</li>
+          <li><strong>Curiosidad:</strong> no tiene partes móviles, por lo que es más rápido y resistente.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Permite acceder rápidamente a historiales clínicos y aplicaciones sanitarias.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué consecuencias tendría para la atención al paciente que el acceso a las historias clínicas fuera muy lento?</strong> Retrasos en consultas, gestiones y toma de decisiones.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>HDD (mucho espacio, menor coste) frente a SSD (más rápido, sin partes móviles). Ambos guardan datos de forma permanente.</p>
+        </div>
+
+        <!-- IMAGEN: hdd-disco-duro -->
+        <!-- IMAGEN: ssd-unidad-estado-solido -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Disco duro HDD y unidad SSD</strong><br>
+          <small>Fuente: PDF original, páginas 9-10 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-04 Hardware de almacenamiento»</strong> en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 5 · TIPOS DE MEMORIA ============ -->
+      <section id="tipos-memoria">
+        <h2>5 · Tipos de memoria</h2>
+        <p>Además del almacenamiento permanente, un ordenador utiliza <strong>diferentes tipos de memoria</strong> para arrancar el sistema, ejecutar programas y mejorar el rendimiento. Cada tipo tiene una función específica.</p>
+
+        <h3>5.1 · Memoria RAM</h3>
+        <p>La memoria <strong>RAM</strong> (Random Access Memory) es la <strong>memoria principal</strong>: almacena temporalmente los datos y programas que se están utilizando en cada momento.</p>
+        <ul>
+          <li><strong>Tipo:</strong> memoria principal <strong>volátil</strong> (su contenido desaparece al apagar el ordenador).</li>
+          <li><strong>Función:</strong> guardar los datos de las aplicaciones abiertas y permitir ejecutar varios programas a la vez.</li>
+          <li><strong>Ubicación:</strong> módulos específicos conectados a la placa base.</li>
+          <li><strong>Curiosidad:</strong> si la RAM se llena, el sistema puede usar memoria virtual, más lenta.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Permite utilizar a la vez la historia clínica electrónica, el correo corporativo, las aplicaciones de gestión sanitaria y las herramientas ofimáticas.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué ocurre si un ordenador tiene poca RAM y se abren muchas aplicaciones a la vez?</strong> El sistema se vuelve más lento porque tiene dificultades para almacenar temporalmente toda la información necesaria.</p>
+        </div>
+
+        <h3>5.2 · Memoria ROM</h3>
+        <p>La memoria <strong>ROM</strong> (Read-Only Memory) almacena las <strong>instrucciones básicas</strong> necesarias para iniciar el ordenador.</p>
+        <ul>
+          <li><strong>Tipo:</strong> memoria permanente <strong>no volátil</strong>.</li>
+          <li><strong>Función:</strong> almacenar el firmware del sistema (UEFI) y permitir el arranque.</li>
+          <li><strong>Ubicación:</strong> integrada en un chip de la placa base.</li>
+          <li><strong>Curiosidad:</strong> actualmente contiene el firmware UEFI, sucesor de la antigua BIOS.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Garantiza el arranque correcto de los equipos utilizados en hospitales, centros de salud y consultas.</p>
+        </div>
+
+        <h3>5.3 · Memoria caché</h3>
+        <p>La memoria <strong>caché</strong> es una memoria <strong>muy rápida integrada en el procesador</strong>.</p>
+        <ul>
+          <li><strong>Tipo:</strong> memoria ultrarrápida de apoyo al procesador.</li>
+          <li><strong>Función:</strong> almacenar temporalmente los datos más utilizados por la CPU y reducir los tiempos de acceso.</li>
+          <li><strong>Características:</strong> más rápida que la RAM, de poca capacidad, funciona automáticamente.</li>
+        </ul>
+
+        <h3>5.4 · Memoria virtual</h3>
+        <p>La memoria <strong>virtual</strong> es un <strong>espacio del disco duro o SSD</strong> que el sistema operativo usa cuando la RAM es insuficiente.</p>
+        <ul>
+          <li><strong>Tipo:</strong> memoria <strong>lógica</strong> gestionada por el sistema operativo (no es física).</li>
+          <li><strong>Características:</strong> más lenta que la RAM y se gestiona automáticamente.</li>
+        </ul>
+
+        <h3>5.5 · Otros tipos de memoria</h3>
+        <ul>
+          <li><strong>Memoria Flash:</strong> no volátil, usada en pendrives, tarjetas SD y SSD. En sanidad, para copias de seguridad.</li>
+          <li><strong>Memoria CMOS:</strong> guarda fecha, hora y parámetros del hardware; mantiene la configuración con el equipo apagado.</li>
+          <li><strong>Memoria VRAM:</strong> integrada en la tarjeta gráfica; fundamental para la visualización de imágenes médicas en radiología, TAC y resonancias.</li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> RAM es la mesa de trabajo (rápida, volátil); ROM arranca el sistema; caché acelera a la CPU; la virtual ayuda cuando la RAM falla.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>RAM (trabajo), ROM (arranque), caché (velocidad), virtual (apoyo) y flash/CMOS/VRAM para funciones específicas.</p>
+        </div>
+
+        <!-- IMAGEN: memoria-ram -->
+        <!-- IMAGEN: memoria-rom -->
+        <!-- IMAGEN: memoria-cache -->
+        <!-- IMAGEN: memoria-virtual -->
+        <!-- IMAGEN: memoria-vram -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Tipos de memoria: RAM, ROM, caché, virtual y VRAM</strong><br>
+          <small>Fuente: PDF original, páginas 10-14 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-05 Tipos de memoria»</strong> en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 6 · SISTEMAS DE REFRIGERACIÓN ============ -->
+      <section id="refrigeracion">
+        <h2>6 · Sistemas de refrigeración</h2>
+        <p>Los componentes electrónicos <strong>generan calor</strong>. Si la temperatura aumenta demasiado, el rendimiento disminuye y pueden producirse averías.</p>
+
+        <h3>6.1 · Ventilador</h3>
+        <p>El <strong>ventilador</strong> genera un flujo constante de aire para reducir la temperatura.</p>
+        <ul>
+          <li><strong>Función:</strong> evitar el sobrecalentamiento de los componentes.</li>
+          <li><strong>Ubicación:</strong> en la CPU, la GPU o la carcasa del equipo.</li>
+          <li><strong>Curiosidad:</strong> algunos ventiladores modifican su velocidad según la temperatura.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Permite que los equipos funcionen durante jornadas completas sin problemas de temperatura.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué podría suceder si el ventilador deja de funcionar correctamente?</strong> El equipo podría sobrecalentarse, reducir su rendimiento o apagarse automáticamente.</p>
+        </div>
+
+        <h3>6.2 · Disipador térmico</h3>
+        <p>El <strong>disipador</strong> es una pieza metálica diseñada para <strong>absorber y dispersar el calor</strong>.</p>
+        <ul>
+          <li><strong>Función:</strong> extraer el calor generado por la CPU o la GPU.</li>
+          <li><strong>Ubicación:</strong> directamente sobre el procesador o la tarjeta gráfica.</li>
+          <li><strong>Curiosidad:</strong> suele fabricarse en aluminio o cobre, excelentes conductores térmicos.</li>
+        </ul>
+
+        <div class="callout callout--summary">
+          <p>Ventilador (mueve el aire) + disipador (absorbe el calor): juntos evitan el sobrecalentamiento y protegen los componentes.</p>
+        </div>
+
+        <!-- IMAGEN: ventilador -->
+        <!-- IMAGEN: disipador-termico -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Ventilador y disipador térmico sobre el procesador</strong><br>
+          <small>Fuente: PDF original, páginas 14-15 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-06 Sistemas de refrigeración»</strong> en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 7 · PERIFÉRICOS ============ -->
+      <section id="perifericos">
+        <h2>7 · Periféricos</h2>
+        <p>Los <strong>periféricos</strong> son dispositivos externos que se conectan al ordenador para <strong>introducir información, mostrar resultados o intercambiar datos</strong>.</p>
+
+        <div class="callout callout--health">
+          <p>Permiten registrar datos de pacientes, digitalizar documentación, imprimir informes médicos, participar en videoconferencias o identificar usuarios mediante tarjetas sanitarias.</p>
+        </div>
+
+        <h3>7.1 · Hardware de entrada</h3>
+        <p>Permiten <strong>introducir información</strong> en el ordenador.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Periférico</th><th>Función</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Teclado</strong></td><td>Escribir texto, números y comandos</td><td>Datos de pacientes, informes y citas</td></tr>
+              <tr><td><strong>Ratón</strong></td><td>Mover el puntero, seleccionar y ejecutar</td><td>Historias clínicas electrónicas y agendas</td></tr>
+              <tr><td><strong>Escáner</strong></td><td>Digitalizar documentos físicos</td><td>Consentimientos, informes y solicitudes</td></tr>
+              <tr><td><strong>Lector de tarjetas sanitarias</strong></td><td>Identificar usuarios</td><td>Identificación segura de pacientes y profesionales</td></tr>
+              <tr><td><strong>Micrófono</strong></td><td>Capturar sonido</td><td>Videoconferencias, telemedicina y dictado</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> «entrada» = la información viaja desde el usuario hacia el ordenador.</p>
+        </div>
+
+        <h3>7.2 · Hardware de salida</h3>
+        <p>Muestran o transmiten la información procesada por el ordenador.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Periférico</th><th>Función</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Monitor</strong></td><td>Mostrar visualmente la información</td><td>Historias clínicas e informes</td></tr>
+              <tr><td><strong>Impresora</strong></td><td>Producir copias físicas</td><td>Recetas, informes, etiquetas y listados</td></tr>
+              <tr><td><strong>Altavoces</strong></td><td>Reproducir sonido</td><td>Videoconferencias y formación online</td></tr>
+              <tr><td><strong>Proyector</strong></td><td>Proyectar a gran tamaño</td><td>Formación y reuniones clínicas</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> «salida» = la información viaja desde el ordenador hacia el usuario.</p>
+        </div>
+
+        <h3>7.3 · Hardware de entrada/salida</h3>
+        <p>Capaces tanto de <strong>recibir como de enviar</strong> información.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Periférico</th><th>Función</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Pantalla táctil</strong></td><td>Mostrar y recibir acciones con el tacto</td><td>Mostradores de atención y autoservicio</td></tr>
+              <tr><td><strong>Impresora multifunción</strong></td><td>Imprimir, escanear y a veces fax</td><td>Gestión de documentación con un único equipo</td></tr>
+              <tr><td><strong>USB y discos duros externos</strong></td><td>Guardar y trasladar archivos</td><td>Copias de seguridad e intercambio</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante proteger los dispositivos de almacenamiento portátiles?</strong> Porque pueden contener información sensible cuya pérdida o acceso no autorizado podría comprometer la seguridad de los datos.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Entrada (teclado, ratón, escáner…), salida (monitor, impresora…) y entrada/salida (pantalla táctil, multifunción, USB).</p>
+        </div>
+
+        <!-- IMAGEN: teclado -->
+        <!-- IMAGEN: raton -->
+        <!-- IMAGEN: monitor -->
+        <!-- IMAGEN: impresora -->
+        <!-- IMAGEN: pantalla-tactil -->
+        <!-- IMAGEN: usb-disco-externo -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Periféricos de entrada, salida y entrada/salida</strong><br>
+          <small>Fuente: PDF original, páginas 15-21 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-07 Periféricos»</strong> en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 8 · PUERTOS DE COMUNICACIÓN ============ -->
+      <section id="puertos-comunicacion">
+        <h2>8 · Puertos de comunicación</h2>
+        <p>Los <strong>puertos de comunicación</strong> son interfaces físicas que permiten <strong>conectar dispositivos externos</strong> para intercambiar información, transmitir audio o vídeo, acceder a redes o suministrar energía.</p>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> conocer los puertos es fundamental para el mantenimiento y el uso correcto de los equipos, especialmente en entornos profesionales como el sanitario.</p>
+        </div>
+
+        <h3>8.1 · Puertos de datos</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Puerto</th><th>Descripción</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>USB-A</strong></td><td>Conector USB tradicional rectangular</td><td>Teclados, ratones, impresoras y lectores de tarjetas</td></tr>
+              <tr><td><strong>USB-B</strong></td><td>Conector cuadrado de impresoras y escáneres</td><td>Documentación clínica y administrativa</td></tr>
+              <tr><td><strong>USB-C</strong></td><td>Conector moderno, reversible y pequeño</td><td>Portátiles modernos y móviles corporativos</td></tr>
+              <tr><td><strong>Thunderbolt</strong></td><td>Alta velocidad, mismo conector que USB-C</td><td>Estaciones de trabajo y diagnóstico por imagen</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>8.2 · Puertos de red</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Puerto</th><th>Descripción</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>RJ45 (Ethernet)</strong></td><td>Conector para cable de red local</td><td>Acceso a historias clínicas y aplicaciones corporativas</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>8.3 · Puertos de vídeo</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Puerto</th><th>Descripción</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>HDMI</strong></td><td>Vídeo y audio de alta calidad en un cable</td><td>Monitores clínicos, proyectores y formación</td></tr>
+              <tr><td><strong>DisplayPort</strong></td><td>Interfaz digital para alta resolución</td><td>Estaciones de radiología y diagnóstico por imagen</td></tr>
+              <tr><td><strong>DVI</strong></td><td>Vídeo digital anterior a HDMI</td><td>Equipos antiguos aún en uso</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>8.4 · Puertos de audio</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Puerto</th><th>Descripción</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Jack 3,5 mm</strong></td><td>Conector analógico para auriculares, micrófonos y altavoces</td><td>Videoconferencias, telemedicina y multimedia</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>8.5 · Puertos históricos o en desuso</h3>
+        <p>Conocerlos ayuda a identificar <strong>equipos heredados</strong> y comprender la evolución del hardware.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Puerto</th><th>Uso histórico</th><th>Situación actual</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>FireWire (IEEE 1394)</strong></td><td>Transferencia rápida de vídeo digital</td><td>Sustituido por USB 3.x y Thunderbolt</td></tr>
+              <tr><td><strong>eSATA</strong></td><td>Almacenamiento externo a gran velocidad</td><td>Sustituido por USB 3.x y USB-C</td></tr>
+              <tr><td><strong>VGA</strong></td><td>Vídeo analógico a monitor</td><td>Obsoleto, sustituido por HDMI y DisplayPort</td></tr>
+              <tr><td><strong>PS/2</strong></td><td>Teclados (morado) y ratones (verde)</td><td>Sustituido por USB</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué crees que algunos puertos han desaparecido y han sido sustituidos?</strong> Porque las nuevas tecnologías ofrecen mayores velocidades, más funcionalidades, mejor compatibilidad y diseños más sencillos y versátiles.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Datos (USB-A/B/C, Thunderbolt), red (RJ45), vídeo (HDMI, DisplayPort, DVI), audio (Jack) e históricos (FireWire, eSATA, VGA, PS/2).</p>
+        </div>
+
+        <!-- IMAGEN: puerto-usb-a -->
+        <!-- IMAGEN: puerto-usb-c -->
+        <!-- IMAGEN: rj45-ethernet -->
+        <!-- IMAGEN: hdmi -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Puertos USB, RJ45 y HDMI de un ordenador</strong><br>
+          <small>Fuente: PDF original, páginas 21-26 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras repasar este apartado, realiza el cuestionario <strong>«HW-08 Puertos de comunicación»</strong> en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 9 · MAPA CONCEPTUAL ============ -->
+      <section id="mapa-hardware">
+        <h2>9 · Mapa conceptual del hardware</h2>
+        <p>Así se organiza todo lo estudiado en este bloque:</p>
+        <pre style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;overflow-x:auto;font-size:0.85rem;line-height:1.5;">HARDWARE
+├── Componentes esenciales → Placa base · Fuente de alimentación
+├── Hardware de procesamiento → CPU · GPU
+├── Hardware de almacenamiento → HDD · SSD
+├── Tipos de memoria → RAM · ROM · Caché · Virtual · Flash · CMOS · VRAM
+├── Sistemas de refrigeración → Ventilador · Disipador térmico
+├── Periféricos
+│   ├── Entrada → Teclado · Ratón · Escáner · Lector de tarjetas · Micrófono
+│   ├── Salida → Monitor · Impresora · Altavoces · Proyector
+│   └── Entrada/Salida → Pantalla táctil · Multifunción · USB/Disco externo
+└── Puertos de comunicación
+    ├── Datos → USB-A · USB-B · USB-C · Thunderbolt
+    ├── Red → RJ45
+    ├── Vídeo → HDMI · DisplayPort · DVI
+    ├── Audio → Jack 3,5 mm
+    └── Históricos → FireWire · eSATA · VGA · PS/2</pre>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> una sola página que conecta todos los conceptos del bloque: repásala antes del cuestionario final.</p>
+        </div>
+
+        <!-- IMAGEN: mapa-conceptual-hardware -->
+        <div class="image-placeholder">
+          Imagen recomendada: <strong>Mapa conceptual del hardware (reconstruible como diagrama HTML/CSS)</strong><br>
+          <small>Fuente: PDF original, páginas 27-29 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+        </div>
+      </section>
+
+      <!-- ============ 10 · RESUMEN DEL BLOQUE ============ -->
+      <section id="resumen-bloque">
+        <h2>10 · Resumen del bloque</h2>
+        <ul>
+          <li>El <strong>hardware</strong> es todo lo físico y tangible de un sistema informático.</li>
+          <li><strong>Componentes esenciales:</strong> placa base y fuente de alimentación.</li>
+          <li><strong>Procesamiento:</strong> CPU (cerebro) y GPU (imágenes).</li>
+          <li><strong>Almacenamiento:</strong> HDD (espacio) y SSD (velocidad).</li>
+          <li><strong>Memorias:</strong> RAM (trabajo), ROM (arranque), caché (velocidad), virtual (apoyo), flash/CMOS/VRAM (funciones específicas).</li>
+          <li><strong>Refrigeración:</strong> ventilador y disipador evitan el sobrecalentamiento.</li>
+          <li><strong>Periféricos:</strong> de entrada, de salida y de entrada/salida.</li>
+          <li><strong>Puertos:</strong> datos, red, vídeo, audio e históricos.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Todos los días trabajas con estos elementos en admisión, consultas, laboratorios y archivo. Comprenderlos permite mantener los equipos y evitar o resolver incidencias.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario final del bloque:</strong> realiza el cuestionario <strong>«HW-EXAMEN Hardware»</strong> en Aules. Combina preguntas aleatorias de todos los apartados y se guardará tu mejor nota hasta la fecha de cierre.</p>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="../00-introduccion-elementos-curriculares/index.html">
+          <small>Anterior</small>
+          ← Bloque 00 · Introducción y elementos curriculares
+        </a>
+        <div class="page-nav__item page-nav__item--next">
+          <small>Siguiente</small>
+          Bloque 02 · Software (próximamente)
+        </div>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material Moodle bilingüe de Vibecoding · HTML generado desde Markdown · CC BY-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+</body>
+</html>

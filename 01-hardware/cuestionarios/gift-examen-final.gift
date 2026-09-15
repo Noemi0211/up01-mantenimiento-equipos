@@ -1,0 +1,152 @@
+﻿$CATEGORY: OFI/UP01/HW/09-examen-final
+
+::HWEX_01_Definicion::El conjunto de componentes físicos y tangibles de un sistema informático es…{
+=El hardware.
+~El software.
+~La base de datos.
+~El firmware.
+}
+
+::HWEX_02_Placa::La placa principal donde se conectan los componentes y se establece la comunicación entre ellos es…{
+=La placa base.
+~La fuente de alimentación.
+~La GPU.
+~El ventilador.
+}
+
+::HWEX_03_Fuente::La función de la fuente de alimentación es…{
+=Convertir la corriente de la red en los voltajes que necesita el equipo.
+~Ejecutar las instrucciones del sistema.
+~Guardar los documentos del usuario.
+~Mostrar los gráficos en pantalla.
+}
+
+::HWEX_04_CPU::El componente que se considera el «cerebro» del ordenador es…{
+=El procesador o CPU.
+~La tarjeta gráfica.
+~El disco duro.
+~La memoria RAM.
+}
+
+::HWEX_05_GPU::La GPU es el componente encargado de…{
+=Procesar imágenes, gráficos y cálculos paralelos.
+~Almacenar información permanente.
+~Suministrar energía.
+~Refrigerar el equipo.
+}
+
+::HWEX_06_HDD::El almacenamiento magnético con discos internos se denomina…{
+=HDD.
+~SSD.
+~RAM.
+~ROM.
+}
+
+::HWEX_07_SSD::La unidad de estado sólido se caracteriza por…{
+=Ser más rápida y no tener partes móviles.
+~Usar discos magnéticos.
+~Ser volátil.
+~Necesitar una GPU externa.
+}
+
+::HWEX_08_TiposMemoria::Relaciona correctamente: la memoria __________ es volátil y la memoria __________ es permanente.{
+=RAM / ROM.
+~ROM / RAM.
+~Flash / virtual.
+~CMOS / caché.
+}
+
+::HWEX_09_Cache::La memoria muy rápida integrada en el procesador es…{
+=La caché.
+~La virtual.
+~El HDD.
+~El SSD.
+}
+
+::HWEX_10_Virtual::Cuando la RAM es insuficiente, el sistema operativo utiliza…{
+=La memoria virtual en el disco.
+~La memoria ROM.
+~La VRAM.
+~La caché del SSD.
+}
+
+::HWEX_11_Refrigeracion::Para evitar el sobrecalentamiento, la CPU utiliza…{
+=Ventilador y disipador térmico.
+~Solo memoria virtual.
+~Un puerto USB externo.
+~Un disco duro de repuesto.
+}
+
+::HWEX_12_PerifericoEntrada::¿Cuál de los siguientes es un periférico de entrada?{
+=El escáner.
+~El monitor.
+~La impresora.
+~El proyector.
+}
+
+::HWEX_13_PerifericoSalida::¿Cuál de los siguientes es un periférico de salida?{
+=El proyector.
+~El teclado.
+~El ratón.
+~El micrófono.
+}
+
+::HWEX_14_Tactil::La pantalla táctil se considera un periférico de…{
+=Entrada/salida.
+~Entrada únicamente.
+~Salida únicamente.
+~Almacenamiento exclusivo.
+}
+
+::HWEX_15_USBC::La ventaja principal del USB-C frente al USB-A es…{
+=Ser reversible y transmitir datos, vídeo, audio y energía.
+~Solo ser más grande.
+~No poder usarse en portátiles.
+~Servir únicamente para audio.
+}
+
+::HWEX_16_RJ45::El puerto que conecta el equipo a la red local con cable es…{
+=RJ45.
+~HDMI.
+~PS/2.
+~DVI.
+}
+
+::HWEX_17_SanidadAdmision::En un mostrador de admisión, para imprimir un informe se usa…{
+=La impresora.
+~El lector de tarjetas.
+~El escáner.
+~El micrófono.
+}
+
+::HWEX_18_SanidadHistoria::Para consultar una historia clínica de forma rápida en el puesto de trabajo se recomienda un disco…{
+=SSD.
+~HDD de gran capacidad.
+~Flexible.
+~Óptico.
+}
+
+::HWEX_19_Historicos::Un ejemplo de puerto histórico en desuso es…{
+=VGA.
+~USB-C.
+~HDMI.
+~Thunderbolt.
+}
+
+::HWEX_20_VerdaderoFalso::El hardware y el software necesitan trabajar juntos para que el sistema informático funcione.{
+=T
+}
+
+::HWEX_21_Mantenimiento::En mantenimiento básico, identificar los componentes del hardware permite…{
+=Diagnosticar y comunicar incidencias con precisión.
+~Instalar más aplicaciones automáticamente.
+~Imprimir todos los documentos sin impresora.
+~Conectar el equipo a Internet siempre.
+}
+
+::HWEX_22_SanidadGlobal::¿Cuál es el objetivo de conocer los elementos de hardware en el ciclo de Documentación y Administración Sanitarias?{
+=Mantener los equipos en buen estado y actuar con seguridad ante incidencias en el puesto de trabajo.
+~Solo poder comprar equipos más baratos.
+~Aprender a programar aplicaciones médicas.
+~Administrar las redes del hospital.
+}

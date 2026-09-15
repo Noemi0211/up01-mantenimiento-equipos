@@ -1,0 +1,103 @@
+﻿$CATEGORY: OFI/UP01/HW/04-almacenamiento
+
+::HW04_01_HDD:¿Cómo se llama el disco duro mecánico que utiliza discos magnéticos?{
+=HDD (Hard Disk Drive).
+~SSD (Solid State Drive).
+~RAM.
+~CPU.
+}
+
+::HW04_02_SSD:La unidad de almacenamiento de estado sólido, más rápida y sin partes móviles, es…{
+=SSD.
+~HDD.
+~ROM.
+~VRAM.
+}
+
+::HW04_03_FuncionHDD:La función principal del disco duro es…{
+=Guardar datos e información de forma permanente.
+~Ejecutar las instrucciones del sistema operativo.
+~Suministrar energía al equipo.
+~Generar imágenes en la pantalla.
+}
+
+::HW04_04_TipoHDD:¿Qué tipo de almacenamiento ofrece un disco duro HDD?{
+=Permanente (no volátil).
+~Temporal y volátil.
+~Solo durante el arranque.
+~Únicamente para imágenes.
+}
+
+::HW04_05_VentajaHDD:¿Cuál es la principal ventaja del HDD frente al SSD?{
+=Ofrece mucha capacidad de almacenamiento a un coste reducido.
+~Es más rápido leyendo archivos.
+~No tiene partes móviles.
+~Funciona sin energía eléctrica.
+}
+
+::HW04_06_VentajaSSD:¿Cuál es la principal ventaja del SSD frente al HDD?{
+=Es más rápido y más resistente, al no tener partes móviles.
+~Almacena más datos por el mismo precio.
+~Es el único que guarda el sistema operativo.
+~Necesita más energía para funcionar.
+}
+
+::HW04_07_UbicacionHDD:¿Dónde se instala habitualmente un disco duro HDD?{
+=En una bahía de almacenamiento, conectado mediante cables SATA.
+~En el zócalo del procesador.
+~Debajo del teclado.
+~Dentro del monitor.
+}
+
+::HW04_08_UbicacionSSD:El SSD puede conectarse mediante SATA o directamente en una ranura…{
+=M.2.
+~PCIe del procesador.
+~HDMI.
+~PS/2.
+}
+
+::HW04_09_SSDMemoria:¿Qué tipo de memoria utiliza el SSD para guardar información?{
+=Memoria flash.
+~Memoria magnética.
+~Memoria ROM.
+~Memoria caché de la impresora.
+}
+
+::HW04_10_Documentacion:Para archivar documentos sanitarios antiguos y copias de seguridad con mucho volumen, el HDD resulta útil porque…{
+=Permite almacenar mucha información a bajo coste.
+~Es el componente más rápido del sistema.
+~No necesita conexión a la placa base.
+~Protege los datos de virus informáticos.
+}
+
+::HW04_11_SanidadSSD:¿Qué mejora aporta el SSD en un centro sanitario?{
+=Acceso más rápido a historiales clínicos y aplicaciones de gestión.
+~Reduce el número de pacientes atendidos.
+~Imprime los informes automáticamente.
+~Conecta el equipo a la red local.
+}
+
+::HW04_12_VerdaderoHDD:El SSD tiene partes móviles en su interior.{
+=F
+}
+
+::HW04_13_AlmacenamientoPermanente:¿Cuáles son los dos tipos principales de almacenamiento permanente interno?{
+=HDD y SSD.
+~RAM y ROM.
+~CPU y GPU.
+~USB y HDMI.
+}
+
+::HW04_14_ConsecuenciaLento:Si el acceso a las historias clínicas fuera muy lento, ¿qué consecuencia tendría para la atención al paciente?{
+=Retrasos en consultas, gestiones y toma de decisiones.
+~Mejor calidad de las imágenes médicas.
+~Menor número de citas programadas.
+~Las impresoras funcionarían con más rapidez.
+}
+
+::HW04_15_CopiaSeguridad:Para realizar copias de seguridad de la base de datos de un centro de salud, el almacenamiento más adecuado por capacidad y coste es…{
+=Un HDD o disco externo de gran capacidad.
+~Una memoria caché.
+~Un ventilador.
+~Un conector PS/2.
+}

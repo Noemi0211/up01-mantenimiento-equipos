@@ -1,0 +1,121 @@
+﻿$CATEGORY: OFI/UP01/HW/05-memorias
+
+::HW05_01_RAM:¿Qué significa RAM?{
+=Random Access Memory.
+~Read Only Memory.
+~Rapid Access Memory.
+~Remote Access Module.
+}
+
+::HW05_02_RAMFuncion:La memoria principal que almacena temporalmente los datos y programas en uso es…{
+=La memoria RAM.
+~La memoria ROM.
+~La memoria virtual.
+~El disco duro.
+}
+
+::HW05_03_RAMVolatil:¿Por qué la memoria RAM es volátil?{
+=Porque su contenido desaparece al apagar el ordenador.
+~Porque almacena solo documentos temporales.
+~Porque no se puede ampliar.
+~Porque se borra al reiniciar el disco duro.
+}
+
+::HW05_04_ROMSignificado:¿Qué significa ROM?{
+=Read-Only Memory.
+~Random Data Memory.
+~Real Output Memory.
+~Rapid Online Memory.
+}
+
+::HW05_05_ROMFuncion:La función de la memoria ROM es…{
+=Almacenar las instrucciones básicas para iniciar el ordenador.
+~Guardar los documentos del usuario.
+~Ejecutar las aplicaciones de ofimática.
+~Almacenar las contraseñas del correo.
+}
+
+::HW05_06_ROMNoVolatil:La memoria ROM es…{
+=No volátil (permanente).
+~Volátil (temporal).
+~Opcional en el equipo.
+~Intercambiable por RAM.
+}
+
+::HW05_07_Cache:La memoria muy rápida integrada en el procesador que almacena los datos más usados se llama…{
+=Memoria caché.
+~Memoria virtual.
+~Memoria CMOS.
+~Memoria flash.
+}
+
+::HW05_08_CacheFuncion:¿Qué función desempeña la memoria caché?{
+=Reducir los tiempos de acceso de la CPU a los datos más utilizados.
+~Arrancar el sistema operativo.
+~Guardar la configuración de fecha y hora.
+~Transformar la corriente eléctrica.
+}
+
+::HW05_09_Virtual:Cuando la RAM es insuficiente, el sistema operativo usa un espacio del disco llamado…{
+=Memoria virtual.
+~Memoria ROM.
+~Memoria flash.
+~Memoria VRAM.
+}
+
+::HW05_10_VirtualCaracter:La memoria virtual se caracteriza por…{
+=Ser lógica, gestionada automáticamente, y más lenta que la RAM.
+~Ser física y más rápida que la caché.
+~Funcionar solo con el equipo apagado.
+~Almacenar el firmware UEFI.
+}
+
+::HW05_11_Flash:La memoria no volátil utilizada en pendrives, tarjetas SD y SSD es la memoria…{
+=Flash.
+~Virtual.
+~CMOS.
+~Caché.
+}
+
+::HW05_12_CMOS:La pequeña memoria que conserva la fecha, la hora y la configuración básica del equipo es…{
+=La memoria CMOS.
+~La memoria VRAM.
+~La memoria caché.
+~La memoria RAM.
+}
+
+::HW05_13_VRAM:La memoria integrada en la tarjeta gráfica, fundamental para imágenes médicas, es…{
+=La VRAM.
+~La CMOS.
+~La RAM.
+~La ROM.
+}
+
+::HW05_14_RAMSanidad:En una centralita de admisión que maneja historias clínicas, agendar citas y correo corporativo a la vez, la memoria que permite ejecutar todas las aplicaciones al mismo tiempo es…{
+=La memoria RAM.
+~La memoria ROM.
+~La memoria virtual.
+~El disco duro.
+}
+
+::HW05_15_VerdaderoROM:La memoria ROM conserva sus datos aunque se apague el ordenador.{
+=T
+}
+
+::HW05_16_MesaTrabajo:Si comparamos la memoria RAM con una mesa de trabajo, al apagar el ordenador…{
+=Se retira todo lo que había sobre la mesa (se pierde el contenido de la RAM).
+~La mesa queda preparada para el día siguiente (se conserva todo).
+~Solo se conserva la mitad de los documentos.
+~Los documentos se imprimen automáticamente.
+}
+
+::HW05_17_UbicacionRAM:¿Dónde se conectan los módulos de memoria RAM?{
+=En módulos o zócalos específicos de la placa base.
+~En la fuente de alimentación.
+~En el puerto USB externo.
+~En la tarjeta gráfica.
+}
+
+::HW05_18_VerdaderoCache:La memoria caché es más rápida que la RAM pero tiene menos capacidad.{
+=T
+}

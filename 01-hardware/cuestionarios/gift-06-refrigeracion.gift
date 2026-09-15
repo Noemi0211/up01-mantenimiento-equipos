@@ -1,0 +1,82 @@
+﻿$CATEGORY: OFI/UP01/HW/06-refrigeracion
+
+::HW06_01_FuncionVentilador::¿Cuál es la función principal del ventilador del ordenador?{
+=Generar un flujo de aire constante para reducir la temperatura.
+~Ejecutar los programas de gestión de pacientes.
+~Almacenar los documentos del usuario.
+~Conectar el equipo a la red local.
+}
+
+::HW06_02_Sobrecalentamiento::¿Qué puede ocurrir si los componentes se sobrecalientan?{
+=El rendimiento disminuye y pueden producirse averías.
+~El equipo funciona con más rapidez.
+~Los datos se guardan de forma automática.
+~El sistema se conecta a Internet.
+}
+
+::HW06_03_UbicacionVentilador::¿Dónde encontramos ventiladores en un ordenador?{
+=En la CPU, la GPU o la carcasa del equipo.
+~Solo dentro del monitor.
+~En el cable de alimentación.
+~En los zócalos de memoria.
+}
+
+::HW06_04_VelocidadVentilador::Algunos ventiladores modifican su velocidad según…{
+=La temperatura de los componentes.
+~El número de usuarios conectados.
+~La hora del día.
+~El idioma del sistema operativo.
+}
+
+::HW06_05_Disipador::¿Qué es un disipador térmico?{
+=Una pieza metálica que absorbe y dispersa el calor.
+~Un componente que genera calor.
+~Un programa de refrigeración.
+~Una memoria de gran velocidad.
+}
+
+::HW06_06_DisipadorUbicacion::¿Dónde se coloca el disipador térmico?{
+=Directamente sobre el procesador o la tarjeta gráfica.
+~En el exterior del monitor.
+~Debajo del teclado.
+~Dentro de la fuente de alimentación.
+}
+
+::HW06_07_MaterialDisipador::¿Qué materiales se emplean habitualmente en los disipadores por ser buenos conductores térmicos?{
+=Aluminio o cobre.
+~Plástico o madera.
+~Cristal o cerámica.
+~Papel o cartón.
+}
+
+::HW06_08_RefrigeracionSanidad::¿Qué permite la refrigeración en el entorno sanitario?{
+=Que los equipos funcionen durante jornadas completas sin problemas de temperatura.
+~Que los pacientes esperen menos en recepción.
+~Que las impresoras trabajen a color.
+~Que el correo llegue más rápido.
+}
+
+::HW06_09_VentiladorParado::Si el ventilador deja de funcionar correctamente, el equipo…{
+=Podría sobrecalentarse, reducir su rendimiento o apagarse automáticamente.
+~Funcionaría igual que siempre.
+~Guardaría todos los documentos por sí solo.
+~Se conectaría a la red local.
+}
+
+::HW06_10_Conjunto::El sistema de refrigeración por aire se compone de…{
+=Ventilador y disipador térmico.
+~Memoria RAM y ROM.
+~HDD y SSD.
+~Fuente de alimentación y placa base.
+}
+
+::HW06_11_VerdaderoFalso::Los ventiladores del ordenador sirven únicamente para hacer ruido.{
+=F
+}
+
+::HW06_12_TemperaturaCPU::En un PC actual, la CPU genera calor mientras trabaja y necesita…{
+=Ventilador y disipador para evacuar ese calor.
+~Memoria virtual adicional.
+~Un SSD más grande.
+~Un puerto HDMI libre.
+}

@@ -1,0 +1,131 @@
+﻿$CATEGORY: OFI/UP01/HW/08-puertos
+
+::HW08_01_QueSon::¿Qué son los puertos de comunicación?{
+=Interfaces físicas que permiten conectar dispositivos externos para intercambiar información.
+~Programas de gestión de archivos.
+~Memorias de trabajo del procesador.
+~Ventiladores de la carcasa.
+}
+
+::HW08_02_USBA::¿Cuál es el conector USB tradicional de forma rectangular?{
+=USB-A.
+~USB-B.
+~USB-C.
+~Thunderbolt.
+}
+
+::HW08_03_USBB::¿Qué tipo de conector USB tiene forma cuadrada y se usa en impresoras y escáneres?{
+=USB-B.
+~USB-A.
+~USB-C.
+~Jack.
+}
+
+::HW08_04_USBC::¿Cuáles son las ventajas del conector USB-C?{
+=Es pequeño, reversible y transmite datos, vídeo, audio y energía.
+~Solo transmite audio.
+~Es grande y solo sirve para impresoras.
+~No se puede usar en portátiles.
+}
+
+::HW08_05_Thunderbolt::El puerto de alta velocidad que usa el mismo conector que USB-C se llama…{
+=Thunderbolt.
+~RJ45.
+~DVI.
+~PS/2.
+}
+
+::HW08_06_RJ45::¿Para qué sirve el puerto RJ45?{
+=Conectar el equipo a una red local mediante cable.
+~Conectar altavoces.
+~Mostrar vídeo en pantalla.
+~Suministrar energía a la fuente.
+}
+
+::HW08_07_HDMI::El puerto HDMI transmite…{
+=Vídeo y audio de alta calidad mediante un único cable.
+~Únicamente audio.
+~Solo datos de documentos.
+~Únicamente corriente eléctrica.
+}
+
+::HW08_08_DisplayPort::¿Para qué se utiliza el puerto DisplayPort?{
+=Conectar pantallas de alta resolución (estaciones de radiología y diagnóstico por imagen).
+~Conectar el teclado.
+~Conectar el ratón.
+~Conectar la impresora.
+}
+
+::HW08_09_DVI::¿Qué es el puerto DVI?{
+=Una interfaz de vídeo digital anterior a HDMI.
+~Un conector de red local.
+~Un conector de audio analógico.
+~Un puerto de almacenamiento externo.
+}
+
+::HW08_10_Jack::El conector jack de 3,5 mm se utiliza para…{
+=Auriculares, micrófonos y altavoces.
+~Monitores de alta resolución.
+~Cables de red.
+~Discos duros.
+}
+
+::HW08_11_Historicos::¿Cuáles son ejemplos de puertos históricos o en desuso?{
+=FireWire, eSATA, VGA y PS/2.
+~USB-C, HDMI y Thunderbolt.
+~Ethernet y DisplayPort.
+~Jack y USB-A.
+}
+
+::HW08_12_PS2::¿Para qué se utilizaban los puertos PS/2?{
+=Para conectar teclados (morado) y ratones (verde).
+~Para conectar la red local.
+~Para transmitir audio de alta calidad.
+~Para proyectar imágenes.
+}
+
+::HW08_13_VGA::¿Qué era el puerto VGA?{
+=Un conector analógico de vídeo a monitor.
+~Un conector de audio digital.
+~Un conector de red inalámbrica.
+~Un conector de alimentación.
+}
+
+::HW08_14_SustitucionFireWire::FireWire fue sustituido principalmente por…{
+=USB 3.x y Thunderbolt.
+~VGA y DVI.
+~PS/2 y Jack.
+~Solo por puertos de red.
+}
+
+::HW08_15_SanidadRed::En un centro de salud, el equipo de admisión se conecta a la red de historia clínica mediante…{
+=El puerto RJ45 (Ethernet).
+~El puerto VGA.
+~El jack de audio.
+~El puerto DVI.
+}
+
+::HW08_16_SanidadImagen::En una estación de diagnóstico por imagen, el monitor de alta resolución se conecta habitualmente mediante…{
+=DisplayPort o HDMI.
+~PS/2.
+~FireWire.
+~Jack 3,5 mm.
+}
+
+::HW08_17_VerdaderoFalso::El puerto USB-C es reversible, es decir, se puede conectar en cualquier orientación.{
+=T
+}
+
+::HW08_18_UsbAlmacenamiento::Para conectar un disco duro externo de gran capacidad al mostrador de admisión se utiliza preferiblemente…{
+=USB-C o USB 3.x.
+~VGA.
+~Jack de audio.
+~PS/2.
+}
+
+::HW08_19_PorQueSustituyen::¿Por qué desaparecen algunos puertos y son sustituidos?{
+=Porque las nuevas tecnologías ofrecen mayor velocidad, más funciones, mejor compatibilidad y diseños más versátiles.
+~Porque se reduce el número de periféricos disponibles.
+~Porque los cables antiguos eran más fiables.
+~Porque los usuarios los prefieren para la decoración.
+}
