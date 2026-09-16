@@ -15,7 +15,7 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 | Fase | Bloque | Estado |
 |---|---|---|
 | 1 | 00 · Introducción y elementos curriculares | ✅ COMPLETADA (1 imagen general integrada) |
-| 2 | 01 · Hardware | ✅ COMPLETADA (contenido + GIFT + guía Aules + 24 imágenes integradas) |
+| 2 | 01 · Hardware | ✅ COMPLETADA (contenido + GIFT + guía Aules + 24 imágenes + navegación `.page-nav` conectada con Aules) |
 | 3 | 02 · Software | ⏳ SIGUIENTE — banco de inventario ya redactado en inventario-general.md |
 | 4 | 03 · Ciberseguridad | ⏳ PENDIENTE |
 | 5 | 04 · Redes locales (LAN) | ⏳ PENDIENTE |
@@ -27,9 +27,10 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 
 - Repo público: `Noemi0211/up01-mantenimiento-equipos` · rama `main` · GitHub Pages:
   `https://noemi0211.github.io/up01-mantenimiento-equipos/`
-- El PDF fuente está excluido del repo (`.gitignore`) por tener licencia distinta (BY-NC-SA).
+- El PDF fuente y `Documentos base/` (PNG originales BY-NC-SA, ≈55 MB) están excluidos del repo (`.gitignore`); solo se publican las copias normalizadas de `images/`.
 - Solo commit/push cuando el usuario lo pida explícitamente.
-- Último commit publicado: `071878c` (imágenes bloque 01 integradas + navegación con cuestionarios de Aules).
+- Último commit publicado: `16e5857` (AGENTS: actualizar último commit publicado).
+- Tras el push, GitHub Pages tarda un par de minutos en regenerarse; si el usuario no ve cambios, avisar de recargar con Ctrl+F5.
 - CRLF: al hacer `git add` se avisa del reemplazo LF→CRLF; es normal y no requiere acción.
 
 ## 3 · Documento fuente
@@ -130,6 +131,7 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 - Footer exacto en todas las páginas HTML.
 - Ninguna imagen rota: todos los `src` de `<img>` resuelven a `images/<categoría>/`.
 - No debe quedar ningún marcador de posición (`image-placeholder`, `<!-- IMAGEN` → glob `*placeholder*`, `*IMAGEN*`).
+- Cargar el `.page-nav` Anterior/Siguiente sigue la cadena del curso definida en §14.
 - GIFT: nº de `::` = nº de `=` = nº de `}` por archivo; acentos UTF-8 sin BOM sin corromper.
 
 ## 11 · Convenciones de idioma y estilo
@@ -193,3 +195,31 @@ images/
 - Los originales son PNG pesados (≈120 KB – 2,2 MB) y se conservan sin optimizar
   para no modificar los originales; si se desea optimizar el sitio, convertir a
   WEBP en `images/<categoría>/` sin tocar la fuente.
+
+## 14 · Navegación secuencial y enlaces de Aules
+
+El curso real en Aules ordena sus actividades, y el sitio GitHub Pages las conecta
+con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
+
+### Enlaces de Aules (IDs reales)
+
+| Actividad | Tipo | URL |
+|---|---|---|
+| Presentación al módulo | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11230301` |
+| Cuestionario sobre la presentación | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11231945` |
+| Cuestionario sobre el hardware | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377` |
+
+### Flujo conectado hoy (page-nav)
+
+- **index.html (Presentación):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Introducción y elementos curriculares.
+- **00 · Introducción:** «Anterior» → Presentación · «Siguiente» → Hardware.
+- **01 · Hardware:** «Anterior» → Introducción y elementos curriculares · «Siguiente» → Cuestionario sobre el hardware (Aules).
+
+### Regla para futuros bloques
+
+- El «Siguiente» de la **última página HTML publicada** debe llevar al elemento
+  siguiente del curso en Aules (al cerrar una fase, desviar el flujo a su
+  cuestionario si procede, o al siguiente bloque cuando exista).
+- Los enlaces externos a Aules se ponen con `target="_blank"` y `rel="noopener"`.
+- El `.page-nav` solo se mantiene en el HTML final; el Markdown fuente no incluye
+  estos enlaces.
