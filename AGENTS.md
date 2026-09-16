@@ -29,7 +29,7 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
   `https://noemi0211.github.io/up01-mantenimiento-equipos/`
 - El PDF fuente está excluido del repo (`.gitignore`) por tener licencia distinta (BY-NC-SA).
 - Solo commit/push cuando el usuario lo pida explícitamente.
-- Último commit publicado: `bb8becd` (Bloque 01 · Hardware).
+- Último commit publicado: `071878c` (imágenes bloque 01 integradas + navegación con cuestionarios de Aules).
 - CRLF: al hacer `git add` se avisa del reemplazo LF→CRLF; es normal y no requiere acción.
 
 ## 3 · Documento fuente
