@@ -400,25 +400,65 @@ td {
 
 tr:nth-child(even) td { background: #faf9f6; }
 
-/* ---------- IMAGEN PLACEHOLDER ---------- */
-.image-placeholder {
-  background: linear-gradient(135deg, rgba(78,204,163,0.10), rgba(26,31,46,0.06));
-  border: 2px dashed #c9d2c9;
-  border-radius: var(--radius);
-  padding: 2rem 1.2rem;
-  text-align: center;
-  color: var(--muted);
-  font-size: 0.9rem;
-  margin: 1.4rem 0;
-}
-
-.image-placeholder strong { color: var(--accent-dark); }
-
-.image-placeholder img { max-width: 100%; height: auto; border-radius: var(--radius); }
-
-figure { margin: 1.4rem 0; }
+/* ---------- FIGURAS E IMÁGENES ---------- */
+figure { margin: 1.6rem auto; }
 figure img { max-width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow); }
 figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; text-align: center; }
+
+.image-figure {
+  max-width: 920px;
+}
+.image-figure--wide { max-width: 100%; }
+.image-figure--centered { max-width: 640px; }
+.image-figure img {
+  width: 100%;
+  display: block;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+.image-figure figcaption {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.6rem;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.image-grid--2 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+
+.image-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.image-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+
+.image-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: #fff;
+}
+
+.image-card figcaption {
+  padding: 0.7rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: center;
+  margin: 0;
+}
 
 /* ---------- TOC (navegación interna) ---------- */
 .toc {
@@ -605,6 +645,7 @@ figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; text-al
   .footer { margin-left: 0; }
 
   .card-grid { grid-template-columns: 1fr; }
+  .image-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 }
 
 @media (min-width: 901px) {

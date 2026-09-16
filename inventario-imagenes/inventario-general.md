@@ -5,12 +5,12 @@ Módulo: **Ofimática** — CFGS Documentación y Administración Sanitarias
 Documento de origen: `ApuntesOPI_UP_01_Mantenimiento 26-27.pdf` (49 páginas)
 Autora: Noemí Celaya Mingot · Licencia original: CC BY-NC-SA 4.0
 
-> **Nota de gestión:** Las imágenes NO se incrustan automáticamente en el HTML.
-> Se insertan marcadores de posición (`<!-- IMAGEN: ... -->`) que se sustituirán
-> por el archivo correspondiente cuando esté disponible en la carpeta `images/`.
->
-> **Convención de nombres:** `up01-bloque-seccion-nombre.ext`
-> Ejemplo: `up01-hw-memoria-ram.png`
+> **Nota de gestión:** Las imágenes proceden de la carpeta
+> `Documentos base/Imagenes` y se copian (sin modificar) a `images/<categoría>/`.
+> Nombres normalizados en minúsculas con guiones (`placa-base.png`).
+> Categorías: `hardware`, `software`, `ciberseguridad`, `redes`, `internet`,
+> `generales`. Cada bloque registra en su `inventario-imagenes.md` el archivo,
+> la ruta completa, la sección y el `alt` de cada imagen integrada.
 
 ---
 
@@ -580,16 +580,16 @@ Autora: Noemí Celaya Mingot · Licencia original: CC BY-NC-SA 4.0
 
 ## Estado de las imágenes
 
-| Bloque | Imágenes catalogadas | Archivos disponibles | Marcadores en HTML |
-|-------|--------------------|---------------------|-------------------|
-| 00 · Introducción | 1 | 0 | Pendiente |
-| 01 · Hardware | 42 | 0 | Pendiente |
-| 02 · Software | 14 | 0 | Pendiente |
-| 03 · Ciberseguridad | 17 | 0 | Pendiente |
-| 04 · Redes LAN | 10 | 0 | Pendiente |
-| 05 · Acceso a Internet | 9 | 0 | Pendiente |
+| Bloque | Imágenes catalogadas | Disponibles en `images/` | Integradas en HTML |
+|-------|--------------------|------------------------|-------------------|
+| 00 · Introducción | 1 | 1 (generales) | ✅ 1 |
+| 01 · Hardware | 42 | 45 (hardware + 1 generales) | ✅ 24 |
+| 02 · Software | 14 | 0 (pendiente del bloque) | ⏳ Pendiente |
+| 03 · Ciberseguridad | 17 | 0 | ⏳ Pendiente |
+| 04 · Redes LAN | 10 | 0 | ⏳ Pendiente |
+| 05 · Acceso a Internet | 9 | 0 | ⏳ Pendiente |
 
-> Las imágenes del PDF original permanecen dentro del documento fuente.
-> Este inventario registra sus datos para poder recuperarlas, redibujarlas o
-> sustituirlas por recursos propios o de bancos de imágenes con licencia
-> compatible (CC BY-SA 4.0 / dominio público).
+> Las imágenes se copian desde `Documentos base/Imagenes` a `images/` sin
+> modificar los originales. Los nombres de archivo se normalizan a
+> minúsculas y guiones. El pie de figura y el `alt` de cada imagen se
+> documentan en el inventario del bloque correspondiente.

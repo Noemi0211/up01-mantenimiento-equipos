@@ -21,11 +21,10 @@ En el ámbito sanitario, los sistemas informáticos forman parte esencial del tr
 
 > 📌 **Resumen:** la ofimática aplica la tecnología informática a las tareas administrativas. En sanidad, su correcto funcionamiento es imprescindible para la atención al paciente.
 
-<!-- IMAGEN: portada-modulo -->
-
-<div class="image-placeholder">
-Imagen recomendada: Portada del módulo «UP01 · Mantenimiento básico de equipos»
-</div>
+<figure class="image-figure image-figure--centered">
+<img src="../images/generales/distribucion-componentes.png" alt="Distribución de los componentes internos de un ordenador: placa base, procesador, memoria y sistema de refrigeración." loading="lazy">
+<figcaption>El sistema informático: distribución de los componentes internos de un equipo.</figcaption>
+</figure>
 
 ---
 

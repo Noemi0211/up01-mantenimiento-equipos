@@ -6,17 +6,29 @@ Unidad: **UP01 · Mantenimiento básico de equipos**
 Documento de origen: `ApuntesOPI_UP_01_Mantenimiento 26-27.pdf`
 Autora: Noemí Celaya Mingot
 
----
-
-### Nombre: portada-modulo
-- **Procedencia:** PDF, página 1 (portada del documento original).
-- **Ubicación recomendada:** `../images/up01-00-portada.png`
-- **Descripción:** Portada del documento con el título «Módulo de Ofimática. UP01. Mantenimiento básico de equipos», el nombre del CFGS y la licencia.
-- **Texto alternativo:** Portada del módulo Ofimática, unidad de mantenimiento básico de equipos, CFGS Documentación y Administración Sanitarias.
+> Este bloque no tiene imágenes propias en `Documentos base/Imagenes`.
+> Para la sección de presentación se reutiliza una imagen del sistema de
+> componentes (categoría **generales**) procedente de `Documentos base/Imagenes`.
 
 ---
+
+### Imagen integrada: distribucion-componentes
+- **Archivo:** `images/generales/distribucion-componentes.png`
+- **Ruta completa:** `C:\Users\Usuario\Documents\Videcoding\Apuntes OPI\Hardware\Apuntes 26-27\images\generales\distribucion-componentes.png`
+- **Origen:** `Documentos base/Imagenes/Distribucion_componentes.png`
+- **Sección:** Bloque 00 · Presentación de la unidad.
+- **Página donde aparece:** `00-introduccion-elementos-curriculares/index.html` (figura) y `index.md`.
+- **Descripción:** Distribución de los componentes internos de un ordenador de sobremesa (placa base, procesador, memoria y refrigeración).
+- **Texto alternativo:** Distribución de los componentes internos de un ordenador: placa base, procesador, memoria y sistema de refrigeración.
+- **Pie de figura:** «El sistema informático: distribución de los componentes internos de un equipo.»
+
+---
+
+### Imágenes pendientes para este bloque
+- No se dispone de una imagen de portada real del módulo en la carpeta de imágenes.
+- La sección de presentación queda resuelta con la imagen general del sistema informático.
 
 ### Notas de accesibilidad
-- Las imágenes de este bloque son decorativas o de presentación; si no se dispone de ellas, pueden omitirse sin pérdida de contenido.
-- Todo contenido esencial debe estar disponible en texto, nunca únicamente en imagen.
+- Cada imagen integrada incluye `alt` descriptivo y `loading="lazy"`.
+- Las imágenes son complementarias; todo el contenido esencial está disponible en texto.
 - Etiqueta de licencia original: **CC BY-NC-SA 4.0 International**.

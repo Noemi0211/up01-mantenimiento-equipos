@@ -21,12 +21,15 @@ Incluye desde los elementos internos del ordenador (procesador, memoria o disco 
 
 > 📌 **Resumen:** hardware = componentes físicos y tangibles (internos y externos) que sostienen todo el sistema informático.
 
-<!-- IMAGEN: placa-base -->
-<!-- IMAGEN: memoria-ram -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Conjunto de componentes de hardware de un ordenador</strong><br>
-<small>Fuente: PDF original · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid image-grid--2">
+<figure class="image-card">
+<img src="../images/hardware/placa-base.png" alt="Placa base de un ordenador, componente principal sobre el que se conecta el resto del hardware." loading="lazy">
+<figcaption>Placa base</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/memoria-ram.png" alt="Módulos de memoria RAM, memoria principal volátil que almacena temporalmente los datos y programas en uso." loading="lazy">
+<figcaption>Memoria RAM</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-01 ¿Qué es el hardware?»** en la plataforma Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -65,12 +68,15 @@ La **fuente de alimentación** convierte la corriente eléctrica procedente de l
 
 > 📌 **Resumen:** placa base (comunica todo) + fuente de alimentación (da energía estable) son la base física de cualquier equipo.
 
-<!-- IMAGEN: placa-base -->
-<!-- IMAGEN: fuente-alimentacion -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Placa base y fuente de alimentación</strong><br>
-<small>Fuente: PDF original, página 7 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid image-grid--2">
+<figure class="image-card">
+<img src="../images/hardware/placa-base.png" alt="Placa base de un ordenador, componente principal sobre el que se conecta el resto del hardware." loading="lazy">
+<figcaption>Placa base</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/fuente-alimentacion.png" alt="Fuente de alimentación que convierte la corriente eléctrica de la red en los voltajes necesarios para el equipo." loading="lazy">
+<figcaption>Fuente de alimentación</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-02 Componentes esenciales»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -109,12 +115,15 @@ La **GPU** (Graphics Processing Unit) es el componente encargado de **procesar i
 
 > 📌 **Resumen:** la CPU ejecuta y calcula; la GPU genera y acelera imágenes. Ambas procesan información.
 
-<!-- IMAGEN: cpu-procesador -->
-<!-- IMAGEN: gpu-tarjeta-grafica -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Procesador (CPU) y tarjeta gráfica (GPU)</strong><br>
-<small>Fuente: PDF original, página 8 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid image-grid--2">
+<figure class="image-card">
+<img src="../images/hardware/cpu.png" alt="Procesador o CPU, cerebro del ordenador encargado de ejecutar instrucciones y realizar cálculos." loading="lazy">
+<figcaption>Procesador (CPU)</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/gpu.png" alt="Tarjeta gráfica o GPU, componente encargado de procesar imágenes, gráficos y cálculos paralelos." loading="lazy">
+<figcaption>Tarjeta gráfica (GPU)</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-03 Hardware de procesamiento»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -155,12 +164,15 @@ El **SSD** (Solid State Drive) utiliza **memoria flash** para almacenar informac
 
 > 📌 **Resumen:** HDD (mucho espacio, menor coste) frente a SSD (más rápido, sin partes móviles). Ambos guardan datos de forma permanente.
 
-<!-- IMAGEN: hdd-disco-duro -->
-<!-- IMAGEN: ssd-unidad-estado-solido -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Disco duro HDD y unidad SSD</strong><br>
-<small>Fuente: PDF original, páginas 9-10 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid image-grid--2">
+<figure class="image-card">
+<img src="../images/hardware/hdd.png" alt="Disco duro HDD de almacenamiento magnético permanente, usado para guardar grandes volúmenes de datos." loading="lazy">
+<figcaption>Disco duro (HDD)</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/ssd.png" alt="Unidad SSD de estado sólido, almacenamiento sin partes móviles que permite acceso rápido a los datos." loading="lazy">
+<figcaption>Unidad de estado sólido (SSD)</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-04 Hardware de almacenamiento»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -228,15 +240,35 @@ La memoria **virtual** es un **espacio del disco duro o SSD** que el sistema ope
 
 > 📌 **Resumen:** ningún ordenador funciona sin memoria: RAM (trabajo), ROM (arranque), caché (velocidad), virtual (apoyo) y flash/CMOS/VRAM para funciones específicas.
 
-<!-- IMAGEN: memoria-ram -->
-<!-- IMAGEN: memoria-rom -->
-<!-- IMAGEN: memoria-cache -->
-<!-- IMAGEN: memoria-virtual -->
-<!-- IMAGEN: memoria-vram -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Tipos de memoria: RAM, ROM, caché, virtual y VRAM</strong><br>
-<small>Fuente: PDF original, páginas 10-14 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid">
+<figure class="image-card">
+<img src="../images/hardware/memoria-ram.png" alt="Módulos de memoria RAM, memoria principal volátil que almacena temporalmente los datos y programas en uso." loading="lazy">
+<figcaption>Memoria RAM</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/memoria-rom.png" alt="Chip de memoria ROM con el firmware UEFI, memoria no volátil que permite el arranque del ordenador." loading="lazy">
+<figcaption>Memoria ROM</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/memoria-cache.png" alt="Esquema de la memoria caché, memoria ultrarrápida integrada en el procesador." loading="lazy">
+<figcaption>Memoria caché</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/memoria-virtual.png" alt="Esquema de memoria virtual, espacio del disco que el sistema operativo usa cuando la RAM es insuficiente." loading="lazy">
+<figcaption>Memoria virtual</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/memoria-flash.png" alt="Memoria flash no volátil usada en pendrives, tarjetas SD y unidades SSD." loading="lazy">
+<figcaption>Memoria flash</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/memoria-cmos.png" alt="Memoria CMOS, pequeña memoria que conserva fecha, hora y configuración básica del ordenador." loading="lazy">
+<figcaption>Memoria CMOS</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/memoria-vram.png" alt="Memoria VRAM, memoria integrada en la tarjeta gráfica para el procesamiento de imágenes." loading="lazy">
+<figcaption>Memoria VRAM</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-05 Tipos de memoria»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -272,12 +304,15 @@ El **disipador** es una pieza metálica diseñada para **absorber y dispersar el
 
 > 📌 **Resumen:** ventilador (mueve el aire) + disipador (absorbe el calor): juntos evitan el sobrecalentamiento y protegen los componentes.
 
-<!-- IMAGEN: ventilador -->
-<!-- IMAGEN: disipador-termico -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Ventilador y disipador térmico sobre el procesador</strong><br>
-<small>Fuente: PDF original, páginas 14-15 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid image-grid--2">
+<figure class="image-card">
+<img src="../images/hardware/ventilador.png" alt="Ventilador que genera flujo de aire para evitar el sobrecalentamiento de los componentes." loading="lazy">
+<figcaption>Ventilador</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/disipador.png" alt="Disipador térmico de aluminio o cobre que absorbe y dispersa el calor del procesador." loading="lazy">
+<figcaption>Disipador térmico</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-06 Sistemas de refrigeración»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -336,16 +371,31 @@ Capaces tanto de **recibir como de enviar** información.
 
 > 📌 **Resumen:** entrada (teclado, ratón, escáner…), salida (monitor, impresora…), entrada/salida (pantalla táctil, multifunción, USB).
 
-<!-- IMAGEN: teclado -->
-<!-- IMAGEN: raton -->
-<!-- IMAGEN: monitor -->
-<!-- IMAGEN: impresora -->
-<!-- IMAGEN: pantalla-tactil -->
-<!-- IMAGEN: usb-disco-externo -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Periféricos de entrada, salida y entrada/salida</strong><br>
-<small>Fuente: PDF original, páginas 15-21 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid">
+<figure class="image-card">
+<img src="../images/hardware/teclado.png" alt="Teclado, periférico de entrada que permite introducir texto, números y comandos." loading="lazy">
+<figcaption>Teclado · entrada</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/raton.png" alt="Ratón, dispositivo apuntador que permite interactuar con los elementos de la pantalla." loading="lazy">
+<figcaption>Ratón · entrada</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/monitor.png" alt="Monitor, periférico de salida que muestra visualmente la información del sistema." loading="lazy">
+<figcaption>Monitor · salida</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/impresora.png" alt="Impresora que produce copias físicas de documentos, recetas, informes y etiquetas." loading="lazy">
+<figcaption>Impresora · salida</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/pantalla-tactil.png" alt="Pantalla táctil, periférico de entrada y salida usado en mostradores y terminales de autoservicio." loading="lazy">
+<figcaption>Pantalla táctil · entrada/salida</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/usb-disco-externo.png" alt="Dispositivos de almacenamiento portátiles, memoria USB y disco duro externo para guardar y trasladar archivos." loading="lazy">
+<figcaption>Almacenamiento portátil · entrada/salida</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-07 Periféricos»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -403,14 +453,23 @@ Conocerlos ayuda a identificar **equipos heredados** y a comprender la evolució
 
 > 📌 **Resumen:** datos (USB-A/B/C, Thunderbolt), red (RJ45), vídeo (HDMI, DisplayPort, DVI), audio (Jack) e históricos (FireWire, eSATA, VGA, PS/2).
 
-<!-- IMAGEN: puerto-usb-a -->
-<!-- IMAGEN: puerto-usb-c -->
-<!-- IMAGEN: rj45-ethernet -->
-<!-- IMAGEN: hdmi -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Puertos USB, RJ45 y HDMI de un ordenador</strong><br>
-<small>Fuente: PDF original, páginas 21-26 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
+<div class="image-grid">
+<figure class="image-card">
+<img src="../images/hardware/puerto-usb-a.png" alt="Puerto USB-A, conector USB tradicional rectangular para teclados, ratones, impresoras y memorias USB." loading="lazy">
+<figcaption>USB-A · datos</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/puerto-usb-c.png" alt="Puerto USB-C, conector moderno y reversible que transmite datos, vídeo, audio y energía." loading="lazy">
+<figcaption>USB-C · datos</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/puerto-rj45.png" alt="Puerto RJ45 o Ethernet que conecta el equipo a una red local mediante cable." loading="lazy">
+<figcaption>RJ45 (Ethernet) · red</figcaption>
+</figure>
+<figure class="image-card">
+<img src="../images/hardware/puerto-hdmi.png" alt="Puerto HDMI que transmite vídeo y audio de alta calidad mediante un único cable." loading="lazy">
+<figcaption>HDMI · vídeo</figcaption>
+</figure>
 </div>
 
 > 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-08 Puertos de comunicación»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
@@ -442,12 +501,10 @@ HARDWARE
 
 > 💡 **Idea clave:** una sola página que conecta todos los conceptos del bloque: repásala antes del cuestionario final.
 
-<!-- IMAGEN: mapa-conceptual-hardware -->
-
-<div class="image-placeholder">
-Imagen recomendada: <strong>Mapa conceptual del hardware (reconstruible como diagrama HTML/CSS)</strong><br>
-<small>Fuente: PDF original, páginas 27-29 · Ver inventario-imagenes/inventario-general.md · Bloque 01</small>
-</div>
+<figure class="image-figure image-figure--wide">
+<img src="../images/hardware/clasificacion-hardware.png" alt="Infografía de clasificación del hardware: componentes esenciales, procesamiento, almacenamiento, memoria, refrigeración, periféricos y puertos." loading="lazy">
+<figcaption>Clasificación general del hardware estudiado en el bloque.</figcaption>
+</figure>
 
 ---
 
