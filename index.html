@@ -36,20 +36,20 @@
     <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
       <nav>
         <div class="sidebar__section">
-          <div class="sidebar__label">Bloques del curso</div>
+          <div class="sidebar__label">Apartados del curso</div>
           <ul class="sidebar__blocks">
-            <li class="sidebar__block"><a href="00-introduccion-elementos-curriculares/index.html"><span>00</span> Introducción y elementos curriculares</a></li>
             <li class="sidebar__block"><a href="01-hardware/index.html"><span>01</span> Hardware</a></li>
-            <li class="sidebar__block"><a href="#"><span>02</span> Software</a></li>
-            <li class="sidebar__block"><a href="#"><span>03</span> Ciberseguridad</a></li>
-            <li class="sidebar__block"><a href="#"><span>04</span> Redes locales (LAN)</a></li>
-            <li class="sidebar__block"><a href="#"><span>05</span> Acceso a Internet</a></li>
           </ul>
         </div>
         <div class="sidebar__section">
-          <div class="sidebar__label">Inicio</div>
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
           <a class="sidebar__link" href="#presentacion">Presentación</a>
-          <a class="sidebar__link" href="#bloques">Bloques de la unidad</a>
+          <a class="sidebar__link" href="#apartados">Apartados de la unidad</a>
+          <a class="sidebar__link" href="#guia-curricular">Guía curricular</a>
           <a class="sidebar__link" href="#materiales">Materiales</a>
           <a class="sidebar__link" href="#creditos">Créditos y licencia</a>
         </div>
@@ -87,53 +87,38 @@
         </ul>
       </section>
 
-      <section id="bloques">
-        <h2>Bloques de la unidad</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Bloque</th>
-              <th>Título</th>
-              <th>Contenido</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a href="00-introduccion-elementos-curriculares/index.html">00</a></td>
-              <td>Introducción y elementos curriculares</td>
-              <td>Objetivos, resultados de aprendizaje, criterios de evaluación, contenidos y evaluación</td>
-            </tr>
-            <tr>
-              <td><a href="01-hardware/index.html">01</a></td>
-              <td>Hardware</td>
-              <td>Componentes, memoria, periféricos, puertos de comunicación y refrigeración</td>
-            </tr>
-            <tr>
-              <td>02</td>
-              <td>Software</td>
-              <td>Software de sistema, de aplicación y utilidades</td>
-            </tr>
-            <tr>
-              <td>03</td>
-              <td>Ciberseguridad</td>
-              <td>Malware, ingeniería social, herramientas de protección y buenas prácticas</td>
-            </tr>
-            <tr>
-              <td>04</td>
-              <td>Redes locales (LAN)</td>
-              <td>Componentes de red, compartición de recursos y tipos de redes</td>
-            </tr>
-            <tr>
-              <td>05</td>
-              <td>Acceso a Internet</td>
-              <td>Formas de conexión, seguridad y problemas frecuentes</td>
-            </tr>
-          </tbody>
-        </table>
+      <section id="apartados">
+        <h2>Apartados de la unidad</h2>
+        <p>Cada apartado consta de tres bloques independientes: <strong>teoría</strong>, <strong>cuestionario</strong> y <strong>prácticas</strong>. Puedes entrar directamente en cada uno o seguir la unidad con el enlace <strong>«Siguiente»</strong> que cierra cada página.</p>
+
+        <h3>Apartado 01 · Hardware</h3>
+        <div class="card-grid">
+          <a class="card" href="01-hardware/index.html">
+            <div class="card__icon">📘</div>
+            <h3>Teoría · Hardware</h3>
+            <p>Elementos de hardware: componentes esenciales, procesamiento, almacenamiento, memoria, refrigeración, periféricos y puertos de comunicación.</p>
+          </a>
+          <a class="card" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377" target="_blank" rel="noopener">
+            <div class="card__icon">🧩</div>
+            <h3>Cuestionario sobre el hardware</h3>
+            <p>Preguntas aleatorias en Aules de todos los apartados del bloque. Intentos múltiples y se guardará tu mejor nota.</p>
+          </a>
+          <a class="card" href="practico-hardware/index.html">
+            <div class="card__icon">🧰</div>
+            <h3>Prácticas · Hardware</h3>
+            <p>Actividades autocorregibles: reconocimiento de equipos, puertos y conexiones, verificación del puesto e inventario, con soluciones en PDF.</p>
+          </a>
+        </div>
 
         <div class="callout callout--key">
-          <p><strong>💡 Idea clave:</strong> los bloques 02 a 05 se publicarán de forma progresiva. Este índice crece con el curso.</p>
+          <p><strong>💡 Idea clave:</strong> los apartados <strong>Software, Ciberseguridad, Redes locales (LAN) y Acceso a Internet</strong> se publicarán de forma progresiva con el mismo esquema: <strong>teoría · cuestionario · prácticas</strong>.</p>
         </div>
+      </section>
+
+      <section id="guia-curricular">
+        <h2>Guía curricular</h2>
+        <p>Material de orientación del módulo: objetivos, resultados de aprendizaje, criterios de evaluación, contenidos y metodología. <strong>No forma parte del recorrido del alumnado</strong>, pero puedes consultarlo en cualquier momento.</p>
+        <p><a href="00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares →</a></p>
       </section>
 
       <section id="materiales">
@@ -159,9 +144,9 @@
           <small>Anterior</small>
           ← Cuestionario sobre la presentación
         </a>
-        <a class="page-nav__item page-nav__item--next" href="00-introduccion-elementos-curriculares/index.html">
+        <a class="page-nav__item page-nav__item--next" href="01-hardware/index.html">
           <small>Siguiente</small>
-          Introducción y elementos curriculares →
+          Apartado 01 · Hardware →
         </a>
       </nav>
 

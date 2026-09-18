@@ -10,18 +10,23 @@ Bienvenida y bienvenido a la unidad **UP01 · Mantenimiento básico de equipos**
 
 En esta unidad aprenderás los fundamentos para mantener en condiciones óptimas los equipos informáticos, las aplicaciones y las redes utilizadas en los centros sanitarios: identificación de componentes hardware y software, ciberseguridad básica, redes locales y acceso a Internet.
 
-## Bloques de la unidad
+## Apartados de la unidad
 
-| Bloque | Título | Contenido |
-|:---:|:---|:---|
-| [00](00-introduccion-elementos-curriculares/index.html) | Introducción y elementos curriculares | Objetivos, resultados de aprendizaje, criterios de evaluación, contenidos y evaluación |
-| [01](01-hardware/index.html) | Hardware | Componentes, memoria, periféricos, puertos de comunicación y refrigeración |
-| 02 | Software | Software de sistema, de aplicación y utilidades |
-| 03 | Ciberseguridad | Malware, ingeniería social, herramientas de protección y buenas prácticas |
-| 04 | Redes locales (LAN) | Componentes de red, compartición de recursos y tipos de redes |
-| 05 | Acceso a Internet | Formas de conexión, seguridad y problemas frecuentes |
+Cada apartado consta de tres bloques independientes: **teoría**, **cuestionario** y **prácticas**. Puedes entrar directamente en cada uno o seguir la unidad con el enlace **«Siguiente»** que cierra cada página.
 
-> Los bloques 02 a 05 se publicarán de forma progresiva.
+### Apartado 01 · Hardware
+
+- 📘 [**Teoría del apartado**](01-hardware/index.html) — Elementos de hardware: componentes esenciales, procesamiento, almacenamiento, memoria, refrigeración, periféricos y puertos de comunicación.
+- 🧩 [**Cuestionario sobre el hardware**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377) — Preguntas aleatorias en Aules de todos los apartados del bloque. Intentos múltiples y mejor nota.
+- 🧰 [**Prácticas del apartado**](practico-hardware/index.html) — Actividades autocorregibles: reconocimiento de equipos, puertos y conexiones, verificación del puesto e inventario, con soluciones en PDF.
+
+> 💡 **Idea clave:** los apartados **Software, Ciberseguridad, Redes locales (LAN) y Acceso a Internet** se publicarán de forma progresiva con el mismo esquema: **teoría · cuestionario · prácticas**.
+
+## Guía curricular
+
+Material de orientación del módulo: objetivos, resultados de aprendizaje, criterios de evaluación, contenidos y metodología. **No forma parte del recorrido del alumnado**, pero puede consultarse en cualquier momento.
+
+[Introducción y elementos curriculares →](00-introduccion-elementos-curriculares/index.html)
 
 ## Materiales
 

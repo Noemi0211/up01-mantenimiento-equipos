@@ -75,7 +75,7 @@ Apuntes 26-27/
 ## 6 · Estructura HTML por página
 
 1. HEADER fijo (mismo en todas).
-2. Sidebar fija: enlaces a los 6 bloques + sección «En esta página».
+2. Sidebar fija: apartados publicados (enlace a cada bloque de teoría) + sección «Guía curricular» (enlace al bloque 00, fuera del recorrido del alumnado) + sección «En esta página». No se listan bloques aún no publicados.
 3. Contenido principal con `<section id="...">` únicas por página.
 4. TOC automático: `<div class="toc" id="toc-automatico"></div>`.
 5. `.page-nav` con Anterior/Siguiente.
@@ -212,29 +212,43 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 
 | Actividad | Tipo | URL |
 |---|---|---|
-| Presentación al módulo | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11230301` |
+| Entrada al módulo (enlace «UP01 · Mantenimiento básico de equipos») | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11225710` |
 | Cuestionario sobre la presentación | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11231945` |
 | Cuestionario sobre el hardware | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377` |
 | PR-01.1 Reconocimiento de equipos y periféricos (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391623` |
 | PR-01.2 Puertos y conexiones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626` |
 | PR-01.3 Verificación del equipo (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627` |
 
+### Estructura por apartados (teoría · cuestionario · prácticas)
+
+Cada apartado de la unidad consta de **3 bloques enlazados de forma diferenciada**
+en Aules, además del recorrido secuencial con «Siguiente» dentro del sitio:
+
+| Apartado | Teoría (URL) | Cuestionario (Quiz) | Prácticas (URL) |
+|---|---|---|---|
+| 01 · Hardware | `01-hardware/index.html` | `…quiz/view.php?id=11291377` | `practico-hardware/index.html` (+ quizzes PR-01.1…3) |
+
+La portada (`index.html`) solo muestra los apartados publicados como 3 tarjetas
+(teoría · cuestionario · prácticas). El bloque 00 (Introducción y elementos
+curriculares) queda como «Guía curricular», fuera del recorrido del alumnado.
+
 ### Flujo conectado hoy (page-nav)
 
-- **index.html (Presentación):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Introducción y elementos curriculares.
-- **00 · Introducción:** «Anterior» → Presentación · «Siguiente» → Hardware.
-- **01 · Hardware:** «Anterior» → Introducción y elementos curriculares · «Siguiente» → Cuestionario sobre el hardware (Aules).
-- **practico-hardware (Bloque práctico):** «Anterior» → Cuestionario sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes.
+- **index.html (Portada):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Apartado 01 · Hardware (salta el bloque 00).
+- **00 · Guía curricular (fuera del recorrido):** «Anterior» → Portada · «Siguiente» → Hardware (acceso opcional desde la portada/sidebar).
+- **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario sobre el hardware (Aules).
+- **practico-hardware (Prácticas):** «Anterior» → Cuestionario sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes.
 
 ### Regla para futuros bloques
 
-- El «Siguiente» de la **última página HTML publicada** debe llevar al elemento
-  siguiente del curso en Aules (al cerrar una fase, desviar el flujo a su
-  cuestionario si procede, o al siguiente bloque cuando exista).
-- El bloque práctico enlaza como «Siguiente» el cuestionario PR-01.1. Cuando exista
-  `02-software/index.html`, habrá que decidir si el cierre del bloque práctico
-  (tras PR-01.3) desvía al bloque Software o mantiene el flujo actual: no dejar
-  enlaces colgados (regla del checklist §9).
+- Cada nuevo apartado (Software, Ciberseguridad, Redes LAN, Acceso a Internet)
+  publicará **los 3 enlaces en Aules** (teoría → quiz → prácticas) con el mismo
+  esquema que Hardware; su página de teoría añade los enlaces al quiz y a las
+  prácticas correspondientes y la portada incorpora las 3 tarjetas del apartado.
+- El «Siguiente» de cada página de teoría lleva a su cuestionario (o al siguiente
+  elemento del curso si fuera procedente): el `page-nav` solo encadena dentro del
+  apartado (teoría → quiz → prácticas), sin encadenar apartados entre sí.
+- El bloque práctico enlaza como «Siguiente» el cuestionario PR-01.1.
 - Las tres actividades del bloque práctico se califican con los cuestionarios
   «PR-01.1…PR-01.3» (categorías `OFI/UP01/PR/…`); su nota llega al libro de
   calificaciones solo a través de Aules (las prácticas on-page no envían nota).
