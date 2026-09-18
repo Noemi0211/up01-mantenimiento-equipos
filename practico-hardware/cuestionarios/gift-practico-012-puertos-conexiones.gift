@@ -39,3 +39,63 @@ $CATEGORY: OFI/UP01/PR/01-2-puertos-conexiones
 ::PR012_10_DisplayPort::El puerto DisplayPort se usa preferentemente para…{
 =Altas resoluciones de vídeo~Conexiones telefónicas~Audio analógico~Suministro de red
 }
+
+::PR012_11_USBAForma::El conector USB-A (el tradicional de escritorio) se reconoce por…{
+=Su forma rectangular y plana~Su forma cuadrada y alta~Ser siempre de color azul~Tener forma circular
+}
+
+::PR012_12_USBBForma::El conector USB-B se caracteriza por…{
+=Ser cuadrado y usarse en impresoras y escáneres~Ser rectangular como el USB-A~Ser redondo~Ser el más pequeño de todos
+}
+
+::PR012_13_JackAudio::El conector jack de 3,5 mm se distingue porque…{
+=Transmite señales de audio (auriculares, micrófono, altavoces)~Transmite vídeo digital de alta resolución~Solo sirve para conectar la red~Es el conector más grande del equipo
+}
+
+::PR012_14_CambioConectores::Si el ordenador solo tiene puertos USB-C y necesitas conectar un teclado USB-A, necesitas…{
+=Un adaptador USB-C a USB-A~Un adaptador RJ45~Un cable VGA~Un cable de red Ethernet
+}
+
+::PR012_15_PuertoVideoAntiguo::El puerto VGA transmite…{
+=Vídeo en formato analógico de menor calidad que HDMI o DisplayPort~Vídeo y audio de alta calidad~Solo audio analógico~Solo datos de red
+}
+
+::PR012_16_MultifuncionConex::La impresora multifunción del centro se conecta al ordenador a través de…{
+=USB-B o conexión de red (RJ45)~VGA~Jack de 3,5 mm~PS/2
+}
+
+::PR012_17_PuertoPS2::El puerto PS/2 se identifica por…{
+=Su forma circular y su color (morado para teclado, verde para ratón)~Ser rectangular como el USB~Ser cuadrado~Ser de color negro
+}
+
+::PR012_18_FireWireHistorico::FireWire (IEEE 1394) es un ejemplo de puerto…{
+=Histórico, actualmente en desuso~De uso obligatorio en servidores~Imprescindible para conectores USB-C~El más rápido actualmente
+}
+
+::PR012_19_SanidadRJ45::En un centro de salud, el acceso a la historia clínica del servidor se realiza a través del puerto…{
+=RJ45 (Ethernet)~VGA~PS/2~Jack de audio
+}
+
+::PR012_20_ConectoresIdentificacion::Para conectar un monitor de alta resolución en radiología, el puerto más adecuado es…{
+=DisplayPort o HDMI~PS/2~RJ45~FireWire
+}
+
+::PR012_21_VerdaderoFalso2::El conector USB-C es reversible, es decir, se puede enchufar en cualquier orientación.{
+=T
+}
+
+::PR012_22_HDMI_Datos::El puerto HDMI, además de vídeo, transmite…{
+=Audio digital~Solo corriente eléctrica~Solo datos de red~Señales analógicas de teléfono
+}
+
+::PR012_23_RedCableada::El puerto de conexión de red cableada (Ethernet) es…{
+=RJ45~HDMI~USB-A~Jack de 3,5 mm
+}
+
+::PR012_24_Adaptadores::Los adaptadores de puertos (por ejemplo, USB-C a HDMI) sirven para…{
+=Conectar dispositivos con conectores diferentes entre sí~Aumentar la velocidad del procesador~Almacenar más datos en el equipo~Refrigerar el sistema
+}
+
+::PR012_25_VerdaderoFalso3::El puerto FireWire es la alternativa moderna al USB-C para periféricos actuales.{
+=F
+}

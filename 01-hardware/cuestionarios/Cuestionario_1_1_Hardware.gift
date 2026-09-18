@@ -1,0 +1,407 @@
+$CATEGORY: OFI/UP01/HW/11-cuestionario-hardware
+
+::HW11_01_DefinicionHardware::El hardware de un sistema informático está formado por…{
+=Todo lo físico y tangible que compone el equipo y sus periféricos.
+~Los programas y aplicaciones instalados en el disco.
+~Los documentos y archivos guardados en la nube.
+~Las contraseñas del sistema operativo.
+}
+
+::HW11_02_DiferenciaHW_SW::La diferencia fundamental entre hardware y software es que…{
+=El hardware se puede tocar; el software es un conjunto de instrucciones.
+~El hardware se instala con un CD; el software es un componente electrónico.
+~El software genera electricidad; el hardware la consume.
+~No existe diferencia: son lo mismo.
+}
+
+::HW11_03_EjemploSW::¿Cuál de los siguientes elementos es software?{
+=El sistema operativo Windows.
+~La placa base.
+~El teclado.
+~El ventilador de la CPU.
+}
+
+::HW11_04_HardwareExterno::Los periféricos conectados fuera de la carcasa del ordenador se consideran…{
+=Hardware externo.
+~Hardware interno.
+~Software de aplicación.
+~Almacenamiento de datos.
+}
+
+::HW11_05_MantenimientoHardware::Conocer los componentes del hardware permite…{
+=Diagnosticar incidencias y comunicarlas con precisión al soporte técnico.
+~Instalar antivirus de forma automática.
+~Escribir informes médicos con rapidez.
+~Conectar el equipo a Internet por sí solo.
+}
+
+::HW11_06_VerdaderoFalso1::La memoria RAM es un componente de hardware.{
+=T
+}
+
+::HW11_07_PlacaBaseFuncion::La función principal de la placa base es…{
+=Conectar y permitir la comunicación entre todos los componentes del equipo.
+~Suministrar energía eléctrica a los periféricos externos.
+~Almacenar documentos de forma permanente.
+~Mostrar la imagen en el monitor.
+}
+
+::HW11_08_FuenteAlimentacion::La fuente de alimentación de un ordenador transforma…{
+=La corriente de la red eléctrica en los voltajes que necesita cada componente.
+~Los datos digitales en señales analógicas.
+~La información del procesador en imágenes en pantalla.
+~La electricidad estática en ondas de radio.
+}
+
+::HW11_09_FuenteVoltajes::Si la fuente de alimentación falla en un puesto de admisión, lo más probable es…{
+=Que el equipo se apague o no encienda en absoluto.
+~Que la impresora imprima más rápido.
+~Que el monitor muestre más colores.
+~Que el teclado funcione con mayor fluidez.
+}
+
+::HW11_10_PlacaBaseExpansion::Las ranuras PCIe de la placa base sirven para…{
+=Instalar tarjetas de expansión como la gráfica o la de red.
+~Conectar auriculares y micrófonos.
+~Almacenar documentos temporalmente.
+~Regular la temperatura del procesador.
+}
+
+::HW11_11_CPU::La siglas CPU significan…{
+=Central Processing Unit (Unidad Central de Procesamiento).
+~Computer Power Unit.
+~Central Peripheral Unit.
+~Core Processing Utility.
+}
+
+::HW11_12_CPUFuncion::La función principal del procesador (CPU) es…{
+=Ejecutar las instrucciones y cálculos necesarios para el funcionamiento del equipo.
+~Almacenar los documentos del usuario.
+~Mostrar la imagen en el monitor.
+~Conectar el equipo a la red local.
+}
+
+::HW11_13_GPUDiferencia::La diferencia principal entre CPU y GPU es que…{
+=La CPU ejecuta tareas generales y la GPU está optimizada para procesar gráficos e imágenes en paralelo.
+~La CPU solo sirve para vídeo y la GPU para cálculos de texto.
+~No hay diferencia: ambas son lo mismo.
+~La GPU ejecuta el sistema operativo y la CPU genera imágenes.
+}
+
+::HW11_14_GPUUsos::Además de los videojuegos, la GPU se emplea en sanidad para…{
+=Procesar imágenes médicas de radiología (TAC, resonancias).
+~Imprimir informes en papel.
+~Almacenar historias clínicas.
+~Conectar el equipo a la red.
+}
+
+::HW11_15_CPUVelocidad::La velocidad de reloj de una CPU se mide en…{
+=GHz (gigahercios).
+~GB (gigabytes).
+~MB/s (megabytes por segundo).
+~DPI (puntos por pulgada).
+}
+
+::HW11_16_CPUVFuncion::Si un procesador tiene ocho núcleos, significa que…{
+=Puede ejecutar hasta ocho tareas de forma simultánea (paralelismo básico).
+~Tiene ocho discos duros internos.
+~Consume ocho veces menos energía.
+~Almacena ocho terabytes de información.
+}
+
+::HW11_17_CPUVFuncion::La GPU se comunica con la placa base a través de…{
+=La ranura PCIe.
+~El zócalo del procesador.
+~El puerto USB.
+~El módulo de memoria RAM.
+}
+
+::HW11_18_SanidadGPU::En un centro hospitalario, una GPU potente es importante para…{
+=Visualizar TAC, resonancias magnéticas e imágenes de alta resolución con rapidez.
+~Imprimir recetas en la impresora del mostrador.
+~Almacenar las contraseñas del personal.
+~Conectar los auriculares del teléfono.
+}
+
+::HW11_19_HDD_VS_SSD_Diferencia::La diferencia principal entre un HDD y un SSD es que el HDD…{
+=Utiliza discos magnéticos giratorios y el SSD utiliza memoria flash sin partes móviles.
+~Es más rápido que el SSD en todos los casos.
+~No necesita energía para funcionar.
+~Es volátil y pierde los datos al apagarse.
+}
+
+::HW11_20_HDD_VS_SSD_Diferencia::El SSD presenta estas ventajas frente al HDD…{
+=Mayor velocidad de acceso, menos consumo, sin ruido y mayor resistencia a golpes.
+~Mayor capacidad por euro de coste.
+~Mejor para almacenar grandes volúmenes a largo plazo.
+~No necesita conexión a la placa base.
+}
+
+::HW11_21_AlmacenamientoSanidad::Para una consulta que necesita acceso rápido a historiales clínicos grandes, la combinación ideal es…{
+=SSD para el sistema operativo y las aplicaciones + HDD para archivo y copias de seguridad.
+~Solo HDD de gran capacidad.
+~Solo memoria RAM sin SSD ni HDD.
+~Un USB 2.0 como disco principal.
+}
+
+::HW11_22_AlmacenamientoPermanente::El almacenamiento interno permanente (HDD/SSD) se diferencia de la RAM en que…{
+=Conserva los datos incluso cuando el equipo está apagado.
+~Se borra completamente al apagar el ordenador.
+~Solo almacena el sistema operativo.
+~Es más rápida que la memoria caché.
+}
+
+::HW11_23_SeguridadDatos::Antes de dar de baja un equipo en un centro sanitario, es fundamental…{
+=Borrar o trasladar los datos del HDD/SSD para proteger la información de pacientes.
+~Simplemente desconectar la corriente.
+~Retirar el ventilador.
+~Poner un cartel de advertencia.
+}
+
+::HW11_24_VerdaderoFalso2::El SSD tiene partes móviles en su interior.{
+=F
+}
+
+::HW11_25_MemoriaRAM_Funcion::La memoria RAM almacena temporalmente…{
+=Los datos y programas que la CPU está usando en ese momento.
+~Las historias clínicas de forma permanente.
+~La configuración de fecha y hora del equipo.
+~Los archivos impresos en la impresora.
+}
+
+::HW11_26_MemoriaRAM_Volatil::¿Por qué la memoria RAM es volátil?{
+=Porque pierde todo su contenido cuando se apaga el equipo.
+~Porque está formada por discos magnéticos.
+~Porque tarda mucho en acceder a los datos.
+~Porque es de solo lectura.
+}
+
+::HW11_27_MemoriaROM_Funcion::La memoria ROM (o firmware UEFI) contiene…{
+=Las instrucciones básicas de arranque y autocomprobación del equipo.
+~Los documentos de usuario.
+~El sistema operativo completo.
+~Las imágenes de radiología.
+}
+
+::HW11_28_Cache_Funcion::La función de la memoria caché es…{
+=Reducir los tiempos de acceso de la CPU almacenando datos muy usados temporalmente.
+~Almacenar los documentos de forma permanente.
+~Conectar la impresora al equipo.
+~Refrigerar el procesador.
+}
+
+::HW11_29_Virtual_Funcion::Cuando la RAM se llena, el sistema operativo recurre a…{
+=La memoria virtual (un espacio del disco duro que simula RAM extra).
+~La memoria caché del procesador.
+~La memoria ROM.
+~La memoria VRAM de la tarjeta gráfica.
+}
+
+::HW11_30_Cache_VS_RAM::La memoria caché es…{
+=Más rápida que la RAM pero tiene mucha menos capacidad.
+~Más lenta que la RAM pero con más capacidad.
+~Igual que la RAM en velocidad y tamaño.
+~No existe en los equipos actuales.
+}
+
+::HW11_31_VerdaderoFalso3::La memoria RAM conserva su contenido al apagar el equipo.{
+=F
+}
+
+::HW11_32_MemoriaFlash::La memoria flash se encuentra en…{
+=Pendrives, tarjetas SD y unidades SSD.
+~Solo en la memoria caché del procesador.
+~Exclusivamente en la placa base.
+~Dentro del ventilador de la CPU.
+}
+
+::HW11_33_Refrigeracion_CPU::El sistema de refrigeración de la CPU se compone de…{
+=Un disipador térmico y un ventilador.
+~Solo un cable de alimentación.
+~Una memoria RAM adicional.
+~Un puerto HDMI de salida.
+}
+
+::HW11_34_VentiladorFuncion::El ventilador del ordenador tiene como misión…{
+=Expulsar el calor de los componentes para evitar el sobrecalentamiento.
+~Enfriar el aire del ambiente del despacho.
+~Reducir el consumo eléctrico del equipo.
+~Almacenar energía de reserva.
+}
+
+::HW11_35_DisipadorMaterial::Los disipadores de calor suelen estar fabricados de…{
+=Aluminio o cobre, por su excelente conductividad térmica.
+~Plástico o cartón.
+~Cristal o cerámica.
+~Goma o silicona.
+}
+
+::HW11_36_Sobrecalentamiento::Si el ventilador de la CPU deja de funcionar, el equipo podría…{
+=Sobrecalentarse y apagarse de forma automática para protegerse.
+~Funcionar con más rapidez.
+~No presentar ningún problema.
+~Tener más espacio en disco.
+}
+
+::HW11_37_RefrigeracionSanidad::La refrigeración adecuada es importante en un centro sanitario porque…{
+=Garantiza que los equipos funcionen continuamente durante jornadas largas sin averías.
+~Permite imprimir más páginas por minuto.
+~Reduce el número de pacientes en espera.
+~Aumenta la calidad de las imágenes de la impresora.
+}
+
+::HW11_38_PerifericosDefinicion::Los periféricos son dispositivos que…{
+=Se conectan al ordenador para introducir, mostrar o intercambiar información.
+~Solo forman parte del interior del equipo.
+~Son exclusivamente componentes de almacenamiento.
+~Solo sirven para mostrar imagen en pantalla.
+}
+
+::HW11_39_PerifericosEntrada::El teclado, el ratón, el escáner y el micrófono son periféricos de…{
+=Entrada.
+~Salida.
+~Entrada/salida.
+~Refrigeración.
+}
+
+::HW11_40_PerifericosSalida::La impresora, el monitor, los altavoces y el proyector son periféricos de…{
+=Salida.
+~Entrada.
+~Entrada/salida.
+~Almacenamiento.
+}
+
+::HW11_41_PantallaTactil::La pantalla táctil se clasifica como periférico de…{
+=Entrada y salida (permite interactuar y mostrar información).
+~Solo entrada.
+~Solo salida.
+~Almacenamiento.
+}
+
+::HW11_42_LectorSanidad::En un mostrador de admisión sanitaria, el lector de tarjetas sirve para…{
+=Identificar de forma segura al paciente o profesional con su tarjeta sanitaria.
+~Imprimir recetas y etiquetas.
+~Digitalizar documentos en papel.
+~Almacenar historias clínicas en disco.
+
+}
+
+::HW11_43_ImpresoraMultifuncion::Una impresora multifunción del centro puede…{
+=Imprimir, escanear y en algunos modelos enviar fax.
+~Solo imprimir en blanco y negro.
+~Solo escanear documentos.
+~Almacenar datos de pacientes de forma permanente.
+}
+
+::HW11_44_USBA_Conector::El conector USB-A se distingue por…{
+=Su forma rectangular y plana.
+~Su forma cuadrada y pequeña.
+~Ser siempre de color azul.
+~Tener forma circular.
+}
+
+::HW11_45_USBB_Conector::El conector USB-B se utiliza habitualmente para…{
+=Conectar impresoras y escáneres al ordenador.
+~Conectar auriculares y micrófonos.
+~Conectar monitores de alta resolución.
+~Conectar cables de red local.
+}
+
+::HW11_46_USBC_Ventajas::El conector USB-C es especialmente ventajoso porque…{
+=Es reversible, compacto y transmite datos, vídeo, audio y energía.
+~Solo sirve para conectar impresoras.
+~Es más grande que el USB-A y no es práctico.
+~Solo se usa en equipos muy antiguos.
+}
+
+::HW11_47_HDMI_Funcion::El puerto HDMI transmite simultáneamente…{
+=Vídeo y audio de alta calidad por un solo cable.
+~Solo datos de texto.
+~Solo audio sin imagen.
+~Solo corriente eléctrica.
+}
+
+::HW11_48_RJ45_Funcion::El puerto RJ45 se utiliza para…{
+=Conectar el equipo a una red local (Ethernet) mediante cable.
+~Conectar auriculares y micrófonos.
+~Transmitir vídeo a un monitor.
+~Cargar la batería de un portátil.
+}
+
+::HW11_49_DisplayPort_Funcion::El puerto DisplayPort se diferencia de HDMI en que…{
+=Está diseñado para pantallas de muy alta resolución y uso profesional (radiología).
+~Solo transmite audio.
+~Es un puerto histórico en desuso.
+~Solo sirve para conectar impresoras.
+}
+
+::HW11_50_PuertosHistoricos::¿Cuál de los siguientes es un puerto que se considera actualmente histórico o en desuso?{
+=VGA.
+~USB-C.
+~HDMI.
+~Thunderbolt.
+}
+
+::HW11_51_Jack35::El conector jack de 3,5 mm se utiliza para…{
+=Conectar auriculares, micrófonos y altavoces.
+~Conectar monitores de alta resolución.
+~Conectar discos duros externos.
+~Conectar cables de red.
+}
+
+::HW11_52_VGA_Caracteristica::El puerto VGA se caracteriza por…{
+=Transmitir vídeo en formato analógico, con menor calidad que HDMI o DisplayPort.
+~Transmitir vídeo y audio de alta calidad.
+~Ser el puerto más rápido actualmente.
+~Solo servir para conectar impresoras.
+}
+
+::HW11_53_Thunderbolt_Coneccion::El puerto Thunderbolt comparte conector físico con…{
+=USB-C.
+~PS/2.
+~RJ45.
+~VGA.
+}
+
+::HW11_54_SanidadPuertos::En una estación de diagnóstico por imagen, los monitores de alta resolución se conectan mediante…{
+=DisplayPort o HDMI.
+~PS/2.
+~VGA.
+~Jack de 3,5 mm.
+}
+
+::HW11_55_VerdaderoFalso4::Todos los puertos USB-C son compatibles con Thunderbolt.{
+=F
+}
+
+::HW11_56_FuentePotencia::Si una fuente de alimentación tiene una potencia de 500 W, esto indica…{
+=Que puede suministrar como máximo 500 vatios de energía al conjunto del equipo.
+~Que el procesador funciona a 500 GHz.
+~Que el disco duro tiene 500 GB de capacidad.
+~Que la memoria RAM tiene 500 MB.
+}
+
+::HW11_57_MemoriaCrecimiento::Si abres muchas aplicaciones a la vez y el equipo va lento, probablemente necesitas…{
+=Más memoria RAM libre (o cerrar aplicaciones).
+~Más ventiladores de refrigeración.
+~Un monitor más grande.
+~Un puerto USB adicional.
+}
+
+::HW11_58_VerdaderoFalso5::La placa base conecta el procesador con la memoria RAM, el disco duro y los puertos externos.{
+=T
+}
+
+::HW11_59_PerifericoE_S::Un pendrive USB es un periférico de…{
+=Entrada y salida (permite leer y escribir datos).
+~Solo entrada.
+~Solo salida.
+~Refrigeración.
+}
+
+::HW11_60_SanidadGlobal::¿Por qué es importante el hardware en el ámbito de la documentación y administración sanitarias?{
+=Porque el correcto funcionamiento de los equipos garantiza la atención al paciente y la gestión de la información.
+~Porque el hardware genera automáticamente los informes médicos.
+~Porque sustituye al personal sanitario en sus tareas.
+~Porque solo es relevante en el departamento de informática.
+}

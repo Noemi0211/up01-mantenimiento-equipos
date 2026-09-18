@@ -17,6 +17,7 @@ Curso: Ofimática · CFGS Documentación y Administración Sanitarias
 | `gift-06-refrigeracion.gift` | 12 preguntas (apartado 6) | HW-06 Sistemas de refrigeración |
 | `gift-07-perifericos.gift` | 19 preguntas (apartado 7) | HW-07 Periféricos |
 | `gift-08-puertos.gift` | 19 preguntas (apartado 8) | HW-08 Puertos de comunicación |
+| `Cuestionario_1_1_Hardware.gift` | 60 preguntas de todo el bloque (banco amplio) | HW-11 Cuestionario 1.1 Hardware |
 | `gift-examen-final.gift` | 22 preguntas de todo el bloque | HW-EXAMEN Hardware |
 
 Cada archivo empieza con la línea `$CATEGORY:` que sitúa las preguntas en la
@@ -55,6 +56,9 @@ En cada actividad **Cuestionario**, ve a **Administración → Ajustes del cuest
 
 ### Número de preguntas por configuración (caso por defecto)
 - **HW-01…HW-08 (práctica por apartado):** 5–8 preguntas aleatorias por intento.
+- **HW-11 (Cuestionario sobre el hardware):** 15–20 preguntas aleatorias por
+  intento desde la categoría `OFI/UP01/HW/11-cuestionario-hardware` (60 preguntas
+  de todo el bloque).
 - **HW-EXAMEN Hardware:** 10 preguntas aleatorias (o las que quieras) de la
   categoría `OFI/UP01/HW/09-examen-final`.
 

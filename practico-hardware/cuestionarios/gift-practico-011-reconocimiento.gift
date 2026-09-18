@@ -39,3 +39,65 @@ $CATEGORY: OFI/UP01/PR/01-1-reconocimiento
 ::PR011_10_CopiasSeguridad::Para realizar copias de seguridad de la documentación sanitaria, lo más adecuado es usar…{
 =Un disco duro externo o una memoria USB~Un altavoz~Un proyector~Una pantalla táctil
 }
+
+::PR011_11_TecladoSanitario::Un teclado lavable para uso en consultas se conecta habitualmente por…{
+=USB (USB-A o USB-C)~RJ45~VGA~Jack de audio
+}
+
+::PR011_12_MicrofonoTelemedicina::El micrófono que se usa en videoconferencias sanitarias es un periférico de…{
+=Entrada~Salida~Entrada/salida~Almacenamiento
+}
+
+::PR011_13_LectorCodBarras::El lector de código de barras de una farmacia hospitalaria sirve para…{
+=Identificar rápidamente medicamentos y asociarlos al paciente correcto~Imprimir recetas~Digitalizar consentimientos~Almacenar datos de peso
+
+}
+
+::PR011_14_DispositivoPeriferico::¿Cuál de los siguientes NO es un periférico?
+{
+=El procesador (CPU)~La impresora~El escáner~El lector de tarjetas
+}
+
+::PR011_15_OrdenadorPuesto::En el puesto de trabajo de administración sanitaria, el componente que ejecuta los programas es…{
+=El procesador (CPU) ubicado en la placa base~La impresora multifunción~El lector de tarjetas sanitarias~El monitor LCD
+}
+
+::PR011_16_ImpresoraEtiquetas::La impresora de etiquetas de muñequera de pacientes es un periférico de…{
+=Salida~Entrada~Entrada/salida~Procesamiento
+}
+
+::PR011_17_FuenteAlimentacion::Si el equipo no enciende, una de las primeras comprobaciones físicas es…{
+=Verificar que la fuente de alimentación recibe corriente y el interruptor está en ON~Reiniciar el sistema operativo~Desconectar el monitor~Llamar al proveedor de software
+}
+
+::PR011_18_PlacaBaseIdentificacion::Al abrir la carcasa del equipo, la placa más grande donde se conectan los componentes es…{
+=La placa base~La fuente de alimentación~El disco duro HDD~El ventilador de la CPU
+}
+
+::PR011_19_MonitorPeriferico::El monitor es un periférico de…{
+=Salida~Entrada~Entrada/salida~Almacenamiento
+}
+
+::PR011_20_PantallaTactilTipo::Una pantalla táctil de recepción (tipo iPad) es un periférico de…{
+=Entrada y salida (permite interactuar y ver información)~Solo entrada~Solo salida~Almacenamiento
+}
+
+::PR011_21_ConsentimientoDigital::Para digitalizar un consentimiento informado firmado por un paciente, el periférico adecuado es…{
+=El escáner~La impresora~El micrófono~El proyector
+}
+
+::PR011_22_ReconocerComponentes::El componente que almacena temporalmente los datos que el procesador está usando en ese momento es…{
+=La memoria RAM~El disco duro HDD~La fuente de alimentación~El ventilador de la CPU
+}
+
+::PR011_23_CopiaSeguridadUSB::Para trasladar un documento de un puesto a otro en la misma planta, el dispositivo más práctico es…{
+=Un pendrive USB o unidad de red compartida~Una impresora de red~Un lector de tarjetas~Un monitor externo
+}
+
+::PR011_24_AlmacenamientoPermanente::Un disco SSD instalado en el equipo almacena datos de forma…{
+=Permanente (no volátil)~Temporal y solo mientras el equipo está encendido~Solo durante el arranque~En la nube sin conexión al disco
+}
+
+::PR011_25_VerdaderoFalso1::El lector de tarjetas sanitarias se utiliza para imprimir informes médicos.{
+=F
+}

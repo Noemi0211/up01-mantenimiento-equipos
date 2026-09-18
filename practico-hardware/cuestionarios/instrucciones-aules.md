@@ -23,9 +23,9 @@ esta carpeta. Configuración común: preguntas aleatorias, intentos múltiples y
 
 | Archivo | Contenido | Cuestionario que alimenta |
 |---|---|---|
-| `gift-practico-011-reconocimiento.gift` | 10 preguntas (reconocimiento de equipos y periféricos) | PR-01.1 Reconocimiento de equipos y periféricos |
-| `gift-practico-012-puertos-conexiones.gift` | 10 preguntas (puertos y conexiones) | PR-01.2 Puertos y conexiones |
-| `gift-practico-013-verificacion-equipo.gift` | 10 preguntas (verificación e inventario) | PR-01.3 Verificación del equipo |
+| `gift-practico-011-reconocimiento.gift` | 25 preguntas (reconocimiento de equipos y periféricos) | PR-01.1 Reconocimiento de equipos y periféricos |
+| `gift-practico-012-puertos-conexiones.gift` | 25 preguntas (puertos y conexiones) | PR-01.2 Puertos y conexiones |
+| `gift-practico-013-verificacion-equipo.gift` | 25 preguntas (verificación e inventario) | PR-01.3 Verificación del equipo |
 
 Cada archivo empieza con la línea `$CATEGORY:` que sitúa las preguntas en la
 categoría correspondiente del banco de preguntas (se crea automáticamente al
@@ -60,13 +60,13 @@ En cada actividad **Cuestionario**, ve a **Administración → Ajustes del cuest
 | **Número de calificaciones** (intentos permitidos) | Múltiples intentos. Para «ilimitados» selecciona *Intentos permitidos → Ilimitados*; si tu Aules limita el máximo, déjalo en ese máximo. |
 | **Método de calificación** | **Calificación más alta** (mejor nota). |
 | **Aleatorizar dentro de las preguntas** (barajar respuestas) | **Sí**. |
-| **Modo de pregunta** | Pregunta aleatoria: **Añadir una pregunta aleatoria...** **5–6 preguntas** de la categoría correspondiente por intento (los bancos tienen 10). |
+| **Modo de pregunta** | Pregunta aleatoria: **Añadir una pregunta aleatoria...** **8–10 preguntas** de la categoría correspondiente por intento (los bancos tienen 25). |
 | **Aplicar abandonos** / penalizaciones por intento | No (para no penalizar la repetición). |
 | **Ventana de tiempo** | Período abierto + **fecha de cierre** del bloque práctico (ver apartado 4). |
 | **Modo de revisión** | Tras cada intento: **Sí** (el alumnado puede ver aciertos y fallos para seguir practicando). |
 
 > Al ser preguntas aleatorias, cada intento reparte un conjunto distinto de la
-> batería de 10 de cada categoría.
+> batería de 25 de cada categoría.
 
 ---
 

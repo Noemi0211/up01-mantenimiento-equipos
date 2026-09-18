@@ -39,3 +39,64 @@ $CATEGORY: OFI/UP01/PR/01-3-verificacion-equipo
 ::PR013_10_VFFuerza::Se debe forzar de forma reiterada el encendido de un equipo aunque falle la fuente de alimentación.{
 =F
 }
+
+::PR013_11_PrimeroRevisar::La primera actuación antes de encender un equipo nuevo o reparado es…{
+=Revisar visualmente que todos los componentes están correctamente instalados~Llamar al proveedor inmediatamente~Conectarlo a Internet~Escribir un informe de incidencia
+}
+
+::PR013_12_ArranqueCorrecto::El orden correcto para poner en marcha un puesto de trabajo es…{
+=Encender el equipo → esperar arranque del SO → comprobar periféricos (teclado, ratón, impresora, lector)~Encender impresora → encender monitor → encender equipo~Conectar todos los cables → encender sin revisar nada~Apagar el equipo → revisar → encender de nuevo
+}
+
+::PR013_13_DispositivosDetectados::Tras el arranque del sistema operativo, se debe comprobar que…{
+=Los dispositivos (monitor, teclado, ratón, impresora, lector de tarjetas) aparecen correctamente en el sistema~Solo funciona el monitor~No hace falta verificar nada más~El equipo no necesita más comprobaciones
+}
+
+::PR013_14_InventarioDefinicion::Un inventario de un puesto de trabajo sanitario contiene…{
+=Relación de componentes, números de serie, ubicación y responsable~Solo el nombre del usuario~El horario de atención al paciente~La contraseña del equipo
+}
+
+::PR013_15_IncidenciaDefinicion::Una incidencia en un puesto de trabajo es…{
+=Una avería o mal funcionamiento que debe registrarse y comunicarse~La compra de un equipo nuevo~La instalación de una aplicación~El cambio de contraseña del usuario
+}
+
+::PR013_16_IncidenteImpresora::Si la impresora del mostrador de admisión no responde, el primer paso es…{
+=Comprobar si tiene papel, tinta y si el cable está correctamente conectado~Reiniciar inmediatamente el servidor~Llamar al soporte sin comprobar nada~Trabajar sin imprimir y olvidar el problema
+}
+
+::PR013_17_IncidenteMonitor::Si el monitor no muestra imagen pero el equipo parece encendido, se debe…{
+=Verificar la conexión del cable de vídeo (HDMI, DisplayPort, VGA) y la entrada seleccionada en el monitor~Cambiar el procesador~Reinstalar el sistema operativo~Desconectar todos los periféricos
+}
+
+::PR013_18_IncidenteRed::Si el equipo de admisión no puede acceder a la historia clínica del servidor, se debe comprobar primero…{
+=Si el cable de red está conectado y el LED del puerto RJ45 está activo~Si la impresora tiene papel~Si el monitor está encendido~Si el ventilador funciona
+}
+
+::PR013_19_InventarioActualizacion::El inventario de hardware de un puesto se debe actualizar cuando…{
+=Se añade, retira o sustituye cualquier componente o dispositivo~Solo una vez al año~Cuando se cambia la contraseña~Cuando se formatea el disco
+}
+
+::PR013_20_OrdenArranque::¿Cuál es el orden lógico de verificación tras encender el equipo?
+{
+=1. Arranque del SO → 2. Detección de periféricos → 3. Conexión a red → 4. Prueba de impresión~1. Imprimir → 2. Conectar red → 3. Encender → 4. Revisar~1. Revisar periféricos → 2. Apagar → 3. Encender → 4. Nada más~1. Conectar a red → 2. Encender → 3. Apagar → 4. Revisar
+}
+
+::PR013_21_ReiniciarEquipo::Cuando un equipo presenta un funcionamiento anómalo (lentitud, pantalla azul), se recomienda…{
+=Reiniciar el equipo y comprobar si el problema persiste~Forzar el apagado desconectando la corriente~Ignorar el problema~Desinstalar todas las aplicaciones
+}
+
+::PR013_22_RespaldoDatos::Antes de realizar un mantenimiento correctivo en un puesto sanitario, es fundamental…{
+=Realizar una copia de seguridad de los datos del usuario~Formatear el disco directamente~Desconectar todos los periféricos~Cambiar el procesador
+}
+
+::PR013_23_InventarioFormato::Un formato adecuado para el inventario de hardware debe incluir como mínimo…{
+=Tipo de equipo, componentes internos, periféricos conectados y número de serie~Solo el nombre del equipo~El color de la carcasa~La marca del escritorio
+}
+
+::PR013_24_MantenimientoPreventivo::El mantenimiento preventivo de un puesto de trabajo incluye…{
+=Revisiones periódicas de limpieza, conexiones, actualizaciones y copias de seguridad~Solo reparar cuando se rompe~Cambiar el equipo cada mes~No hacer nada hasta que falle
+}
+
+::PR013_25_VerdaderoFalso4::Registrar las incidencias y su resolución ayuda a mejorar el mantenimiento futuro del parque informático.{
+=T
+}
