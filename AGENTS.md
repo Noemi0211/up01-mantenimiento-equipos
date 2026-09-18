@@ -30,7 +30,7 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
   `https://noemi0211.github.io/up01-mantenimiento-equipos/`
 - El PDF fuente y `Documentos base/` (PNG originales BY-NC-SA, ≈55 MB) están excluidos del repo (`.gitignore`); solo se publican las copias normalizadas de `images/`.
 - Solo commit/push cuando el usuario lo pida explícitamente.
-- Último commit publicado: `16e5857` (AGENTS: actualizar último commit publicado).
+- Último commit publicado: `d509027` (créditos/licencia CC BY-NC-SA y sidebar del apartado Hardware).
 - Tras el push, GitHub Pages tarda un par de minutos en regenerarse; si el usuario no ve cambios, avisar de recargar con Ctrl+F5.
 - CRLF: al hacer `git add` se avisa del reemplazo LF→CRLF; es normal y no requiere acción.
 
@@ -232,6 +232,43 @@ La portada (`index.html`) solo muestra los apartados publicados como 3 tarjetas
 (teoría · cuestionario · prácticas). El bloque 00 (Introducción y elementos
 curriculares) queda como «Guía curricular», fuera del recorrido del alumnado.
 
+### Plantilla de apartado (replicar en Software y siguientes)
+
+**Cada apartado se construye SIEMPRE con estos 3 elementos**, enlazados de forma
+diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
+
+| # | Elemento | Qué es | Dónde vive | Enlace en Aules |
+|---|---|---|---|---|
+| 1 | **Teoría** | HTML con los contenidos teóricos del apartado | `<NN>-<bloque>/index.html` (GitHub Pages) | Actividad **URL** al HTML publicado |
+| 2 | **Cuestionario teórico** | Banco GIFT del apartado importado como Quiz | `<NN>-<bloque>/cuestionarios/` → Aules | Actividad **Quiz** (una por apartado) |
+| 3 | **Prácticas** | HTML del bloque práctico + sus 3 cuestionarios | `practico-<bloque>/` + Aules | 1 actividad **URL** + 3 actividades **Quiz** (`PR-0X.1…3`) |
+
+**URLs publicadas** (para las actividades URL de Aules):
+- Teoría: `https://noemi0211.github.io/up01-mantenimiento-equipos/<NN>-<bloque>/`
+- Prácticas: `https://noemi0211.github.io/up01-mantenimiento-equipos/practico-<bloque>/`
+- Portada / presentación: `https://noemi0211.github.io/up01-mantenimiento-equipos/`
+
+**Convención de nombres** (ejemplo Hardware → Software):
+- Teoría: `01-hardware/` → `02-software/`
+- Prácticas: `practico-hardware/` → `practico-software/`
+- Bancos GIFT teoría: `OFI/UP01/HW/…` → `OFI/UP01/SW/…`
+- Cuestionarios prácticos: `PR-01.1…PR-01.3` → `PR-02.1…PR-02.3` (categorías `OFI/UP01/PR/…`)
+
+**Pasos de montaje de un apartado nuevo:**
+1. Publicar el HTML de teoría: `<NN>-<bloque>/index.html`.
+2. Crear el banco GIFT del **cuestionario teórico** e importarlo en Aules (Quiz).
+3. Crear el **bloque práctico**: `practico-<bloque>/index.html` con actividades
+   autocorregibles (`js/actividades.js`), sus 3 bancos GIFT (`PR-0X.1…3`),
+   `instrucciones-aules.md` e inventario de imágenes.
+4. Configurar en Aules, en este orden:
+   **URL teoría → Quiz teoría → URL prácticas → Quiz PR-0X.1 → PR-0X.2 → PR-0X.3**.
+5. Conectar el sitio:
+   - **Portada:** 3 tarjetas del apartado (teoría · cuestionario · prácticas).
+   - **Sidebar de la teoría:** sección «Apartado 0X» con enlaces al cuestionario
+     teórico, al bloque práctico y a los 3 quizzes prácticos.
+   - **`.page-nav`:** Portada → Teoría → Cuestionario teórico → Prácticas → PR-0X.1.
+6. Verificar enlaces externos (`target="_blank"` + `rel="noopener"`) y footer exacto.
+
 ### Flujo conectado hoy (page-nav)
 
 - **index.html (Portada):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Apartado 01 · Hardware (salta el bloque 00).
@@ -240,6 +277,8 @@ curriculares) queda como «Guía curricular», fuera del recorrido del alumnado.
 - **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes.
 
 ### Regla para futuros bloques
+
+> Seguir la **«Plantilla de apartado»** definida arriba (3 elementos: teoría · cuestionario · prácticas).
 
 - Cada nuevo apartado (Software, Ciberseguridad, Redes LAN, Acceso a Internet)
   publicará **los 3 enlaces en Aules** (teoría → quiz → prácticas) con el mismo
