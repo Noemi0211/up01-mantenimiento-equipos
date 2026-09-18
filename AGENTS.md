@@ -75,12 +75,12 @@ Apuntes 26-27/
 ## 6 · Estructura HTML por página
 
 1. HEADER fijo (mismo en todas).
-2. Sidebar fija: apartados publicados (enlace a cada bloque de teoría) + sección «Guía curricular» (enlace al bloque 00, fuera del recorrido del alumnado) + sección «En esta página». No se listan bloques aún no publicados.
+2. Sidebar fija: apartados publicados (enlace a cada bloque de teoría) +, en la página de teoría de cada bloque, sección «Apartado 0X» con enlaces al cuestionario teórico y a los recursos del bloque (bloque práctico y quizzes prácticos) + sección «Guía curricular» (enlace al bloque 00, fuera del recorrido del alumnado) + sección «En esta página». No se listan bloques aún no publicados.
 3. Contenido principal con `<section id="...">` únicas por página.
 4. TOC automático: `<div class="toc" id="toc-automatico"></div>`.
 5. `.page-nav` con Anterior/Siguiente.
 6. FOOTER con el texto EXACTO:
-   `Material Moodle bilingüe de Vibecoding · HTML generado desde Markdown · CC BY-SA 4.0`
+   `Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0`
 7. Botón volver arriba + `<script src="RUTA js/navegacion.js">`.
 
 Rutas relativas: desde un bloque `<../css/estilos.css>`, `<../js/navegacion.js>`; desde raíz `css/…`.
@@ -214,7 +214,7 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 |---|---|---|
 | Entrada al módulo (enlace «UP01 · Mantenimiento básico de equipos») | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11225710` |
 | Cuestionario sobre la presentación | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11231945` |
-| Cuestionario sobre el hardware | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377` |
+| Cuestionario teórico sobre el hardware | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377` |
 | PR-01.1 Reconocimiento de equipos y periféricos (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391623` |
 | PR-01.2 Puertos y conexiones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626` |
 | PR-01.3 Verificación del equipo (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627` |
@@ -236,8 +236,8 @@ curriculares) queda como «Guía curricular», fuera del recorrido del alumnado.
 
 - **index.html (Portada):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Apartado 01 · Hardware (salta el bloque 00).
 - **00 · Guía curricular (fuera del recorrido):** «Anterior» → Portada · «Siguiente» → Hardware (acceso opcional desde la portada/sidebar).
-- **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario sobre el hardware (Aules).
-- **practico-hardware (Prácticas):** «Anterior» → Cuestionario sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes.
+- **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el hardware (Aules).
+- **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes.
 
 ### Regla para futuros bloques
 

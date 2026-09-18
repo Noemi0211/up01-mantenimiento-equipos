@@ -529,7 +529,7 @@ HARDWARE
 
 ## Créditos
 
-Material Moodle bilingüe de Vibecoding · HTML generado desde Markdown · CC BY-SA 4.0
+Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0
 
 Módulo de Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
 Autora de los contenidos originales: Noemí Celaya Mingot.

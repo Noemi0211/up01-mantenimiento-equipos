@@ -1,6 +1,6 @@
 /* ============================================================
-   Material Moodle bilingüe de Vibecoding · UP01 Mantenimiento
-   JS de actividades autocorregibles · CC BY-SA 4.0
+   Material para el módulo de Ofimática · Creado por Noemí Celaya Mingot con ayuda de la IA
+   JS de actividades autocorregibles · CC BY-NC-SA 4.0
    Bloque práctico: hardware básico de un puesto
    de trabajo administrativo sanitario
    ============================================================ */

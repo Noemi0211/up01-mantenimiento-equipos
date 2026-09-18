@@ -56,7 +56,7 @@ En cada actividad **Cuestionario**, ve a **Administración → Ajustes del cuest
 
 ### Número de preguntas por configuración (caso por defecto)
 - **HW-01…HW-08 (práctica por apartado):** 5–8 preguntas aleatorias por intento.
-- **HW-11 (Cuestionario sobre el hardware):** 15–20 preguntas aleatorias por
+- **HW-11 (Cuestionario teórico sobre el hardware):** 15–20 preguntas aleatorias por
   intento desde la categoría `OFI/UP01/HW/11-cuestionario-hardware` (60 preguntas
   de todo el bloque).
 - **HW-EXAMEN Hardware:** 10 preguntas aleatorias (o las que quieras) de la
