@@ -30,7 +30,7 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
   `https://noemi0211.github.io/up01-mantenimiento-equipos/`
 - El PDF fuente y `Documentos base/` (PNG originales BY-NC-SA, ≈55 MB) están excluidos del repo (`.gitignore`); solo se publican las copias normalizadas de `images/`.
 - Solo commit/push cuando el usuario lo pida explícitamente.
-- Último commit publicado: `d509027` (créditos/licencia CC BY-NC-SA y sidebar del apartado Hardware).
+- El historial de commits está en GitHub; este documento no mantiene el SHA del último commit (usar `git log --oneline`).
 - Tras el push, GitHub Pages tarda un par de minutos en regenerarse; si el usuario no ve cambios, avisar de recargar con Ctrl+F5.
 - CRLF: al hacer `git add` se avisa del reemplazo LF→CRLF; es normal y no requiere acción.
 
