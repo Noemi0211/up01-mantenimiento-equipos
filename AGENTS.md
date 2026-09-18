@@ -75,7 +75,7 @@ Apuntes 26-27/
 ## 6 · Estructura HTML por página
 
 1. HEADER fijo (mismo en todas).
-2. Sidebar fija: apartados publicados (enlace a cada bloque de teoría) +, en la página de teoría de cada bloque, sección «Apartado 0X» con enlaces al cuestionario teórico y a los recursos del bloque (bloque práctico y quizzes prácticos) + sección «Guía curricular» (enlace al bloque 00, fuera del recorrido del alumnado) + sección «En esta página». No se listan bloques aún no publicados.
+2. Sidebar fija: apartados publicados (enlace a cada bloque de teoría) +, en las páginas de teoría y de prácticas de cada bloque, sección «Apartado 0X» con enlaces a la teoría, al cuestionario teórico y a los recursos del bloque (bloque práctico y quizzes prácticos) + sección «Guía curricular» (enlace al bloque 00, fuera del recorrido del alumnado) + sección «En esta página». No se listan bloques aún no publicados.
 3. Contenido principal con `<section id="...">` únicas por página.
 4. TOC automático: `<div class="toc" id="toc-automatico"></div>`.
 5. `.page-nav` con Anterior/Siguiente.
@@ -212,9 +212,10 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 
 | Actividad | Tipo | URL |
 |---|---|---|
-| Entrada al módulo (enlace «UP01 · Mantenimiento básico de equipos») | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11225710` |
+| Teoría de hardware y presentación (enlace «UP01 · Mantenimiento básico de equipos») | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11225710` |
 | Cuestionario sobre la presentación | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11231945` |
 | Cuestionario teórico sobre el hardware | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377` |
+| Prácticas de hardware (Bloque práctico) | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11397605` |
 | PR-01.1 Reconocimiento de equipos y periféricos (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391623` |
 | PR-01.2 Puertos y conexiones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626` |
 | PR-01.3 Verificación del equipo (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627` |
@@ -226,11 +227,26 @@ en Aules, además del recorrido secuencial con «Siguiente» dentro del sitio:
 
 | Apartado | Teoría (URL) | Cuestionario (Quiz) | Prácticas (URL) |
 |---|---|---|---|
-| 01 · Hardware | `01-hardware/index.html` | `…quiz/view.php?id=11291377` | `practico-hardware/index.html` (+ quizzes PR-01.1…3) |
+| 01 · Hardware | `11225710` → `index.html` + `01-hardware/index.html` | `11291377` | `11397605` → `practico-hardware/index.html` (+ quizzes PR-01.1…3) |
 
 La portada (`index.html`) solo muestra los apartados publicados como 3 tarjetas
 (teoría · cuestionario · prácticas). El bloque 00 (Introducción y elementos
 curriculares) queda como «Guía curricular», fuera del recorrido del alumnado.
+
+**Orden de las actividades en Aules (apartado Hardware):**
+
+1. **Teoría de hardware y presentación** — URL `11225710` → abre la portada del sitio.
+2. **Cuestionario teórico sobre el hardware** — Quiz `11291377`.
+3. **Prácticas de hardware** — URL `11397605` → abre `practico-hardware/index.html`.
+4. **PR-01.1** Reconocimiento de equipos y periféricos — Quiz `11391623`.
+5. **PR-01.2** Puertos y conexiones — Quiz `11391626`.
+6. **PR-01.3** Verificación del equipo — Quiz `11391627`.
+
+Los pasos 2→3, 4→5 y 5→6 los encadena **Aules** (orden del curso); el sitio solo
+controla los «Anterior/Siguiente» internos (portada, teoría y prácticas). Para que
+el «Siguiente» del quiz teórico lleve a las prácticas, coloca la actividad URL de
+prácticas justo después del quiz y activa en el quiz «Mostrar enlace a la siguiente
+actividad».
 
 ### Plantilla de apartado (replicar en Software y siguientes)
 
@@ -264,8 +280,9 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
    **URL teoría → Quiz teoría → URL prácticas → Quiz PR-0X.1 → PR-0X.2 → PR-0X.3**.
 5. Conectar el sitio:
    - **Portada:** 3 tarjetas del apartado (teoría · cuestionario · prácticas).
-   - **Sidebar de la teoría:** sección «Apartado 0X» con enlaces al cuestionario
-     teórico, al bloque práctico y a los 3 quizzes prácticos.
+   - **Sidebar (teoría y prácticas):** sección «Apartado 0X» con enlaces a la teoría,
+     al cuestionario teórico y a los 3 quizzes prácticos (y al bloque práctico desde
+     la teoría).
    - **`.page-nav`:** Portada → Teoría → Cuestionario teórico → Prácticas → PR-0X.1.
 6. Verificar enlaces externos (`target="_blank"` + `rel="noopener"`) y footer exacto.
 
@@ -274,7 +291,7 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - **index.html (Portada):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Apartado 01 · Hardware (salta el bloque 00).
 - **00 · Guía curricular (fuera del recorrido):** «Anterior» → Portada · «Siguiente» → Hardware (acceso opcional desde la portada/sidebar).
 - **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el hardware (Aules).
-- **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes.
+- **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes. Su sidebar incluye la sección «Apartado 01 · Hardware» (teoría, cuestionario teórico y PR-01.1…3).
 
 ### Regla para futuros bloques
 
