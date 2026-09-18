@@ -1,0 +1,41 @@
+$CATEGORY: OFI/UP01/PR/01-3-verificacion-equipo
+
+::PR013_01_Primero::Antes de encender un equipo, lo primero que debe hacerse es…{
+=Revisar visualmente el equipo, los cables y las conexiones~Arrancar todas las aplicaciones~Desconectar todos los periféricos~Formatear el disco
+}
+
+::PR013_02_LED::El indicador LED de encendido del equipo confirma que…{
+=El equipo recibe alimentación eléctrica~La impresora está en línea~Hay red disponible~El escáner está actualizado
+}
+
+::PR013_03_TrasArranque::Tras el arranque del sistema, se debe comprobar que…{
+=Los periféricos (teclado, ratón, impresora, lector) se detectan correctamente~No se necesita red~Solo funciona el monitor~El equipo no necesita mantenimiento
+}
+
+::PR013_04_ImpresoraFallo::Si la impresora del mostrador no aparece disponible, lo correcto es…{
+=Comprobar la conexión y el estado, e informar del problema~Reiniciar sin comprobar nada~Trabajar sin imprimir y olvidarlo~Desconectar el equipo de la red
+}
+
+::PR013_05_InventarioQueEs::Un inventario sencillo de un puesto de trabajo es…{
+=Una relación de los componentes y dispositivos del equipo~Un listado de contraseñas~Un calendario de citas~Una copia de las historias clínicas
+}
+
+::PR013_06_InventarioParaQue::¿Para qué sirve elaborar un inventario del hardware?{
+=Para controlar y mantener los equipos del centro~Para aumentar la velocidad de la red~Para evitar el registro de incidencias~Para sustituir el software
+}
+
+::PR013_07_OrdenCorrecto::¿Cuál es el orden correcto al poner en marcha un puesto de trabajo?{
+=Revisión visual, conectar corriente y red, encender y comprobar periféricos~Encender sin revisar, conectar periféricos, revisar cables~Conectar la impresora, encender, formatear el disco~Apagar el equipo, revisar visualmente, encender
+}
+
+::PR013_08_NoArranca::Si un equipo no arranca, la actuación correcta es…{
+=Registrar la incidencia y avisar al soporte técnico~Forzar el encendido repetidamente~Cambiar la contraseña del usuario~Trabajar con otro equipo sin notificarlo
+}
+
+::PR013_09_VFIncidencias::El registro de incidencias es parte del mantenimiento básico del puesto de trabajo.{
+=T
+}
+
+::PR013_10_VFFuerza::Se debe forzar de forma reiterada el encendido de un equipo aunque falle la fuente de alimentación.{
+=F
+}

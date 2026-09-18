@@ -523,6 +523,8 @@ HARDWARE
 
 > 🧩 **Cuestionario final del bloque:** realiza el cuestionario **«HW-EXAMEN Hardware»** en Aules. Combina preguntas aleatorias de todos los apartados del bloque y se guardará tu mejor nota hasta la fecha de cierre.
 
+> 🧰 **Bloque práctico:** cuando completes el cuestionario, trabaja el [**Bloque práctico: Hardware básico de un puesto de trabajo administrativo sanitario**](../practico-hardware/index.html): reconocimiento de equipos y periféricos, puertos y conexiones, verificación del puesto e inventario, con actividades autocorregibles y soluciones descargables.
+
 ---
 
 ## Créditos

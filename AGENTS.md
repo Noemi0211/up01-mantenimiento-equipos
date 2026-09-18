@@ -16,6 +16,7 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 |---|---|---|
 | 1 | 00 · Introducción y elementos curriculares | ✅ COMPLETADA (1 imagen general integrada) |
 | 2 | 01 · Hardware | ✅ COMPLETADA (contenido + GIFT + guía Aules + 24 imágenes + navegación `.page-nav` conectada con Aules) |
+| 2b | Bloque práctico: Hardware básico de un puesto de trabajo administrativo sanitario | ✅ COMPLETADA (`practico-hardware/` · actividades autocorregibles con `js/actividades.js` + 3 bancos GIFT `PR-01.1…PR-01.3` + soluciones PDF desbloqueables por apartado + tarjeta de acceso en 01-hardware) |
 | 3 | 02 · Software | ⏳ SIGUIENTE — banco de inventario ya redactado en inventario-general.md |
 | 4 | 03 · Ciberseguridad | ⏳ PENDIENTE |
 | 5 | 04 · Redes locales (LAN) | ⏳ PENDIENTE |
@@ -51,6 +52,8 @@ Apuntes 26-27/
 ├── 01-hardware/ 02-software/ 03-ciberseguridad/ 04-redes-lan/ 05-acceso-internet/
 │     (cada una: markdown fuente + html final + inventario de imágenes propio + images/)
 │     cuestionarios/  (solo si el bloque lo requiere): *.gift + instrucciones-aules.md
+├── practico-hardware/                        # Bloque práctico (fase 2b): index.md + index.html +
+│     inventario-imagenes.md + cuestionarios/ (gift-practico-011..013 + instrucciones-aules.md)
 ```
 
 - `docs/` · `output/` · `images/` (raíz) quedan reservados para las imágenes del proyecto.
@@ -61,9 +64,12 @@ Apuntes 26-27/
 
 - Paleta: `#1A1F2E` (tinta) · `#4ECCA3` (acento) · `#F7F4EF` (fondo) · `#FFFFFF` (tarjetas) · `#667085` (texto secundario).
 - Tipografías (Google Fonts): **Syne** (títulos) · **DM Sans** (cuerpo).
-- `css/estilos.css` — CSS único compartido. Prohibido duplicar estilos inline por página.
+- `css/estilos.css` — CSS único compartido. Prohibido duplicar estilos inline por página. Incluye protección contra copia (`user-select: none` en el contenido, permitido en `input`/`textarea`/`select`).
 - Componentes disponibles: `.hero`, `.card-grid/.card`, `.callout` (+ modificadores `--key --health --example --summary --reflect`), `.table-wrap`, `.image-figure` (+ modificadores `--wide --centered`), `.image-grid` (+ modificador `--2`) y `.image-card`, `.timeline`, `.steps/.step`, `.ce-list`, `.toc`, `.page-nav`.
-- `js/navegacion.js` — menú móvil, scroll-spy, TOC automático, volver arriba.
+- Widgets interactivos del bloque práctico: `.baraja`/`.flash` (tarjetas volteables), `.match` (emparejados), `.test` (autoevaluación), `.escenario`, `.checklist`, `.orden`, `.inventario` y `.soluciones-panel`. Estilos en `css/estilos.css`.
+- `js/navegacion.js` — menú móvil, scroll-spy, TOC automático, volver arriba y protección ligera contra copia (bloquea `copy`/`cut`/clic derecho/arrastre/selección; permite `input`/`textarea`).
+- `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`…). Solo se ejecuta en la página que los incluye.
+- La tabla de respuestas resueltas se desbloquea con un test perfecto; el panel de soluciones de puertos (`#soluciones-puertos`) con escenarios y emparejado perfectos; el de verificación (`#soluciones-verificacion`) con checklist y orden perfectos. Cada desbloqueo se guarda en `localStorage` (`up01-practico-{rec,puertos,verificacion}-ok`).
 - `templates/plantilla-base.html` — marcadores `[[TITULO_PAGINA]]`, `[[CONTENIDO]]`, `[[NAV_INTERNA]]`, `[[URL_RAIZ]]`.
 
 ## 6 · Estructura HTML por página
@@ -145,8 +151,9 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 - Plantilla reutilizable: `templates/plantilla-base.html`
 - Ejemplo de bloque completo: `00-introduccion-elementos-curriculares/` (index.md + index.html + inventario)
 - Ejemplo de bloque con cuestionarios: `01-hardware/` (index.md + index.html + inventario + `cuestionarios/`)
+- Ejemplo de bloque práctico con actividades interactivas: `practico-hardware/` (index.md + index.html + inventario + `cuestionarios/` + widgets `js/actividades.js`)
 - Inventario global: `inventario-imagenes/inventario-general.md`
-- Estilos y JS compartidos: `css/estilos.css`, `js/navegacion.js`
+- Estilos y JS compartidos: `css/estilos.css`, `js/navegacion.js`, `js/actividades.js`
 
 ## 13 · Estado de imágenes (revisión completa)
 
@@ -208,18 +215,29 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 | Presentación al módulo | URL | `https://aules.edu.gva.es/fp/mod/url/view.php?id=11230301` |
 | Cuestionario sobre la presentación | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11231945` |
 | Cuestionario sobre el hardware | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377` |
+| PR-01.1 Reconocimiento de equipos y periféricos (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391623` |
+| PR-01.2 Puertos y conexiones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626` |
+| PR-01.3 Verificación del equipo (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627` |
 
 ### Flujo conectado hoy (page-nav)
 
 - **index.html (Presentación):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Introducción y elementos curriculares.
 - **00 · Introducción:** «Anterior» → Presentación · «Siguiente» → Hardware.
 - **01 · Hardware:** «Anterior» → Introducción y elementos curriculares · «Siguiente» → Cuestionario sobre el hardware (Aules).
+- **practico-hardware (Bloque práctico):** «Anterior» → Cuestionario sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes.
 
 ### Regla para futuros bloques
 
 - El «Siguiente» de la **última página HTML publicada** debe llevar al elemento
   siguiente del curso en Aules (al cerrar una fase, desviar el flujo a su
   cuestionario si procede, o al siguiente bloque cuando exista).
+- El bloque práctico enlaza como «Siguiente» el cuestionario PR-01.1. Cuando exista
+  `02-software/index.html`, habrá que decidir si el cierre del bloque práctico
+  (tras PR-01.3) desvía al bloque Software o mantiene el flujo actual: no dejar
+  enlaces colgados (regla del checklist §9).
+- Las tres actividades del bloque práctico se califican con los cuestionarios
+  «PR-01.1…PR-01.3» (categorías `OFI/UP01/PR/…`); su nota llega al libro de
+  calificaciones solo a través de Aules (las prácticas on-page no envían nota).
 - Los enlaces externos a Aules se ponen con `target="_blank"` y `rel="noopener"`.
 - El `.page-nav` solo se mantiene en el HTML final; el Markdown fuente no incluye
   estos enlaces.

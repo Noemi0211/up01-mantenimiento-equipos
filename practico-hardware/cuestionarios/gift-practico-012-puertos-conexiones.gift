@@ -1,0 +1,41 @@
+$CATEGORY: OFI/UP01/PR/01-2-puertos-conexiones
+
+::PR012_01_RJ45::El puerto RJ45 (Ethernet) sirve para…{
+=Conectar el equipo a una red local mediante cable~Conectar un teclado~Transmitir audio~Cargar un móvil
+}
+
+::PR012_02_ImpresoraMostrador::Para conectar la impresora de un mostrador al ordenador, el conector más habitual es…{
+=USB-B~HDMI~Jack de 3,5 mm~RJ45
+}
+
+::PR012_03_USBC::El conector USB-C se caracteriza por…{
+=Ser moderno, reversible y compacto~Ser exclusivo de impresoras~Ser de los años 90~Transmitir solo audio
+}
+
+::PR012_04_HDMI::Para transmitir vídeo y audio a un monitor o proyector se usa…{
+=HDMI~PS/2~eSATA~Jack de 3,5 mm
+}
+
+::PR012_05_Jack::El puerto Jack de 3,5 mm se utiliza para…{
+=Auriculares, micrófonos y altavoces~Conexiones de red local~Vídeo digital~Discos duros externos
+}
+
+::PR012_06_RedServidor::Para acceder desde el equipo del centro de salud a las historias clínicas del servidor, necesitas…{
+=Conectar el equipo a la red mediante RJ45~Conectarlo solo por HDMI~Un lector de DVD~Un puerto PS/2
+}
+
+::PR012_07_VGA::El puerto VGA se considera…{
+=Obsoleto, sustituido por HDMI y DisplayPort~El conector moderno de datos~Específico para audio~Para cargar portátiles
+}
+
+::PR012_08_PS2::El conector PS/2 se usaba históricamente para…{
+=Teclados y ratones~Impresoras~Redes locales~Pantallas táctiles
+}
+
+::PR012_09_Thunderbolt::Thunderbolt comparte conector físico con…{
+=USB-C~Jack de 3,5 mm~RJ45~VGA
+}
+
+::PR012_10_DisplayPort::El puerto DisplayPort se usa preferentemente para…{
+=Altas resoluciones de vídeo~Conexiones telefónicas~Audio analógico~Suministro de red
+}

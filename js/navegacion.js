@@ -102,4 +102,15 @@
       document.querySelector("html").classList.toggle("lang-en");
     });
   }
+
+  // --- Protección ligera contra copia (disuasoria, no infalible) ---
+  ["copy", "cut", "contextmenu", "dragstart"].forEach(function (tipo) {
+    document.addEventListener(tipo, function (e) { e.preventDefault(); }, true);
+  });
+  document.addEventListener("selectstart", function (e) {
+    var etiqueta = (e.target && e.target.tagName) || "";
+    if (etiqueta !== "INPUT" && etiqueta !== "TEXTAREA" && etiqueta !== "SELECT") {
+      e.preventDefault();
+    }
+  }, true);
 })();

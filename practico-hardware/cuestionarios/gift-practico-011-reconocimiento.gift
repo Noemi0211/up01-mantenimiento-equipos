@@ -1,0 +1,41 @@
+$CATEGORY: OFI/UP01/PR/01-1-reconocimiento
+
+::PR011_01_EscanerConsentimiento::El dispositivo que se usa para digitalizar un consentimiento informado firmado es…{
+=Escáner~Teclado~Monitor~Proyector
+}
+
+::PR011_02_Entrada::¿Cuál de los siguientes es un periférico de entrada?{
+=Lector de tarjetas sanitarias~Monitor~Impresora~Altavoces
+}
+
+::PR011_03_Salida::¿Cuál de los siguientes es un periférico de salida?{
+=Impresora~Ratón~Micrófono~Escáner
+}
+
+::PR011_04_PantallaTactil::Una pantalla táctil de un mostrador de autoservicio es un dispositivo…{
+=De entrada y salida~Solo de entrada~Solo de salida~De almacenamiento
+}
+
+::PR011_05_LectorSanidad::El lector de tarjetas sanitarias se utiliza principalmente para…{
+=Identificar de forma segura a pacientes y profesionales~Imprimir informes médicos~Digitalizar documentos~Reproducir sonido
+}
+
+::PR011_06_HDD::El disco duro (HDD) es un dispositivo de…{
+=Almacenamiento interno permanente~Almacenamiento temporal~Entrada de datos~Procesamiento
+}
+
+::PR011_07_SSD::¿Qué ventaja principal tiene un SSD frente a un HDD?{
+=Acceso mucho más rápido a los datos~Menor coste por unidad de capacidad~Datos en memoria volátil~No necesita fuente de alimentación
+}
+
+::PR011_08_VFRecuerda::El lector de tarjetas sanitarias se usa para imprimir informes médicos.{
+=F
+}
+
+::PR011_09_ImpresoraAdmision::En un puesto de admisión, la impresora se usa para…{
+=Imprimir recetas, informes médicos, etiquetas y listados~Identificar pacientes~Guardar historias clínicas~Procesar cálculos
+}
+
+::PR011_10_CopiasSeguridad::Para realizar copias de seguridad de la documentación sanitaria, lo más adecuado es usar…{
+=Un disco duro externo o una memoria USB~Un altavoz~Un proyector~Una pantalla táctil
+}
