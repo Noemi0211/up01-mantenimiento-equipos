@@ -52,8 +52,9 @@ Apuntes 26-27/
 ├── 01-hardware/ 02-software/ 03-ciberseguridad/ 04-redes-lan/ 05-acceso-internet/
 │     (cada una: markdown fuente + html final + inventario de imágenes propio + images/)
 │     cuestionarios/  (solo si el bloque lo requiere): *.gift + instrucciones-aules.md
-├── practico-hardware/                        # Bloque práctico (fase 2b): index.md + index.html +
-│     inventario-imagenes.md + cuestionarios/ (gift-practico-011..013 + instrucciones-aules.md)
+├── practico-hardware/                        # Bloque práctico de cada apartado (<NN> → practico-<bloque>):
+│     index.md + index.html + inventario-imagenes.md + cuestionarios/ (PR-0X.1..3 + instrucciones-aules.md)
+│     (siguientes apartados: practico-software/, practico-ciberseguridad/, …)
 ```
 
 - `docs/` · `output/` · `images/` (raíz) quedan reservados para las imágenes del proyecto.
@@ -117,7 +118,7 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 3. **Redactar** `<bloque>/index.md` (incluyendo aviso «🧩 Cuestionario en Aules» al final de cada apartado cuando proceda).
 4. **Generar** `<bloque>/index.html` copiando la estructura de `00-introduccion-elementos-curriculares/index.html` (plantilla ya aplicada), adaptando id, nav y contenido.
 5. **Imágenes**: copiar a `images/<categoría>/` las imágenes necesarias de `Documentos base/Imagenes` y actualizar el `inventario-imagenes.md` del bloque (archivo, ruta, sección, `alt`, página).
-6. **Cuestionarios**: si el bloque los requiere, crear `<bloque>/cuestionarios/` con los `.gift` por apartado + `.gift` de examen final + `instrucciones-aules.md` (ver §8bis).
+6. **Cuestionarios**: si el bloque los requiere, crear `<bloque>/cuestionarios/` con los `.gift` por apartado + `.gift` de examen final + `instrucciones-aules.md` (ver §9bis).
 7. **Conectar**: si la carpeta del bloque ya existe y tocaba enlace en portada/sidebar, enlazarla; NO crear bloques futuros que queden colgados.
 8. **Verificar**: rutas relativas, ids de sección únicos, cierre de etiquetas, footer exacto, responsive (viewport).
 9. **Detener** y resumir; esperar instrucciones.
