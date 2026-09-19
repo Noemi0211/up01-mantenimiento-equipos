@@ -32,15 +32,27 @@
 
   function abrirImpresion(titulo, cuerpoHtml) {
     var cssUrl = new URL("../css/estilos.css", location.href).href;
+    var leyenda =
+      "Material para el aula de Ofimática generado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0";
     var html =
       '<!DOCTYPE html><html lang="es"><head><meta charset="utf-8">' +
       "<title>" + esc(titulo) + "</title>" +
+      '<link rel="preconnect" href="https://fonts.googleapis.com">' +
+      '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' +
+      '<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">' +
       '<link rel="stylesheet" href="' + cssUrl + '">' +
       "<style>" +
-      ".print-visor{padding:2rem;max-width:820px;margin:0 auto}" +
-      ".print-visor h1{color:var(--ink)}" +
-      ".print-visor .meta{color:var(--muted);font-size:0.85rem;margin-bottom:1rem}" +
+      "@page{margin:18mm 14mm 20mm}" +
+      ".print-visor{max-width:820px;margin:0 auto}" +
       ".print-barra{margin-bottom:1.2rem}" +
+      ".print-cab{margin-bottom:1.3rem;border-bottom:3px solid var(--accent);padding-bottom:0.7rem}" +
+      ".print-cab h1{color:var(--ink);font-family:Syne,sans-serif;font-size:1.55rem;line-height:1.25;margin:0 0 0.35rem}" +
+      ".print-cab .meta{color:var(--muted);font-size:0.85rem}" +
+      ".print-pie{border-top:1px solid #d9d7d2;margin-top:1.6rem;padding-top:0.55rem;color:var(--muted);font-size:0.72rem;text-align:center}" +
+      "thead{display:table-header-group}" +
+      "tr{page-break-inside:avoid}" +
+      "img{page-break-inside:avoid}" +
+      "@media screen{.print-visor{padding:2rem}}" +
       "@media print{.print-barra{display:none}}" +
       "</style></head><body>" +
       '<div class="print-visor">' +
@@ -48,9 +60,13 @@
       '<button class="btn btn--primary" onclick="window.print()">Imprimir o guardar como PDF</button> ' +
       '<button class="btn btn--ghost" onclick="window.close()">Cerrar</button>' +
       "</div>" +
+      '<header class="print-cab">' +
       "<h1>" + esc(titulo) + "</h1>" +
-      '<div class="meta">' + new Date().toLocaleDateString("es-ES") + "</div>" +
+      '<div class="meta">UP01 · Mantenimiento básico de equipos · Bloque práctico · ' +
+      new Date().toLocaleDateString("es-ES") + "</div>" +
+      "</header>" +
       cuerpoHtml +
+      '<div class="print-pie">' + esc(leyenda) + "</div>" +
       "</div></body></html>";
     var w = window.open("", "_blank");
     if (!w) { alert("Permite las ventanas emergentes para descargar el PDF."); return; }

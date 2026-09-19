@@ -912,6 +912,17 @@ body.has-lightbox { overflow: hidden; }
 .soluciones-panel { margin: 1.8rem 0; border: 2px solid var(--accent); border-radius: var(--radius); background: #fff; box-shadow: var(--shadow-lg); }
 .soluciones-panel__cab { background: var(--ink); color: #fff; padding: 1rem 1.3rem; border-radius: var(--radius) var(--radius) 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem; justify-content: space-between; }
 .soluciones-panel__cab h3 { margin: 0; font-size: 1.05rem; }
+
+.soluciones-panel__cab .btn--ghost {
+  color: #fff;
+  border-color: rgba(255,255,255,0.4);
+  background: transparent;
+}
+.soluciones-panel__cab .btn--ghost:hover {
+  background: rgba(255,255,255,0.12);
+  box-shadow: none;
+  color: #fff;
+}
 .soluciones-panel__cuerpo { padding: 1.2rem 1.3rem; }
 .tabla-soluciones img { width: 46px; height: 38px; object-fit: contain; background: #fff; border: 1px solid var(--border); border-radius: 6px; margin: 0; box-shadow: none; }
 .tabla-soluciones td { font-size: 0.85rem; }

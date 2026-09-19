@@ -50,9 +50,7 @@ Cada dispositivo se usa en una o varias tareas del entorno sanitario. Une cada d
 
 Autoevaluación de **10 preguntas** generadas al azar. Puedes repetirla **tantas veces como quieras**. Cuando la completes **perfecta**, se desbloqueará la tabla de **respuestas resueltas** para que la **descargues en PDF** y la estudies como prefieras.
 
-> 🧩 **Cuestionario en Aules:** tras practicar en esta página, realiza el cuestionario [**«PR-01.1 Reconocimiento de equipos y periféricos»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391623) en la plataforma Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
->
-> **Siguiente:** [PR-01.2 Puertos y conexiones →](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626)
+> 🧩 **Cuestionario en Aules:** tras practicar en esta página, realiza el cuestionario [**«PR-01.1 Reconocimiento de equipos y periféricos»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391623) en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
 
 ---
 
@@ -74,9 +72,7 @@ Ahora cambiamos la mecánica: **empareja** cada imagen de puerto con su **nombre
 
 Cuando completes correctamente los **8 escenarios** y el **emparejado**, se desbloquearán las **soluciones en PDF** de puertos y conexiones.
 
-> 🧩 **Cuestionario en Aules:** cuando domines la actividad, realiza el cuestionario [**«PR-01.2 Puertos y conexiones»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626) en Aules. Preguntas aleatorias y se guardará tu mejor nota.
->
-> **Siguiente:** [PR-01.3 Verificación del equipo →](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627)
+> 🧩 **Cuestionario en Aules:** cuando domines la actividad, realiza el cuestionario [**«PR-01.2 Puertos y conexiones»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626) en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
 
 ---
 
@@ -102,7 +98,7 @@ Un **inventario** es una relación de los componentes y dispositivos presentes e
 
 > 📌 **Resumen:** verificar antes de usar + registrar incidencias + inventariar los equipos = mantenimiento básico responsable de cualquier puesto sanitario.
 
-> 🧩 **Cuestionario en Aules:** al terminar, realiza el cuestionario [**«PR-01.3 Verificación del equipo»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627) en Aules. Preguntas aleatorias y se guardará tu mejor nota. **Con este cuestionario finaliza el bloque práctico.**
+> 🧩 **Cuestionario en Aules:** al terminar, realiza el cuestionario [**«PR-01.3 Verificación del equipo»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627) en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. **Con este cuestionario finaliza el bloque práctico.**
 
 ---
 

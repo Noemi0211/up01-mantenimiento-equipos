@@ -70,8 +70,9 @@ Apuntes 26-27/
 - Widgets interactivos del bloque práctico: `.baraja`/`.flash` (tarjetas volteables), `.match` (emparejados), `.test` (autoevaluación), `.escenario`, `.checklist`, `.orden`, `.inventario` y `.soluciones-panel`. Estilos en `css/estilos.css`.
 - `js/navegacion.js` — menú móvil, scroll-spy, TOC automático, volver arriba, **lightbox de imágenes** y protección ligera contra copia (bloquea `copy`/`cut`/clic derecho/arrastre/selección; permite `input`/`textarea`).
 - **Lightbox:** se inicializa una sola vez por delegación de eventos en `document` (así cubre también las imágenes generadas dinámicamente por `actividades.js`). Amplía cualquier `<img>` salvo las que estén **dentro de un `<button>` o de `.baraja`**, para no interferir con la baraja que se voltea, los emparejados ni las opciones de los tests. Cierre con ✕, clic en el fondo o `Esc`. Cursor `zoom-in` en `.image-figure img`, `.image-card img`, `.test__prompt img` y `.soluciones-panel img`.
-- `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`…). Solo se ejecuta en la página que los incluye.
+- `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`…). Solo se ejecuta en la página que los incluye. Los PDF que se desbloquean al completar una actividad perfecta (tablas resueltas, puertos, verificación e inventario) se generan con `abrirImpresion(título, html)`: ventana de impresión con cabecera (título + «UP01 · Mantenimiento básico de equipos · Bloque práctico» + fecha), tablas con `thead` repetido y salto de página controlado, y la leyenda al pie: **«Material para el aula de Ofimática generado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0»**.
 - La tabla de respuestas resueltas se desbloquea con un test perfecto; el panel de soluciones de puertos (`#soluciones-puertos`) con escenarios y emparejado perfectos; el de verificación (`#soluciones-verificacion`) con checklist y orden perfectos. Cada desbloqueo se guarda en `localStorage` (`up01-practico-{rec,puertos,verificacion}-ok`).
+- **Botones `.btn--ghost` sobre fondos oscuros:** en `.callout--key` y `.soluciones-panel__cab` (fondo `--ink`), el `btn--ghost` por defecto tiene texto `--ink` y sería invisible («caja vacía»). Estos contextos deben llevar estilos propios: texto blanco, borde translúcido `rgba(255,255,255,0.4)` y hover con fondo `rgba(255,255,255,0.12)`.
 - `templates/plantilla-base.html` — marcadores `[[TITULO_PAGINA]]`, `[[CONTENIDO]]`, `[[NAV_INTERNA]]`, `[[URL_RAIZ]]`.
 
 ## 6 · Estructura HTML por página
@@ -141,6 +142,12 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 > bancos NO tienen acentos corruptos (0 U+FFFD, UTF-8 sin BOM); los `�` que se ven en
 > consola PowerShell son solo del juego de caracteres de la terminal.
 
+> **Pendiente (18-09-2026):** los quizzes prácticos PR-01.1…3 en Aules
+> actualmente muestran **todas** las preguntas del banco (la profesora no los
+> configuró como aleatorios); cómo se repartirán de cara al examen es una
+> decisión pendiente de la profesora. No reflejarlo en el contenido dirigido al
+> alumnado (ver §11).
+
 ## 10 · Verificación antes de terminar
 
 - `grep` de `href|src` para confirmar rutas `css/` y `js/` correctas.
@@ -154,6 +161,7 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 ## 11 · Convenciones de idioma y estilo
 
 - Redacción en español (castellano), tono didáctico directo.
+- **Menciones a los cuestionarios de Aules dirigidas al alumnado:** no indicar que las preguntas son aleatorias; usar la frase **«Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota»**.
 - Emojis solo en los reactivos didácticos (💡🏥✍️📌❓) y jóvenes iconos de tarjetas; NO añadir emojis fuera de contexto.
 - Código sin comentarios salvo las cabeceras de sección HTML (`<!-- ============ … ============ -->`).
 
@@ -308,7 +316,7 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - **00 · Guía curricular (fuera del recorrido):** «Anterior» → Portada · «Siguiente» → Hardware (acceso opcional desde la portada/sidebar).
 - **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el hardware (Aules).
 - **02 · Software:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el software (Aules `11402081`). Su sidebar incluye la sección «Apartado 02 · Software» con el cuestionario teórico (los enlaces de prácticas se añadirán cuando exista `practico-software/`).
-- **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes. Su sidebar incluye la sección «Apartado 01 · Hardware» (teoría, cuestionario teórico y PR-01.1…3).
+- **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Cada actividad enlaza **solo su propio** «Cuestionario en Aules» (sin botón hacia el siguiente quiz antes de trabajar sus contenidos), y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes. Su sidebar incluye la sección «Apartado 01 · Hardware» (teoría, cuestionario teórico y PR-01.1…3).
 
 ### Regla para futuros bloques
 
