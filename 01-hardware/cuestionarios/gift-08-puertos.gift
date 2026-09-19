@@ -112,9 +112,7 @@ $CATEGORY: OFI/UP01/HW/08-puertos
 ~Jack 3,5 mm.
 }
 
-::HW08_17_VerdaderoFalso::El puerto USB-C es reversible, es decir, se puede conectar en cualquier orientación.{
-=T
-}
+::HW08_17_VerdaderoFalso::El puerto USB-C es reversible, es decir, se puede conectar en cualquier orientación.{T}
 
 ::HW08_18_UsbAlmacenamiento::Para conectar un disco duro externo de gran capacidad al mostrador de admisión se utiliza preferiblemente…{
 =USB-C o USB 3.x.

@@ -1,0 +1,182 @@
+$CATEGORY: OFI/UP01/SW/02-tipos-de-software
+
+::SW02_01_Clasificacion::El software puede clasificarse en tres grandes grupos…{
+=Software de sistema, software de aplicación y utilidades del sistema.
+~Software de sistema, hardware y periféricos.
+~Aplicaciones, drivers y puertos.
+~Ofimática, navegación y juegos.
+}
+
+::SW02_02_SoftwareSistema::El software encargado de gestionar y coordinar el funcionamiento del ordenador es…{
+=El software de sistema.
+~El software de aplicación.
+~Una utilidad de limpieza.
+~Un compresor de archivos.
+}
+
+::SW02_03_SistemaOperativo::El programa principal del ordenador que actúa como intermediario entre el hardware y el usuario es…{
+=El sistema operativo.
+~El procesador de textos.
+~El antivirus.
+~El controlador de impresora.
+}
+
+::SW02_04_FuncionesSO::¿Cuál de las siguientes es una función del sistema operativo?{
+=Gestionar los recursos del equipo, los archivos y los permisos de seguridad.
+~Redactar informes médicos.
+~Imprimir documentación clínica.
+~Digitalizar documentos.
+}
+
+::SW02_05_EjemplosSO::¿Cuál de los siguientes es un sistema operativo?{
+=Windows.
+~Microsoft Word.
+~Microsoft Excel.
+~Microsoft Outlook.
+}
+
+::SW02_06_SinSO::¿Qué ocurriría si un ordenador no tuviera sistema operativo?{
+=No sería posible utilizar aplicaciones ni interactuar con el hardware de forma normal.
+~Funcionaría igual, solo un poco más lento.
+~Solo se perderían los documentos guardados.
+~El antivirus podría sustituirlo.
+}
+
+::SW02_07_Drivers::Los programas que permiten que el sistema operativo se comunique con los dispositivos de hardware se denominan…{
+=Drivers o controladores.
+~Procesadores de texto.
+~Hojas de cálculo.
+~Navegadores web.
+}
+
+::SW02_08_FuncionDrivers::La función principal de un controlador o driver es…{
+=Traducir las instrucciones entre el sistema operativo y los dispositivos.
+~Gestionar las citas médicas.
+~Crear presentaciones visuales.
+~Comprimir los archivos del equipo.
+}
+
+::SW02_09_EjemploDriver::¿Cuál de los siguientes es un ejemplo de driver?{
+=El controlador de la impresora.
+~El sistema operativo Windows.
+~La hoja de cálculo Excel.
+~La aplicación de correo Outlook.
+}
+
+::SW02_10_DriverFalta::¿Qué podría suceder si falta el controlador de una impresora?{
+=El sistema operativo podría no reconocerla o no permitir su uso correctamente.
+~La impresora imprimiría a mayor velocidad.
+~El ordenador se reiniciaría automáticamente.
+~Se borrarían todos los archivos del usuario.
+}
+
+::SW02_11_SoftwareAplicacion::Los programas creados para realizar tareas específicas, como redactar documentos o hacer cálculos, se clasifican como…{
+=Software de aplicación.
+~Software de sistema.
+~Utilidades del sistema.
+~Drivers.
+}
+
+::SW02_12_ProcesadorTexto::Microsoft Word es un ejemplo de…{
+=Procesador de textos.
+~Hoja de cálculo.
+~Base de datos.
+~Navegador web.
+}
+
+::SW02_13_HojaCalculo::La herramienta ofimática utilizada para organizar datos y realizar cálculos (como Microsoft Excel) es…{
+=Una hoja de cálculo.
+~Un procesador de textos.
+~Una base de datos.
+~Un compresor de archivos.
+}
+
+::SW02_14_BaseDatos::El programa orientado al almacenamiento y consulta de información estructurada (como Microsoft Access) es…{
+=Una base de datos.
+~Una presentación.
+~Un correo electrónico.
+~Un antivirus.
+}
+
+::SW02_15_Presentaciones::La herramienta utilizada para crear presentaciones visuales (como Microsoft PowerPoint) sirve en sanidad para…{
+=Formación del personal y presentación de proyectos.
+~Registrar pacientes.
+~Controlar el tráfico de red.
+~Eliminar archivos temporales.
+}
+
+::SW02_16_CorreoAgenda::Microsoft Outlook se utiliza principalmente para…{
+=La comunicación y organización profesional (correo y agenda).
+~Almacenar grandes volúmenes de datos.
+~Editar imágenes médicas.
+~Programar el arranque del equipo.
+}
+
+::SW02_17_SanidadApps::¿Cuál de las siguientes es una aplicación sanitaria?{
+=La historia clínica electrónica.
+~Microsoft Excel.
+~El sistema operativo Windows.
+~El controlador del escáner.
+}
+
+::SW02_18_SanidadAppsImportancia::¿Por qué son tan importantes las aplicaciones sanitarias en un centro de salud?{
+=Porque permiten gestionar la información clínica y administrativa de manera segura y eficiente.
+~Porque sustituyen al sistema operativo.
+~Porque solo sirven para el entretenimiento.
+~Porque eliminan la necesidad de personal.
+}
+
+::SW02_19_Utilidades::Los programas que ayudan al mantenimiento y seguridad del ordenador se denominan…{
+=Utilidades del sistema.
+~Software de aplicación.
+~Hojas de cálculo.
+~Bases de datos.
+}
+
+::SW02_20_Antivirus::El programa destinado a detectar, bloquear y eliminar software malicioso es…{
+=El antivirus.
+~El compresor de archivos.
+~El procesador de textos.
+~El controlador de dispositivos.
+}
+
+::SW02_21_AntivirusActualizado::¿Por qué es importante disponer de un antivirus actualizado?{
+=Porque permite detectar amenazas que pueden comprometer la seguridad de la información.
+~Porque acelera la impresión de documentos.
+~Porque ocupa menos espacio en el disco.
+~Porque no necesita sistema operativo.
+}
+
+::SW02_22_Firewall::El sistema de seguridad que controla el tráfico de red y permite o bloquea conexiones según las reglas establecidas es…{
+=El cortafuegos o firewall.
+~El antivirus.
+~El compresor de archivos.
+~La hoja de cálculo.
+}
+
+::SW02_23_RedesSanitarias::¿Por qué es importante proteger las redes sanitarias?{
+=Porque manejan información sensible de pacientes y profesionales.
+~Porque son más rápidas que las domésticas.
+~Porque siempre están conectadas a Internet.
+~Porque utilizan muchos cables.
+}
+
+::SW02_24_Compresor::Los programas que reducen el tamaño de los archivos para facilitar su intercambio y almacenamiento se denominan…{
+=Compresores de archivos.
+~Antivirus.
+~Cortafuegos.
+~Procesadores de texto.
+}
+
+::SW02_25_Limpieza::Las herramientas que eliminan archivos innecesarios para mantener el rendimiento del equipo son…{
+=Programas de limpieza.
+~Bases de datos.
+~Presentaciones.
+~Navegadores web.
+}
+
+::SW02_26_VerdaderoFalso::El sistema operativo gestiona los recursos del equipo, los archivos, los permisos de seguridad y la ejecución de aplicaciones.{T}
+
+::SW02_27_VerdaderoFalso::Los drivers permiten que el hardware se comunique con el sistema operativo.{T}
+
+::SW02_28_VerdaderoFalso::Las utilidades del sistema solo sirven para decorar el escritorio del ordenador.{F}

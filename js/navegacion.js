@@ -103,6 +103,63 @@
     });
   }
 
+  // --- Lightbox: ampliar imágenes al hacer clic ---
+  var overlay = document.createElement("div");
+  overlay.className = "lightbox is-hidden";
+  overlay.setAttribute("role", "dialog");
+  overlay.setAttribute("aria-modal", "true");
+  overlay.setAttribute("aria-label", "Imagen ampliada");
+  overlay.innerHTML =
+    '<button class="lightbox__cerrar" type="button" aria-label="Cerrar vista ampliada">&times;</button>' +
+    '<figure class="lightbox__contenido">' +
+    "<img alt=\"\">" +
+    "<figcaption></figcaption>" +
+    "</figure>";
+
+  var imgZoom = overlay.querySelector("img");
+  var figZoom = overlay.querySelector("figcaption");
+
+  function abrirLightbox(img) {
+    imgZoom.src = img.src;
+    imgZoom.alt = img.alt || "";
+    var fig = img.closest("figure");
+    var pie = fig ? fig.querySelector("figcaption") : null;
+    figZoom.textContent = pie ? pie.textContent : "";
+    overlay.classList.remove("is-hidden");
+    document.body.classList.add("has-lightbox");
+    overlay.querySelector(".lightbox__cerrar").focus();
+  }
+
+  function cerrarLightbox() {
+    overlay.classList.add("is-hidden");
+    document.body.classList.remove("has-lightbox");
+    imgZoom.src = "";
+  }
+
+  document.addEventListener("click", function (e) {
+    if (e.target.closest(".lightbox")) { return; }
+    var img = e.target.closest("img");
+    if (!img) { return; }
+    // Las imágenes dentro de un botón conservan su comportamiento interactivo
+    // (baraja que se voltea, emparejados de puertos, opciones de test).
+    if (img.closest("button") || img.closest(".baraja")) { return; }
+    abrirLightbox(img);
+  });
+
+  overlay.addEventListener("click", function (e) {
+    if (e.target === overlay || e.target.classList.contains("lightbox__cerrar")) {
+      cerrarLightbox();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !overlay.classList.contains("is-hidden")) {
+      cerrarLightbox();
+    }
+  });
+
+  document.body.appendChild(overlay);
+
   // --- Protección ligera contra copia (disuasoria, no infalible) ---
   ["copy", "cut", "contextmenu", "dragstart"].forEach(function (tipo) {
     document.addEventListener(tipo, function (e) { e.preventDefault(); }, true);

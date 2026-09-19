@@ -1,0 +1,131 @@
+$CATEGORY: OFI/UP01/SW/09-examen-final
+
+::SWEX_01_Definicion::El conjunto de programas, instrucciones y reglas informáticas que permiten que un ordenador funcione es…{
+=El software.
+~El hardware.
+~Los periféricos.
+~Los puertos de comunicación.
+}
+
+::SWEX_02_ParteIntangible::La parte lógica o intangible de un sistema informático es…{
+=El software.
+~La placa base.
+~La memoria RAM.
+~El disco duro.
+}
+
+::SWEX_03_SistemaOperativo::El programa principal que actúa como intermediario entre el hardware y el usuario es…{
+=El sistema operativo.
+~El procesador de textos.
+~El antivirus.
+~El compresor de archivos.
+}
+
+::SWEX_04_FuncionSO::¿Cuál de las siguientes es una función del sistema operativo?{
+=Gestionar los recursos del equipo, los archivos y los permisos de seguridad.
+~Redactar informes médicos.
+~Digitalizar documentos.
+~Imprimir etiquetas.
+}
+
+::SWEX_05_Drivers::Los programas que permiten que el sistema operativo se comunique con los dispositivos de hardware son…{
+=Los drivers o controladores.
+~Las hojas de cálculo.
+~Las bases de datos.
+~Los navegadores web.
+}
+
+::SWEX_06_SoftwareAplicacion::Los programas creados para realizar tareas específicas, como redactar documentos, son…{
+=Software de aplicación.
+~Software de sistema.
+~Utilidades del sistema.
+~Drivers.
+}
+
+::SWEX_07_ProcesadorTexto::Microsoft Word, destinado a crear y modificar documentos, es un…{
+=Procesador de textos.
+~Sistema operativo.
+~Antivirus.
+~Driver.
+}
+
+::SWEX_08_HojaCalculo::Para organizar datos en listados y realizar cálculos estadísticos en un centro sanitario se utiliza…{
+=Una hoja de cálculo, como Microsoft Excel.
+~Un procesador de textos.
+~Un compresor de archivos.
+~Un controlador.
+}
+
+::SWEX_09_BaseDatos::El programa orientado a almacenar y consultar información estructurada de pacientes es…{
+=Una base de datos, como Microsoft Access.
+~Una presentación.
+~Un correo electrónico.
+~Un antivirus.
+}
+
+::SWEX_10_Presentaciones::Microsoft PowerPoint se utiliza en sanidad principalmente para…{
+=Formación del personal y presentación de proyectos.
+~Registrar pacientes.
+~Controlar el tráfico de red.
+~Limpiar el equipo.
+}
+
+::SWEX_11_AplicacionesSanitarias::¿Cuál de las siguientes es una aplicación sanitaria?{
+=El sistema de codificación diagnóstica.
+~Microsoft Excel.
+~Microsoft Word.
+~Windows.
+}
+
+::SWEX_12_Antivirus::El programa destinado a detectar, bloquear y eliminar software malicioso es…{
+=El antivirus.
+~El compresor de archivos.
+~El procesador de textos.
+~El controlador.
+}
+
+::SWEX_13_Firewall::El sistema de seguridad que controla el tráfico de red según las reglas establecidas es…{
+=El cortafuegos o firewall.
+~El antivirus.
+~El programa de limpieza.
+~La base de datos.
+}
+
+::SWEX_14_Compresor::Para reducir el tamaño de la documentación y facilitar su intercambio se utilizan…{
+=Compresores de archivos.
+~Antivirus.
+~Presentaciones.
+~Bases de datos.
+}
+
+::SWEX_15_InteraccionSO::El sistema operativo gestiona la memoria RAM; esto es un ejemplo de…{
+=Interacción entre software y hardware.
+~Fallo del sistema.
+~Utilidad de limpieza.
+~Periférico de salida.
+}
+
+::SWEX_16_DriversPerifericos::Que la impresora funcione correctamente depende de…{
+=Su controlador o driver y del sistema operativo.
+~Únicamente del color del cable.
+~Del compresor de archivos.
+~Solo de la electricidad.
+}
+
+::SWEX_17_SanidadGlobal::En el entorno sanitario, la correcta interacción entre hardware y software permite…{
+=Utilizar aplicaciones clínicas, gestionar documentación y acceder a la información necesaria para la atención sanitaria.
+~Prescindir del personal administrativo.
+~Evitar las copias de seguridad.
+~Ignorar los permisos de acceso.
+}
+
+::SWEX_18_VerdaderoFalso::Sin software, los componentes físicos del ordenador no podrían realizar ninguna tarea útil.{T}
+
+::SWEX_19_VerdaderoFalso::Los programas de limpieza sirven únicamente para hacer más ruido en el equipo.{F}
+
+::SWEX_20_Resumen::El software de sistema, el software de aplicación y las utilidades del sistema son…{
+=Los tres grandes grupos de software que puede tener un ordenador.
+~Tipos de hardware interno.
+~Modelos de impresora.
+~Tipos de puertos USB.
+}

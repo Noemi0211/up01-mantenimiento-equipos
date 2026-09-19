@@ -20,7 +20,13 @@ Cada apartado consta de tres bloques independientes: **teoría**, **cuestionario
 - 🧩 [**Cuestionario teórico sobre el hardware**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377) — Preguntas aleatorias en Aules de todos los apartados del bloque. Intentos múltiples y mejor nota.
 - 🧰 [**Prácticas del apartado**](practico-hardware/index.html) — Actividades autocorregibles: reconocimiento de equipos, puertos y conexiones, verificación del puesto e inventario, con soluciones en PDF.
 
-> 💡 **Idea clave:** los apartados **Software, Ciberseguridad, Redes locales (LAN) y Acceso a Internet** se publicarán de forma progresiva con el mismo esquema: **teoría · cuestionario · prácticas**.
+### Apartado 02 · Software
+
+- 📘 [**Teoría del apartado**](02-software/index.html) — Elementos de software: qué es el software, tipos (sistema, aplicación y utilidades) y su interacción con el hardware.
+- 🧩 [**Cuestionario teórico sobre el software**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081) — Preguntas aleatorias en Aules de todos los apartados del bloque. Intentos múltiples y mejor nota.
+- 🧰 **Prácticas del apartado** — En preparación (mismo esquema que el bloque de hardware).
+
+> 💡 **Idea clave:** los apartados **Ciberseguridad, Redes locales (LAN) y Acceso a Internet** se publicarán de forma progresiva con el mismo esquema: **teoría · cuestionario · prácticas**. Las prácticas de Software llegarán próximamente.
 
 ## Guía curricular
 

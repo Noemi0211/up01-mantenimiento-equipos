@@ -133,9 +133,7 @@ $CATEGORY: OFI/UP01/HW/09-examen-final
 ~Thunderbolt.
 }
 
-::HWEX_20_VerdaderoFalso::El hardware y el software necesitan trabajar juntos para que el sistema informático funcione.{
-=T
-}
+::HWEX_20_VerdaderoFalso::El hardware y el software necesitan trabajar juntos para que el sistema informático funcione.{T}
 
 ::HWEX_21_Mantenimiento::En mantenimiento básico, identificar los componentes del hardware permite…{
 =Diagnosticar y comunicar incidencias con precisión.

@@ -85,9 +85,7 @@ $CATEGORY: OFI/UP01/HW/03-procesamiento
 ~El cable de red.
 }
 
-::HW03_13_VerdaderoFalso::La GPU es un componente de entrada de datos.{
-=F
-}
+::HW03_13_VerdaderoFalso::La GPU es un componente de entrada de datos.{F}
 
 ::HW03_14_ProcesamientoSanidad::Las aplicaciones de historia clínica electrónica, facturación sanitaria y ofimática son ejecutadas por…{
 =El hardware de procesamiento.

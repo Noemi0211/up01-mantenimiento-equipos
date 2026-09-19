@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque 02. Elementos de software. UP01 Mantenimiento básico de equipos. CFGS Documentación y Administración Sanitarias.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque 02 · Elementos de software · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="index.html"><span>02</span> Software</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#que-es-software">1 · ¿Qué es el software?</a>
+          <a class="sidebar__link" href="#tipos-de-software">2 · Tipos de software</a>
+          <a class="sidebar__link" href="#interaccion-software-hardware">3 · Interacción entre software y hardware</a>
+          <a class="sidebar__link" href="#organizacion-software">4 · Organización del software</a>
+          <a class="sidebar__link" href="#resumen-bloque">5 · Resumen del bloque</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 02 · Software</div>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081" target="_blank" rel="noopener">Cuestionario teórico</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">Bloque 02 · Software</div>
+        <h1>Elementos de software</h1>
+        <p>La parte lógica del sistema informático: software de sistema, aplicaciones, utilidades y la interacción con el hardware en los puestos de trabajo sanitarios.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">UP01 · Mantenimiento básico de equipos</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 1 · ¿QUÉ ES EL SOFTWARE? ============ -->
+      <section id="que-es-software">
+        <h2>1 · ¿Qué es el software?</h2>
+        <p>El <strong>software</strong> es el conjunto de <strong>programas, instrucciones y reglas informáticas</strong> que permiten que un ordenador funcione.</p>
+        <p>A diferencia del hardware, que corresponde a la parte <strong>física</strong> del sistema, el software es la parte <strong>lógica o intangible</strong>. Sin software, los componentes físicos del ordenador no podrían realizar ninguna tarea útil.</p>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> si no se puede tocar pero permite que el ordenador haga algo útil, es software. Es la parte lógica del sistema informático.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>El software permite utilizar aplicaciones de gestión de pacientes, historia clínica electrónica, correo corporativo, herramientas ofimáticas y sistemas de comunicación sanitaria.</p>
+        </div>
+
+        <div class="callout callout--example">
+          <p>La historia clínica electrónica, el programa de gestión de citas y el procesador de textos con el que se redacta un informe son software.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Podría funcionar un ordenador únicamente con hardware?</strong> No: necesita software para realizar tareas y comunicarse con el usuario.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Hardware = parte física; software = parte lógica (programas e instrucciones). Ambos necesitan funcionar juntos.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · TIPOS DE SOFTWARE ============ -->
+      <section id="tipos-de-software">
+        <h2>2 · Tipos de software</h2>
+        <p>El software puede clasificarse en tres grandes grupos:</p>
+        <ul>
+          <li><strong>Software de sistema.</strong></li>
+          <li><strong>Software de aplicación.</strong></li>
+          <li><strong>Utilidades del sistema.</strong></li>
+        </ul>
+
+        <h3>2.1 · Software de sistema</h3>
+        <p>Es el software encargado de <strong>gestionar y coordinar el funcionamiento del ordenador</strong>.</p>
+
+        <h4>Sistema operativo (SO)</h4>
+        <p>Es el <strong>programa principal</strong> del ordenador y actúa como <strong>intermediario entre el hardware y el usuario</strong>.</p>
+        <ul>
+          <li><strong>Función:</strong> gestionar los recursos del equipo, controlar dispositivos y periféricos, administrar archivos y carpetas, gestionar permisos y seguridad, y permitir la ejecución de aplicaciones.</li>
+          <li><strong>Ejemplos:</strong> Microsoft Windows, Linux y macOS.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Permite utilizar aplicaciones sanitarias, acceder a redes corporativas e interactuar con los periféricos del sistema.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué ocurriría si un ordenador no tuviera sistema operativo?</strong> No sería posible utilizar aplicaciones ni interactuar con el hardware de forma normal.</p>
+        </div>
+
+        <h4>Drivers o controladores</h4>
+        <p>Son <strong>programas que permiten que el sistema operativo se comunique con los dispositivos de hardware</strong>.</p>
+        <ul>
+          <li><strong>Función:</strong> traducir las instrucciones entre el sistema operativo y los dispositivos, y permitir que el hardware funcione correctamente.</li>
+          <li><strong>Ejemplos:</strong> controlador de impresora, de escáner y de tarjeta gráfica.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Permiten utilizar impresoras, escáneres, lectores de tarjetas sanitarias y otros periféricos esenciales.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué podría suceder si falta el controlador de una impresora?</strong> El sistema operativo podría no reconocerla o no permitir su uso correctamente.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>El sistema operativo (gestiona el equipo) y los drivers (comunican el sistema con el hardware) forman el software de sistema.</p>
+        </div>
+
+        <h3>2.2 · Software de aplicación</h3>
+        <p>Son <strong>programas creados para realizar tareas específicas</strong>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Aplicación</th><th>Función</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Procesadores de texto</strong> (Word)</td><td>Crear y modificar documentos</td><td>Informes, comunicaciones y documentación administrativa</td></tr>
+              <tr><td><strong>Hojas de cálculo</strong> (Excel)</td><td>Organizar datos y realizar cálculos</td><td>Listados, estadísticas y planificación de actividades</td></tr>
+              <tr><td><strong>Bases de datos</strong> (Access)</td><td>Almacenar y consultar información estructurada</td><td>Gestión de pacientes, historiales clínicos y documentación</td></tr>
+              <tr><td><strong>Presentaciones</strong> (PowerPoint)</td><td>Crear presentaciones visuales</td><td>Formación del personal y presentación de proyectos</td></tr>
+              <tr><td><strong>Correo electrónico y agenda</strong> (Outlook)</td><td>Comunicación y organización profesional</td><td>Gestión de citas, comunicación y coordinación de actividades</td></tr>
+              <tr><td><strong>Aplicaciones sanitarias</strong></td><td>Software específico del ámbito sanitario</td><td>Historia clínica electrónica, gestión de pacientes, codificación diagnóstica, citas y laboratorios</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> la ofimática (procesador de textos, hoja de cálculo, base de datos, presentaciones y correo) es el software de aplicación más habitual en cualquier puesto administrativo sanitario.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Las aplicaciones sanitarias constituyen la principal herramienta de trabajo del personal administrativo sanitario.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué son tan importantes las aplicaciones sanitarias en un centro de salud?</strong> Porque permiten gestionar la información clínica y administrativa de manera segura y eficiente.</p>
+        </div>
+
+        <h3>2.3 · Utilidades del sistema</h3>
+        <p>Son <strong>programas que ayudan al mantenimiento y seguridad del ordenador</strong>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Utilidad</th><th>Función</th><th>Aplicación sanitaria</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Antivirus</strong></td><td>Detectar, bloquear y eliminar software malicioso</td><td>Protege la información clínica y administrativa</td></tr>
+              <tr><td><strong>Cortafuegos (firewall)</strong></td><td>Controlar el tráfico de red</td><td>Protege los sistemas frente a accesos no autorizados</td></tr>
+              <tr><td><strong>Compresores de archivos</strong></td><td>Reducir el tamaño de los archivos</td><td>Intercambio y almacenamiento de documentación</td></tr>
+              <tr><td><strong>Programas de limpieza</strong></td><td>Eliminar archivos innecesarios</td><td>Mantiene el rendimiento de los equipos</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante disponer de un antivirus actualizado?</strong> Porque permite detectar amenazas que pueden comprometer la seguridad de la información.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante proteger las redes sanitarias?</strong> Porque manejan información sensible de pacientes y profesionales.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>De sistema (SO y drivers), de aplicación (ofimática y aplicaciones sanitarias) y utilidades (antivirus, firewall, compresores y limpieza).</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · INTERACCIÓN SOFTWARE-HARDWARE ============ -->
+      <section id="interaccion-software-hardware">
+        <h2>3 · Interacción entre software y hardware</h2>
+        <p>El <strong>software permite que el hardware funcione correctamente</strong>. Sin programas, los componentes físicos no pueden ejecutar ninguna tarea.</p>
+        <ul>
+          <li>El <strong>sistema operativo</strong> gestiona la <strong>memoria RAM</strong> y los recursos del equipo.</li>
+          <li>Los <strong>drivers</strong> permiten utilizar impresoras, escáneres y otros periféricos.</li>
+          <li>Las <strong>aplicaciones</strong> utilizan el <strong>procesador</strong> para ejecutar tareas.</li>
+          <li>Los <strong>antivirus</strong> protegen el <strong>sistema operativo</strong> y los <strong>archivos</strong>.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>La correcta interacción entre hardware y software permite utilizar aplicaciones clínicas, gestionar documentación y acceder a la información necesaria para la atención sanitaria.</p>
+        </div>
+
+        <div class="callout callout--example">
+          <p>Para consultar la historia clínica electrónica se necesita el sistema operativo, la aplicación sanitaria y el hardware del puesto (procesador, memoria, pantalla y red).</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>Si falla el driver de la tarjeta gráfica, ¿qué problema verá el usuario?</strong> Probablemente no se mostrarán correctamente las imágenes en pantalla, afectando a aplicaciones de diagnóstico por imagen.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Hardware y software son dos caras del mismo sistema: el software dirige y el hardware ejecuta. Si uno falla, todo el sistema se resiente.</p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · ORGANIZACIÓN DEL SOFTWARE ============ -->
+      <section id="organizacion-software">
+        <h2>4 · Organización del software</h2>
+        <p>Así se organiza todo lo estudiado en este bloque:</p>
+        <pre style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;overflow-x:auto;font-size:0.85rem;line-height:1.5;">SOFTWARE
+├── Software de sistema
+│   ├── Sistema operativo (SO) → Windows · Linux · macOS
+│   └── Drivers o controladores → Impresora · Escáner · Tarjeta gráfica
+├── Software de aplicación
+│   ├── Procesadores de texto → Microsoft Word
+│   ├── Hojas de cálculo → Microsoft Excel
+│   ├── Bases de datos → Microsoft Access
+│   ├── Presentaciones → Microsoft PowerPoint
+│   ├── Correo electrónico y agenda → Microsoft Outlook
+│   └── Aplicaciones sanitarias → Historia clínica · Gestión de pacientes · Citas · Laboratorios
+└── Utilidades del sistema
+    ├── Antivirus
+    ├── Cortafuegos (firewall)
+    ├── Compresores de archivos
+    └── Programas de limpieza</pre>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> una sola página que conecta todos los conceptos del bloque: repásala antes del cuestionario final.</p>
+        </div>
+      </section>
+
+      <!-- ============ 5 · RESUMEN DEL BLOQUE ============ -->
+      <section id="resumen-bloque">
+        <h2>5 · Resumen del bloque</h2>
+        <ul>
+          <li>El <strong>software</strong> es la parte <strong>lógica</strong> del sistema informático (programas e instrucciones).</li>
+          <li><strong>Software de sistema:</strong> sistema operativo (Windows, Linux, macOS) y drivers o controladores.</li>
+          <li><strong>Software de aplicación:</strong> procesadores de texto, hojas de cálculo, bases de datos, presentaciones, correo y agenda, y aplicaciones sanitarias.</li>
+          <li><strong>Utilidades del sistema:</strong> antivirus, cortafuegos, compresores de archivos y programas de limpieza.</li>
+          <li><strong>Interacción:</strong> el software permite que el hardware funcione correctamente; ambos se necesitan.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Día a día trabajas con el sistema operativo, la ofimática y las aplicaciones sanitarias. Comprender qué es cada tipo de software permite mantener los equipos, instalar y actualizar programas y resolver o comunicar incidencias.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario final del bloque:</strong> accede a <strong><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081" target="_blank" rel="noopener">Cuestionario_1_1_Software</a></strong> y contesta a las preguntas relacionadas con estos contenidos. Hazlo tantas veces como quieras antes de que finalice el plazo, se guardará tu mejor nota.</p>
+        </div>
+
+        <div class="callout callout--example">
+          <p><strong>🧰 Bloque práctico:</strong> las actividades prácticas de software se publicarán próximamente con el mismo esquema del bloque de hardware.</p>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="../index.html">
+          <small>Anterior</small>
+          ← Presentación de la unidad
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081" target="_blank" rel="noopener">
+          <small>Siguiente</small>
+          Cuestionario teórico sobre el software →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+</body>
+</html>

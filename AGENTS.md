@@ -8,7 +8,7 @@ Transformar el documento `ApuntesOPI_UP_01_Mantenimiento 26-27.pdf` en una colec
 
 Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desde **Markdown**.
 
-> Cuestionarios: se entregan como **bancos de preguntas en formato GIFT** (`<bloque>/cuestionarios/*.gift`) + guía de importación y configuración en Aules (instrucciones-aules.md). La configuración estándar es: intentos múltiples, **mejor nota** en el libro de calificaciones, preguntas aleatorias por apartado y fecha de cierre. NO se incrustan preguntas en el HTML; en su lugar se inserta un aviso «Cuestionario en Aules» al final de cada apartado.
+> Cuestionarios: se entregan como **bancos de preguntas en formato GIFT** (`<bloque>/cuestionarios/*.gift`) + guía de importación y configuración en Aules (instrucciones-aules.md). La configuración estándar es: intentos múltiples, **mejor nota** en el libro de calificaciones, preguntas aleatorias por apartado y fecha de cierre. NO se incrustan preguntas en el HTML. En los bloques teóricos **no** se añade aviso de cuestionario por apartado; solo al final del bloque se señala el «Cuestionario final» enlazando a su actividad en Aules (p. ej. «Cuestionario_1_1_Hardware»). En el bloque práctico sí se inserta el aviso «Cuestionario en Aules» en cada actividad (enlaza su quiz PR).
 
 ## 2 · Estado actual y fases
 
@@ -17,7 +17,7 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 | 1 | 00 · Introducción y elementos curriculares | ✅ COMPLETADA (1 imagen general integrada) |
 | 2 | 01 · Hardware | ✅ COMPLETADA (contenido + GIFT + guía Aules + 24 imágenes + navegación `.page-nav` conectada con Aules) |
 | 2b | Bloque práctico: Hardware básico de un puesto de trabajo administrativo sanitario | ✅ COMPLETADA (`practico-hardware/` · actividades autocorregibles con `js/actividades.js` + 3 bancos GIFT `PR-01.1…PR-01.3` + soluciones PDF desbloqueables por apartado + tarjeta de acceso en 01-hardware) |
-| 3 | 02 · Software | ⏳ SIGUIENTE — banco de inventario ya redactado en inventario-general.md |
+| 3 | 02 · Software | ✅ COMPLETADA (teoría `02-software/` + 5 bancos GIFT + guía Aules + inventario · SIN imágenes, no hay archivos en la fuente · `.page-nav` → Cuestionario teórico SW · **bloque práctico `practico-software/` pendiente**) |
 | 4 | 03 · Ciberseguridad | ⏳ PENDIENTE |
 | 5 | 04 · Redes locales (LAN) | ⏳ PENDIENTE |
 | 6 | 05 · Acceso a Internet | ⏳ PENDIENTE |
@@ -68,7 +68,8 @@ Apuntes 26-27/
 - `css/estilos.css` — CSS único compartido. Prohibido duplicar estilos inline por página. Incluye protección contra copia (`user-select: none` en el contenido, permitido en `input`/`textarea`/`select`).
 - Componentes disponibles: `.hero`, `.card-grid/.card`, `.callout` (+ modificadores `--key --health --example --summary --reflect`), `.table-wrap`, `.image-figure` (+ modificadores `--wide --centered`), `.image-grid` (+ modificador `--2`) y `.image-card`, `.timeline`, `.steps/.step`, `.ce-list`, `.toc`, `.page-nav`.
 - Widgets interactivos del bloque práctico: `.baraja`/`.flash` (tarjetas volteables), `.match` (emparejados), `.test` (autoevaluación), `.escenario`, `.checklist`, `.orden`, `.inventario` y `.soluciones-panel`. Estilos en `css/estilos.css`.
-- `js/navegacion.js` — menú móvil, scroll-spy, TOC automático, volver arriba y protección ligera contra copia (bloquea `copy`/`cut`/clic derecho/arrastre/selección; permite `input`/`textarea`).
+- `js/navegacion.js` — menú móvil, scroll-spy, TOC automático, volver arriba, **lightbox de imágenes** y protección ligera contra copia (bloquea `copy`/`cut`/clic derecho/arrastre/selección; permite `input`/`textarea`).
+- **Lightbox:** se inicializa una sola vez por delegación de eventos en `document` (así cubre también las imágenes generadas dinámicamente por `actividades.js`). Amplía cualquier `<img>` salvo las que estén **dentro de un `<button>` o de `.baraja`**, para no interferir con la baraja que se voltea, los emparejados ni las opciones de los tests. Cierre con ✕, clic en el fondo o `Esc`. Cursor `zoom-in` en `.image-figure img`, `.image-card img`, `.test__prompt img` y `.soluciones-panel img`.
 - `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`…). Solo se ejecuta en la página que los incluye.
 - La tabla de respuestas resueltas se desbloquea con un test perfecto; el panel de soluciones de puertos (`#soluciones-puertos`) con escenarios y emparejado perfectos; el de verificación (`#soluciones-verificacion`) con checklist y orden perfectos. Cada desbloqueo se guarda en `localStorage` (`up01-practico-{rec,puertos,verificacion}-ok`).
 - `templates/plantilla-base.html` — marcadores `[[TITULO_PAGINA]]`, `[[CONTENIDO]]`, `[[NAV_INTERNA]]`, `[[URL_RAIZ]]`.
@@ -115,7 +116,7 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 
 1. **Extraer** el texto de las páginas del PDF correspondientes al bloque.
 2. **Transformar** (no copiar literal): microcontenidos, estructura didáctica §7, ejemplos sanitarios.
-3. **Redactar** `<bloque>/index.md` (incluyendo aviso «🧩 Cuestionario en Aules» al final de cada apartado cuando proceda).
+3. **Redactar** `<bloque>/index.md` (bloques teóricos: sin aviso por apartado, solo el «Cuestionario final» del bloque con enlace a su actividad en Aules; bloque práctico: aviso «🧩 Cuestionario en Aules» por actividad).
 4. **Generar** `<bloque>/index.html` copiando la estructura de `00-introduccion-elementos-curriculares/index.html` (plantilla ya aplicada), adaptando id, nav y contenido.
 5. **Imágenes**: copiar a `images/<categoría>/` las imágenes necesarias de `Documentos base/Imagenes` y actualizar el `inventario-imagenes.md` del bloque (archivo, ruta, sección, `alt`, página).
 6. **Cuestionarios**: si el bloque los requiere, crear `<bloque>/cuestionarios/` con los `.gift` por apartado + `.gift` de examen final + `instrucciones-aules.md` (ver §9bis).
@@ -127,9 +128,18 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 
 - Un `.gift` por apartado + uno de examen final. Cada archivo empieza con `$CATEGORY: OFI/UP01/<BLOQUE>/<NN>-<nombre>` (p. ej. `OFI/UP01/HW/01-que-es-hardware`), de modo que Moodle crea la categoría al importar.
 - Sintaxis GIFT: `::Nombre::Pregunta{=Correcta~Incorrecta~Incorrecta}`; V/F: `{T}`/`{F}`; escapar `=`, `{`, `}`, `~`, `#` con `\` si aparecen dentro del enunciado.
+- **IMPORTANTE — V/F:** las preguntas verdadero/falso deben escribirse en una sola línea `{T}`/`{F}` (o `{TRUE}`/`{FALSE}`). Un formato en bloque como `{ \n=T \n }` se importa en Moodle como **respuesta corta** (el alumnado debe teclear T/F en vez de botones).
 - **IMPORTANTE — codificación:** los archivos `.gift` deben escribirse como UTF-8 sin BOM. No transformar con PowerShell `Get-Content`/`Set-Content` sin `-Encoding UTF8` (corrompe acentos). Tras editar, verificar que los acentos (áéíóú/¿¡) se leen correctamente.
 - **IMPORTANTE — sintaxis:** una única respuesta correcta (`=`) por pregunta de opción única; el resto con `~`. Verificación rápida por archivo: nº de líneas `::…` = nº de líneas `=` = nº de líneas `}`. Si usas «respuesta múltiple», ponderar con `%50%` etc.
 - El `instrucciones-aules.md` describe: importar GIFT, crear un quiz por apartado con **pregunta aleatoria** (extracción aleatoria de la categoría), intentos múltiples, **método de calificación «calificación más alta»**, cierre de plazo con «Ventana de tiempo» (Permitir enviar hasta) y nota en el libro de calificaciones.
+
+> **Resuelto (18-09-2026):** los 32 V/F de los bancos (teoría HW/SW + PR-01.1…3)
+> pasaron del formato en bloque `{\n=T/F\n}` a `{T}`/`{F}` inline, de modo que
+> vuelven a importarse como verdadero/falso con botones en Moodle. Además se
+> corrigieron 33 marcadores `::Nombre:` (un solo colon) en `gift-04-almacenamiento.gift`
+> y `gift-05-memorias.gift`. Verificado: `Cuestionario_1_1_Hardware.gift` y el resto de
+> bancos NO tienen acentos corruptos (0 U+FFFD, UTF-8 sin BOM); los `�` que se ven en
+> consola PowerShell son solo del juego de caracteres de la terminal.
 
 ## 10 · Verificación antes de terminar
 
@@ -220,6 +230,8 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 | PR-01.1 Reconocimiento de equipos y periféricos (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391623` |
 | PR-01.2 Puertos y conexiones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391626` |
 | PR-01.3 Verificación del equipo (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627` |
+| Teoría de software (enlace «Bloque 02 · Software») | URL | `02-software/index.html` (GitHub Pages) |
+| Cuestionario teórico sobre el software | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081` |
 
 ### Estructura por apartados (teoría · cuestionario · prácticas)
 
@@ -229,6 +241,7 @@ en Aules, además del recorrido secuencial con «Siguiente» dentro del sitio:
 | Apartado | Teoría (URL) | Cuestionario (Quiz) | Prácticas (URL) |
 |---|---|---|---|
 | 01 · Hardware | `11225710` → `index.html` + `01-hardware/index.html` | `11291377` | `11397605` → `practico-hardware/index.html` (+ quizzes PR-01.1…3) |
+| 02 · Software | `02-software/index.html` (GitHub Pages) | `11402081` | Pendiente → `practico-software/index.html` (+ quizzes PR-02.1…3) |
 
 La portada (`index.html`) solo muestra los apartados publicados como 3 tarjetas
 (teoría · cuestionario · prácticas). El bloque 00 (Introducción y elementos
@@ -270,6 +283,8 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - Prácticas: `practico-hardware/` → `practico-software/`
 - Bancos GIFT teoría: `OFI/UP01/HW/…` → `OFI/UP01/SW/…`
 - Cuestionarios prácticos: `PR-01.1…PR-01.3` → `PR-02.1…PR-02.3` (categorías `OFI/UP01/PR/…`)
+- Cuestionario teórico del bloque (quiz final en la web de teoría): `Cuestionario_1_1_<Bloque>`
+  (p. ej. `Cuestionario_1_1_Hardware` → quiz `11291377`; `Cuestionario_1_1_Software` → quiz `11402081`).
 
 **Pasos de montaje de un apartado nuevo:**
 1. Publicar el HTML de teoría: `<NN>-<bloque>/index.html`.
@@ -292,16 +307,22 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - **index.html (Portada):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Apartado 01 · Hardware (salta el bloque 00).
 - **00 · Guía curricular (fuera del recorrido):** «Anterior» → Portada · «Siguiente» → Hardware (acceso opcional desde la portada/sidebar).
 - **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el hardware (Aules).
+- **02 · Software:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el software (Aules `11402081`). Su sidebar incluye la sección «Apartado 02 · Software» con el cuestionario teórico (los enlaces de prácticas se añadirán cuando exista `practico-software/`).
 - **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Además, los avisos «Cuestionario en Aules» de las actividades 1, 2 y 3 llevan el enlace al cuestionario propio y un botón «Siguiente» hacia el siguiente cuestionario, y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes. Su sidebar incluye la sección «Apartado 01 · Hardware» (teoría, cuestionario teórico y PR-01.1…3).
 
 ### Regla para futuros bloques
 
 > Seguir la **«Plantilla de apartado»** definida arriba (3 elementos: teoría · cuestionario · prácticas).
 
-- Cada nuevo apartado (Software, Ciberseguridad, Redes LAN, Acceso a Internet)
-  publicará **los 3 enlaces en Aules** (teoría → quiz → prácticas) con el mismo
-  esquema que Hardware; su página de teoría añade los enlaces al quiz y a las
-  prácticas correspondientes y la portada incorpora las 3 tarjetas del apartado.
+- Cada nuevo apartado (Ciberseguridad, Redes LAN, Acceso a Internet)
+  replicará el **mismo formato que 01-hardware/02-software**: teoría con aviso
+  único «Cuestionario final» al final del bloque enlazando la actividad
+  `Cuestionario_1_1_<Bloque>` (sin avisos por apartado), bloque práctico
+  `practico-<bloque>/` con aviso «Cuestionario en Aules» por actividad, 3
+  quizzes `PR-0X.1…3`, lightbox compartido para imágenes y los 3 enlaces en
+  Aules (teoría → quiz → prácticas) con el mismo esquema que Hardware; su página
+  de teoría añade los enlaces al quiz y a las prácticas correspondientes y la
+  portada incorpora las 3 tarjetas del apartado.
 - El «Siguiente» de cada página de teoría lleva a su cuestionario (o al siguiente
   elemento del curso si fuera procedente): el `page-nav` solo encadena dentro del
   apartado (teoría → quiz → prácticas), sin encadenar apartados entre sí.

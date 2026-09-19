@@ -84,9 +84,7 @@ $CATEGORY: OFI/UP01/HW/02-componentes-esenciales
 ~Píxeles.
 }
 
-::HW02_13_VerdaderoCEO::La fuente de alimentación está situada siempre sobre el procesador.{
-=F
-}
+::HW02_13_VerdaderoCEO::La fuente de alimentación está situada siempre sobre el procesador.{F}
 
 ::HW02_14_ComunicacionGlobal::En el ordenador, la comunicación entre procesador, memoria, almacenamiento y periféricos se realiza gracias a…{
 =La placa base.

@@ -28,9 +28,7 @@ $CATEGORY: OFI/UP01/PR/01-1-reconocimiento
 =Acceso mucho más rápido a los datos~Menor coste por unidad de capacidad~Datos en memoria volátil~No necesita fuente de alimentación
 }
 
-::PR011_08_VFRecuerda::El lector de tarjetas sanitarias se usa para imprimir informes médicos.{
-=F
-}
+::PR011_08_VFRecuerda::El lector de tarjetas sanitarias se usa para imprimir informes médicos.{F}
 
 ::PR011_09_ImpresoraAdmision::En un puesto de admisión, la impresora se usa para…{
 =Imprimir recetas, informes médicos, etiquetas y listados~Identificar pacientes~Guardar historias clínicas~Procesar cálculos
@@ -97,6 +95,4 @@ $CATEGORY: OFI/UP01/PR/01-1-reconocimiento
 =Permanente (no volátil)~Temporal y solo mientras el equipo está encendido~Solo durante el arranque~En la nube sin conexión al disco
 }
 
-::PR011_25_VerdaderoFalso1::El lector de tarjetas sanitarias se utiliza para imprimir informes médicos.{
-=F
-}
+::PR011_25_VerdaderoFalso1::El lector de tarjetas sanitarias se utiliza para imprimir informes médicos.{F}

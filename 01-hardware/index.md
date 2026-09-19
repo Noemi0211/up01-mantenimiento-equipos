@@ -32,8 +32,6 @@ Incluye desde los elementos internos del ordenador (procesador, memoria o disco 
 </figure>
 </div>
 
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-01 ¿Qué es el hardware?»** en la plataforma Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
-
 ---
 
 ## 2 · Componentes esenciales
@@ -79,8 +77,6 @@ La **fuente de alimentación** convierte la corriente eléctrica procedente de l
 </figure>
 </div>
 
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-02 Componentes esenciales»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
-
 ---
 
 ## 3 · Hardware de procesamiento
@@ -125,8 +121,6 @@ La **GPU** (Graphics Processing Unit) es el componente encargado de **procesar i
 <figcaption>Tarjeta gráfica (GPU)</figcaption>
 </figure>
 </div>
-
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-03 Hardware de procesamiento»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
 
 ---
 
@@ -174,8 +168,6 @@ El **SSD** (Solid State Drive) utiliza **memoria flash** para almacenar informac
 <figcaption>Unidad de estado sólido (SSD)</figcaption>
 </figure>
 </div>
-
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-04 Hardware de almacenamiento»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
 
 ---
 
@@ -271,8 +263,6 @@ La memoria **virtual** es un **espacio del disco duro o SSD** que el sistema ope
 </figure>
 </div>
 
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-05 Tipos de memoria»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
-
 ---
 
 ## 6 · Sistemas de refrigeración
@@ -314,8 +304,6 @@ El **disipador** es una pieza metálica diseñada para **absorber y dispersar el
 <figcaption>Disipador térmico</figcaption>
 </figure>
 </div>
-
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-06 Sistemas de refrigeración»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
 
 ---
 
@@ -398,8 +386,6 @@ Capaces tanto de **recibir como de enviar** información.
 </figure>
 </div>
 
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-07 Periféricos»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
-
 ---
 
 ## 8 · Puertos de comunicación
@@ -472,8 +458,6 @@ Conocerlos ayuda a identificar **equipos heredados** y a comprender la evolució
 </figure>
 </div>
 
-> 🧩 **Cuestionario en Aules:** tras repasar este apartado, realiza el cuestionario **«HW-08 Puertos de comunicación»** en Aules. Las preguntas son aleatorias y se guardará tu mejor nota.
-
 ---
 
 ## 9 · Mapa conceptual del hardware
@@ -521,7 +505,7 @@ HARDWARE
 
 > 🏥 **Aplicación en entornos sanitarios:** todos los días trabajas con estos elementos en admisión, consultas, laboratorios y archivo. Comprenderlos permite mantener los equipos y evitar o resolver incidencias.
 
-> 🧩 **Cuestionario final del bloque:** realiza el cuestionario **«HW-EXAMEN Hardware»** en Aules. Combina preguntas aleatorias de todos los apartados del bloque y se guardará tu mejor nota hasta la fecha de cierre.
+> 🧩 **Cuestionario final del bloque:** accede a [**Cuestionario_1_1_Hardware**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11291377) y contesta a las preguntas relacionadas con estos contenidos. Hazlo tantas veces como quieras antes de que finalice el plazo, se guardará tu mejor nota.
 
 > 🧰 **Bloque práctico:** cuando completes el cuestionario, trabaja el [**Bloque práctico: Hardware básico de un puesto de trabajo administrativo sanitario**](../practico-hardware/index.html): reconocimiento de equipos y periféricos, puertos y conexiones, verificación del puesto e inventario, con actividades autocorregibles y soluciones descargables.
 

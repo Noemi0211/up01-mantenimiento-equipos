@@ -112,9 +112,7 @@ $CATEGORY: OFI/UP01/HW/07-perifericos
 ~Incorrecto: el monitor es de entrada.
 }
 
-::HW07_17_VerdaderoFalso::Los altavoces son periféricos de entrada.{
-=F
-}
+::HW07_17_VerdaderoFalso::Los altavoces son periféricos de entrada.{F}
 
 ::HW07_18_ProteccionDatos::¿Por qué hay que proteger los dispositivos de almacenamiento portátiles en sanidad?{
 =Porque pueden contener información sensible cuya pérdida o acceso no autorizado comprometería la seguridad.

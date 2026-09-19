@@ -1,0 +1,306 @@
+$CATEGORY: OFI/UP01/SW/11-cuestionario-software
+
+::SW11_01_QueEs::¿Qué es el software?{
+=El conjunto de programas, instrucciones y reglas informáticas que permiten que un ordenador funcione.
+~Los componentes físicos y tangibles del equipo.
+~Los cables y conexiones del sistema informático.
+~La memoria RAM y el disco duro.
+}
+
+::SW11_02_FisicoLogico::La parte física del sistema informático es el hardware; la parte lógica o intangible es…{
+=El software.
+~El periférico.
+~El puerto de comunicación.
+~La fuente de alimentación.
+}
+
+::SW11_03_EjemploSoftware::¿Cuál de los siguientes elementos es software?{
+=El antivirus.
+~El teclado.
+~El disco duro.
+~El monitor.
+}
+
+::SW11_04_EjemploHardware::¿Cuál de los siguientes elementos es hardware?{
+=La placa base.
+~El sistema operativo.
+~El procesador de textos.
+~El navegador web.
+}
+
+::SW11_05_SinSoftware::Sin software, los componentes físicos del ordenador…{
+=No podrían realizar ninguna tarea útil.
+~Funcionarían igual, solo más despacio.
+~Serían más resistentes.
+~Se apagarían automáticamente.
+}
+
+::SW11_06_Juntos::Para que un sistema informático funcione correctamente necesitan trabajar juntos…{
+=El hardware y el software.
+~Solo los periféricos.
+~Solo la electricidad.
+~Únicamente los cables.
+}
+
+::SW11_07_Sanidad::¿Cuál de las siguientes actividades sanitarias depende directamente del software?{
+=Gestionar la historia clínica electrónica.
+~Conectar el monitor por HDMI.
+~Sustituir un cable de red.
+~Limpiar el interior del equipo.
+}
+
+::SW11_08_Caracteristica::A diferencia del hardware, el software…{
+=No puede verse ni tocarse directamente.
+~Es una pieza interna del ordenador.
+~Se conecta mediante un puerto USB.
+~Se fabrica en la placa base.
+}
+
+::SW11_09_Naturaleza::El software es la parte __________ del sistema informático.{
+=Lógica o intangible.
+~Física y tangible.
+~Electrónica y volátil.
+~Mecánica y desmontable.
+}
+
+::SW11_10_Mantenimiento::En el mantenimiento básico de equipos, distinguir entre hardware y software permite…{
+=Diagnosticar y comunicar las incidencias con precisión.
+~Desmontar el equipo sin herramientas.
+~Prescindir de las copias de seguridad.
+~Evitar el uso de contraseñas.
+}
+
+::SW11_11_Clasificacion::Los tres grandes grupos en los que se clasifica el software son…{
+=Software de sistema, software de aplicación y utilidades del sistema.
+~Software de sistema, hardware y periféricos.
+~Aplicaciones, drivers y puertos.
+~Ofimática, navegación y juegos.
+}
+
+::SW11_12_SoftwareSistema::El software encargado de gestionar y coordinar el funcionamiento del ordenador es…{
+=El software de sistema.
+~El software de aplicación.
+~Una utilidad de limpieza.
+~Un compresor de archivos.
+}
+
+::SW11_13_SistemaOperativo::El programa principal del ordenador que actúa como intermediario entre el hardware y el usuario es…{
+=El sistema operativo.
+~El procesador de textos.
+~El antivirus.
+~El controlador de impresora.
+}
+
+::SW11_14_FuncionesSO::¿Cuál de las siguientes es una función del sistema operativo?{
+=Gestionar los recursos del equipo, los archivos, los permisos y la ejecución de aplicaciones.
+~Redactar informes médicos.
+~Imprimir documentación clínica.
+~Digitalizar documentos.
+}
+
+::SW11_15_EjemplosSO::¿Cuál de los siguientes es un sistema operativo?{
+=Linux.
+~Microsoft Word.
+~Microsoft Excel.
+~Microsoft Outlook.
+}
+
+::SW11_16_SinSO::¿Qué ocurriría si un ordenador no tuviera sistema operativo?{
+=No sería posible utilizar aplicaciones ni interactuar con el hardware de forma normal.
+~Funcionaría igual, solo un poco más lento.
+~Solo se perderían los documentos guardados.
+~El antivirus podría sustituirlo.
+}
+
+::SW11_17_Drivers::Los programas que permiten que el sistema operativo se comunique con los dispositivos de hardware se denominan…{
+=Drivers o controladores.
+~Procesadores de texto.
+~Hojas de cálculo.
+~Navegadores web.
+}
+
+::SW11_18_FuncionDrivers::La función principal de un controlador o driver es…{
+=Traducir las instrucciones entre el sistema operativo y los dispositivos.
+~Gestionar las citas médicas.
+~Crear presentaciones visuales.
+~Comprimir los archivos del equipo.
+}
+
+::SW11_19_EjemploDriver::¿Cuál de los siguientes es un ejemplo de driver?{
+=El controlador del escáner.
+~El sistema operativo Windows.
+~La hoja de cálculo Excel.
+~La aplicación de correo Outlook.
+}
+
+::SW11_20_DriverFalta::Si falta el controlador de una impresora, lo más probable es que…{
+=El sistema operativo no la reconozca o no permita su uso correctamente.
+~La impresora imprima a mayor velocidad.
+~El ordenador se reinicie automáticamente.
+~Se borren todos los archivos del usuario.
+}
+
+::SW11_21_SoftwareAplicacion::Los programas creados para realizar tareas específicas, como redactar documentos o hacer cálculos, se clasifican como…{
+=Software de aplicación.
+~Software de sistema.
+~Utilidades del sistema.
+~Drivers.
+}
+
+::SW11_22_ProcesadorTexto::Microsoft Word es un ejemplo de…{
+=Procesador de textos.
+~Hoja de cálculo.
+~Base de datos.
+~Navegador web.
+}
+
+::SW11_23_HojaCalculo::La herramienta ofimática utilizada para organizar datos y realizar cálculos es…{
+=La hoja de cálculo, como Microsoft Excel.
+~El procesador de textos.
+~La base de datos.
+~El compresor de archivos.
+}
+
+::SW11_24_BaseDatos::El programa orientado al almacenamiento y consulta de información estructurada es…{
+=Una base de datos, como Microsoft Access.
+~Una presentación.
+~Un correo electrónico.
+~Un antivirus.
+}
+
+::SW11_25_Presentaciones::La herramienta utilizada para crear presentaciones visuales sirve en sanidad para…{
+=Formación del personal y presentación de proyectos.
+~Registrar a los pacientes.
+~Controlar el tráfico de red.
+~Eliminar archivos temporales.
+}
+
+::SW11_26_CorreoAgenda::El correo electrónico y la agenda (como Microsoft Outlook) se utilizan en sanidad para…{
+=La gestión de citas, la comunicación entre profesionales y la coordinación de actividades.
+~Almacenar grandes volúmenes de datos clínicos.
+~La edición de imágenes médicas.
+~El arranque del sistema operativo.
+}
+
+::SW11_27_AppsSanitarias::¿Cuál de las siguientes es una aplicación sanitaria?{
+=El sistema de gestión de citas.
+~Microsoft Excel.
+~Windows.
+~El controlador del escáner.
+}
+
+::SW11_28_AppsSanitariasHerramienta::Las aplicaciones sanitarias constituyen…{
+=La principal herramienta de trabajo del personal administrativo sanitario.
+~Un complemento decorativo del sistema.
+~Un sustituto del sistema operativo.
+~Un tipo de hardware.
+}
+
+::SW11_29_AppsSanitariasImportancia::¿Por qué son tan importantes las aplicaciones sanitarias en un centro de salud?{
+=Porque permiten gestionar la información clínica y administrativa de manera segura y eficiente.
+~Porque eliminan la necesidad de personal.
+~Porque son más baratas que el resto del software.
+~Porque solo se usan para el ocio.
+}
+
+::SW11_30_Utilidades::Los programas que ayudan al mantenimiento y seguridad del ordenador se denominan…{
+=Utilidades del sistema.
+~Software de aplicación.
+~Hojas de cálculo.
+~Bases de datos.
+}
+
+::SW11_31_Antivirus::El programa destinado a detectar, bloquear y eliminar software malicioso es…{
+=El antivirus.
+~El compresor de archivos.
+~El procesador de textos.
+~El controlador de dispositivos.
+}
+
+::SW11_32_Firewall::El sistema de seguridad que controla el tráfico de red y bloquea o permite conexiones según reglas es…{
+=El cortafuegos o firewall.
+~El antivirus.
+~El compresor de archivos.
+~La hoja de cálculo.
+}
+
+::SW11_33_Compresores::Los programas que reducen el tamaño de los archivos facilitan…{
+=El intercambio y el almacenamiento de documentación.
+~La conexión a Internet.
+~El encendido del equipo.
+~La impresión de informes.
+}
+
+::SW11_34_Limpieza::Las herramientas que eliminan archivos innecesarios ayudan a…{
+=Mantener el rendimiento de los equipos.
+~Aumentar el riesgo de infecciones.
+~Desconectar los periféricos.
+~Reducir la seguridad del sistema.
+}
+
+::SW11_35_AntivirusActualizado::¿Por qué es importante disponer de un antivirus actualizado?{
+=Porque permite detectar las amenazas que pueden comprometer la seguridad de la información.
+~Porque acelera la impresión de documentos.
+~Porque ocupa menos espacio en el disco.
+~Porque sustituye al sistema operativo.
+}
+
+::SW11_36_SeguridadRedes::¿Por qué es importante proteger las redes sanitarias?{
+=Porque manejan información sensible de pacientes y profesionales.
+~Porque son más rápidas que las domésticas.
+~Porque siempre están conectadas a Internet.
+~Porque utilizan muchos cables.
+}
+
+::SW11_37_Interaccion::¿Qué permite que el hardware funcione correctamente?{
+=El software.
+~Los cables de conexión.
+~La electricidad estática.
+~El polvo acumulado.
+}
+
+::SW11_38_SO_RAM::El sistema operativo gestiona…{
+=La memoria RAM y los recursos del equipo.
+~Únicamente la memoria ROM.
+~El papel de la impresora.
+~La temperatura ambiental.
+}
+
+::SW11_39_DriversPerifericos::Gracias a los drivers…{
+=Se pueden utilizar impresoras, escáneres y otros periféricos.
+~El ordenador se enciende sin electricidad.
+~No se necesitan contraseñas.
+~Los archivos se borran automáticamente.
+}
+
+::SW11_40_AplicacionesCPU::Las aplicaciones utilizan el procesador para…{
+=Ejecutar tareas.
+~Refrigerar el equipo.
+~Almacenar energía.
+~Imprimir documentos por sí solas.
+}
+
+::SW11_41_AntivirusProtege::Los antivirus protegen…{
+=El sistema operativo y los archivos del equipo.
+~El monitor.
+~La fuente de alimentación.
+~Los ventiladores.
+}
+
+::SW11_42_SanidadInteraccion::La correcta interacción entre hardware y software en sanidad permite…{
+=Utilizar aplicaciones clínicas, gestionar documentación y acceder a la información necesaria para la atención sanitaria.
+~Sustituir al personal administrativo.
+~Evitar las copias de seguridad.
+~Desconectar los periféricos.
+}
+
+::SW11_43_HistoriaClinica::Para consultar la historia clínica electrónica necesitan funcionar juntos…{
+=El sistema operativo, las aplicaciones sanitarias y el hardware del puesto.
+~Solo el monitor y el teclado.
+~Únicamente el antivirus.
+~Solo el compresor de archivos.
+}
+
+::SW11_44_VerdaderoFalso::El software necesita al hardware para ejecutarse y el hardware necesita al software para funcionar.{T}
+
+::SW11_45_VerdaderoFalso::Las aplicaciones sanitarias son un tipo de hardware.{F}

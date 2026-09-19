@@ -32,13 +32,9 @@ $CATEGORY: OFI/UP01/PR/01-3-verificacion-equipo
 =Registrar la incidencia y avisar al soporte técnico~Forzar el encendido repetidamente~Cambiar la contraseña del usuario~Trabajar con otro equipo sin notificarlo
 }
 
-::PR013_09_VFIncidencias::El registro de incidencias es parte del mantenimiento básico del puesto de trabajo.{
-=T
-}
+::PR013_09_VFIncidencias::El registro de incidencias es parte del mantenimiento básico del puesto de trabajo.{T}
 
-::PR013_10_VFFuerza::Se debe forzar de forma reiterada el encendido de un equipo aunque falle la fuente de alimentación.{
-=F
-}
+::PR013_10_VFFuerza::Se debe forzar de forma reiterada el encendido de un equipo aunque falle la fuente de alimentación.{F}
 
 ::PR013_11_PrimeroRevisar::La primera actuación antes de encender un equipo nuevo o reparado es…{
 =Revisar visualmente que todos los componentes están correctamente instalados~Llamar al proveedor inmediatamente~Conectarlo a Internet~Escribir un informe de incidencia
@@ -97,6 +93,4 @@ $CATEGORY: OFI/UP01/PR/01-3-verificacion-equipo
 =Revisiones periódicas de limpieza, conexiones, actualizaciones y copias de seguridad~Solo reparar cuando se rompe~Cambiar el equipo cada mes~No hacer nada hasta que falle
 }
 
-::PR013_25_VerdaderoFalso4::Registrar las incidencias y su resolución ayuda a mejorar el mantenimiento futuro del parque informático.{
-=T
-}
+::PR013_25_VerdaderoFalso4::Registrar las incidencias y su resolución ayuda a mejorar el mantenimiento futuro del parque informático.{T}

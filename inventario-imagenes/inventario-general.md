@@ -584,7 +584,7 @@ Autora: Noemí Celaya Mingot · Licencia original: CC BY-NC-SA 4.0
 |-------|--------------------|------------------------|-------------------|
 | 00 · Introducción | 1 | 1 (generales) | ✅ 1 |
 | 01 · Hardware | 42 | 45 (hardware + 1 generales) | ✅ 24 |
-| 02 · Software | 14 | 0 (pendiente del bloque) | ⏳ Pendiente |
+| 02 · Software | 14 | 0 | ⚠️ Bloque publicado sin imágenes (sin archivos en la fuente) |
 | 03 · Ciberseguridad | 17 | 0 | ⏳ Pendiente |
 | 04 · Redes LAN | 10 | 0 | ⏳ Pendiente |
 | 05 · Acceso a Internet | 9 | 0 | ⏳ Pendiente |

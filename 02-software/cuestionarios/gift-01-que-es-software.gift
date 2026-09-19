@@ -1,0 +1,101 @@
+$CATEGORY: OFI/UP01/SW/01-que-es-software
+
+::SW01_01_DefinicionSoftware::¿Qué es el software?{
+=El conjunto de programas, instrucciones y reglas informáticas que permiten que un ordenador funcione.
+~Los componentes físicos y tangibles del equipo.
+~Los cables y conexiones del sistema.
+~La memoria RAM.
+}
+
+::SW01_02_ParteLogica::La parte lógica o intangible del sistema informático se denomina…{
+=Software.
+~Hardware.
+~Firmware.
+~Periférico.
+}
+
+::SW01_03_EjemploSoftware::¿Cuál de los siguientes elementos es software?{
+=El sistema operativo.
+~El teclado.
+~El disco duro.
+~El monitor.
+}
+
+::SW01_04_NoSoftware::¿Cuál de las siguientes opciones NO es software?{
+=La placa base.
+~Un procesador de textos.
+~Un antivirus.
+~El sistema operativo.
+}
+
+::SW01_05_SinSoftware::¿Qué ocurriría en un ordenador sin software?{
+=Los componentes físicos no podrían realizar ninguna tarea útil.
+~Funcionaría igual, solo sin aplicaciones nuevas.
+~El equipo estaría más rápido.
+~El hardware ejecutaría la información por sí solo.
+}
+
+::SW01_06_SistemaInformatico::Para que un sistema informático realice tareas útiles se necesitan…{
+=Hardware y software trabajando juntos.
+~Solo hardware.
+~Solo software.
+~Únicamente periféricos.
+}
+
+::SW01_07_SanidadSoftware::En un centro sanitario, ¿cuál de las siguientes actividades depende directamente del software?{
+=Consultar la historia clínica electrónica.
+~Conectar el monitor mediante un cable HDMI.
+~Sustituir un cable de red.
+~Limpiar el polvo del interior del equipo.
+}
+
+::SW01_08_DefinicionClave::Completa la frase: el software es la parte __________ del sistema informático.{
+=Lógica o intangible.
+~Física y tangible.
+~Electrónica y volátil.
+~Mecánica y externa.
+}
+
+::SW01_09_Reflexion::¿Podría funcionar un ordenador únicamente con hardware?{
+=No, necesita software para realizar tareas y comunicarse con el usuario.
+~Sí, el hardware basta por sí solo.
+~Solo si tiene un disco duro de gran capacidad.
+~Solo en modo seguro.
+}
+
+::SW01_10_SoftwareSanitario::La gestión de pacientes, la historia clínica electrónica o el correo corporativo son…{
+=Software.
+~Hardware.
+~Periféricos.
+~Puertos de comunicación.
+}
+
+::SW01_11_Instrucciones::Las reglas informáticas y las instrucciones que permiten que el ordenador funcione forman parte de…{
+=El software.
+~El hardware interno.
+~Los puertos de comunicación.
+~La fuente de alimentación.
+}
+
+::SW01_12_VerdaderoFalso::Sin software, los componentes físicos del ordenador no podrían realizar ninguna tarea útil.{T}
+
+::SW01_13_NaturalezaSoftware::A diferencia del hardware, el software…{
+=No puede verse ni tocarse directamente.
+~Es una pieza interna del ordenador.
+~Se conecta a un puerto USB.
+~Se instala en la fuente de alimentación.
+}
+
+::SW01_14_Mantenimiento::Comprender qué es el software resulta esencial en el mantenimiento básico de equipos porque permite…{
+=Distinguir entre los elementos físicos del equipo y los programas que necesita.
+~Desmontar el equipo con más rapidez.
+~Prescindir de los periféricos.
+~Evitar el uso de contraseñas.
+}
+
+::SW01_15_UnidadDocente::En la UP01 Mantenimiento básico de equipos, el estudio del software se aborda desde el apartado…{
+=3 · Software.
+~2 · Hardware.
+~4 · Ciberseguridad.
+~6 · Acceso a Internet.
+}

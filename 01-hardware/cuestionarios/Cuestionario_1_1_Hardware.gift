@@ -35,9 +35,7 @@ $CATEGORY: OFI/UP01/HW/11-cuestionario-hardware
 ~Conectar el equipo a Internet por sí solo.
 }
 
-::HW11_06_VerdaderoFalso1::La memoria RAM es un componente de hardware.{
-=T
-}
+::HW11_06_VerdaderoFalso1::La memoria RAM es un componente de hardware.{T}
 
 ::HW11_07_PlacaBaseFuncion::La función principal de la placa base es…{
 =Conectar y permitir la comunicación entre todos los componentes del equipo.
@@ -158,9 +156,7 @@ $CATEGORY: OFI/UP01/HW/11-cuestionario-hardware
 ~Poner un cartel de advertencia.
 }
 
-::HW11_24_VerdaderoFalso2::El SSD tiene partes móviles en su interior.{
-=F
-}
+::HW11_24_VerdaderoFalso2::El SSD tiene partes móviles en su interior.{F}
 
 ::HW11_25_MemoriaRAM_Funcion::La memoria RAM almacena temporalmente…{
 =Los datos y programas que la CPU está usando en ese momento.
@@ -204,9 +200,7 @@ $CATEGORY: OFI/UP01/HW/11-cuestionario-hardware
 ~No existe en los equipos actuales.
 }
 
-::HW11_31_VerdaderoFalso3::La memoria RAM conserva su contenido al apagar el equipo.{
-=F
-}
+::HW11_31_VerdaderoFalso3::La memoria RAM conserva su contenido al apagar el equipo.{F}
 
 ::HW11_32_MemoriaFlash::La memoria flash se encuentra en…{
 =Pendrives, tarjetas SD y unidades SSD.
@@ -369,9 +363,7 @@ $CATEGORY: OFI/UP01/HW/11-cuestionario-hardware
 ~Jack de 3,5 mm.
 }
 
-::HW11_55_VerdaderoFalso4::Todos los puertos USB-C son compatibles con Thunderbolt.{
-=F
-}
+::HW11_55_VerdaderoFalso4::Todos los puertos USB-C son compatibles con Thunderbolt.{F}
 
 ::HW11_56_FuentePotencia::Si una fuente de alimentación tiene una potencia de 500 W, esto indica…{
 =Que puede suministrar como máximo 500 vatios de energía al conjunto del equipo.
@@ -387,9 +379,7 @@ $CATEGORY: OFI/UP01/HW/11-cuestionario-hardware
 ~Un puerto USB adicional.
 }
 
-::HW11_58_VerdaderoFalso5::La placa base conecta el procesador con la memoria RAM, el disco duro y los puertos externos.{
-=T
-}
+::HW11_58_VerdaderoFalso5::La placa base conecta el procesador con la memoria RAM, el disco duro y los puertos externos.{T}
 
 ::HW11_59_PerifericoE_S::Un pendrive USB es un periférico de…{
 =Entrada y salida (permite leer y escribir datos).

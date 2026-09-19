@@ -77,9 +77,7 @@ $CATEGORY: OFI/UP01/HW/01-que-es-hardware
 ~La placa base.
 }
 
-::HW01_12_VerdaderoFalso::Para que un sistema informático funcione necesitamos hardware y software trabajando juntos.{
-=T
-}
+::HW01_12_VerdaderoFalso::Para que un sistema informático funcione necesitamos hardware y software trabajando juntos.{T}
 
 ::HW01_13_SoftwareEjemplo::¿Cuál de los siguientes es un ejemplo de software, no de hardware?{
 =Un navegador web.

@@ -70,9 +70,7 @@ $CATEGORY: OFI/UP01/HW/06-refrigeracion
 ~Fuente de alimentación y placa base.
 }
 
-::HW06_11_VerdaderoFalso::Los ventiladores del ordenador sirven únicamente para hacer ruido.{
-=F
-}
+::HW06_11_VerdaderoFalso::Los ventiladores del ordenador sirven únicamente para hacer ruido.{F}
 
 ::HW06_12_TemperaturaCPU::En un PC actual, la CPU genera calor mientras trabaja y necesita…{
 =Ventilador y disipador para evacuar ese calor.

@@ -80,9 +80,7 @@ $CATEGORY: OFI/UP01/PR/01-2-puertos-conexiones
 =DisplayPort o HDMI~PS/2~RJ45~FireWire
 }
 
-::PR012_21_VerdaderoFalso2::El conector USB-C es reversible, es decir, se puede enchufar en cualquier orientación.{
-=T
-}
+::PR012_21_VerdaderoFalso2::El conector USB-C es reversible, es decir, se puede enchufar en cualquier orientación.{T}
 
 ::PR012_22_HDMI_Datos::El puerto HDMI, además de vídeo, transmite…{
 =Audio digital~Solo corriente eléctrica~Solo datos de red~Señales analógicas de teléfono
@@ -96,6 +94,4 @@ $CATEGORY: OFI/UP01/PR/01-2-puertos-conexiones
 =Conectar dispositivos con conectores diferentes entre sí~Aumentar la velocidad del procesador~Almacenar más datos en el equipo~Refrigerar el sistema
 }
 
-::PR012_25_VerdaderoFalso3::El puerto FireWire es la alternativa moderna al USB-C para periféricos actuales.{
-=F
-}
+::PR012_25_VerdaderoFalso3::El puerto FireWire es la alternativa moderna al USB-C para periféricos actuales.{F}

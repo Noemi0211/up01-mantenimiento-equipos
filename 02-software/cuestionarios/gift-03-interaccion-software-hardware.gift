@@ -1,0 +1,89 @@
+$CATEGORY: OFI/UP01/SW/03-interaccion-software-hardware
+
+::SW03_01_Interaccion::¿Qué permite que el hardware funcione correctamente?{
+=El software.
+~Los cables de conexión.
+~La electricidad estática.
+~El polvo acumulado.
+}
+
+::SW03_02_SO_RAM::El sistema operativo gestiona…{
+=La memoria RAM y los recursos del equipo.
+~Únicamente la memoria ROM.
+~El papel de la impresora.
+~La temperatura ambiental.
+}
+
+::SW03_03_Drivers_Perifericos::Gracias a los drivers…{
+=Se pueden utilizar impresoras, escáneres y otros periféricos.
+~El ordenador se enciende sin electricidad.
+~No se necesitan contraseñas.
+~Los archivos se borran automáticamente.
+}
+
+::SW03_04_Aplicaciones_CPU::Las aplicaciones utilizan el procesador para…{
+=Ejecutar tareas.
+~Refrigerar el equipo.
+~Almacenar energía.
+~Imprimir documentos por sí solas.
+}
+
+::SW03_05_Antivirus_Proteccion::Los antivirus protegen…{
+=El sistema operativo y los archivos del equipo.
+~El monitor.
+~La fuente de alimentación.
+~Los ventiladores.
+}
+
+::SW03_06_Sanidad::La correcta interacción entre hardware y software en el entorno sanitario permite…{
+=Utilizar aplicaciones clínicas, gestionar documentación y acceder a la información necesaria para la atención sanitaria.
+~Sustituir al personal administrativo.
+~Evitar las copias de seguridad.
+~Desconectar los periféricos.
+}
+
+::SW03_07_EjemploInteraccion::¿Cuál de los siguientes es un ejemplo de interacción entre software y hardware?{
+=Una aplicación que utiliza el procesador para ejecutar una tarea.
+~Un monitor apagado.
+~Un cable de red desconectado.
+~Un pendrive vacío.
+}
+
+::SW03_08_SinSoftwareHardware::Sin el software de sistema y de aplicación…{
+=El hardware no podría realizar tareas útiles para el usuario.
+~El equipo funcionaría exactamente igual.
+~Solo fallaría la impresión.
+~Se perdería la conexión a Internet.
+}
+
+::SW03_09_Roles::Relaciona correctamente: el __________ gestiona la memoria y los __________ permiten utilizar periféricos.{
+=Sistema operativo / drivers.
+~Antivirus / compresores.
+~Driver / sistemas operativos.
+~Programa de limpieza / antivirus.
+}
+
+::SW03_10_SanidadHistoria::Para que el personal pueda consultar la historia clínica electrónica necesitan funcionar juntos…{
+=El sistema operativo, las aplicaciones sanitarias y el hardware del equipo.
+~Solo el monitor y el teclado.
+~Únicamente el antivirus.
+~Solo el compresor de archivos.
+}
+
+::SW03_11_VerdaderoFalso::El software puede funcionar por completo sin ningún tipo de hardware.{F}
+
+::SW03_12_VerdaderoFalso::Los antivirus protegen el sistema operativo y los archivos del equipo frente al malware.{T}
+
+::SW03_13_Resumen::La relación entre software y hardware puede resumirse como…{
+=Dependencia mutua: el software necesita al hardware para ejecutarse y el hardware necesita al software para funcionar.
+~Independencia total entre ambos.
+~Sustitución completa del hardware por software.
+~Competencia comercial entre fabricantes.
+}
+
+::SW03_14_FallaDriverGrafica::Si falla el driver de la tarjeta gráfica, el problema más probable es que…{
+=No se muestren correctamente las imágenes en pantalla.
+~El equipo se quede sin electricidad.
+~Se impriman documentos por sí solos.
+~Se borren los archivos del usuario.
+}
