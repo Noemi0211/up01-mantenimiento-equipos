@@ -17,12 +17,18 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 | 1 | 00 · Introducción y elementos curriculares | ✅ COMPLETADA (1 imagen general integrada) |
 | 2 | 01 · Hardware | ✅ COMPLETADA (contenido + GIFT + guía Aules + 24 imágenes + navegación `.page-nav` conectada con Aules) |
 | 2b | Bloque práctico: Hardware básico de un puesto de trabajo administrativo sanitario | ✅ COMPLETADA (`practico-hardware/` · actividades autocorregibles con `js/actividades.js` + 3 bancos GIFT `PR-01.1…PR-01.3` + soluciones PDF desbloqueables por apartado + tarjeta de acceso en 01-hardware) |
-| 3 | 02 · Software | ✅ COMPLETADA (teoría `02-software/` + 5 bancos GIFT + guía Aules + inventario · SIN imágenes, no hay archivos en la fuente · `.page-nav` → Cuestionario teórico SW · **bloque práctico `practico-software/` pendiente**) |
+| 3 | 02 · Software | ✅ COMPLETADA (teoría `02-software/` + 5 bancos GIFT + guía Aules + inventario · SIN imágenes, no hay archivos en la fuente · `.page-nav` → Cuestionario teórico SW · **bloque práctico `practico-software/` COMPLETADO** con 3 bancos GIFT `PR-01.4…PR-01.6` + guía Aules + inventario) |
 | 4 | 03 · Ciberseguridad | ⏳ PENDIENTE |
 | 5 | 04 · Redes locales (LAN) | ⏳ PENDIENTE |
 | 6 | 05 · Acceso a Internet | ⏳ PENDIENTE |
 
 **Regla de fases:** se genera UN bloque por fase. Al terminar una fase, detener la generación y esperar instrucciones del usuario.
+
+> **Próximo paso (punto de reanudación, 20-09-2026):** la Fase 3 (02 · Software,
+> teoría + bloque práctico) está **completada**. La siguiente fase pendiente es la
+> **Fase 4 · 03 · Ciberseguridad**. Antes de generarla, confirmar con la profesora la
+> numeración real de sus quizzes prácticos (ver nota de `PR-01.4…PR-01.6` en §14),
+> ya que los de software se llamaron `PR-01.4…6` y no `PR-02.x`.
 
 ### Publicación y git
 
@@ -70,8 +76,8 @@ Apuntes 26-27/
 - Widgets interactivos del bloque práctico: `.baraja`/`.flash` (tarjetas volteables), `.match` (emparejados), `.test` (autoevaluación), `.escenario`, `.checklist`, `.orden`, `.inventario` y `.soluciones-panel`. Estilos en `css/estilos.css`.
 - `js/navegacion.js` — menú móvil, scroll-spy, TOC automático, volver arriba, **lightbox de imágenes** y protección ligera contra copia (bloquea `copy`/`cut`/clic derecho/arrastre/selección; permite `input`/`textarea`).
 - **Lightbox:** se inicializa una sola vez por delegación de eventos en `document` (así cubre también las imágenes generadas dinámicamente por `actividades.js`). Amplía cualquier `<img>` salvo las que estén **dentro de un `<button>` o de `.baraja`**, para no interferir con la baraja que se voltea, los emparejados ni las opciones de los tests. Cierre con ✕, clic en el fondo o `Esc`. Cursor `zoom-in` en `.image-figure img`, `.image-card img`, `.test__prompt img` y `.soluciones-panel img`.
-- `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`…). Solo se ejecuta en la página que los incluye. Los PDF que se desbloquean al completar una actividad perfecta (tablas resueltas, puertos, verificación e inventario) se generan con `abrirImpresion(título, html)`: ventana de impresión con cabecera (título + «UP01 · Mantenimiento básico de equipos · Bloque práctico» + fecha), tablas con `thead` repetido y salto de página controlado, y la leyenda al pie: **«Material para el aula de Ofimática generado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0»**.
-- La tabla de respuestas resueltas se desbloquea con un test perfecto; el panel de soluciones de puertos (`#soluciones-puertos`) con escenarios y emparejado perfectos; el de verificación (`#soluciones-verificacion`) con checklist y orden perfectos. Cada desbloqueo se guarda en `localStorage` (`up01-practico-{rec,puertos,verificacion}-ok`).
+- `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`… y los contenedores del bloque práctico de software: `#baraja-soft`, `#empareja-funciones`, `#ponte-a-prueba-soft`, `#escenarios-soft`, `#empareja-apps`, `#checklist-soft`, `#orden-soft`, `#inventario-soft`, `#soluciones-soft-rec/-so/-config`). Solo se ejecuta en la página que los incluye. Los widgets HW están **parametrizados** (`iniciarBaraja(contenedor, deck)`, `iniciarEscenarios(contenedor, datos, msjBad, onCompletos)`, `iniciarChecklist(contenedor, datos, msjOk, onCompletos)`, `iniciarOrden(contenedor, datos, msjIntro, msjOk, msjFallo, onCompletos)`, `iniciarInventario(contenedor, datos, tituloPdf)`); SW añade `iniciarTestSoft` (modos delim/tipo/función/tarea). La baraja admite frontal de imagen o de texto (`.baraja__cara--txt` + `.baraja__chip`). Los PDF que se desbloquean al completar una actividad perfecta (tablas resueltas, puertos, verificación e inventario) se generan con `abrirImpresion(título, html)`: ventana de impresión con cabecera (título + «UP01 · Mantenimiento básico de equipos · Bloque práctico» + fecha), tablas con `thead` repetido y salto de página controlado, y la leyenda al pie: **«Material para el aula de Ofimática generado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0»**.
+- La tabla de respuestas resueltas se desbloquea con un test perfecto; el panel de soluciones de puertos (`#soluciones-puertos`) con escenarios y emparejado perfectos; el de verificación (`#soluciones-verificacion`) con checklist y orden perfectos. Cada desbloqueo se guarda en `localStorage` (`up01-practico-{rec,puertos,verificacion}-ok`). Software: `up01-practico-soft-{rec,so,config}-ok` (rec → test perfecto; so → escenarios + emparejado; config → checklist + orden).
 - **Botones `.btn--ghost` sobre fondos oscuros:** en `.callout--key` y `.soluciones-panel__cab` (fondo `--ink`), el `btn--ghost` por defecto tiene texto `--ink` y sería invisible («caja vacía»). Estos contextos deben llevar estilos propios: texto blanco, borde translúcido `rgba(255,255,255,0.4)` y hover con fondo `rgba(255,255,255,0.12)`.
 - `templates/plantilla-base.html` — marcadores `[[TITULO_PAGINA]]`, `[[CONTENIDO]]`, `[[NAV_INTERNA]]`, `[[URL_RAIZ]]`.
 
@@ -146,7 +152,8 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 > actualmente muestran **todas** las preguntas del banco (la profesora no los
 > configuró como aleatorios); cómo se repartirán de cara al examen es una
 > decisión pendiente de la profesora. No reflejarlo en el contenido dirigido al
-> alumnado (ver §11).
+> alumnado (ver §11). Aplicable también a los PR-01.4…6 de software (pendiente de
+> confirmar con la profesora).
 
 ## 10 · Verificación antes de terminar
 
@@ -171,6 +178,7 @@ Evitar párrafos largos y lenguaje académico excesivo. Microcontenidos.
 - Ejemplo de bloque completo: `00-introduccion-elementos-curriculares/` (index.md + index.html + inventario)
 - Ejemplo de bloque con cuestionarios: `01-hardware/` (index.md + index.html + inventario + `cuestionarios/`)
 - Ejemplo de bloque práctico con actividades interactivas: `practico-hardware/` (index.md + index.html + inventario + `cuestionarios/` + widgets `js/actividades.js`)
+- Segundo ejemplo de bloque práctico (mismos widgets parametrizados, con contenidos propios y sin imágenes nuevas): `practico-software/`
 - Inventario global: `inventario-imagenes/inventario-general.md`
 - Estilos y JS compartidos: `css/estilos.css`, `js/navegacion.js`, `js/actividades.js`
 
@@ -204,12 +212,15 @@ images/
 |---|---|---|
 | 00 · Introducción | 1 | Presentación (figura centrada, `generales/distribucion-componentes.png`) |
 | 01 · Hardware | 24 | Tarjetas `.image-card` y figura `.image-figure` en los apartados 1–9 |
+| 02 · Software (teoría + prácticas) | 0 nuevas | Sin archivos en la fuente; la baraja del práctico reutiliza `images/hardware/` (monitor, teclado, cpu, memoria-ram, hdd) y el resto del software usa frontal de texto (`.chip`) |
 
 ### Imágenes pendientes
 
-- Software, ciberseguridad, redes e Internet: sin archivos disponibles en la
-  carpeta fuente; se integrarán cuando esos bloques se generen (categorías
-  `software/`, `ciberseguridad/`, `redes/`, `internet/`).
+- Ciberseguridad, redes e Internet: sin archivos disponibles en la carpeta
+  fuente; se integrarán cuando esos bloques se generen (categorías
+  `ciberseguridad/`, `redes/`, `internet/`). El bloque de software (teoría y
+  prácticas) quedó **sin imágenes nuevas** (sin archivos en la fuente: la baraja
+  del práctico reutiliza `images/hardware/`; `software/` conserva `.gitkeep`).
 - No existe imagen real de «portada del módulo»; la presentación del bloque 00 usa
   la imagen general del sistema informático.
 
@@ -240,6 +251,10 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 | PR-01.3 Verificación del equipo (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11391627` |
 | Teoría de software (enlace «Bloque 02 · Software») | URL | `02-software/index.html` (GitHub Pages) |
 | Cuestionario teórico sobre el software | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081` |
+| Prácticas de software (Bloque práctico) | URL | `practico-software/index.html` (GitHub Pages) |
+| PR-01.4 Identificación de software y hardware (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229` |
+| PR-01.5 El sistema operativo y sus funciones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417230` |
+| PR-01.6 Personalización y configuración del sistema (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417231` |
 
 ### Estructura por apartados (teoría · cuestionario · prácticas)
 
@@ -249,7 +264,7 @@ en Aules, además del recorrido secuencial con «Siguiente» dentro del sitio:
 | Apartado | Teoría (URL) | Cuestionario (Quiz) | Prácticas (URL) |
 |---|---|---|---|
 | 01 · Hardware | `11225710` → `index.html` + `01-hardware/index.html` | `11291377` | `11397605` → `practico-hardware/index.html` (+ quizzes PR-01.1…3) |
-| 02 · Software | `02-software/index.html` (GitHub Pages) | `11402081` | Pendiente → `practico-software/index.html` (+ quizzes PR-02.1…3) |
+| 02 · Software | `02-software/index.html` (GitHub Pages) | `11402081` | `practico-software/index.html` (GitHub Pages) (+ quizzes PR-01.4…6) |
 
 La portada (`index.html`) solo muestra los apartados publicados como 3 tarjetas
 (teoría · cuestionario · prácticas). El bloque 00 (Introducción y elementos
@@ -269,6 +284,26 @@ controla los «Anterior/Siguiente» internos (portada, teoría y prácticas). Pa
 el «Siguiente» del quiz teórico lleve a las prácticas, coloca la actividad URL de
 prácticas justo después del quiz y activa en el quiz «Mostrar enlace a la siguiente
 actividad».
+
+**Orden de las actividades en Aules (apartado Software):**
+
+1. **Teoría de software** — URL → `02-software/index.html` (GitHub Pages).
+2. **Cuestionario teórico sobre el software** — Quiz `11402081`.
+3. **Prácticas de software** — URL → `practico-software/index.html`.
+4. **PR-01.4** Identificación de software y hardware — Quiz `11417229`.
+5. **PR-01.5** El sistema operativo y sus funciones — Quiz `11417230`.
+6. **PR-01.6** Personalización y configuración del sistema — Quiz `11417231`.
+
+> **Nota sobre la numeración:** los quizzes prácticos de software se llaman
+> `PR-01.4…PR-01.6` (no `PR-02.x`), porque la profesora los creó en Aules con esa
+> numeración continua del bloque práctico (los IDs reales son los de la tabla
+> anterior). Los bancos GIFT viven en `practico-software/cuestionarios/`
+> (`gift-practico-014-software-hardware.gift`, `gift-practico-015-sistema-operativo.gift`
+> y `gift-practico-016-configuracion.gift`; categorías `OFI/UP01/PR/01-4-software-hardware`,
+> `OFI/UP01/PR/01-5-sistema-operativo`, `OFI/UP01/PR/01-6-configuracion`).
+> El bloque práctico de software **no usa imágenes nuevas**: los elementos de
+> software se representan con frontal de texto (.chip) y los componentes hardware
+> reutilizan `images/hardware/`.
 
 ### Plantilla de apartado (replicar en Software y siguientes)
 
@@ -290,7 +325,7 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - Teoría: `01-hardware/` → `02-software/`
 - Prácticas: `practico-hardware/` → `practico-software/`
 - Bancos GIFT teoría: `OFI/UP01/HW/…` → `OFI/UP01/SW/…`
-- Cuestionarios prácticos: `PR-01.1…PR-01.3` → `PR-02.1…PR-02.3` (categorías `OFI/UP01/PR/…`)
+- Cuestionarios prácticos: `PR-01.1…PR-01.3` → para Software se usó la numeración que la profesora creó en Aules (continua del práctico): `PR-01.4…PR-01.6`. Para bloques futuros, confirmar con la docente la numeración real antes de generar los bancos.
 - Cuestionario teórico del bloque (quiz final en la web de teoría): `Cuestionario_1_1_<Bloque>`
   (p. ej. `Cuestionario_1_1_Hardware` → quiz `11291377`; `Cuestionario_1_1_Software` → quiz `11402081`).
 
@@ -315,8 +350,9 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - **index.html (Portada):** «Anterior» → Cuestionario sobre la presentación (Aules) · «Siguiente» → Apartado 01 · Hardware (salta el bloque 00).
 - **00 · Guía curricular (fuera del recorrido):** «Anterior» → Portada · «Siguiente» → Hardware (acceso opcional desde la portada/sidebar).
 - **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el hardware (Aules).
-- **02 · Software:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el software (Aules `11402081`). Su sidebar incluye la sección «Apartado 02 · Software» con el cuestionario teórico (los enlaces de prácticas se añadirán cuando exista `practico-software/`).
+- **02 · Software:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el software (Aules `11402081`). Su sidebar incluye la sección «Apartado 02 · Software» con la teoría, el cuestionario teórico (`11402081`), el bloque práctico y los quizzes PR-01.4…6.
 - **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Cada actividad enlaza **solo su propio** «Cuestionario en Aules» (sin botón hacia el siguiente quiz antes de trabajar sus contenidos), y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes. Su sidebar incluye la sección «Apartado 01 · Hardware» (teoría, cuestionario teórico y PR-01.1…3).
+- **practico-software (Prácticas):** «Anterior» → Cuestionario teórico sobre el software (Aules `11402081`) · «Siguiente» → PR-01.4 (Aules `11417229`). Mismo patrón que `practico-hardware`: cada actividad enlaza solo su «Cuestionario en Aules», la autoevaluación enlaza PR-01.4…6 y su sidebar incluye la sección «Apartado 02 · Software». Widgets con contenedores propios (`#baraja-soft`, `#empareja-funciones`, `#ponte-a-prueba-soft`, `#escenarios-soft`, `#empareja-apps`, `#checklist-soft`, `#orden-soft`, `#inventario-soft` y los paneles `#soluciones-soft-rec/-so/-config`) inicializados en `js/actividades.js` con claves de desbloqueo `up01-practico-soft-{rec,so,config}-ok`; `actividades.js` reutiliza las mismas funciones de widgets parametrizadas con los datos de software, y la baraja soporta tarjetas de texto (`.baraja__cara--txt`) para el software.
 
 ### Regla para futuros bloques
 

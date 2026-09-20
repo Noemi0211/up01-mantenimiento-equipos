@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque práctico: software y configuración básica de un puesto de trabajo administrativo sanitario. Identificación de software, el sistema operativo y personalización del sistema. UP01 Mantenimiento básico de equipos.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque práctico · Software y configuración básica · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="../02-software/index.html"><span>02</span> Software</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#practico-intro">0 · Cómo funciona este bloque</a>
+          <a class="sidebar__link" href="#actividad-1-software-hardware">1 · Identificación de software y hardware</a>
+          <a class="sidebar__link" href="#actividad-2-sistema-operativo">2 · El sistema operativo y sus funciones</a>
+          <a class="sidebar__link" href="#actividad-3-configuracion">3 · Personalización y configuración</a>
+          <a class="sidebar__link" href="#autoevaluacion">4 · Autoevaluación</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 02 · Software</div>
+          <a class="sidebar__link" href="../02-software/index.html">Teoría de software</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081" target="_blank" rel="noopener">Cuestionario teórico</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229" target="_blank" rel="noopener">PR-01.4 · Identificación de software</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417230" target="_blank" rel="noopener">PR-01.5 · El sistema operativo</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417231" target="_blank" rel="noopener">PR-01.6 · Configuración del sistema</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">UP01 · Mantenimiento básico de equipos · Bloque práctico</div>
+        <h1>Software y configuración básica de un puesto de trabajo administrativo sanitario</h1>
+        <p>Aplica lo que ya has estudiado: identifica software y hardware, reconoce el sistema operativo y sus funciones, personaliza un puesto de trabajo y elabora un inventario de software.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">Bloque práctico</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 0 · CÓMO FUNCIONA ============ -->
+      <section id="practico-intro">
+        <h2>0 · Cómo funciona este bloque</h2>
+        <p>Ya has estudiado la <strong>teoría del software</strong> (Bloque 02) y has hecho el cuestionario sobre el software. Aquí no se repite la teoría: solo se <strong>recuerdan brevemente</strong> las ideas necesarias para trabajar.</p>
+        <ul>
+          <li><strong>Software</strong> = el conjunto de programas e instrucciones que permiten que un ordenador realice tareas.</li>
+          <li><strong>Hardware</strong> = la parte física y tangible del sistema informático.</li>
+          <li><strong>Software de sistema</strong> = programa principal que gestiona el equipo: el <strong>sistema operativo</strong>, los <strong>controladores o drivers</strong> y las utilidades básicas.</li>
+          <li><strong>Software de aplicación</strong> = programas con los que realizas tareas concretas: ofimática (Word, Excel, Access, PowerPoint, Outlook) y <strong>aplicaciones sanitarias</strong> (historia clínica electrónica, gestión de citas…).</li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> aquí no se memoriza teoría nueva: se practica hasta distinguir el software del hardware, reconocer el sistema operativo y saber personalizar un puesto.</p>
+        </div>
+
+        <h3>Objetivos del bloque</h3>
+        <ul>
+          <li>Distinguir <strong>software y hardware</strong> y clasificar los programas por su <strong>tipo</strong>.</li>
+          <li>Reconocer el <strong>sistema operativo</strong> y las funciones de los <strong>controladores (drivers)</strong>.</li>
+          <li>Relacionar cada aplicación con su <strong>función</strong> y su <strong>tarea sanitaria</strong>.</li>
+          <li><strong>Personalizar y configurar</strong> los aspectos básicos de un puesto.</li>
+          <li><strong>Elaborar un inventario sencillo</strong> de software de un puesto.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Trabajarás las mismas situaciones de un servicio de Documentación y Administración Sanitarias: admisión, consultas, archivo y laboratorio.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Las actividades se <strong>autocorrigen en esta página</strong> y puedes repetirlas las veces que quieras.</p>
+        </div>
+      </section>
+
+      <!-- ============ 1 · IDENTIFICACIÓN ============ -->
+      <section id="actividad-1-software-hardware">
+        <h2>1 · Identificación de software y hardware</h2>
+        <p>Recordatorio breve: todo lo que <strong>se puede ver y tocar</strong> es hardware; todo lo que son <strong>programas e instrucciones</strong> es software. El software se divide en <strong>software de sistema</strong> (sistema operativo, drivers) y <strong>software de aplicación</strong> (ofimática, aplicaciones sanitarias).</p>
+
+        <h3>1.1 · Baraja de reconocimiento</h3>
+        <p>Fíjate en cada tarjeta: unas muestran la <strong>imagen</strong> de un componente hardware y otras el <strong>nombre</strong> de un programa. Haz clic sobre cada tarjeta para voltearla y ver su <strong>nombre, tipo y función</strong>.</p>
+        <div id="baraja-soft"></div>
+
+        <h3>1.2 · Relaciona cada programa con su función</h3>
+        <p>Une cada programa con la <strong>función</strong> que realiza. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-funciones"></div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> saber solo el nombre de un programa no basta: lo importante es <strong>para qué sirve en tu trabajo</strong>.</p>
+        </div>
+
+        <h3>1.3 · Ponte a prueba</h3>
+        <p>Autoevaluación de <strong>10 preguntas</strong> generadas al azar. Puedes repetirla <strong>tantas veces como quieras</strong>. Cuando la completes <strong>perfecta</strong>, se desbloqueará la tabla de <strong>respuestas resueltas</strong> para que la <strong>descargues en PDF</strong>.</p>
+        <div id="ponte-a-prueba-soft"></div>
+
+        <div class="soluciones-panel" id="soluciones-soft-rec" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Tabla de respuestas resueltas</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-soft-rec">Descargar tabla en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-soft-rec">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras practicar en esta página, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229" target="_blank" rel="noopener"><strong>«PR-01.4 Identificación de software y hardware»</strong></a> en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · SISTEMA OPERATIVO ============ -->
+      <section id="actividad-2-sistema-operativo">
+        <h2>2 · El sistema operativo y sus funciones</h2>
+        <p>Recordatorio breve: el <strong>sistema operativo</strong> (Windows, Linux, macOS…) es el programa que <strong>gestiona el equipo</strong>: arranca el ordenador, administra los recursos y permite ejecutar las aplicaciones. Los <strong>controladores o drivers</strong> hacen de puente entre el sistema y cada dispositivo (impresora, escáner, tarjeta gráfica…).</p>
+
+        <h3>2.1 · Resuelve qué software interviene</h3>
+        <p>Te planteamos <strong>situaciones reales</strong> de un puesto sanitario. Decide qué <strong>elemento de software</strong> es el responsable en cada una y comprueba tu respuesta.</p>
+        <div id="escenarios-soft"></div>
+
+        <h3>2.2 · Une cada aplicación con su tarea sanitaria</h3>
+        <p>Ahora cambiamos la mecánica: <strong>empareja</strong> cada aplicación con la <strong>tarea administrativo-sanitaria</strong> que resuelve. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-apps"></div>
+
+        <p class="practica__intro">Cuando completes correctamente los 8 escenarios y el emparejado, se desbloquearán las <strong>soluciones en PDF</strong> del sistema operativo y sus funciones.</p>
+
+        <div class="soluciones-panel" id="soluciones-soft-so" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Soluciones · El sistema operativo y sus funciones</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-soft-so">Descargar soluciones en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-soft-so">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> reconocer qué programa se usa en cada momento del trabajo sanitario agiliza la gestión del servicio.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> cuando domines la actividad, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417230" target="_blank" rel="noopener"><strong>«PR-01.5 El sistema operativo y sus funciones»</strong></a> en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · CONFIGURACIÓN ============ -->
+      <section id="actividad-3-configuracion">
+        <h2>3 · Personalización y configuración del sistema</h2>
+        <p>Recordatorio breve: antes de ponerse a trabajar conviene <strong>dejar el puesto a tu medida</strong> y ordenado: fecha y hora, resolución de pantalla, fondo de escritorio, accesos directos y una carpeta de trabajo para la documentación.</p>
+
+        <h3>3.1 · Checklist de configuración</h3>
+        <p>Marca uno a uno los pasos de la <strong>personalización del puesto</strong>. Cuando completes todos, el sistema queda <strong>listo y personalizado</strong>. Si dudas sobre cómo realizar alguna comprobación, pulsa <strong>«¿Cómo lo compruebo?»</strong> en el paso correspondiente.</p>
+        <div id="checklist-soft"></div>
+
+        <div class="callout callout--health">
+          <p>Si algo no responde durante la configuración (aplicación que no abre, resolución incorrecta…), no se fuerza: se <strong>registra la incidencia</strong> y se avisa al servicio de mantenimiento. En nuestro aula harás lo mismo: <strong>anota la incidencia en la hoja que te proporcionará la profesora</strong>. Según el protocolo del centro, será la profesora quien tramite y registre la incidencia.</p>
+        </div>
+
+        <h3>3.2 · Ordena los pasos</h3>
+        <p>Coloca los pasos de la <strong>personalización y configuración de un sistema</strong> en el orden correcto. Pulsa las fichas en orden: 1 → 2 → 3…</p>
+        <div id="orden-soft"></div>
+
+        <p class="practica__intro">Cuando completes el checklist entero y ordenes correctamente los pasos, se desbloquearán las <strong>soluciones en PDF</strong> de la configuración del sistema.</p>
+
+        <div class="soluciones-panel" id="soluciones-soft-config" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Soluciones · Personalización y configuración del sistema</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-soft-config">Descargar soluciones en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-soft-config">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <h3>3.3 · Inventario de software</h3>
+        <p>Un <strong>inventario de software</strong> es la relación de los <strong>programas</strong> presentes en un puesto. Marca los grupos de software que has encontrado en el equipo y <strong>genera el inventario</strong>: podrás descargarlo en PDF. Este movimiento forma parte del mantenimiento básico del puesto.</p>
+        <div id="inventario-soft"></div>
+
+        <div class="callout callout--summary">
+          <p>Personalizar + configurar + inventariar el software = un puesto ordenado y mantenimiento básico responsable de cualquier servicio sanitario.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> al terminar, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417231" target="_blank" rel="noopener"><strong>«PR-01.6 Personalización y configuración del sistema»</strong></a> en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. <strong>Con este cuestionario finaliza el bloque práctico.</strong></p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · AUTOEVALUACIÓN ============ -->
+      <section id="autoevaluacion">
+        <h2>4 · Autoevaluación</h2>
+        <p>A continuación encontrarás unas <strong>sencillas actividades de evaluación</strong> en Aules. Su resultado se reflejará automáticamente en la <strong>calificación de la sección práctica sobre el software</strong>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Cuestionario</th><th>Contenidos</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229" target="_blank" rel="noopener"><strong>PR-01.4</strong> Identificación de software y hardware</a></td><td>Software, hardware y tipos de software</td></tr>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417230" target="_blank" rel="noopener"><strong>PR-01.5</strong> El sistema operativo y sus funciones</a></td><td>Sistema operativo, drivers y sus funciones</td></tr>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417231" target="_blank" rel="noopener"><strong>PR-01.6</strong> Personalización y configuración del sistema</a></td><td>Personalización, configuración e inventario de software</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Practica las veces que necesites en esta página y demuestra tu dominio en los cuestionarios de Aules: ¡tu mejor nota es la que cuenta!</p>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081" target="_blank" rel="noopener">
+          <small>Anterior</small>
+          ← Cuestionario teórico sobre el software
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229" target="_blank" rel="noopener">
+          <small>Siguiente</small>
+          PR-01.4 Identificación de software y hardware →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+  <script src="../js/actividades.js"></script>
+</body>
+</html>

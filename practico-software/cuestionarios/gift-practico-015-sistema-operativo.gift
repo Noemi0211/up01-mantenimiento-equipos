@@ -1,0 +1,91 @@
+$CATEGORY: OFI/UP01/PR/01-5-sistema-operativo
+
+::SWPR015_01_DefinicionSO::El programa principal que gestiona el equipo y actúa de intermediario entre el hardware y el usuario es…{
+=El sistema operativo~El procesador de textos~La hoja de cálculo~El controlador de la impresora
+}
+
+::SWPR015_02_EjemploSO::¿Cuál de los siguientes es un sistema operativo?{
+=Linux~Microsoft Word~Microsoft Excel~Microsoft PowerPoint
+}
+
+::SWPR015_03_FuncionSO::Una función del sistema operativo es…{
+=Gestionar los recursos del equipo y ejecutar aplicaciones~Redactar informes médicos~Enviar correos electrónicos~Digitalizar documentos
+}
+
+::SWPR015_04_GestionRAM::El sistema operativo gestiona la memoria RAM; esto es un ejemplo de…{
+=Interacción entre software y hardware~Fallo del sistema~Utilidad de red~Periférico de salida
+}
+
+::SWPR015_05_SinSO::Sin sistema operativo, un ordenador…{
+=No podría utilizar aplicaciones ni interactuar con el hardware con normalidad~Solo sería más lento~Imprimiría más rápido~Funcionaría solo con el monitor
+}
+
+::SWPR015_06_DriverDefinicion::El programa que permite que el sistema operativo se comunique con un dispositivo es…{
+=El controlador o driver~El antivirus~La hoja de cálculo~El procesador de textos
+}
+
+::SWPR015_07_ImpresoraDriver::Si falta el controlador de la impresora,…{
+=El sistema podría no reconocerla ni permitir su uso~Imprimiría más rápido~El equipo no arrancaría~Se borrarían los archivos
+}
+
+::SWPR015_08_Arranque::Al encender el equipo, lo primero que carga es…{
+=El sistema operativo~La hoja de cálculo~El correo electrónico~La base de datos
+}
+
+::SWPR015_09_AppSobreSO::Las aplicaciones se ejecutan sobre…{
+=El sistema operativo~El controlador del monitor~El cable de red~El lector de tarjetas
+}
+
+::SWPR015_10_Archivos::La organización de archivos y carpetas la gestiona…{
+=El sistema operativo~La hoja de cálculo~El proyector~El altavoz
+}
+
+::SWPR015_11_Multitarea::Poder tener varias aplicaciones sanitarias abiertas a la vez es posible gracias a…{
+=El sistema operativo~La impresora~El escáner~El lector de tarjetas
+}
+
+::SWPR015_12_Resolucion::La resolución de pantalla la controla principalmente…{
+=El controlador de la tarjeta gráfica~El procesador de textos~El correo electrónico~La base de datos
+}
+
+::SWPR015_13_EscanerDriver::Para que un escáner digitalice un consentimiento informado,…{
+=El sistema necesita su controlador instalado~Basta con el monitor~Basta con una hoja de cálculo~Se necesita el antivirus
+}
+
+::SWPR015_14_DriverGraficaImagen::Un monitor con imagen borrosa puede deberse a…{
+=Un controlador de tarjeta gráfica incorrecto~Una hoja de cálculo abierta~Un correo sin leer~Un documento mal guardado
+}
+
+::SWPR015_15_VFSO_Software::El sistema operativo es un software, no un hardware.{T}
+
+::SWPR015_16_VFDriversSO::Los drivers permiten que el sistema operativo se comunique con los dispositivos.{T}
+
+::SWPR015_17_VFOficinaSO::Excel, Access y PowerPoint son sistemas operativos.{F}
+
+::SWPR015_18_QueIniciaSO::El elemento que coordina el arranque del equipo hasta llegar al escritorio es…{
+=El sistema operativo~El proyector~El altavoz~El lector de códigos
+}
+
+::SWPR015_19_DriverTipo::Un driver o controlador pertenece al…{
+=Software de sistema~Software de aplicación~Hardware externo~Grupo de presentaciones
+}
+
+::SWPR015_20_ImpresoraNoDetecta::Al conectar una impresora nueva que el sistema no detecta, lo más probable es que…{
+=Falte su controlador o driver~El monitor esté apagado~El ordenador no tenga disco duro~La red esté saturada
+}
+
+::SWPR015_21_SanidadSO::En un centro sanitario, el sistema operativo permite…{
+=Usar las aplicaciones sanitarias y los periféricos del puesto~Sustituir al personal administrativo~Imprimir sin controlador~Eliminar la necesidad de red
+}
+
+::SWPR015_22_AppEjecuta::Para ejecutar la aplicación de gestión de citas hace falta…{
+=Un sistema operativo funcionando~Un proyector encendido~Un altavoz conectado~Una tarjeta gráfica imposible
+}
+
+::SWPR015_23_HardwareIntermediario::El programa que hace de intermediario entre el hardware y el usuario es…{
+=El sistema operativo~El procesador de textos~La base de datos~El compresor de archivos
+}
+
+::SWPR015_24_VFSincDriver::Un escáner puede funcionar sin su controlador instalado.{F}
+
+::SWPR015_25_VFAppSistema::Las aplicaciones se instalan y ejecutan gracias al sistema operativo que las gestiona.{T}

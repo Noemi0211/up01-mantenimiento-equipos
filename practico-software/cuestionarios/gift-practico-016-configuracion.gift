@@ -1,0 +1,89 @@
+$CATEGORY: OFI/UP01/PR/01-6-configuracion
+
+::SWPR016_01_PersonalizarFondo::Para cambiar el fondo de escritorio se accede a…{
+=Personalizar (clic derecho sobre el escritorio)~Disco duro~Papelera de reciclaje~Administrador de tareas
+}
+
+::SWPR016_02_Resolucion::Para mejorar la nitidez de la pantalla se ajusta…{
+=La resolución de pantalla~El fondo de escritorio~La papelera~El protector de pantalla
+}
+
+::SWPR016_03_FechaHora::La fecha y la hora del sistema se ajustan desde…{
+=Configuración (Hora e idioma)~La papelera de reciclaje~El escritorio~El explorador de archivos
+}
+
+::SWPR016_04_BarraTareas::Las aplicaciones de uso frecuente se fijan en…{
+=La barra de tareas~El disco de arranque~La papelera~El monitor
+}
+
+::SWPR016_05_CarpetaTrabajo::Para guardar la documentación del servicio es recomendable…{
+=Crear una carpeta de trabajo organizada~Guardar todo en el escritorio sin orden~Vaciarse la papelera~Desinstalar las aplicaciones
+}
+
+::SWPR016_06_AccesoDirecto::Un acceso directo sirve para…{
+=Abrir rápidamente una aplicación o archivo~Eliminar programas~Cambiar la resolución~Reparar el hardware
+}
+
+::SWPR016_07_VaciaPapelera::Vaciar la papelera de reciclaje permite…{
+=Liberar espacio y eliminar archivos temporales~Instalar un sistema operativo~Conectar una impresora~Cambiar el idioma del teclado
+}
+
+::SWPR016_08_ConfigGuardar::Al personalizar el sistema, los cambios…{
+=Se guardan automáticamente y aplican en la sesión actual~Se pierden siempre al reiniciar~Requieren una tarjeta gráfica nueva~No afectan al equipo
+}
+
+::SWPR016_09_OrganizarEscritorio::Para tener un puesto ordenado conviene…{
+=Organizar iconos y accesos directos en el escritorio~Instalar todo tipo de programas~Apagar el equipo cada hora~Eliminar la barra de tareas
+}
+
+::SWPR016_10_SalirSesion::Para aplicar algunos cambios de configuración puede ser necesario…{
+=Reiniciar o cerrar y volver a abrir la sesión~Formatear el disco duro~Cambiar la placa base~Desinstalar el sistema operativo
+}
+
+::SWPR016_11_ProtectorPantalla::El protector de pantalla se usa para…{
+=Evitar que la pantalla se queme y protegerla en ausencias~Cambiar el sistema operativo~Aumentar la memoria RAM~Conectar periféricos
+}
+
+::SWPR016_12_TemaPersonalizacion::El conjunto fondo, colores y sonidos se denomina…{
+=Tema de personalización~Inventario de software~Utilidad de red~Controlador de dispositivo
+}
+
+::SWPR016_13_ExploradorArchivos::Para crear carpetas y organizar documentos se utiliza…{
+=El explorador de archivos~El protector de pantalla~El fondo de escritorio~La tarjeta gráfica
+}
+
+::SWPR016_14_AnclarApp::Anclar una aplicación a la barra de tareas significa…{
+=Fijarla para acceder a ella rápidamente~Desinstalarla del equipo~Eliminar sus archivos~Bloquear su uso
+}
+
+::SWPR016_15_VerificarConfiguracion::Después de configurar el puesto conviene…{
+=Comprobar que las aplicaciones abren y el equipo funciona~Olvidarse de la configuración~Encender y apagar sin revisar~Cambiar la contraseña
+}
+
+::SWPR016_16_VFEsperarGuardado::Algunos cambios de configuración tardan en aplicarse y conviene reiniciar si es necesario.{T}
+
+::SWPR016_17_VFPersonalizacion::Personalizar el sistema solo sirve para decorar y no afecta al trabajo.{F}
+
+::SWPR016_18_VFAccesoDirecto::Un acceso directo duplica el programa en el disco duro.{F}
+
+::SWPR016_19_VFOrganizacionCarpetas::Dejar ordenadas las carpetas de trabajo facilita encontrar la documentación sanitaria.{T}
+
+::SWPR016_20_PuestoConfigurado::Un puesto sanitario correctamente configurado debería…{
+=Tener las aplicaciones necesarias ordenadas y funcionando~Tener todos los iconos por todas partes~Deshabilitar la barra de tareas~Eliminar la carpeta de trabajo
+}
+
+::SWPR016_21_ResolucionParaQue::Ajustar la resolución de pantalla sirve para…{
+=Ver con nitidez y comodidad los documentos y aplicaciones~Acumular archivos temporales~Ver la barra de tareas~Reparar la placa base
+}
+
+::SWPR016_22_CambioConfiguracion::Antes de anunciar un problema de configuración…{
+=Se comprueba el equipo y se registra la incidencia~Se apaga todo sin revisar~Se desinstalan todas las aplicaciones~Se formatea el equipo
+}
+
+::SWPR016_23_IconoEscritorio::Los iconos del escritorio representan…{
+=Accesos a programas, archivos o carpetas~Metas del sistema de refrigeración~Puertos físicos~Componentes internos
+}
+
+::SWPR016_24_VFBarraTareasActualiza::Anclar aplicaciones en la barra de tareas agiliza el trabajo diario del administrativo sanitario.{T}
+
+::SWPR016_25_VFResolucionObligatoria::Cambiar la resolución de pantalla obliga siempre a formatear el disco duro.{F}

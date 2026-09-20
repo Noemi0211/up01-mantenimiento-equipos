@@ -24,9 +24,9 @@ Cada apartado consta de tres bloques independientes: **teoría**, **cuestionario
 
 - 📘 [**Teoría del apartado**](02-software/index.html) — Elementos de software: qué es el software, tipos (sistema, aplicación y utilidades) y su interacción con el hardware.
 - 🧩 [**Cuestionario teórico sobre el software**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081) — Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
-- 🧰 **Prácticas del apartado** — En preparación (mismo esquema que el bloque de hardware).
+- 🧰 [**Prácticas del apartado**](practico-software/index.html) — Actividades autocorregibles: identificación de software y hardware, el sistema operativo y sus funciones, y personalización del sistema, con soluciones en PDF.
 
-> 💡 **Idea clave:** los apartados **Ciberseguridad, Redes locales (LAN) y Acceso a Internet** se publicarán de forma progresiva con el mismo esquema: **teoría · cuestionario · prácticas**. Las prácticas de Software llegarán próximamente.
+> 💡 **Idea clave:** los apartados **Ciberseguridad, Redes locales (LAN) y Acceso a Internet** se publicarán de forma progresiva con el mismo esquema: **teoría · cuestionario · prácticas**.
 
 ## Guía curricular
 

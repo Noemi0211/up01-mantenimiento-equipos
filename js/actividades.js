@@ -1,7 +1,7 @@
 /* ============================================================
    Material para el módulo de Ofimática · Creado por Noemí Celaya Mingot con ayuda de la IA
    JS de actividades autocorregibles · CC BY-NC-SA 4.0
-   Bloque práctico: hardware básico de un puesto
+   Bloque práctico: hardware básico y software de un puesto
    de trabajo administrativo sanitario
    ============================================================ */
 
@@ -12,6 +12,9 @@
   var CLAVE_REC = "up01-practico-rec-ok";
   var CLAVE_PUERTOS = "up01-practico-puertos-ok";
   var CLAVE_VERIF = "up01-practico-verificacion-ok";
+  var CLAVE_SW_REC = "up01-practico-soft-rec-ok";
+  var CLAVE_SW_SO = "up01-practico-soft-so-ok";
+  var CLAVE_SW_CONFIG = "up01-practico-soft-config-ok";
 
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
@@ -163,15 +166,106 @@
     { g: "Puertos presentes", items: ["USB-A", "USB-B", "USB-C", "RJ45", "HDMI", "Jack audio"] }
   ];
 
+  /* -------------------- DATOS · SOFTWARE -------------------- */
+
+  var SW_DECK = [
+    { img: "monitor.png", nom: "Monitor", tipo: "Hardware", funcion: "Muestra visualmente la información procesada.", tarea: "Consultar historias clínicas e informes en pantalla." },
+    { img: "teclado.png", nom: "Teclado", tipo: "Hardware", funcion: "Introduce texto, números y comandos.", tarea: "Registrar datos de pacientes, redactar informes y gestionar citas." },
+    { img: "cpu.png", nom: "Procesador (CPU)", tipo: "Hardware", funcion: "Ejecuta instrucciones y realiza cálculos.", tarea: "Ejecutar la gestión de pacientes y las historias clínicas." },
+    { img: "memoria-ram.png", nom: "Memoria RAM", tipo: "Hardware", funcion: "Memoria de trabajo temporal y muy rápida.", tarea: "Mantener varias aplicaciones sanitarias abiertas a la vez." },
+    { img: "hdd.png", nom: "Disco duro (HDD)", tipo: "Hardware", funcion: "Guarda grandes volúmenes de datos a bajo coste.", tarea: "Guardar documentación e historias clínicas del servicio." },
+    { chip: "Windows", nom: "Sistema operativo (Windows)", tipo: "Software de sistema", funcion: "Gestiona el equipo y hace de intermediario entre el hardware y el usuario.", tarea: "Arrancar el puesto y ejecutar las aplicaciones sanitarias." },
+    { chip: "Driver impresora", nom: "Controlador de impresora", tipo: "Software de sistema", funcion: "Permite que el sistema use la impresora.", tarea: "Imprimir recetas, informes, etiquetas y listados." },
+    { chip: "Driver escáner", nom: "Controlador de escáner", tipo: "Software de sistema", funcion: "Conecta el sistema con el escáner.", tarea: "Digitalizar consentimientos informados y documentación." },
+    { chip: "Driver gráfica", nom: "Controlador de tarjeta gráfica", tipo: "Software de sistema", funcion: "Configura la calidad de imagen en pantalla.", tarea: "Visualizar con nitidez imágenes médicas y radiografías." },
+    { chip: "Word", nom: "Procesador de textos (Word)", tipo: "Software de aplicación", funcion: "Crea y modifica documentos de texto.", tarea: "Redactar informes, comunicaciones y documentos administrativos." },
+    { chip: "Excel", nom: "Hoja de cálculo (Excel)", tipo: "Software de aplicación", funcion: "Organiza datos y realiza cálculos.", tarea: "Elaborar listados y estadísticas de citas y pacientes." },
+    { chip: "Access", nom: "Base de datos (Access)", tipo: "Software de aplicación", funcion: "Almacena y consulta información estructurada.", tarea: "Gestionar pacientes, historiales y recursos del centro." },
+    { chip: "PowerPoint", nom: "Presentaciones (PowerPoint)", tipo: "Software de aplicación", funcion: "Crea presentaciones visuales.", tarea: "Formar al personal y presentar proyectos del servicio." },
+    { chip: "Outlook", nom: "Correo y agenda (Outlook)", tipo: "Software de aplicación", funcion: "Comunicación y organización profesional.", tarea: "Coordinar al equipo y gestionar avisos y reuniones." },
+    { chip: "Historia clínica", nom: "Historia clínica electrónica", tipo: "Software de aplicación sanitaria", funcion: "Aplicación sanitaria de gestión clínica.", tarea: "Acceso seguro a la información clínica del paciente." },
+    { chip: "Gestión de citas", nom: "Gestión de citas", tipo: "Software de aplicación sanitaria", funcion: "Reserva y administra citas de pacientes.", tarea: "Asignar, consultar y recordar citas en el servicio." }
+  ];
+
+  var SW_FUNCIONES = [
+    { a: "Sistema operativo (Windows)", b: "Gestionar el equipo y hacer de intermediario entre hardware y usuario" },
+    { a: "Procesador de textos (Word)", b: "Crear y modificar documentos de texto" },
+    { a: "Hoja de cálculo (Excel)", b: "Organizar datos y realizar cálculos" },
+    { a: "Base de datos (Access)", b: "Almacenar y consultar información estructurada" },
+    { a: "Correo y agenda (Outlook)", b: "Comunicación y organización profesional" },
+    { a: "Controlador de impresora", b: "Permitir que el sistema use la impresora" },
+    { a: "Controlador de escáner", b: "Conectar el sistema con el escáner" },
+    { a: "Historia clínica electrónica", b: "Aplicación sanitaria de gestión clínica" }
+  ];
+
+  var SW_ESCENARIOS = [
+    { s: "Enciendes el equipo y aparece el logotipo de Windows antes de llegar al escritorio. ¿Qué software lo hace posible?", ops: ["El sistema operativo", "Un procesador de textos", "El controlador del escáner", "Una hoja de cálculo"], ok: 0, ex: "El sistema operativo controla el arranque y gestiona el equipo." },
+    { s: "Conectas una impresora nueva y el equipo no la reconoce si falta su programa controlador específico.", ops: ["El controlador (driver) de la impresora", "Una hoja de cálculo", "El sistema operativo", "Un procesador de textos"], ok: 0, ex: "Los drivers permiten que el sistema se comunique con el dispositivo." },
+    { s: "La pantalla muestra una imagen borrosa o con poca resolución al conectar un monitor nuevo.", ops: ["El controlador de la tarjeta gráfica", "El correo electrónico", "La base de datos", "El ratón"], ok: 0, ex: "El driver de la tarjeta gráfica ajusta la calidad de la imagen." },
+    { s: "Necesitas redactar el informe de alta de un paciente.", ops: ["Un procesador de textos", "Una base de datos", "El sistema operativo", "Un controlador"], ok: 0, ex: "Los procesadores de textos crean y modifican documentos." },
+    { s: "El servicio te pide el listado mensual de citas con estadísticas.", ops: ["Una hoja de cálculo", "Un correo electrónico", "Un procesador de textos", "Un driver"], ok: 0, ex: "Las hojas de cálculo organizan datos y realizan cálculos." },
+    { s: "Hay que consultar la historia clínica electrónica de un paciente en la consulta.", ops: ["La aplicación de historia clínica", "Presentaciones", "El controlador del escáner", "Una hoja de cálculo"], ok: 0, ex: "Las aplicaciones sanitarias gestionan la información clínica." },
+    { s: "Vas a enviar a todo el equipo el recordatorio de la reunión del miércoles.", ops: ["Correo y agenda", "Una base de datos", "El disco duro", "El sistema operativo"], ok: 0, ex: "El correo y la agenda gestionan la comunicación y las citas." },
+    { s: "Un compañero te dice que el escáner no digitaliza los consentimientos informados.", ops: ["El controlador del escáner", "Un procesador de textos", "El sistema operativo", "Una hoja de cálculo"], ok: 0, ex: "Sin su driver, el sistema no detecta ni usa el escáner." }
+  ];
+
+  var SW_TAREAS = [
+    { a: "Procesador de textos (Word)", b: "Redactar informes y comunicaciones" },
+    { a: "Hoja de cálculo (Excel)", b: "Elaborar estadísticas y listados de citas" },
+    { a: "Base de datos (Access)", b: "Gestionar pacientes e historiales" },
+    { a: "Presentaciones (PowerPoint)", b: "Formación del personal y proyectos" },
+    { a: "Correo y agenda (Outlook)", b: "Coordinación del equipo y avisos" },
+    { a: "Historia clínica electrónica", b: "Acceso seguro a información clínica" }
+  ];
+
+  var SW_CHECKLIST = [
+    { t: "Inicia sesión en el equipo y comprueba que el escritorio carga sin errores.",
+      a: "Identifícate en el sistema y espera a que aparezca el escritorio. Si aparece un error o una cuenta inesperada, registra la incidencia." },
+    { t: "Comprueba que la fecha y la hora del sistema son correctas.",
+      a: "Abre Configuración → Hora e idioma y verifica la hora, el día y la zona horaria de tu comunidad." },
+    { t: "Configura la resolución de pantalla para una lectura cómoda.",
+      a: "En Configuración → Sistema → Pantalla, elige la resolución recomendada y comprueba que el texto se ve nítido." },
+    { t: "Personaliza el fondo de escritorio con una imagen adecuada (sin datos personales).",
+      a: "Clic derecho sobre el escritorio → Personalizar → Fondo y elige una imagen corporativa o neutra." },
+    { t: "Organiza los iconos y ancla a la barra de tareas las aplicaciones de uso diario.",
+      a: "Ordena los accesos directos del escritorio y fija en la barra de tareas Word, Excel, Outlook y las aplicaciones sanitarias." },
+    { t: "Crea una carpeta de trabajo para la documentación del servicio.",
+      a: "En Documentos, crea una carpeta con el nombre del servicio y úsala para guardar informes y listados." },
+    { t: "Vacía la papelera de reciclaje si contiene archivos temporales.",
+      a: "Abre la Papelera, revisa el contenido y vacíala si ya no se necesita. Libera espacio y deja el puesto ordenado." },
+    { t: "Comprueba que las aplicaciones abren y guarda la configuración realizada.",
+      a: "Abre cada aplicación sanitaria y ofimática y verifica que responde: algunos cambios se aplican al reiniciar o al volver a iniciar sesión." }
+  ];
+
+  var SW_SECUENCIA = [
+    "Inicia sesión y espera a que el sistema cargue hasta el escritorio.",
+    "Comprueba la fecha y la hora del sistema.",
+    "Configura la resolución de la pantalla.",
+    "Personaliza el fondo de escritorio y organiza los iconos.",
+    "Ancla a la barra de tareas las aplicaciones de uso diario.",
+    "Crea la carpeta de trabajo y verifica que las aplicaciones abren."
+  ];
+
+  var SW_INVENTARIO = [
+    { g: "Sistema operativo", items: ["Windows", "Linux", "macOS"] },
+    { g: "Software de aplicación (ofimática)", items: ["Procesador de textos", "Hoja de cálculo", "Base de datos", "Presentaciones", "Correo y agenda"] },
+    { g: "Aplicaciones sanitarias", items: ["Historia clínica electrónica", "Gestión de citas", "Gestión de pacientes", "Codificación diagnóstica"] },
+    { g: "Controladores (drivers)", items: ["Impresora", "Escáner", "Tarjeta gráfica"] }
+  ];
+
   /* -------------------- BAR AJA -------------------- */
 
-  function iniciarBaraja(contenedor) {
+  function iniciarBaraja(contenedor, deck) {
+    deck = deck || DECK;
     var html = "";
-    DECK.forEach(function (d) {
+    deck.forEach(function (d) {
+      var frontal = d.img
+        ? '<span class="baraja__cara"><img src="' + IMG + d.img + '" alt="' + esc(d.nom) + '" loading="lazy"></span>'
+        : '<span class="baraja__cara baraja__cara--txt"><span class="baraja__chip">' + esc(d.nom) + "</span></span>";
       html +=
         '<button type="button" class="baraja__card" aria-pressed="false">' +
         '<span class="baraja__inner">' +
-        '<span class="baraja__cara"><img src="' + IMG + d.img + '" alt="' + esc(d.nom) + '" loading="lazy"></span>' +
+        frontal +
         '<span class="baraja__cara baraja__cara--tras">' +
         '<span class="baraja__tras-tipo">' + esc(d.tipo) + "</span>" +
         '<span class="baraja__tras-nombre">' + esc(d.nom) + "</span>" +
@@ -382,6 +476,207 @@
     construir();
   }
 
+  /* -------------------- PONTE A PRUEBA · SOFTWARE -------------------- */
+
+  function hacerPreguntaSW(d, deck, tiposDeck) {
+    var modos = ["delim", "tipo", "funcion", "tarea"];
+    var modo = modos[Math.floor(Math.random() * modos.length)];
+    var q = {};
+    if (modo === "delim") {
+      q.prompt = "«" + d.nom + "» es…";
+      q.opciones = shuffle(["Software", "Hardware"]);
+      q.respuesta = d.tipo === "Hardware" ? q.opciones.indexOf("Hardware") : q.opciones.indexOf("Software");
+      q.explicacion = d.nom + " es " + d.tipo + ".";
+    } else if (modo === "tipo") {
+      q.prompt = "¿A qué tipo pertenece «" + d.nom + "»?";
+      var r = opcionesDesde(d.tipo, tiposDeck);
+      q.opciones = r.opciones; q.respuesta = r.respuesta; q.explicacion = d.funcion;
+    } else if (modo === "funcion") {
+      q.prompt = "¿Cuál es la función de «" + d.nom + "»?";
+      var r2 = opcionesDesde(d.funcion, deck.map(function (x) { return x.funcion; }));
+      q.opciones = r2.opciones; q.respuesta = r2.respuesta; q.explicacion = d.nom + ".";
+    } else {
+      q.prompt = "¿Con qué tarea del entorno sanitario se relaciona «" + d.nom + "»?";
+      var r3 = opcionesDesde(d.tarea, deck.map(function (x) { return x.tarea; }));
+      q.opciones = r3.opciones; q.respuesta = r3.respuesta; q.explicacion = d.funcion;
+    }
+    return q;
+  }
+
+  function iniciarTestSoft(contenedor) {
+    var tiposSW = [];
+    SW_DECK.forEach(function (d) { if (tiposSW.indexOf(d.tipo) === -1) { tiposSW.push(d.tipo); } });
+    var preguntas = [];
+    var total = 10;
+
+    function construir() {
+      preguntas = shuffle(SW_DECK).slice(0, total).map(function (d) { return hacerPreguntaSW(d, SW_DECK, tiposSW); });
+      var html = '<ol class="test">';
+      preguntas.forEach(function (q, i) {
+        html += '<li class="test__q" data-q="' + i + '">';
+        html += '<div class="test__prompt"><span>' + esc(q.prompt) + "</span></div>";
+        html += '<div class="test__opciones">';
+        q.opciones.forEach(function (o, j) {
+          html += '<button type="button" class="test__op" data-opt="' + j + '">' + esc(o) + "</button>";
+        });
+        html += "</div></li>";
+      });
+      html += "</ol>";
+      html += '<div class="feedback" aria-live="polite"><p>Selecciona una respuesta en cada pregunta y pulsa «Comprobar respuestas».</p></div>';
+      html += '<div class="practica__intro"><button type="button" class="btn btn--primary">Comprobar respuestas</button> ' +
+        '<button type="button" class="btn btn--ghost">Reintentar (nuevo test)</button></div>';
+      contenedor.innerHTML = html;
+
+      $$(".test__op", contenedor).forEach(function (b) {
+        b.addEventListener("click", function () {
+          var li = b.closest(".test__q");
+          $$(".test__op", li).forEach(function (o) { o.classList.remove("is-selected"); });
+          b.classList.add("is-selected");
+        });
+      });
+
+      $(".btn--primary", contenedor).addEventListener("click", function () { corregir(); });
+      $(".btn--ghost", contenedor).addEventListener("click", function () { construir(); });
+    }
+
+    function corregir() {
+      var aciertos = 0;
+      preguntas.forEach(function (q, i) {
+        var li = $('.test__q[data-q="' + i + '"]', contenedor);
+        var selec = $(".test__op.is-selected", li);
+        var ops = $$(".test__op", li);
+        if (!selec) { return; }
+        var elegida = parseInt(selec.getAttribute("data-opt"), 10);
+        if (elegida === q.respuesta) {
+          selec.classList.add("is-correct");
+          aciertos++;
+        } else {
+          selec.classList.add("is-wrong");
+          ops[q.respuesta].classList.add("is-revelado");
+        }
+        ops.forEach(function (o) { o.disabled = true; });
+      });
+      var fb = $(".feedback", contenedor);
+      if (aciertos === total) {
+        fb.className = "feedback feedback--ok";
+        fb.innerHTML = "<p>¡Perfecto! Has acertado las " + total + " preguntas. " +
+          "Se ha desbloqueado la tabla de respuestas resueltas (software y hardware) para descargarla en PDF.</p>";
+        desbloquearSolucionesSoft();
+      } else {
+        fb.className = "feedback feedback--bad";
+        fb.innerHTML = "<p>Has acertado " + aciertos + " de " + total + ". Repite el test cuantas veces quieras hasta lograrlo perfecto.</p>";
+      }
+    }
+
+    construir();
+  }
+
+  /* -------------------- SOLUCIONES PDF · SOFTWARE -------------------- */
+
+  function elementoSoftCelda(d, absolutas) {
+    if (d.img) {
+      var ruta = absolutas ? imgAbs(d.img) : IMG + d.img;
+      return "<img src='" + ruta + "' alt='" + esc(d.nom) + "' loading='lazy'>";
+    }
+    return '<span class="chip-celda">' + esc(d.chip) + "</span>";
+  }
+
+  function tablaSoftwareRecHtml(absolutas) {
+    var cab = "<thead><tr><th>Elemento</th><th>Tipo</th><th>Función</th><th>Tarea sanitaria</th></tr></thead>";
+    var filas = "";
+    SW_DECK.forEach(function (d) {
+      filas +=
+        "<tr><td>" + elementoSoftCelda(d, absolutas) + "</td>" +
+        "<td>" + esc(d.tipo) + "</td>" +
+        "<td>" + esc(d.funcion) + "</td>" +
+        "<td>" + esc(d.tarea) + "</td></tr>";
+    });
+    return '<div class="table-wrap tabla-soluciones"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>";
+  }
+
+  function tablaSoftSoHtml() {
+    var cab = "<thead><tr><th>#</th><th>Situación</th><th>Solución</th><th>Por qué</th></tr></thead>";
+    var filas = "";
+    SW_ESCENARIOS.forEach(function (e, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td>" + esc(e.s) + "</td>" +
+        "<td><strong>" + esc(e.ops[e.ok]) + "</strong></td><td>" + esc(e.ex) + "</td></tr>";
+    });
+    var cab2 = "<thead><tr><th>Aplicación</th><th>Tarea sanitaria</th></tr></thead>";
+    var filas2 = "";
+    SW_TAREAS.forEach(function (t) {
+      filas2 += "<tr><td><strong>" + esc(t.a) + "</strong></td><td>" + esc(t.b) + "</td></tr>";
+    });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>" +
+      "<h3>Aplicaciones y tareas sanitarias</h3>" +
+      '<div class="table-wrap"><table>' + cab2 + "<tbody>" + filas2 + "</tbody></table></div>";
+  }
+
+  function tablaSoftConfigHtml() {
+    var cab = "<thead><tr><th>#</th><th>Comprobación</th><th>Cómo hacerlo</th></tr></thead>";
+    var filas = "";
+    SW_CHECKLIST.forEach(function (c, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td><strong>" + esc(c.t) + "</strong></td><td>" + esc(c.a) + "</td></tr>";
+    });
+    var sec = "";
+    SW_SECUENCIA.forEach(function (s, i) { sec += "<li>" + (i + 1) + ". " + esc(s) + "</li>"; });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>" +
+      "<h3>Orden de la personalización y configuración del sistema</h3><ol>" + sec + "</ol>";
+  }
+
+  var SW_SO_OK_EMPAREJADO = false;
+  var SW_SO_OK_ESCENARIOS = false;
+  var SW_CONFIG_OK_CHECKLIST = false;
+  var SW_CONFIG_OK_ORDEN = false;
+
+  function desbloquearSolucionesSoft() {
+    desbloquearPanel("#soluciones-soft-rec", CLAVE_SW_REC);
+  }
+
+  function intentarDesbloquearSoftSo() {
+    if (SW_SO_OK_EMPAREJADO && SW_SO_OK_ESCENARIOS) {
+      desbloquearPanel("#soluciones-soft-so", CLAVE_SW_SO);
+    }
+  }
+
+  function intentarDesbloquearSoftConfig() {
+    if (SW_CONFIG_OK_CHECKLIST && SW_CONFIG_OK_ORDEN) {
+      desbloquearPanel("#soluciones-soft-config", CLAVE_SW_CONFIG);
+    }
+  }
+
+  function iniciarSolucionesSoftRec() {
+    var panel = $("#soluciones-soft-rec");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaSoftwareRecHtml(false);
+    $("#btn-pdf-soluciones-soft-rec").addEventListener("click", function () {
+      abrirImpresion("Software y hardware · Tabla de respuestas resueltas", tablaSoftwareRecHtml(true));
+    });
+    $("#btn-cerrar-soluciones-soft-rec").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_SW_REC) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  function iniciarSolucionesSoftSo() {
+    var panel = $("#soluciones-soft-so");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaSoftSoHtml();
+    $("#btn-pdf-soluciones-soft-so").addEventListener("click", function () {
+      abrirImpresion("El sistema operativo y sus funciones · Soluciones resueltas", tablaSoftSoHtml());
+    });
+    $("#btn-cerrar-soluciones-soft-so").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_SW_SO) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  function iniciarSolucionesSoftConfig() {
+    var panel = $("#soluciones-soft-config");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaSoftConfigHtml();
+    $("#btn-pdf-soluciones-soft-config").addEventListener("click", function () {
+      abrirImpresion("Personalización y configuración del sistema · Soluciones resueltas", tablaSoftConfigHtml());
+    });
+    $("#btn-cerrar-soluciones-soft-config").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_SW_CONFIG) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
   /* -------------------- SOLUCIONES PDF -------------------- */
 
   function tablaSolucionesHtml(absolutas) {
@@ -507,9 +802,12 @@
 
   /* -------------------- ESCENARIOS -------------------- */
 
-  function iniciarEscenarios(contenedor) {
+  function iniciarEscenarios(contenedor, datos, msjBad, onCompletos) {
+    datos = datos || ESCENARIOS;
+    msjBad = msjBad || "Todavía no. Fíjate bien en el dispositivo y en el tipo de puerto.";
+    onCompletos = onCompletos || function () { PUERTOS_OK_ESCENARIOS = true; intentarDesbloquearPuertos(); };
     var html = "";
-    ESCENARIOS.forEach(function (e, i) {
+    datos.forEach(function (e, i) {
       html += '<div class="escenario" data-es="' + i + '">';
       html += "<p>" + esc(e.s) + "</p>";
       html += '<div class="escenario__opciones">';
@@ -543,18 +841,17 @@
           return;
         }
         var val = parseInt(elegido.value, 10);
-        if (val === ESCENARIOS[i].ok) {
+        if (val === datos[i].ok) {
           mensaje.className = "escenario__mensaje ok";
-          mensaje.textContent = "Correcto. " + ESCENARIOS[i].ex;
+          mensaje.textContent = "Correcto. " + datos[i].ex;
           esc.setAttribute("data-acierto", "1");
         } else {
           mensaje.className = "escenario__mensaje bad";
-          mensaje.textContent = "Todavía no. Fíjate bien en el dispositivo y en el tipo de puerto.";
+          mensaje.textContent = msjBad;
           esc.setAttribute("data-acierto", "0");
         }
-        if ($$('.escenario[data-acierto="1"]', contenedor).length === ESCENARIOS.length) {
-          PUERTOS_OK_ESCENARIOS = true;
-          intentarDesbloquearPuertos();
+        if ($$('.escenario[data-acierto="1"]', contenedor).length === datos.length) {
+          onCompletos();
         }
       });
     });
@@ -562,9 +859,12 @@
 
   /* -------------------- CHECKLIST -------------------- */
 
-  function iniciarChecklist(contenedor) {
+  function iniciarChecklist(contenedor, datos, msjOk, onCompletos) {
+    datos = datos || CHECKLIST;
+    msjOk = msjOk || "Equipo revisado: listo para uso. Si detectaste alguna anomalía, regístrala y avisa al servicio de mantenimiento.";
+    onCompletos = onCompletos || function () { VERIF_OK_CHECKLIST = true; intentarDesbloquearVerificacion(); };
     var html = '<ul class="checklist">';
-    CHECKLIST.forEach(function (c, i) {
+    datos.forEach(function (c, i) {
       html += '<li class="checklist__item">';
       html += '<div class="checklist__fila"><input type="checkbox" id="chk-' + i + '"><span class="num">' + (i + 1) +
         "</span><label for='chk-" + i + "'>" + esc(c.t) + "</label></div>";
@@ -593,9 +893,8 @@
       var fb = $(".feedback", contenedor);
       if (hecho === total) {
         fb.className = "feedback feedback--ok";
-        fb.innerHTML = "<p>Equipo revisado: listo para uso. Si detectaste alguna anomalía, regístrala y avisa al servicio de mantenimiento.</p>";
-        VERIF_OK_CHECKLIST = true;
-        intentarDesbloquearVerificacion();
+        fb.innerHTML = "<p>" + msjOk + "</p>";
+        onCompletos();
       } else {
         fb.className = "feedback";
         fb.innerHTML = "<p>Has comprobado " + hecho + " de " + total + " pasos. Continúa revisando.</p>";
@@ -611,14 +910,19 @@
 
   /* -------------------- ORDENAR PASOS -------------------- */
 
-  function iniciarOrden(contenedor) {
+  function iniciarOrden(contenedor, datos, msjIntro, msjOk, msjFallo, onCompletos) {
     var pos = 0;
     var fallo = false;
-    var total = SECUENCIA.length;
+    datos = datos || SECUENCIA;
+    msjIntro = msjIntro || "Ordena correctamente los seis pasos de la puesta en marcha.";
+    msjOk = msjOk || "¡Correcto! Este es el orden de verificación de un puesto de trabajo.";
+    msjFallo = msjFallo || "Ese paso no corresponde aquí: primero se inspecciona y se conecta el equipo antes de encenderlo. Pulsa «Reiniciar» e inténtalo de nuevo.";
+    onCompletos = onCompletos || function () { VERIF_OK_ORDEN = true; intentarDesbloquearVerificacion(); };
+    var total = datos.length;
 
     function construir() {
       pos = 0; fallo = false;
-      var pasos = shuffle(SECUENCIA.map(function (s, i) { return { id: i, t: s }; }));
+      var pasos = shuffle(datos.map(function (s, i) { return { id: i, t: s }; }));
       var html = '<div class="orden">';
       html += '<div><div class="match__title">Pulsa los pasos en el orden correcto</div><div class="orden__pila">';
       pasos.forEach(function (p) {
@@ -628,7 +932,7 @@
       html += '<div><div class="match__title">Tu secuencia (1 a ' + total + ')</div><ol class="orden__secuencia">';
       for (var i = 0; i < total; i++) { html += "<li></li>"; }
       html += "</ol></div></div>";
-      html += '<div class="feedback" aria-live="polite"><p>Ordena correctamente los seis pasos de la puesta en marcha.</p></div>';
+      html += '<div class="feedback" aria-live="polite"><p>' + msjIntro + "</p></div>";
       html += '<div class="practica__intro"><button type="button" class="btn btn--ghost">Reiniciar</button></div>';
       contenedor.innerHTML = html;
 
@@ -638,16 +942,15 @@
           var id = parseInt(b.getAttribute("data-paso"), 10);
           var lis = $$(".orden__secuencia li", contenedor);
           if (id === pos) {
-            lis[pos].textContent = (pos + 1) + ". " + SECUENCIA[id];
+            lis[pos].textContent = (pos + 1) + ". " + datos[id];
             lis[pos].className = "esta-ok";
             b.disabled = true;
             pos++;
             var fb = $(".feedback", contenedor);
             if (pos === total) {
               fb.className = "feedback feedback--ok";
-              fb.innerHTML = "<p>¡Correcto! Este es el orden de verificación de un puesto de trabajo.</p>";
-              VERIF_OK_ORDEN = true;
-              intentarDesbloquearVerificacion();
+              fb.innerHTML = "<p>" + msjOk + "</p>";
+              onCompletos();
             } else {
               fb.className = "feedback";
               fb.innerHTML = "<p>Paso " + pos + " de " + total + " colocado. Sigue con el siguiente.</p>";
@@ -658,7 +961,7 @@
             b.classList.add("is-bad");
             var f = $(".feedback", contenedor);
             f.className = "feedback feedback--bad";
-            f.innerHTML = "<p>Ese paso no corresponde aquí: primero se inspecciona y se conecta el equipo antes de encenderlo. Pulsa «Reiniciar» e inténtalo de nuevo.</p>";
+            f.innerHTML = "<p>" + msjFallo + "</p>";
           }
         });
       });
@@ -671,9 +974,11 @@
 
   /* -------------------- INVENTARIO -------------------- */
 
-  function iniciarInventario(contenedor) {
+  function iniciarInventario(contenedor, datos, tituloPdf) {
+    datos = datos || INVENTARIO;
+    tituloPdf = tituloPdf || "Inventario del puesto de trabajo";
     var html = "";
-    INVENTARIO.forEach(function (g, gi) {
+    datos.forEach(function (g, gi) {
       html += '<div class="inventario__grupo"><h4>' + esc(g.g) + "</h4>";
       g.items.forEach(function (it, ii) {
         html += '<label class="inventario__fila"><input type="checkbox" data-grupo="' + gi + '" data-item="' + ii + '">' + esc(it) + "</label>";
@@ -695,7 +1000,7 @@
       INVENTARIO.forEach(function (g, gi) {
         var marcados = [];
         $$('input[data-grupo="' + gi + '"]:checked', contenedor).forEach(function (inp) {
-          marcados.push(INVENTARIO[gi].items[parseInt(inp.getAttribute("data-item"), 10)]);
+          marcados.push(datos[gi].items[parseInt(inp.getAttribute("data-item"), 10)]);
         });
         total += marcados.length;
         grupos.push({ nombre: g.g, marcados: marcados });
@@ -727,7 +1032,7 @@
       resultado.innerHTML = tabla;
 
       resultado.querySelector(".btn").addEventListener("click", function () {
-        abrirImpresion("Inventario del puesto de trabajo", tablaBase);
+        abrirImpresion(tituloPdf, tablaBase);
       });
     });
   }
@@ -761,5 +1066,56 @@
     if ($("#checklist")) { iniciarChecklist($("#checklist")); }
     if ($("#orden")) { iniciarOrden($("#orden")); }
     if ($("#inventario")) { iniciarInventario($("#inventario")); }
+
+    /* --- Bloque práctico · Software --- */
+    if ($("#baraja-soft")) { iniciarBaraja($("#baraja-soft"), SW_DECK); }
+    if ($("#empareja-funciones")) {
+      iniciarEmparejado(
+        $("#empareja-funciones"),
+        shuffle(SW_FUNCIONES.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(SW_FUNCIONES.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false
+      );
+    }
+    if ($("#empareja-apps")) {
+      iniciarEmparejado(
+        $("#empareja-apps"),
+        shuffle(SW_TAREAS.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(SW_TAREAS.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false,
+        function () { SW_SO_OK_EMPAREJADO = true; intentarDesbloquearSoftSo(); }
+      );
+    }
+    if ($("#ponte-a-prueba-soft")) { iniciarTestSoft($("#ponte-a-prueba-soft")); }
+    if ($("#soluciones-soft-rec")) { iniciarSolucionesSoftRec(); }
+    if ($("#soluciones-soft-so")) { iniciarSolucionesSoftSo(); }
+    if ($("#soluciones-soft-config")) { iniciarSolucionesSoftConfig(); }
+    if ($("#escenarios-soft")) {
+      iniciarEscenarios(
+        $("#escenarios-soft"),
+        SW_ESCENARIOS,
+        "Todavía no. Piensa qué elemento de software interviene en esta situación.",
+        function () { SW_SO_OK_ESCENARIOS = true; intentarDesbloquearSoftSo(); }
+      );
+    }
+    if ($("#checklist-soft")) {
+      iniciarChecklist(
+        $("#checklist-soft"),
+        SW_CHECKLIST,
+        "Configuración completada: el puesto queda listo y personalizado para su uso. Si detectaste algo que no responde, regístralo y avisa a mantenimiento.",
+        function () { SW_CONFIG_OK_CHECKLIST = true; intentarDesbloquearSoftConfig(); }
+      );
+    }
+    if ($("#orden-soft")) {
+      iniciarOrden(
+        $("#orden-soft"),
+        SW_SECUENCIA,
+        "Ordena correctamente los seis pasos de la personalización del sistema.",
+        "¡Correcto! Este es el orden de personalización y configuración del sistema.",
+        "Ese paso no corresponde aquí: primero se enciende y se configura lo básico. Pulsa «Reiniciar» e inténtalo de nuevo.",
+        function () { SW_CONFIG_OK_ORDEN = true; intentarDesbloquearSoftConfig(); }
+      );
+    }
+    if ($("#inventario-soft")) { iniciarInventario($("#inventario-soft"), SW_INVENTARIO, "Inventario de software del puesto de trabajo"); }
   });
 })();

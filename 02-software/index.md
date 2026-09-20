@@ -162,7 +162,7 @@ SOFTWARE
 
 > 🧩 **Cuestionario final del bloque:** accede a [**Cuestionario_1_1_Software**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081) y contesta a las preguntas relacionadas con estos contenidos. Hazlo tantas veces como quieras antes de que finalice el plazo, se guardará tu mejor nota.
 
-> 🧰 **Bloque práctico:** las actividades prácticas de software se publicarán próximamente con el mismo esquema del bloque de hardware.
+> 🧰 **Bloque práctico:** cuando completes el cuestionario, trabaja el [**Bloque práctico: Software y configuración básica de un puesto de trabajo administrativo sanitario**](../practico-software/index.html): identificación de software y hardware, sistema operativo y sus funciones, y personalización básica del sistema, con actividades autocorregibles y soluciones descargables.
 
 ---
 

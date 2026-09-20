@@ -1,0 +1,93 @@
+$CATEGORY: OFI/UP01/PR/01-4-software-hardware
+
+::SWPR014_01_Definicion::El conjunto de programas e instrucciones que permiten que un ordenador funcione es…{
+=El software~El hardware~Los periféricos~Los puertos
+}
+
+::SWPR014_02_ParteLogica::La parte lógica o intangible de un sistema informático es…{
+=El software~La placa base~El disco duro~El monitor
+}
+
+::SWPR014_03_ParteFisica::La parte física y tangible de un sistema informático es…{
+=El hardware~El sistema operativo~El antivirus~El procesador de textos
+}
+
+::SWPR014_04_EjemploSW::¿Cuál de los siguientes es software?{
+=Microsoft Word~El ratón~La memoria RAM~El monitor
+}
+
+::SWPR014_05_EjemploHW::¿Cuál de los siguientes es hardware?{
+=El teclado~Excel~Linux~El navegador web
+}
+
+::SWPR014_06_SOesSW::El sistema operativo Windows es un ejemplo de…{
+=Software de sistema~Hardware~Periférico~Puerto de comunicación
+}
+
+::SWPR014_07_WordAplicacion::Microsoft Word es un ejemplo de…{
+=Software de aplicación~Software de sistema~Hardware~Driver
+}
+
+::SWPR014_08_DriverSistema::El controlador de la impresora es un ejemplo de…{
+=Software de sistema~Software de aplicación~Hardware~Hoja de cálculo
+}
+
+::SWPR014_09_MonitorHW::El monitor de un puesto sanitario es…{
+=Hardware~Software de sistema~Software de aplicación~Un driver
+}
+
+::SWPR014_10_ExcelUso::La hoja de cálculo Excel sirve para…{
+=Organizar datos y realizar cálculos~Imprimir documentos~Conectar la impresora~Arrancar el equipo
+}
+
+::SWPR014_11_AccessFuncion::La base de datos Access se utiliza en un centro sanitario para…{
+=Almacenar y consultar información estructurada~Diseñar presentaciones~Enviar correos~Controlar el encendido del equipo
+}
+
+::SWPR014_12_OutlookFuncion::Microsoft Outlook se usa principalmente para…{
+=Correo electrónico y agenda~Edición de imágenes~Cálculos estadísticos~Gestión de la red
+}
+
+::SWPR014_13_PowerPointSanidad::PowerPoint se emplea en sanidad para…{
+=Formar al personal y presentar proyectos~Gestionar historias clínicas~Conectar dispositivos~Digitalizar documentos
+}
+
+::SWPR014_14_HistoriaClinicaApp::La historia clínica electrónica es…{
+=Una aplicación sanitaria~Un hardware interno~Un driver de impresora~Un sistema operativo
+}
+
+::SWPR014_15_SindSoftware::¿Podría funcionar un ordenador únicamente con hardware?{
+=No, necesita software para realizar tareas~Sí, solo un poco más lento~Solo durante el arranque~Sí, si tiene antivirus
+}
+
+::SWPR014_16_CPU_HW::El procesador (CPU) es…{
+=Hardware~Software de sistema~Software de aplicación~Un controlador
+}
+
+::SWPR014_17_RAM_HW::La memoria RAM es…{
+=Hardware~Software de aplicación~Un compresor~Un navegador
+}
+
+::SWPR014_18_DriverEscáner::El controlador del escáner permite que…{
+=El sistema operativo se comunique con el escáner~El escáner imprima informes~El equipo arranque sin sistema operativo~La red funcione por sí sola
+}
+
+::SWPR014_19_DriverGrafica::El controlador de la tarjeta gráfica se relaciona con…{
+=La calidad de la imagen en pantalla~La red local~Las citas médicas~El almacenamiento de datos
+}
+
+::SWPR014_20_ClasificaWord::¿A qué tipo de software pertenece Microsoft Word?{
+=Software de aplicación~Software de sistema~Hardware~Utilidad de red
+}
+
+::SWPR014_21_ClasificaWindows::¿A qué tipo de software pertenece Windows?{
+=Software de sistema~Software de aplicación~Periférico~Almacenamiento
+}
+
+::SWPR014_22_VFWordHardware::Microsoft Word es un componente hardware del ordenador.{F}
+
+::SWPR014_23_VFMonitorSoftware::El monitor es hardware porque se puede ver y tocar.{T}
+
+::SWPR014_24_VF_SinSoftware::El hardware necesita el software para realizar tareas útiles.{T}
+
+::SWPR014_25_VFHistoriaClinica::La historia clínica electrónica es un ejemplo de aplicación sanitaria (software).{T}
