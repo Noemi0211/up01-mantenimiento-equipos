@@ -25,10 +25,12 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 **Regla de fases:** se genera UN bloque por fase. Al terminar una fase, detener la generación y esperar instrucciones del usuario.
 
 > **Próximo paso (punto de reanudación, 20-09-2026):** la Fase 3 (02 · Software,
-> teoría + bloque práctico) está **completada**. La siguiente fase pendiente es la
-> **Fase 4 · 03 · Ciberseguridad**. Antes de generarla, confirmar con la profesora la
-> numeración real de sus quizzes prácticos (ver nota de `PR-01.4…PR-01.6` en §14),
-> ya que los de software se llamaron `PR-01.4…6` y no `PR-02.x`.
+> teoría + bloque práctico) está **completada y publicada** (commit `f69638c`
+> pulsado a `main`; `practico-software/` visible en GitHub Pages). La siguiente
+> fase pendiente es la **Fase 4 · 03 · Ciberseguridad**. Antes de generarla,
+> confirmar con la profesora la numeración real de sus quizzes prácticos (ver nota
+> de `PR-01.4…PR-01.6` en §14), ya que los de software se llamaron `PR-01.4…6` y no
+> `PR-02.x`.
 
 ### Publicación y git
 
@@ -192,14 +194,16 @@ sustituyeron por imágenes reales copiadas desde `Documentos base/Imagenes`.
 
 45 archivos procedentes de: `Componentes/` (12), `memorias/` (3),
 `perifericos/` (12), `puertos/` (13), `Infografías/` (4) y raíz (1,
-`Distribucion_componentes.png`).
+`Distribucion_componentes.png`). Añadido **21-09-2026:** el mapa mental del
+software (`Imagenes/Infografías/mapa_software.png`) suma una 5.ª infografía
+(nº 46).
 
 ### Carpetas utilizadas
 
 ```
 images/
 ├── hardware/    (44 imágenes) — copiadas y renombradas (minúsculas + guiones)
-├── software/    (vacía, .gitkeep)
+├── software/    (1 imagen: mapa-software.png)
 ├── ciberseguridad/ (vacía, .gitkeep)
 ├── redes/       (vacía, .gitkeep)
 ├── internet/    (vacía, .gitkeep)
@@ -212,15 +216,16 @@ images/
 |---|---|---|
 | 00 · Introducción | 1 | Presentación (figura centrada, `generales/distribucion-componentes.png`) |
 | 01 · Hardware | 24 | Tarjetas `.image-card` y figura `.image-figure` en los apartados 1–9 |
-| 02 · Software (teoría + prácticas) | 0 nuevas | Sin archivos en la fuente; la baraja del práctico reutiliza `images/hardware/` (monitor, teclado, cpu, memoria-ram, hdd) y el resto del software usa frontal de texto (`.chip`) |
+| 02 · Software (teoría + prácticas) | 1 nueva | `mapa-software.png` (mapa mental) integrado al final del bloque teórico (`software/mapa-software.png`, figura `.image-figure--wide`); la baraja del práctico es **solo de software** (frontal de texto `.chip`); las 5 imágenes de `images/hardware/` (monitor, teclado, cpu, memoria-ram, hdd) solo se usan en miniatura en la tabla de respuestas resueltas en PDF |
 
 ### Imágenes pendientes
 
 - Ciberseguridad, redes e Internet: sin archivos disponibles en la carpeta
   fuente; se integrarán cuando esos bloques se generen (categorías
   `ciberseguridad/`, `redes/`, `internet/`). El bloque de software (teoría y
-  prácticas) quedó **sin imágenes nuevas** (sin archivos en la fuente: la baraja
-  del práctico reutiliza `images/hardware/`; `software/` conserva `.gitkeep`).
+  prácticas) cuenta con **1 imagen integrada** (`software/mapa-software.png`,
+  del mapa mental; el resto de imágenes de la sección 3 del PDF sigue sin
+  archivos en la fuente: la baraja del práctico reutiliza `images/hardware/`).
 - No existe imagen real de «portada del módulo»; la presentación del bloque 00 usa
   la imagen general del sistema informático.
 
@@ -252,9 +257,9 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 | Teoría de software (enlace «Bloque 02 · Software») | URL | `02-software/index.html` (GitHub Pages) |
 | Cuestionario teórico sobre el software | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081` |
 | Prácticas de software (Bloque práctico) | URL | `practico-software/index.html` (GitHub Pages) |
-| PR-01.4 Identificación de software y hardware (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229` |
-| PR-01.5 El sistema operativo y sus funciones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417230` |
-| PR-01.6 Personalización y configuración del sistema (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417231` |
+| PR-01.4 Identificación de software y hardware (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428448` |
+| PR-01.5 El sistema operativo y sus funciones (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428449` |
+| PR-01.6 Personalización y configuración del sistema (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428451` |
 
 ### Estructura por apartados (teoría · cuestionario · prácticas)
 
@@ -290,9 +295,9 @@ actividad».
 1. **Teoría de software** — URL → `02-software/index.html` (GitHub Pages).
 2. **Cuestionario teórico sobre el software** — Quiz `11402081`.
 3. **Prácticas de software** — URL → `practico-software/index.html`.
-4. **PR-01.4** Identificación de software y hardware — Quiz `11417229`.
-5. **PR-01.5** El sistema operativo y sus funciones — Quiz `11417230`.
-6. **PR-01.6** Personalización y configuración del sistema — Quiz `11417231`.
+4. **PR-01.4** Identificación de software y hardware — Quiz `11428448`.
+5. **PR-01.5** El sistema operativo y sus funciones — Quiz `11428449`.
+6. **PR-01.6** Personalización y configuración del sistema — Quiz `11428451`.
 
 > **Nota sobre la numeración:** los quizzes prácticos de software se llaman
 > `PR-01.4…PR-01.6` (no `PR-02.x`), porque la profesora los creó en Aules con esa
@@ -352,7 +357,7 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - **01 · Hardware:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el hardware (Aules).
 - **02 · Software:** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre el software (Aules `11402081`). Su sidebar incluye la sección «Apartado 02 · Software» con la teoría, el cuestionario teórico (`11402081`), el bloque práctico y los quizzes PR-01.4…6.
 - **practico-hardware (Prácticas):** «Anterior» → Cuestionario teórico sobre el hardware (Aules) · «Siguiente» → PR-01.1 (Aules). Cada actividad enlaza **solo su propio** «Cuestionario en Aules» (sin botón hacia el siguiente quiz antes de trabajar sus contenidos), y la tabla del apartado 4 · Autoevaluación enlaza los tres quizzes. Su sidebar incluye la sección «Apartado 01 · Hardware» (teoría, cuestionario teórico y PR-01.1…3).
-- **practico-software (Prácticas):** «Anterior» → Cuestionario teórico sobre el software (Aules `11402081`) · «Siguiente» → PR-01.4 (Aules `11417229`). Mismo patrón que `practico-hardware`: cada actividad enlaza solo su «Cuestionario en Aules», la autoevaluación enlaza PR-01.4…6 y su sidebar incluye la sección «Apartado 02 · Software». Widgets con contenedores propios (`#baraja-soft`, `#empareja-funciones`, `#ponte-a-prueba-soft`, `#escenarios-soft`, `#empareja-apps`, `#checklist-soft`, `#orden-soft`, `#inventario-soft` y los paneles `#soluciones-soft-rec/-so/-config`) inicializados en `js/actividades.js` con claves de desbloqueo `up01-practico-soft-{rec,so,config}-ok`; `actividades.js` reutiliza las mismas funciones de widgets parametrizadas con los datos de software, y la baraja soporta tarjetas de texto (`.baraja__cara--txt`) para el software.
+- **practico-software (Prácticas):** «Anterior» → Cuestionario teórico sobre el software (Aules `11402081`) · «Siguiente» → PR-01.4 (Aules `11428448`). Cada actividad enlaza **solo su propio** «Cuestionario en Aules» y, además, un enlace «siguiente elemento» al quiz siguiente (PR-01.4 → PR-01.5 → PR-01.6), de modo que la secuencia del apartado se recorre desde la web sin depender del orden de Aules; la autoevaluación enlaza PR-01.4…6 y su sidebar incluye la sección «Apartado 02 · Software». La teoría (02-software) añade en su «Cuestionario final del bloque» el enlace «continúa con el Bloque práctico de software». Widgets con contenedores propios (`#baraja-soft`, `#empareja-funciones`, `#ponte-a-prueba-soft`, `#escenarios-soft`, `#empareja-apps`, `#checklist-soft`, `#orden-soft`, `#inventario-soft` y los paneles `#soluciones-soft-rec/-so/-config`) inicializados en `js/actividades.js` con claves de desbloqueo `up01-practico-soft-{rec,so,config}-ok`; `actividades.js` reutiliza las mismas funciones de widgets parametrizadas con los datos de software, y la baraja soporta tarjetas de texto (`.baraja__cara--txt`) para el software.
 
 ### Regla para futuros bloques
 

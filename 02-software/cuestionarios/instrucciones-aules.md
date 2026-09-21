@@ -106,7 +106,52 @@ preguntas en el HTML: todo el banco vive en Moodle.
 
 ---
 
-## 6 · Estructura de calificación sugerida en el libro de calificaciones
+## 6 · Orden de las actividades y enlace «Siguiente» en Aules
+
+El recorrido del apartado (teoría → cuestionario → prácticas) lo encadena **Aules**:
+el sitio web solo controla los «Anterior/Siguiente» internos de las páginas. El
+botón **«Siguiente»** que aparece tras terminar un cuestionario pertenece a la
+**navegación por actividades** de Moodle:
+
+1. En **Ajustes del cuestionario → Formato → Navegación**, marca **Mostrar enlace
+   a la siguiente actividad** (botón flotante para saltar a la actividad siguiente).
+2. Coloca las actividades en este orden dentro de la sección del curso:
+
+   | # | Actividad | Tipo |
+   |---|---|---|
+   | 1 | Teoría de software → `https://noemi0211.github.io/up01-mantenimiento-equipos/02-software/` | URL |
+   | 2 | Cuestionario teórico sobre el software (`Cuestionario_1_1_Software`) | Cuestionario |
+   | 3 | Prácticas de software → `https://noemi0211.github.io/up01-mantenimiento-equipos/practico-software/` | URL |
+   | 4 | PR-01.4 Identificación de software y hardware | Cuestionario |
+   | 5 | PR-01.5 El sistema operativo y sus funciones | Cuestionario |
+   | 6 | PR-01.6 Personalización y configuración del sistema | Cuestionario |
+
+> Si el «Siguiente» del cuestionario teórico lleva a unas **prácticas equivocadas**
+> (p. ej. a las de hardware), revisa dos cosas: (1) que la actividad URL de
+> **prácticas de software** sea exactamente la inmediatamente siguiente al
+> cuestionario en la sección; y (2) que la URL de esa actividad apunte a
+> `practico-software/` (nunca a `practico-hardware/`).
+
+### Cómo reordenar las actividades en Aules
+
+1. Activa la **edición** del curso (conmutador «Activar edición», arriba a la
+   derecha).
+2. En el tema/sección donde están las actividades, usa el icono de **arrastrar**
+   (cruz) de cada actividad para dejarlas en el orden de la tabla anterior:
+   Teoría → Cuestionario teórico → Bloque práctico → PR-01.4 → PR-01.5 → PR-01.6.
+3. **Guarda los cambios**.
+4. En el cuestionario teórico, comprueba **Ajustes → Formato → Navegación →
+   Mostrar enlace a la siguiente actividad** (SÍ) y guarda.
+5. Comprueba el resultado en «Vista previa» o terminando un intento: el botón
+   «Siguiente» debe abrir *Bloque práctico software*.
+
+> Importante: todas las actividades del apartado deben vivir en **la misma
+> sección/tema**; si el cuestionario está en una sección y las prácticas en otra,
+> el botón «Siguiente» saltará fuera del apartado.
+
+---
+
+## 7 · Estructura de calificación sugerida en el libro de calificaciones
 
 | Ídem | Actividad | Ponderación propuesta |
 |---|---|---|

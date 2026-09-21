@@ -36,9 +36,9 @@ Recordatorio breve: todo lo que **se puede ver y tocar** es hardware; todo lo qu
 
 ### 1.1 · Baraja de reconocimiento
 
-Fíjate en cada tarjeta: unas muestran la **imagen** de un componente hardware y otras el **nombre** de un programa. Haz clic sobre cada tarjeta para voltearla y ver su **nombre, tipo y función**.
+Todas las tarjetas muestran el **nombre** de un programa de software: sistema operativo, controladores (drivers), ofimática y aplicaciones sanitarias. Haz clic sobre cada tarjeta para voltearla y ver su **tipo y función**.
 
-> ✍️ **Actividad interactiva:** tarjeta a tarjeta, intenta deducir si es software o hardware y cuál es su función antes de voltearla. Repítelo hasta distinguirlas todas a simple vista.
+> ✍️ **Actividad interactiva:** tarjeta a tarjeta, intenta deducir el **tipo** (software de sistema o de aplicación) y la **función** antes de voltearla. Repítelo hasta reconocerlos todas a simple vista.
 
 ### 1.2 · Relaciona cada programa con su función
 
@@ -50,7 +50,7 @@ Une cada programa con la **función** que realiza. Selecciona un elemento de la 
 
 Autoevaluación de **10 preguntas** generadas al azar. Puedes repetirla **tantas veces como quieras**. Cuando la completes **perfecta**, se desbloqueará la tabla de **respuestas resueltas** para que la **descargues en PDF**.
 
-> 🧩 **Cuestionario en Aules:** tras practicar en esta página, realiza el cuestionario [**«PR-01.4 Identificación de software y hardware»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229) en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
+> 🧩 **Cuestionario en Aules:** tras practicar en esta página, realiza el cuestionario [**«PR-01.4 Identificación de software y hardware»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428448) en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: [**«PR-01.5 El sistema operativo y sus funciones»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428449).
 
 ---
 
@@ -72,7 +72,7 @@ Ahora cambiamos la mecánica: **empareja** cada aplicación con la **tarea admin
 
 Cuando completes correctamente los **8 escenarios** y el **emparejado**, se desbloquearán las **soluciones en PDF** del sistema operativo y sus funciones.
 
-> 🧩 **Cuestionario en Aules:** cuando domines la actividad, realiza el cuestionario [**«PR-01.5 El sistema operativo y sus funciones»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417230) en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
+> 🧩 **Cuestionario en Aules:** cuando domines la actividad, realiza el cuestionario [**«PR-01.5 El sistema operativo y sus funciones»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428449) en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: [**«PR-01.6 Personalización y configuración del sistema»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428451).
 
 ---
 
@@ -98,7 +98,7 @@ Un **inventario de software** es la relación de los **programas** presentes en 
 
 > 📌 **Resumen:** personalizar + configurar + inventariar el software = un puesto ordenado y mantenimiento básico responsable de cualquier servicio sanitario.
 
-> 🧩 **Cuestionario en Aules:** al terminar, realiza el cuestionario [**«PR-01.6 Personalización y configuración del sistema»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417231) en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. **Con este cuestionario finaliza el bloque práctico.**
+> 🧩 **Cuestionario en Aules:** al terminar, realiza el cuestionario [**«PR-01.6 Personalización y configuración del sistema»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428451) en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. **Con este cuestionario finaliza el bloque práctico.**
 
 ---
 
@@ -108,9 +108,9 @@ A continuación encontrarás unas **sencillas actividades de evaluación** en Au
 
 | Cuestionario | Contenidos |
 |:--|:--|
-| [**PR-01.4 Identificación de software y hardware**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417229) | Software, hardware, tipos de software |
-| [**PR-01.5 El sistema operativo y sus funciones**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417230) | Sistema operativo, drivers y sus funciones |
-| [**PR-01.6 Personalización y configuración del sistema**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11417231) | Personalización, configuración e inventario de software |
+| [**PR-01.4 Identificación de software y hardware**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428448) | Software, hardware, tipos de software |
+| [**PR-01.5 El sistema operativo y sus funciones**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428449) | Sistema operativo, drivers y sus funciones |
+| [**PR-01.6 Personalización y configuración del sistema**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11428451) | Personalización, configuración e inventario de software |
 
 Consulta la guía de importación y configuración en `practico-software/cuestionarios/instrucciones-aules.md`.
 

@@ -8,20 +8,24 @@ Bloque: **02 · Elementos de software**
 
 ## Estado
 
-Este bloque se ha publicado **sin imágenes integradas**: la carpeta fuente
-`Documentos base/Imagenes` no dispone de archivos de la categoría `software`
-(solo contiene componentes, memorias, periféricos, puertos e infografías de
-hardware).
+Este bloque se publicó **sin imágenes integradas** hasta 2026-09-21, en que se
+localizó en la fuente `Imagenes/Infografías` el mapa mental del software y se
+integró al final del bloque teórico:
 
-- `images/software/` conserva únicamente `.gitkeep` (scaffolding).
-- No se utiliza ningún marcador de posición («Imagen recomendada»,
-  `image-placeholder`, etc.) ni cajas de imagen vacías.
+- **mapa-software.png** → `images/software/mapa-software.png` (localizada, copiada
+  y renombrada; ninguna de las imágenes de componentes de software se ha localizado).
+
+## Imágenes integradas
+
+| Archivo | Ruta | Sección | Página | Alt |
+|---|---|---|---|---|
+| mapa-software.png | `images/software/mapa-software.png` | 5 · Resumen del bloque | — | Mapa mental de la organización del software: software de sistema (sistema operativo y drivers), software de aplicación (ofimática y aplicaciones sanitarias) y utilidades del sistema. |
 
 ## Imágenes catalogadas pendientes
 
 El inventario general (`inventario-imagenes/inventario-general.md`) cataloga
-las **14 imágenes de software** del documento original (sección 3, páginas
-29–33), pendientes de localizar en la fuente:
+las **13 imágenes de software** del documento original (sección 3, páginas
+29–33) que siguen pendientes de localizar en la fuente:
 
 | Nombre | Ruta recomendada | Sección | Página |
 |---|---|---|---|
@@ -38,7 +42,6 @@ las **14 imágenes de software** del documento original (sección 3, páginas
 | firewall | `images/software/firewall.png` | 3.2 Utilidades del sistema | 33 |
 | compresor-archivos | `images/software/compresor-archivos.png` | 3.2 Utilidades del sistema | 33 |
 | limpieza-sistema | `images/software/limpieza-sistema.png` | 3.2 Utilidades del sistema | 33 |
-| mapa-software | `images/software/mapa-software.png` | Organización del software (§ 3.3) | — |
 
 > Si se localizan los archivos en el futuro, se copiarán a `images/software/`
 > sin modificar los originales y se actualizará este inventario con archivo,

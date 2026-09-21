@@ -276,6 +276,12 @@ Autora: Noemí Celaya Mingot · Licencia original: CC BY-NC-SA 4.0
 
 ## 02 · Software
 
+### Nombre: mapa-software (integrada)
+- **Procedencia:** `Imagenes/Infografías/mapa_software.png` (carpeta fuente de infografías).
+- **Ubicación:** `images/software/mapa-software.png`
+- **Descripción:** Mapa mental de la organización del software: software de sistema (sistema operativo y drivers), software de aplicación (ofimática y aplicaciones sanitarias) y utilidades del sistema.
+- **Texto alternativo:** Mapa mental de la organización del software: software de sistema (sistema operativo y drivers), software de aplicación (ofimática y aplicaciones sanitarias) y utilidades del sistema.
+
 ### Nombre: software
 - **Procedencia:** PDF, página 29 (§ 3.1 ¿Qué es el software?).
 - **Ubicación recomendada:** `images/up01-sw-software.png`
@@ -584,7 +590,7 @@ Autora: Noemí Celaya Mingot · Licencia original: CC BY-NC-SA 4.0
 |-------|--------------------|------------------------|-------------------|
 | 00 · Introducción | 1 | 1 (generales) | ✅ 1 |
 | 01 · Hardware | 42 | 45 (hardware + 1 generales) | ✅ 24 |
-| 02 · Software | 14 | 0 | ⚠️ Bloque publicado sin imágenes (sin archivos en la fuente) |
+| 02 · Software | 13 + 1 mapa mental | 1 (software) | ✅ 1 (mapa mental del software) |
 | 03 · Ciberseguridad | 17 | 0 | ⏳ Pendiente |
 | 04 · Redes LAN | 10 | 0 | ⏳ Pendiente |
 | 05 · Acceso a Internet | 9 | 0 | ⏳ Pendiente |

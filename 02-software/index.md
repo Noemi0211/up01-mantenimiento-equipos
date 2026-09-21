@@ -160,7 +160,12 @@ SOFTWARE
 
 > 🏥 **Aplicación en entornos sanitarios:** día a día trabajas con el sistema operativo, la ofimática y las aplicaciones sanitarias. Comprender qué es cada tipo de software permite mantener los equipos, instalar y actualizar programas y resolver o comunicar incidencias.
 
-> 🧩 **Cuestionario final del bloque:** accede a [**Cuestionario_1_1_Software**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081) y contesta a las preguntas relacionadas con estos contenidos. Hazlo tantas veces como quieras antes de que finalice el plazo, se guardará tu mejor nota.
+> 🧩 **Cuestionario final del bloque:** accede a [**Cuestionario_1_1_Software**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081) y contesta a las preguntas relacionadas con estos contenidos. Hazlo tantas veces como quieras antes de que finalice el plazo, se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: [**Bloque práctico de software**](../practico-software/index.html).
+
+<figure class="image-figure image-figure--wide">
+  <img src="../images/software/mapa-software.png" alt="Mapa mental de la organización del software: software de sistema (sistema operativo y drivers), software de aplicación (ofimática y aplicaciones sanitarias) y utilidades del sistema." loading="lazy">
+  <figcaption>Mapa mental del software: esquema de todo lo estudiado en el bloque.</figcaption>
+</figure>
 
 > 🧰 **Bloque práctico:** cuando completes el cuestionario, trabaja el [**Bloque práctico: Software y configuración básica de un puesto de trabajo administrativo sanitario**](../practico-software/index.html): identificación de software y hardware, sistema operativo y sus funciones, y personalización básica del sistema, con actividades autocorregibles y soluciones descargables.
 

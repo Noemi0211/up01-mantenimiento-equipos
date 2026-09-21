@@ -187,6 +187,8 @@
     { chip: "Gestión de citas", nom: "Gestión de citas", tipo: "Software de aplicación sanitaria", funcion: "Reserva y administra citas de pacientes.", tarea: "Asignar, consultar y recordar citas en el servicio." }
   ];
 
+  var SW_DECK_SOFT = SW_DECK.filter(function (d) { return !d.img; });
+
   var SW_FUNCIONES = [
     { a: "Sistema operativo (Windows)", b: "Gestionar el equipo y hacer de intermediario entre hardware y usuario" },
     { a: "Procesador de textos (Word)", b: "Crear y modificar documentos de texto" },
@@ -1068,7 +1070,7 @@
     if ($("#inventario")) { iniciarInventario($("#inventario")); }
 
     /* --- Bloque práctico · Software --- */
-    if ($("#baraja-soft")) { iniciarBaraja($("#baraja-soft"), SW_DECK); }
+    if ($("#baraja-soft")) { iniciarBaraja($("#baraja-soft"), SW_DECK_SOFT); }
     if ($("#empareja-funciones")) {
       iniciarEmparejado(
         $("#empareja-funciones"),
