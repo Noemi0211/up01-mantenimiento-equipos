@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque 03. Ciberseguridad. UP01 Mantenimiento básico de equipos. CFGS Documentación y Administración Sanitarias.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque 03 · Ciberseguridad · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="../02-software/index.html"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="index.html"><span>03</span> Ciberseguridad</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#que-es-ciberseguridad">1 · ¿Qué es la ciberseguridad?</a>
+          <a class="sidebar__link" href="#malware">2 · Malware</a>
+          <a class="sidebar__link" href="#ingenieria-social">3 · Ingeniería social</a>
+          <a class="sidebar__link" href="#herramientas-proteccion">4 · Herramientas de protección</a>
+          <a class="sidebar__link" href="#buenas-practicas">5 · Buenas prácticas</a>
+          <a class="sidebar__link" href="#mapa-ciberseguridad">6 · Mapa conceptual</a>
+          <a class="sidebar__link" href="#resumen-bloque">7 · Resumen del bloque</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 03 · Ciberseguridad</div>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431133" target="_blank" rel="noopener">Cuestionario teórico</a>
+          <a class="sidebar__link" href="../practico-ciberseguridad/index.html">Bloque práctico</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431277" target="_blank" rel="noopener">PR-01.7 · Malware y amenazas</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431343" target="_blank" rel="noopener">PR-01.8 · Ingeniería social</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431355" target="_blank" rel="noopener">PR-01.9 · Protección y buenas prácticas</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">Bloque 03 · Ciberseguridad</div>
+        <h1>Ciberseguridad</h1>
+        <p>Medidas, herramientas y buenas prácticas para proteger los sistemas informáticos, los dispositivos y la información de los puestos de trabajo sanitarios.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">UP01 · Mantenimiento básico de equipos</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 1 · ¿QUÉ ES LA CIBERSEGURIDAD? ============ -->
+      <section id="que-es-ciberseguridad">
+        <h2>1 · ¿Qué es la ciberseguridad?</h2>
+        <p>La <strong>ciberseguridad</strong> es el conjunto de <strong>medidas, herramientas y buenas prácticas</strong> destinadas a proteger los sistemas informáticos, los dispositivos y la información frente a:</p>
+        <ul>
+          <li><strong>Accesos no autorizados.</strong></li>
+          <li><strong>Pérdidas de datos.</strong></li>
+          <li><strong>Ataques informáticos.</strong></li>
+        </ul>
+        <p>En el <strong>ámbito sanitario</strong> es especialmente importante, porque los sistemas gestionan <strong>información sensible de pacientes y profesionales</strong>.</p>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> ciberseguridad no es solo instalar un antivirus: es proteger datos, dispositivos y sistemas con medidas técnicas y también con hábitos de uso seguros.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Los centros sanitarios deben proteger la historia clínica electrónica y los datos personales de pacientes y profesionales constante y rigurosamente.</p>
+        </div>
+
+        <div class="callout callout--example">
+          <p>Un centro de salud no solo usa antivirus: también limita quién accede a las historias clínicas, exige contraseñas seguras y forma al personal para que no caiga en engaños.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es más delicada la seguridad de los datos en un hospital que en un entorno doméstico?</strong> Porque se manejan datos sensibles de pacientes cuya divulgación o pérdida puede afectar gravemente a las personas y a la atención sanitaria.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Ciberseguridad = proteger sistemas, dispositivos e información frente a accesos no autorizados, pérdidas de datos y ataques. En sanidad, misión crítica.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · MALWARE ============ -->
+      <section id="malware">
+        <h2>2 · Malware o software malintencionado</h2>
+        <p>El <strong>malware</strong> es cualquier <strong>programa diseñado para dañar sistemas informáticos, robar información o alterar el funcionamiento normal de los dispositivos</strong>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Tipo</th><th>¿Qué hace?</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Virus</strong></td><td>Se adjunta a archivos legítimos y se propaga cuando estos se ejecutan.</td></tr>
+              <tr><td><strong>Troyano</strong></td><td>Aparenta ser seguro o útil, pero realiza acciones maliciosas.</td></tr>
+              <tr><td><strong>Ransomware</strong></td><td>Bloquea el acceso a los datos y exige un pago para recuperarlos.</td></tr>
+              <tr><td><strong>Spyware</strong></td><td>Recopila información del usuario sin su consentimiento.</td></tr>
+              <tr><td><strong>Gusanos (worms)</strong></td><td>Se propagan automáticamente por redes y dispositivos.</td></tr>
+              <tr><td><strong>Keylogger</strong></td><td>Registra las pulsaciones realizadas en el teclado.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Una infección por malware puede impedir el acceso a las historias clínicas electrónicas o comprometer información confidencial de pacientes.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué puede ser especialmente grave un ataque ransomware en un hospital?</strong> Porque puede impedir el acceso a información clínica necesaria para la atención de los pacientes.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>El malware (virus, troyanos, ransomware, spyware, gusanos y keyloggers) daña, roba o bloquea; en sanidad puede detener el acceso a historias clínicas.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · INGENIERÍA SOCIAL ============ -->
+      <section id="ingenieria-social">
+        <h2>3 · Ingeniería social</h2>
+        <p>La <strong>ingeniería social</strong> es una <strong>técnica de ataque basada en la manipulación de las personas</strong> para obtener información confidencial o acceso a sistemas.</p>
+        <p>En estos ataques el objetivo principal <strong>no es la tecnología, sino el error humano</strong>.</p>
+
+        <h3>3.1 · Phishing</h3>
+        <p>El <strong>phishing</strong> consiste en el envío de <strong>correos electrónicos, mensajes o páginas web falsas</strong> que intentan engañar al usuario para que <strong>revele información personal o credenciales de acceso</strong>.</p>
+        <ul>
+          <li><strong>Spear phishing:</strong> phishing dirigido a una persona o colectivo concreto.</li>
+          <li><strong>Whaling:</strong> ataque dirigido a cargos directivos o relevantes.</li>
+          <li><strong>Smishing:</strong> suplantación mediante mensajes de texto (SMS).</li>
+          <li><strong>Vishing:</strong> suplantación mediante llamadas telefónicas.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Los ciberdelincuentes pueden intentar obtener credenciales de acceso a aplicaciones sanitarias mediante mensajes fraudulentos.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante comprobar siempre el remitente de un correo electrónico?</strong> Porque algunos correos fraudulentos intentan hacerse pasar por organizaciones legítimas para obtener información confidencial.</p>
+        </div>
+
+        <h3>3.2 · Otras técnicas de ingeniería social</h3>
+        <ul>
+          <li><strong>Pretexting:</strong> inventar una historia para obtener información.</li>
+          <li><strong>Baiting:</strong> ofrecer un beneficio atractivo para engañar al usuario.</li>
+          <li><strong>Suplantación de identidad:</strong> hacerse pasar por una persona de confianza.</li>
+          <li><strong>Shoulder surfing:</strong> observar directamente la pantalla o el teclado de otra persona.</li>
+          <li><strong>Deepfake:</strong> uso de inteligencia artificial para crear contenido audiovisual falso con fines de engaño.</li>
+        </ul>
+
+        <div class="callout callout--summary">
+          <p>La ingeniería social manipula a las personas (no a las máquinas): el phishing y sus variantes, el pretexting, el baiting, la suplantación, el shoulder surfing y el deepfake buscan el error humano.</p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · HERRAMIENTAS DE PROTECCIÓN ============ -->
+      <section id="herramientas-proteccion">
+        <h2>4 · Herramientas de protección</h2>
+
+        <h3>4.1 · Antivirus</h3>
+        <ul>
+          <li><strong>Descripción:</strong> programa diseñado para <strong>detectar, bloquear y eliminar</strong> amenazas informáticas.</li>
+          <li><strong>Función:</strong> proteger el sistema frente a virus y otros tipos de malware.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Ayuda a proteger información clínica y administrativa.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante mantener actualizado el antivirus?</strong> Porque las amenazas evolucionan constantemente y requieren nuevas actualizaciones de protección.</p>
+        </div>
+
+        <h3>4.2 · Cortafuegos (firewall)</h3>
+        <ul>
+          <li><strong>Descripción:</strong> sistema de seguridad que <strong>controla las conexiones de red entrantes y salientes</strong>.</li>
+          <li><strong>Función:</strong> bloquear accesos no autorizados y proteger los dispositivos conectados a una red.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Contribuye a proteger los sistemas de información sanitaria frente a accesos no autorizados.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante proteger una red sanitaria?</strong> Porque almacena y transmite información sensible de pacientes y profesionales.</p>
+        </div>
+
+        <h3>4.3 · Otras herramientas de seguridad</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Herramienta</th><th>Función</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Antimalware</strong></td><td>Protege frente a amenazas avanzadas como spyware o ransomware.</td></tr>
+              <tr><td><strong>Gestores de contraseñas</strong></td><td>Ayudan a crear y almacenar contraseñas seguras.</td></tr>
+              <tr><td><strong>Software de cifrado</strong></td><td>Protege la información mediante técnicas criptográficas.</td></tr>
+              <tr><td><strong>VPN (red privada virtual)</strong></td><td>Permite establecer conexiones seguras a través de Internet.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> antivirus y cortafuegos son la primera línea de defensa; antimalware, gestores de contraseñas, cifrado y VPN completan la protección.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Antivirus (detecta y elimina), cortafuegos (controla la red), antimalware, gestores de contraseñas, cifrado y VPN forman el conjunto de herramientas de protección.</p>
+        </div>
+      </section>
+
+      <!-- ============ 5 · BUENAS PRÁCTICAS ============ -->
+      <section id="buenas-practicas">
+        <h2>5 · Buenas prácticas de seguridad digital</h2>
+        <p>Aplicar buenos hábitos reduce la mayoría de los riesgos de seguridad:</p>
+        <ul>
+          <li><strong>Contraseñas seguras:</strong> contraseñas largas y complejas, no reutilizarlas y activar la <strong>autenticación en dos pasos (2FA)</strong>.</li>
+          <li><strong>Navegación segura:</strong> no acceder a enlaces sospechosos, verificar la dirección de los sitios web y descargar software únicamente desde fuentes fiables.</li>
+          <li><strong>Actualizaciones:</strong> mantener actualizado el sistema operativo y actualizar las aplicaciones periódicamente.</li>
+          <li><strong>Protección de dispositivos:</strong> bloquear el acceso físico al equipo, no conectar dispositivos USB desconocidos y proteger la información sensible.</li>
+          <li><strong>Correo electrónico seguro:</strong> no abrir adjuntos sospechosos, comprobar el remitente y desconfiar de mensajes urgentes o alarmistas.</li>
+          <li><strong>Redes Wi-Fi:</strong> evitar redes públicas para acceder a información sensible y utilizar la <strong>VPN</strong> cuando sea necesario.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>La protección de los datos de pacientes empieza por los hábitos diarios del personal: contraseñas, bloqueo de pantalla, correo seguro y cuidado con las redes y los dispositivos USB.</p>
+        </div>
+
+        <div class="callout callout--example">
+          <p>Antes de salir de la consulta, bloquea el equipo; al recibir un correo de un «compañero» pidiendo datos, verifica el remitente y desconfía de la urgencia.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué harías si un USB encontrado en el pasillo se conecta a tu equipo?</strong> No conectarlo: los dispositivos USB desconocidos pueden contener malware. Debe avisarse a la persona responsable.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Contraseñas seguras con 2FA, navegación prudente, actualizaciones, bloqueo de dispositivos, correo seguro y cuidar las redes Wi-Fi son las buenas prácticas esenciales.</p>
+        </div>
+      </section>
+
+      <!-- ============ 6 · MAPA CONCEPTUAL ============ -->
+      <section id="mapa-ciberseguridad">
+        <h2>6 · Mapa conceptual de ciberseguridad</h2>
+        <p>Así se organiza todo lo estudiado en este bloque:</p>
+        <pre style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;overflow-x:auto;font-size:0.85rem;line-height:1.5;">CIBERSEGURIDAD
+├── Malware
+│   ├── Virus
+│   ├── Troyano
+│   ├── Ransomware
+│   ├── Spyware
+│   ├── Gusano (Worm)
+│   └── Keylogger
+├── Ingeniería social
+│   ├── Phishing → Spear phishing · Whaling · Smishing · Vishing
+│   ├── Pretexting
+│   ├── Baiting
+│   ├── Suplantación de identidad
+│   ├── Shoulder surfing
+│   └── Deepfake
+├── Herramientas de protección
+│   ├── Antivirus
+│   ├── Cortafuegos (Firewall)
+│   ├── Antimalware
+│   ├── Gestores de contraseñas
+│   ├── Software de cifrado
+│   └── VPN
+├── Buenas prácticas
+│   ├── Contraseñas seguras
+│   ├── Autenticación en dos pasos (2FA)
+│   ├── Navegación segura
+│   ├── Actualizaciones
+│   ├── Protección de dispositivos
+│   ├── Uso seguro del correo electrónico
+│   ├── Seguridad en redes Wi-Fi
+│   └── Protección de datos personales
+└── Objetivo principal
+    ├── Confidencialidad
+    ├── Integridad
+    └── Disponibilidad</pre>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> el objetivo principal de la ciberseguridad se resume en tres palabras: <strong>confidencialidad</strong> (solo quien debe puede ver los datos), <strong>integridad</strong> (los datos no se alteran) y <strong>disponibilidad</strong> (los datos y sistemas están accesibles cuando se necesitan). Repásalo antes del cuestionario final.</p>
+        </div>
+      </section>
+
+      <!-- ============ 7 · RESUMEN DEL BLOQUE ============ -->
+      <section id="resumen-bloque">
+        <h2>7 · Resumen del bloque</h2>
+        <ul>
+          <li>La <strong>ciberseguridad</strong> protege sistemas, dispositivos e información frente a accesos no autorizados, pérdidas de datos y ataques.</li>
+          <li><strong>Malware:</strong> virus, troyano, ransomware, spyware, gusano y keylogger.</li>
+          <li><strong>Ingeniería social:</strong> controla a las personas, no a las máquinas: phishing y variantes, pretexting, baiting, suplantación, shoulder surfing y deepfake.</li>
+          <li><strong>Herramientas de protección:</strong> antivirus, cortafuegos, antimalware, gestores de contraseñas, cifrado y VPN.</li>
+          <li><strong>Buenas prácticas:</strong> contraseñas seguras y 2FA, navegación segura, actualizaciones, correo seguro, protección de dispositivos y cuidado de las redes Wi-Fi.</li>
+          <li><strong>Objetivo final:</strong> confidencialidad, integridad y disponibilidad de la información.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Cuidar la ciberseguridad del puesto es cuidar a los pacientes: cada hábito seguro de tu día a día protege sus datos y garantiza que la información clínica esté disponible cuando se necesita.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario final del bloque:</strong> accede a <strong><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431133" target="_blank" rel="noopener">Cuestionario_1_3_Ciberseguridad</a></strong> y contesta a las preguntas relacionadas con estos contenidos. Hazlo tantas veces como quieras antes de que finalice el plazo, se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: <a href="../practico-ciberseguridad/index.html"><strong>Bloque práctico de ciberseguridad</strong></a>.</p>
+        </div>
+
+        <div class="card-grid">
+          <a class="card" href="../practico-ciberseguridad/index.html">
+            <div class="card__icon">🛡️</div>
+            <h3>Bloque práctico: ciberseguridad del puesto de trabajo</h3>
+            <p>Reconocimiento de amenazas e ingeniería social, y herramientas y buenas prácticas de protección. Actividades autocorregibles con soluciones descargables.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="../index.html">
+          <small>Anterior</small>
+          ← Presentación de la unidad
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431133" target="_blank" rel="noopener">
+          <small>Siguiente</small>
+          Cuestionario teórico sobre la ciberseguridad →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+</body>
+</html>

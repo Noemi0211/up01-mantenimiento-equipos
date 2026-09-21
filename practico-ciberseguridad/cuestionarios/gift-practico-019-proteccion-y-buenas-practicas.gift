@@ -1,0 +1,71 @@
+$CATEGORY: OFI/UP01/PR/01-9-proteccion-buenas-practicas
+
+::CSPR019_01_Antivirus::La herramienta principal que detecta, bloquea y elimina software malicioso es…{
+=El antivirus~El firewall~El gestor de contraseñas~La VPN
+}
+
+::CSPR019_02_Firewall::El cortafuegos (firewall) sirve para…{
+=Controlar las conexiones de red entrantes y salientes~Eliminar virus del equipo~Crear contraseñas~Comprimir archivos
+}
+
+::CSPR019_03_FuncionCifrado::Cifrar la información sirve para…{
+=Proteger los datos mediante técnicas criptográficas para que solo los vean quienes tienen la clave~Que el equipo arranque más rápido~Aumentar la memoria~Cambiar el idioma del sistema
+}
+
+::CSPR019_04_TwoFactor::La autenticación en dos pasos (2FA)…{
+=Añade un segundo factor de confirmación de identidad~Reemplaza la contraseña~Duplica los datos~Crea dos usuarios
+}
+
+::CSPR019_05_GestorContraseñas::Para guardar contraseñas seguras de forma segura se recomienda…{
+=Un gestor de contraseñas~Un post-it en el monitor~Compartirlas con el equipo~Guardarlas en un documento de texto
+}
+
+::CSPR019_06_VPN::La VPN sirve para…{
+=Establecer conexiones seguras a través de Internet~Reiniciar el equipo~Imprimir documentos~Eliminar malware
+}
+
+::CSPR019_07_PasswordSegura::¿Cuál es una contraseña segura?{
+=Larga, compleja y no reutilizada en otros servicios~El número de la seguridad social~El nombre del centro en minúsculas~La propia fecha de nacimiento
+}
+
+::CSPR019_08_Backup::Las copias de seguridad periódicas permiten…{
+=Recuperar los datos ante un ataque o una pérdida~Evitar instalar el antivirus~Acelerar la impresora~Bloquear la red
+}
+
+::CSPR019_09_Actualizaciones::Mantener actualizado el sistema operativo es importante porque…{
+=Corrige vulnerabilidades conocidas de seguridad~Aumenta el número de periféricos~Cambia la contraseña automáticamente~Desactiva el firewall
+}
+
+::CSPR019_10_Remitente::Antes de abrir un adjunto en un correo, lo primero es…{
+=Comprobar el remitente y si la dirección es legítima~Pulsar sobre el adjunto para verlo~Reenviarlo a un compañero~Guardarlo en el escritorio
+}
+
+::CSPR019_11_VerdaderoFalsoFirewall::Desactivar el firewall suele mejorar la seguridad del puesto.{F}
+
+::CSPR019_12_VerdaderoFalsoWiFi::Trabajar con datos sanitarios en una red Wi-Fi abierta sin protección es seguro.{F}
+
+::CSPR019_13_USBDesconocido::Ante una memoria USB desconocida…{
+=No se conecta y se avisa al responsable~Se conecta en el puesto propio~Se comparte con los compañeros~Se reinicia el equipo
+}
+
+::CSPR019_14_BloqueoSesion::Para proteger el puesto al abandonarlo unos minutos se debe…{
+=Bloquear la sesión (Windows+L)~Apagar el monitor~Abrir el correo~Cerrar la puerta del aula
+}
+
+::CSPR019_15_MapaMundoInterno::La capa de seguridad que previene accesos no autorizados del exterior a la red se llama…{
+=Cortafuegos (firewall)~Antivirus~Keylogger~Spam
+}
+
+::CSPR019_16_BDPersonal::Ante un mensaje de una conocida entidad sanitaria pidiendo urgentemente tu contraseña…{
+=Se deduce que es falso: ninguna entidad legítima pide créditos por correo o SMS~Se comparte la contraseña~Se responde con otro dato~Se reinicia el equipo
+}
+
+::CSPR019_17_IncidenteProtocolo::Cuando se detecta un incidente de seguridad, el protocolo recomienda…{
+=Registrar y avisar a la persona responsable según el procedimiento del centro~Borrar las pruebas sin avisar~Reiniciar el servidor~Esperar a que desaparezca solo
+}
+
+::CSPR019_18_VerdaderoFalsoFirmaLegitima::Un correo legítimo ha de estar firmado por la entidad y usar dominios oficiales.{T}
+
+::CSPR019_19_VerdaderoFalsoContraseñaSola::Bastar con una contraseña para proteger una cuenta es siempre suficiente.{F}
+
+::CSPR019_20_VerdaderoFalsoPenalizacion::Las actualizaciones automáticas pueden retrasarse indefinidamente sin riesgo.{F}

@@ -1,0 +1,75 @@
+$CATEGORY: OFI/UP01/CS/01-que-es-ciberseguridad
+
+::CS01_01_Definicion::¿Qué es la ciberseguridad?{
+=Es el conjunto de medidas, herramientas y buenas prácticas para proteger sistemas, dispositivos e información frente a accesos no autorizados, pérdidas de datos y ataques informáticos.
+~Es el software que limpia el disco duro del ordenador.
+~Es el cableado interno que conecta los componentes de un equipo.
+~Es la red de Internet que utiliza un centro sanitario.
+}
+
+::CS01_02_ProtegeQue::¿Qué protege la ciberseguridad?{
+=Los sistemas informáticos, los dispositivos y la información.
+~Únicamente los cables y las conexiones.
+~Solo los programas de ofimática.
+~Exclusivamente las impresoras.
+}
+
+::CS01_03_Amenazas::¿Frente a qué protege la ciberseguridad?{
+=Accesos no autorizados, pérdidas de datos y ataques informáticos.
+~El desgaste físico de los periféricos.
+~La falta de papel en impresora.
+~El orden de los archivos de la papelera.
+}
+
+::CS01_04_AmbijtoSanitario::¿Por qué es especialmente importante la ciberseguridad en el ámbito sanitario?{
+=Porque los sistemas gestionan información sensible de pacientes y profesionales.
+~Porque los hospitales utilizan muchos cables.
+~Porque los ordenadores sanitarios son más caros.
+~Porque el personal sanitario no usa contraseñas.
+}
+
+::CS01_05_InformacionSensible::¿Qué tipo de información gestionan los sistemas sanitarios que conviene proteger?{
+=Historias clínicas y datos personales de pacientes y profesionales.
+~Las facturas de la cafetería.
+~Los horarios de autobuses.
+~Las listas de música de los ascensores.
+}
+
+::CS01_06_NoEsCiberseguridad::¿Cuál de las siguientes opciones NO es una medida de ciberseguridad?{
+=Instalar programas de juegos sin control.
+~Usar contraseñas seguras en los accesos al sistema.
+~Actualizar el antivirus periódicamente.
+~Limitar el acceso a las historias clínicas.
+}
+
+::CS01_07_ERROR_DISTRACTOR_OK_1::¿Cuál de las siguientes opciones es una medida básica de ciberseguridad?{
+=Bloquear el equipo cuando se abandona el puesto.
+~Apagar el monitor sin cerrar sesión.
+~Anotar la contraseña en un post-it del teclado.
+~Compartir la contraseña con los compañeros.
+}
+
+::CS01_08_VerdaderoFalso::La ciberseguridad solo se preocupa de los ataques técnicos y nunca del error humano.{F}
+
+::CS01_09_VerdaderoFalso::En sanidad es especialmente importante proteger los datos de pacientes y profesionales.{T}
+
+::CS01_10_CualNoProtege::¿Cuál de los siguientes NO es un objetivo de la ciberseguridad?{
+=Que los equipos sean más rápidos.
+~Que solo las personas autorizadas accedan a los datos.
+~Que los datos no se alteren.
+~Que la información esté disponible cuando se necesita.
+}
+
+::CS01_11_ActitudPersonal::La ciberseguridad en un puesto administrativo sanitario depende principalmente de…{
+=Las medidas técnicas y los hábitos seguros del personal.
+~Únicamente del antivirus instalado.
+~Solo del administrador de la red.
+~Exclusivamente del tipo de impresora.
+}
+
+::CS01_12_Resumen::¿Cuál resume mejor el concepto de ciberseguridad?{
+=Proteger sistemas, dispositivos e información frente a accesos no autorizados, pérdidas de datos y ataques.
+~Mantener limpios los equipos por fuera.
+~Guardar copias de los manuales del software.
+~Conectar más periféricos al puesto de trabajo.
+}

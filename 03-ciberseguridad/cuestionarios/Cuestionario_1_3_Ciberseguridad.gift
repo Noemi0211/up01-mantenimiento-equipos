@@ -1,0 +1,264 @@
+$CATEGORY: OFI/UP01/CS/11-cuestionario-ciberseguridad
+
+::CS11_01_Definicion::¿Qué es la ciberseguridad?{
+=El conjunto de medidas, herramientas y buenas prácticas para proteger sistemas, dispositivos e información frente a accesos no autorizados, pérdidas de datos y ataques.
+~El programa de limpieza del disco.
+~La red interna del centro sanitario.
+~El manual de uso de los periféricos.
+}
+
+::CS11_02_Sanidad::¿Por qué es especialmente importante la ciberseguridad en sanidad?{
+=Porque los sistemas gestionan información sensible de pacientes y profesionales.
+~Porque los hospitales usan muchos ordenadores.
+~Porque el personal sanitario trabaja de noche.
+~Porque hay impresoras en todas las plantas.
+}
+
+::CS11_03_MalwareDef::El malware es…{
+=Cualquier programa diseñado para dañar sistemas, robar información o alterar su funcionamiento.
+~El sistema operativo principal.
+~El controlador de la tarjeta gráfica.
+~La batería del portátil.
+}
+
+::CS11_04_VirusDef::Un virus informático se caracteriza por…{
+=Adjuntarse a archivos legítimos y propagarse cuando estos se ejecutan.
+~Propagarse solo por las redes sin tocar archivos.
+~Recopilar contraseñas del teclado.
+~Bloquear la pantalla del equipo.
+}
+
+::CS11_05_TroyanoDef::El troyano es…{
+=Un programa que aparenta ser seguro pero realiza acciones maliciosas.
+~Un cable de red.
+~Un tipo de memoria RAM.
+~Un programa de presentaciones.
+}
+
+::CS11_06_RansomwareDef::Un ransomware…{
+=Bloquea el acceso a los datos y exige un pago para recuperarlos.
+~Registra las pulsaciones del teclado.
+~Comprime los archivos.
+~Protege la conexión Wi-Fi.
+}
+
+::CS11_07_SpywareDef::El spyware…{
+=Recopila información del usuario sin su consentimiento.
+~Controla la temperatura del procesador.
+~Organiza las citas médicas.
+~Actualiza el antivirus.
+}
+
+::CS11_08_GusanoDef::El gusano informático…{
+=Se propaga automáticamente por redes y dispositivos.
+~Necesita un archivo del usuario para activarse.
+~Solo actúa sobre la impresora.
+~Es un componente físico del equipo.
+}
+
+::CS11_09_KeyloggerDef::El keylogger se dedica a…{
+=Registrar las pulsaciones del teclado.
+~Limpiar archivos temporales.
+~Cifrar los documentos.
+~Gestionar la bandeja del correo.
+}
+
+::CS11_10_RansomwareHospital::¿Por qué un ransomware es especialmente grave en un hospital?{
+=Porque puede impedir el acceso a información clínica necesaria para atender pacientes.
+~Porque gasta mucha electricidad.
+~Porque cambia el idioma del sistema.
+~Porque apaga los monitores.
+}
+
+::CS11_11_VerdaderoFalsoVirusActiva::Un virus se activa al ejecutar el archivo al que se ha adjuntado.{T}
+
+::CS11_12_IngenieriaSocialDef::La ingeniería social…{
+=Es una técnica de ataque basada en la manipulación de las personas.
+~Es un tipo de virus de la red.
+~Es un sistema de cifrado de datos.
+~Es una herramienta del sistema operativo.
+}
+
+::CS11_13_IngenieriaSocialObjetivo::En la ingeniería social, el objetivo principal es…{
+=El error humano.
+~El servidor del centro.
+~El firewall.
+~La tarjeta de red.
+}
+
+::CS11_14_PhishingDef::¿Qué es el phishing?{
+=El envío de correos, mensajes o webs falsas para que el usuario revele información o credenciales.
+~Un programa de copias de seguridad.
+~Un sistema de impresión en red.
+~Un componente de la placa base.
+}
+
+::CS11_15_SpearPhishing::El spear phishing es un phishing…{
+=Dirigido a una persona o colectivo concreto.
+~Que solo llega por SMS.
+~Que ataca a los equipos apagados.
+~Que se elimina con un reinicio.
+}
+
+::CS11_16_Smishing::La suplantación mediante SMS se llama…{
+=Smishing.
+~Vishing.
+~Deepfake.
+~Baiting.
+}
+
+::CS11_17_Vishing::La suplantación mediante llamadas telefónicas se llama…{
+=Vishing.
+~Smishing.
+~Whaling.
+~Pretexting.
+}
+
+::CS11_18_OtrasTecnicas::Pretexting, baiting, suplantación de identidad, shoulder surfing y deepfake son…{
+=Técnicas de ingeniería social.
+~Tipos de memoria.
+~Herramientas de cifrado.
+~Protocolos de red.
+}
+
+::CS11_19_DeepfakeDef::El deepfake es…{
+=Contenido audiovisual falso creado con inteligencia artificial.
+~Un sistema de copias de seguridad.
+~Un puerto de conexión.
+~Un tipo de antivirus.
+}
+
+::CS11_20_VerdaderoFalsoErrorHumano::La ingeniería social aprovecha la confianza de las personas.{T}
+
+::CS11_21_AntivirusDef::La función principal del antivirus es…{
+=Detectar, bloquear y eliminar amenazas informáticas.
+~Controlar las conexiones de red.
+~Crear contraseñas seguras.
+~Comprimir los archivos.
+}
+
+::CS11_22_AntivirusActualizado::¿Por qué conviene mantener el antivirus actualizado?{
+=Porque las amenazas evolucionan y requieren nuevas protecciones.
+~Para que el equipo arranque más rápido.
+~Para liberar espacio en el disco.
+~Para cambiar el idioma del sistema.
+}
+
+::CS11_23_FirewallDef::El cortafuegos (firewall)…{
+=Controla las conexiones de red entrantes y salientes.
+~Detecta y elimina virus del disco.
+~Guarda las contraseñas.
+~Registra las pulsaciones del teclado.
+}
+
+::CS11_24_AntimalwareDef::El antimalware protege frente a…{
+=Amenazas avanzadas como spyware o ransomware.
+~Errores de impresión.
+~Cortes de luz.
+~Fallos del teclado.
+}
+
+::CS11_25_GestorContrasenas::Los gestores de contraseñas permiten…{
+=Crear y almacenar contraseñas seguras.
+~Editar documentos de texto.
+~Conectar redes Wi-Fi.
+~Reparar periféricos.
+}
+
+::CS11_26_CifradoDef::El software de cifrado…{
+=Protege la información mediante técnicas criptográficas.
+~Borra los archivos temporales.
+~Actualiza el sistema operativo.
+~Registra las visitas de pacientes.
+}
+
+::CS11_27_VPNDef::La VPN permite…{
+=Establecer conexiones seguras a través de Internet.
+~Imprimir sin cables.
+~Ampliar la memoria RAM.
+~Acumular copias de seguridad.
+}
+
+::CS11_28_VerdaderoFalsoFirewall::El firewall bloquea accesos no autorizados en la red.{T}
+
+::CS11_29_ContrasenaSegura::Una contraseña segura es…{
+=Larga y compleja, y no se reutiliza en otros servicios.
+~La fecha de nacimiento del usuario.
+~El nombre del centro.
+~Una palabra corta fácil de recordar.
+}
+
+::CS11_30_2FA::La autenticación en dos pasos (2FA) añade…{
+=Un segundo factor de confirmación de la identidad.
+~Una segunda contraseña para el correo.
+~Un segundo usuario en el sistema.
+~Una copia extra de los archivos.
+}
+
+::CS11_31_NavegacionSegura::¿Qué hábito es seguro al navegar?{
+=Verificar la dirección del sitio web antes de introducir datos.
+~Pulsar cualquier enlace que llegue por correo.
+~Descargar software de cualquier web.
+~Guardar la contraseña anotada en el escritorio.
+}
+
+::CS11_32_Actualizaciones::¿Qué se recomienda con las actualizaciones?{
+=Mantener actualizado el sistema operativo y las aplicaciones.
+~Desactivarlas para ahorrar tiempo.
+~Actualizar solo los juegos.
+~Borrar las que lleguen automáticas.
+}
+
+::CS11_33_USBDesconocido::Ante un USB desconocido…{
+=No se conecta y se avisa a la persona responsable.
+~Se conecta para revisar su contenido.
+~Se conecta si es pequeño.
+~Se formatea directamente.
+}
+
+::CS11_34_CorreoSeguro::Un correo con adjuntos sospechosos…{
+=No se abre y se comprueba el remitente.
+~Se abre para ver qué contiene.
+~Se reenvía a los compañeros.
+~Se guarda en la carpeta de descargas.
+}
+
+::CS11_35_WifiPublica::Para acceder a información sensible desde una red pública…{
+=Se evita o se utiliza una VPN.
+~Se accede directamente sin comprobarlo.
+~Se comparte la contraseña de la red.
+~Se desconecta el antivirus.
+}
+
+::CS11_36_VerdaderoFalsoUsb::Conectar un USB hallado en el pasillo es seguro si hay antivirus instalado.{F}
+
+::CS11_37_VerdaderoFalsoBloqueo::Bloquear el equipo al abandonar el puesto protege la información.{T}
+
+::CS11_38_ObjetivoTriada::El objetivo principal de la ciberseguridad se resume en…{
+=Confidencialidad, integridad y disponibilidad.
+~Velocidad, memoria y pantalla.
+~Red, correo y almacenamiento.
+~Identidad, contraseña y antivirus.
+}
+
+::CS11_39_Confidencialidad::La confidencialidad significa que…{
+=Solo las personas autorizadas pueden acceder a los datos.
+~Los datos siempre están disponibles.
+~Los datos no se pueden borrar.
+~Todos los datos se comparten.
+}
+
+::CS11_40_Disponibilidad::La disponibilidad significa que…{
+=Los datos y sistemas están accesibles cuando se necesitan.
+~Los datos se guardan en papel.
+~Los equipos nunca se apagan.
+~Solo el administrador usa el sistema.
+}
+
+::CS11_41_VerdaderoFalsoActualizaciones::Desactivar las actualizaciones mejora la seguridad del puesto.{F}
+
+::CS11_42_ResumenProteccion::¿Qué conjunto protege mejor un puesto sanitario?{
+=Antivirus, cortafuegos, antimalware, gestión de contraseñas, cifrado, VPN y buenas prácticas.
+~Solo el antivirus.
+~Solo el cortafuegos.
+}

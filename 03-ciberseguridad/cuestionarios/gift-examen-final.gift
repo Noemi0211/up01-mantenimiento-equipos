@@ -1,0 +1,131 @@
+$CATEGORY: OFI/UP01/CS/09-examen-final
+
+::CS_EX_01_Definicion::¿Qué es la ciberseguridad?{
+=Medidas, herramientas y buenas prácticas que protegen sistemas, dispositivos e información frente a accesos no autorizados, pérdidas de datos y ataques.
+~El software que gestiona las historias clínicas.
+~El cableado interno de los equipos.
+~La lista de periféricos del centro.
+}
+
+::CS_EX_02_VirusDef::¿Cómo actúa un virus informático?{
+=Se adjunta a archivos legítimos y se propaga cuando estos se ejecutan.
+~Se propaga solo por redes sin tocar archivos.
+~Registra las pulsaciones del teclado.
+~Bloquea el acceso a los datos pidiendo un pago.
+}
+
+::CS_EX_03_TroyanoDef::Un programa que aparenta ser útil pero realiza acciones maliciosas es…{
+=Un troyano.
+~Un gusano.
+~Un antivirus.
+~Un gestor de contraseñas.
+}
+
+::CS_EX_04_RansomwareDef::El ransomware…{
+=Bloquea los datos y exige un pago para recuperarlos.
+~Recopila datos sin consentimiento.
+~Se propaga por la red automáticamente.
+~Registra las pulsaciones del teclado.
+}
+
+::CS_EX_05_KeyloggerDef::Un keylogger sirve para…{
+=Registrar las pulsaciones del teclado y robar credenciales.
+~Comprimir los archivos.
+~Crear copias de seguridad.
+~Controlar la red local.
+}
+
+::CS_EX_06_MalwareSanidad::Una infección por malware en un centro sanitario puede…{
+=Impedir el acceso a las historias clínicas electrónicas.
+~Mejorar la impresión de listados.
+~Cambiar el idioma del sistema.
+~Acortar la duración del turno.
+}
+
+::CS_EX_07_IngenieriaSocial::La ingeniería social se basa en…{
+=Manipular a las personas para obtener información o acceso.
+~Vencer la seguridad del firewall.
+~Descifrar las contraseñas del servidor.
+~Saturar la red del centro.
+}
+
+::CS_EX_08_PhishingDef::¿Qué pretende un correo de phishing?{
+=Que el usuario revele información personal o credenciales.
+~Que el usuario actualice el antivirus.
+~Que el usuario imprima documentos.
+~Que el usuario reinicie el equipo.
+}
+
+::CS_EX_09_SmishingVishing::La suplantación por SMS es el smishing; por teléfono es…{
+=Vishing.
+~Whaling.
+~Deepfake.
+~Pretexting.
+}
+
+::CS_EX_10_ShoulderSurfing::Observar la pantalla o el teclado de otra persona para obtener datos se llama…{
+=Shoulder surfing.
+~Baiting.
+~Pretexting.
+~Cifrado.
+}
+
+::CS_EX_11_AntivirusFunción::La función del antivirus es…{
+=Detectar, bloquear y eliminar amenazas informáticas.
+~Controlar las conexiones de red.
+~Crear contraseñas seguras.
+~Comprimir archivos.
+}
+
+::CS_EX_12_FirewallFunción::La función del cortafuegos es…{
+=Controlar las conexiones de red entrantes y salientes.
+~Detectar virus en el disco.
+~Guardar contraseñas.
+~Registrar pulsaciones.
+}
+
+::CS_EX_13_VPNUso::¿Cuándo conviene usar una VPN?{
+=Al acceder a información sensible desde una red pública.
+~Solo para imprimir documentos.
+~Cuando el equipo está encendido.
+~Para cambiar el fondo de pantalla.
+}
+
+::CS_EX_14_ContrasenaSegura::¿Cuál es una contraseña segura?{
+=Larga, compleja y no reutilizada en otros servicios.
+~El número de la seguridad social del usuario.
+~El nombre del centro en minúsculas.
+~Una palabra corta que se recuerda con facilidad.
+}
+
+::CS_EX_15_2FA::La autenticación en dos pasos…{
+=Añade un segundo factor de confirmación de la identidad.
+~Duplica la contraseña.
+~Crea dos usuarios.
+~Guarda dos copias de los archivos.
+}
+
+::CS_EX_16_CorreoSospechoso::Ante un correo urgente que pide datos personales…{
+=Se desconfía, se comprueba el remitente y se avisa si procede.
+~Se responde de inmediato para no perder tiempo.
+~Se reenvía a los compañeros.
+~Se ignora siempre sin comprobarlo.
+}
+
+::CS_EX_17_USBDesconocido::Ante un USB desconocido…{
+=No se conecta y se avisa a la persona responsable.
+~Se conecta para revisarlo.
+~Se conecta solo si es de metal.
+~Se reinicia el equipo antes de conectarlo.
+}
+
+::CS_EX_18_Objetivo::El objetivo principal de la ciberseguridad es proteger…{
+=La confidencialidad, la integridad y la disponibilidad de la información.
+~La velocidad de los equipos.
+~El número de periféricos.
+~El brillo de las pantallas.
+}
+
+::CS_EX_19_VerdaderoFalsoFirewall::El firewall controla las conexiones de red entrantes y salientes.{T}
+
+::CS_EX_20_VerdaderoFalsoActualizar::Desactivar las actualizaciones del sistema protege mejor el equipo.{F}

@@ -1,0 +1,73 @@
+$CATEGORY: OFI/UP01/PR/01-8-ingenieria-social
+
+::CSPR018_01_DefinicionISI::La ingeniería social es…{
+=La manipulación de las personas para obtener información o acceso~Un tipo de malware~Un método de cifrado~Una red local
+}
+
+::CSPR018_02_ObjetivoISI::El objetivo del atacante en la ingeniería social es…{
+=Que la víctima revele datos, credenciales o acceso por propia decisión~Que el antivirus se actualice~Que el equipo se reinicie~Que se desactive el firewall
+}
+
+::CSPR018_03_Phishing::Un correo falso que imita a una entidad para robar credenciales es…{
+=Phishing~Un firewall~Un antivirus~Un gestor de contraseñas
+}
+
+::CSPR018_04_Smishing::La suplantación mediante mensajes de texto (SMS) se llama…{
+=Smishing~Vishing~Baiting~Pretexting
+}
+
+::CSPR018_05_Vishing::La suplantación mediante llamadas telefónicas se llama…{
+=Vishing~Smishing~Phishing~Deepfake
+}
+
+::CSPR018_06_Pretexting::Inventar una historia para obtener información de la víctima es…{
+=Pretexting~Baiting~Cifrado~Verificación
+}
+
+::CSPR018_07_Baiting::Ofrecer un beneficio atractivo para que la víctima haga clic o revele datos se llama…{
+=Baiting~Pretexting~Shoulder surfing~Backup
+}
+
+::CSPR018_08_ShoulderSurfing::Observar la pantalla o el teclado de otra persona para captar datos es…{
+=Shoulder surfing~Baiting~Smishing~Vishing
+}
+
+::CSPR018_09_Deepfake::El contenido audiovisual falso creado con IA para engañar se llama…{
+=Deepfake~Firewall~Spyware~Gusano
+}
+
+::CSPR018_10_SpearPhishing::El phishing dirigido a una persona o colectivo concreto se llama…{
+=Spear phishing~Baiting~Pretexting~Whaling
+}
+
+::CSPR018_11_Suplantacion::Hacerse pasar por una persona o entidad de confianza se denomina…{
+=Suplantación de identidad~Cifrado~Backup~Verificación
+}
+
+::CSPR018_12_UrgenciaFalsa::Incluir urgencia o miedo en el mensaje es una técnica habitual para…{
+=Que la víctima actúe sin pensar~Que la víctima verifique el remitente~Que el antivirus se bloquee~Que la impresora se conecte mejor
+}
+
+::CSPR018_13_CorreoDirector::Al recibir un correo del «director del centro» con una dirección no oficial pidiendo credenciales…{
+=Se desconfía, se comprueba el remitente y se avisa~Se responde de inmediato~Se reenvía a todos los compañeros~Se guarda como documento
+}
+
+::CSPR018_14_VerdaderoFalsoPresion::Un mensaje que presiona con urgencia para revelar datos suele ser legítimo.{F}
+
+::CSPR018_15_VerdaderoFalsoPersonal::La ingeniería social solo se realiza por correo electrónico.{F}
+
+::CSPR018_16_MedicacionFalsos::«Qué oferta pide datos de pacientes a cambio de una recompensa» es un ejemplo de…{
+=Baiting~Cifrado~Verificación~Shoulder surfing
+}
+
+::CSPR018_17_DatosHistoriaClinica::Ante una llamada pidiendo datos de pacientes para una «urgencia»…{
+=Se corta la llamada, se identifica al interlocutor por otra vía y se avisa~Se facilitan los datos por seguridad~Se traslada la llamada a un compañero~Se anota y se responde al día siguiente
+}
+
+::CSPR018_18_VerdaderoFalsoEscritorioBloqueado::Dejar la sesión desbloqueada en un puesto compartido favorece técnicas como el shoulder surfing.{T}
+
+::CSPR018_19_REDNombre::La red social donde se pueden recolectar datos personales para ataques personalizados es un objetivo de…{
+=La ingeniería social~El mantenimiento preventivo~La gestión de citas~La digitalización
+}
+
+::CSPR018_20_VerdaderoFalsoDefinitivo::Comprobar siempre el remitente antes de actuar es una buena defensa frente a la suplantación.{T}

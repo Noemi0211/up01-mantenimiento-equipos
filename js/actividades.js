@@ -15,6 +15,9 @@
   var CLAVE_SW_REC = "up01-practico-soft-rec-ok";
   var CLAVE_SW_SO = "up01-practico-soft-so-ok";
   var CLAVE_SW_CONFIG = "up01-practico-soft-config-ok";
+  var CLAVE_CIBER_AME = "up01-practico-ciber-ame-ok";
+  var CLAVE_CIBER_SOCIAL = "up01-practico-ciber-social-ok";
+  var CLAVE_CIBER_PROT = "up01-practico-ciber-prot-ok";
 
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
@@ -253,6 +256,111 @@
     { g: "Software de aplicación (ofimática)", items: ["Procesador de textos", "Hoja de cálculo", "Base de datos", "Presentaciones", "Correo y agenda"] },
     { g: "Aplicaciones sanitarias", items: ["Historia clínica electrónica", "Gestión de citas", "Gestión de pacientes", "Codificación diagnóstica"] },
     { g: "Controladores (drivers)", items: ["Impresora", "Escáner", "Tarjeta gráfica"] }
+  ];
+
+  /* -------------------- DATOS · CIBERSEGURIDAD -------------------- */
+
+  var CS_DECK = [
+    { chip: "Virus", nom: "Virus", tipo: "Malware", funcion: "Se adjunta a archivos legítimos y se propaga cuando se ejecutan.", tarea: "Puede corromper documentos e historias clínicas al abrir archivos infectados." },
+    { chip: "Troyano", nom: "Troyano", tipo: "Malware", funcion: "Aparenta ser seguro o útil pero realiza acciones maliciosas.", tarea: "Puede dar acceso remoto a un atacante en el puesto de trabajo." },
+    { chip: "Ransomware", nom: "Ransomware", tipo: "Malware", funcion: "Bloquea el acceso a los datos y exige un pago para recuperarlos.", tarea: "Puede impedir el acceso a historias clínicas durante una emergencia." },
+    { chip: "Gusano", nom: "Gusano", tipo: "Malware", funcion: "Se propaga automáticamente por redes y dispositivos.", tarea: "Puede infectar toda la red del centro sin intervención del usuario." },
+    { chip: "Spyware", nom: "Spyware", tipo: "Malware", funcion: "Recopila información del usuario sin su consentimiento.", tarea: "Puede espiar la actividad y robar datos sensibles del servicio." },
+    { chip: "Keylogger", nom: "Keylogger", tipo: "Malware", funcion: "Registra las pulsaciones del teclado.", tarea: "Puede robar contraseñas de las aplicaciones sanitarias." },
+    { chip: "Phishing", nom: "Phishing", tipo: "Ingeniería social", funcion: "Mensajes o webs falsas que intentan que reveles datos personales.", tarea: "Puede robar credenciales de acceso a cuentas corporativas." },
+    { chip: "Deepfake", nom: "Deepfake", tipo: "Ingeniería social", funcion: "Contenido audiovisual falso creado con IA para engañar.", tarea: "Puede suplantar a un responsable del centro para obtener datos." }
+  ];
+
+  var CS_MALWARE = [
+    { a: "Virus", b: "Se adjunta a archivos legítimos y se propaga al ejecutarlos" },
+    { a: "Troyano", b: "Aparenta ser seguro o útil pero realiza acciones maliciosas" },
+    { a: "Ransomware", b: "Bloquea los datos y exige un pago para recuperarlos" },
+    { a: "Gusano", b: "Se propaga automáticamente por redes y dispositivos" },
+    { a: "Spyware", b: "Recopila información del usuario sin su consentimiento" },
+    { a: "Keylogger", b: "Registra las pulsaciones del teclado" },
+    { a: "Phishing", b: "Mensajes o webs falsas para que reveles credenciales" },
+    { a: "Deepfake", b: "Audiovisual falso creado con IA para engañar" }
+  ];
+
+  var CS_ESCENARIOS = [
+    { s: "Te llaman por teléfono desde el «servicio de informática» y te piden la contraseña de la historia clínica.", ops: ["Vishing", "Smishing", "Shoulder surfing", "Deepfake"], ok: 0, ex: "El vishing es la suplantación por teléfono; nadie legítimo pedirá tu contraseña." },
+    { s: "Recibes un SMS de «tu banco» con un enlace para confirmar un cargo inexistente.", ops: ["Smishing", "Vishing", "Pretexting", "Baiting"], ok: 0, ex: "El smishing usa mensajes de texto para engañar." },
+    { s: "Una persona dice ser «la administrativa del servicio» y te cuenta una emergencia para que le facilites el usuario.", ops: ["Pretexting", "Deepfake", "Ransomware", "Keylogger"], ok: 0, ex: "El pretexting inventa una historia para obtener información." },
+    { s: "Te ofrecen una tableta «de regalo» si descargas su aplicación de música.", ops: ["Baiting", "Shoulder surfing", "Vishing", "Gusano"], ok: 0, ex: "El baiting ofrece un beneficio atractivo para engañar." },
+    { s: "Mientras trabajas notas que alguien se acerca y mira tu pantalla y tu teclado sin tu permiso.", ops: ["Shoulder surfing", "Phishing", "Smishing", "Spyware"], ok: 0, ex: "El shoulder surfing observa la pantalla o el teclado para captar datos." },
+    { s: "Recibes un correo «del director del centro», con una dirección no oficial, pidiendo credenciales de admisión.", ops: ["Suplantación de identidad", "Vishing", "Pretexting", "Baiting"], ok: 0, ex: "Hacerse pasar por una persona de confianza es una suplantación de identidad." },
+    { s: "Un vídeo generado con IA imita al gerente pidiendo que envíes datos de pacientes.", ops: ["Deepfake", "Keylogger", "Ransomware", "Gusano"], ok: 0, ex: "El deepfake crea contenido audiovisual falso con IA." },
+    { s: "Recibes un correo dirigido personalmente a ti, con un enlace «para revisar tu nómina», desde una dirección que parece interna.", ops: ["Spear phishing", "Baiting", "Shoulder surfing", "Troyano"], ok: 0, ex: "El spear phishing va dirigido a una persona concreta." }
+  ];
+
+  var CS_TECNICAS = [
+    { a: "Pretexting", b: "Inventar una historia para obtener información" },
+    { a: "Baiting", b: "Ofrecer un beneficio atractivo para engañar al usuario" },
+    { a: "Suplantación de identidad", b: "Hacerse pasar por una persona de confianza" },
+    { a: "Shoulder surfing", b: "Observar la pantalla o el teclado de otra persona" },
+    { a: "Deepfake", b: "Usar la IA para crear contenido audiovisual falso" },
+    { a: "Spear phishing", b: "Phishing dirigido a una persona o colectivo concreto" },
+    { a: "Smishing", b: "Suplantación mediante mensajes de texto (SMS)" },
+    { a: "Vishing", b: "Suplantación mediante llamadas telefónicas" }
+  ];
+
+  var CS_TEST = [
+    { p: "Un programa que se propaga automáticamente por la red se llama…", ops: ["Gusano", "Virus", "Troyano", "Deepfake"], ok: 0 },
+    { p: "El malware que bloquea los datos y pide un pago es…", ops: ["Ransomware", "Spyware", "Keylogger", "Baiting"], ok: 0 },
+    { p: "Un correo falso que pide tus credenciales es…", ops: ["Phishing", "Pretexting", "Shoulder surfing", "Gusano"], ok: 0 },
+    { p: "La técnica de hacerse pasar por el director del centro es…", ops: ["Suplantación de identidad", "Baiting", "Smishing", "Vishing"], ok: 0 },
+    { p: "Para crear contraseñas seguras y guardarlas se recomienda…", ops: ["Un gestor de contraseñas", "Autocompletar del navegador", "Un post-it en el monitor", "Una hoja de cálculo compartida"], ok: 0 },
+    { p: "La herramienta que controla las conexiones de red entrantes y salientes es…", ops: ["El cortafuegos (firewall)", "El antivirus", "El gestor de contraseñas", "El cifrado"], ok: 0 },
+    { p: "Comprobar el remitente antes de abrir adjuntos es una práctica de…", ops: ["Protección del correo electrónico", "Navegación rápida", "Protección física", "Gestión de citas"], ok: 0 },
+    { p: "¿Qué aporta la autenticación en dos pasos (2FA)?", ops: ["Un segundo factor de confirmación", "Una contraseña más larga", "Un antivirus extra", "Más espacio en el disco"], ok: 0 },
+    { p: "Ante un USB encontrado en el pasillo…", ops: ["No se conecta y se avisa", "Se conecta para revisarlo", "Se prueba en un equipo antiguo", "Se comparte con el compañero"], ok: 0 },
+    { p: "Una videollamada falsa que imita al gerente usa…", ops: ["Deepfake", "Baiting", "Pretexting", "Keylogger"], ok: 0 }
+  ];
+
+  var CS_HERRAMIENTAS = [
+    { a: "Antivirus", b: "Detecta, bloquea y elimina virus y otros malware" },
+    { a: "Cortafuegos (firewall)", b: "Controla las conexiones de red entrantes y salientes" },
+    { a: "Antimalware", b: "Protege frente a amenazas como spyware o ransomware" },
+    { a: "Gestor de contraseñas", b: "Crea y almacena contraseñas seguras" },
+    { a: "Software de cifrado", b: "Protege la información con técnicas criptográficas" },
+    { a: "VPN", b: "Establece conexiones seguras a través de Internet" },
+    { a: "Autenticación en dos pasos (2FA)", b: "Confirma la identidad con un segundo factor" },
+    { a: "Copias de seguridad", b: "Recupera los datos ante un ataque o una pérdida" }
+  ];
+
+  var CS_CHECKLIST = [
+    { t: "Uso una contraseña larga y compleja y no la comparto.",
+      a: "Crea una contraseña de al menos 12 caracteres mezclando letras, números y símbolos: no la reutilices en otros servicios ni la anotes junto al equipo." },
+    { t: "Compruebo el remitente y la dirección web antes de abrir o introducir datos.",
+      a: "Fíjate en el dominio del correo y en la URL completa antes de pulsar en un enlace; si la dirección es extraña, no la abras." },
+    { t: "No abro adjuntos sospechosos y desconfío de mensajes urgentes o alarmistas.",
+      a: "Ante un mensaje que te presiona, párate: verifica con otra vía si el remitente es legítimo antes de actuar." },
+    { t: "He activado la autenticación en dos pasos (2FA) en las cuentas que lo permiten.",
+      a: "Revisa los ajustes de seguridad de tus cuentas principales y activa el segundo factor de verificación." },
+    { t: "Bloqueo el equipo cuando abandono el puesto.",
+      a: "Usa Windows+L (u otra combinación de bloqueo rápido) cuando te levantes de la mesa, aunque sea por unos instantes." },
+    { t: "No conecto dispositivos USB desconocidos.",
+      a: "Si encuentras una memoria USB que no es tuya, no la conectes: avisa a la persona responsable o al servicio informático." },
+    { t: "Mantengo actualizado el sistema operativo y las aplicaciones.",
+      a: "Comprueba que las actualizaciones automáticas están activadas o instala las pendientes desde la configuración del sistema." },
+    { t: "Evito redes Wi-Fi públicas para información sensible y uso VPN cuando es necesario.",
+      a: "Comprueba la red a la que te conectas y usa VPN si trabajas desde una red no controlada por el centro." }
+  ];
+
+  var CS_SECUENCIA = [
+    "Detente y desconfía de los mensajes urgentes o alarmistas.",
+    "Comprueba el remitente y la dirección (dominio) del correo.",
+    "No abras adjuntos ni pulses enlaces sospechosos.",
+    "No facilites credenciales ni datos personales.",
+    "Avisa a la persona responsable o al servicio informático.",
+    "Registra la incidencia siguiendo el protocolo del centro."
+  ];
+
+  var CS_INVENTARIO = [
+    { g: "Herramientas de protección", items: ["Antivirus", "Cortafuegos (firewall)", "Antimalware", "Gestor de contraseñas", "Software de cifrado"] },
+    { g: "Seguridad de las cuentas", items: ["Autenticación en dos pasos (2FA)", "Contraseñas largas y complejas", "Sesiones bloqueadas al abandonar el puesto"] },
+    { g: "Red y navegación", items: ["Acceso a redes autorizadas del centro", "Uso de VPN cuando es necesario", "Navegación solo desde fuentes fiables"] },
+    { g: "Actualizaciones y copias", items: ["Actualizaciones del sistema operativo", "Actualizaciones de aplicaciones", "Copias de seguridad periódicas"] }
   ];
 
   /* -------------------- BAR AJA -------------------- */
@@ -1039,6 +1147,170 @@
     });
   }
 
+  /* -------------------- PONTE A PRUEBA · CIBERSEGURIDAD -------------------- */
+
+  function iniciarTestCiber(contenedor) {
+    var preguntas = [];
+    var total = 10;
+
+    function construir() {
+      preguntas = shuffle(CS_TEST).slice(0, total);
+      var html = '<ol class="test">';
+      preguntas.forEach(function (q, i) {
+        html += '<li class="test__q" data-q="' + i + '">';
+        html += '<div class="test__prompt"><span>' + esc(q.p) + "</span></div>";
+        html += '<div class="test__opciones">';
+        q.ops.forEach(function (o, j) {
+          html += '<button type="button" class="test__op" data-opt="' + j + '">' + esc(o) + "</button>";
+        });
+        html += "</div></li>";
+      });
+      html += "</ol>";
+      html += '<div class="feedback" aria-live="polite"><p>Selecciona una respuesta en cada pregunta y pulsa «Comprobar respuestas».</p></div>';
+      html += '<div class="practica__intro"><button type="button" class="btn btn--primary">Comprobar respuestas</button> ' +
+        '<button type="button" class="btn btn--ghost">Reintentar (nuevo test)</button></div>';
+      contenedor.innerHTML = html;
+
+      $$(".test__op", contenedor).forEach(function (b) {
+        b.addEventListener("click", function () {
+          var li = b.closest(".test__q");
+          $$(".test__op", li).forEach(function (o) { o.classList.remove("is-selected"); });
+          b.classList.add("is-selected");
+        });
+      });
+
+      $(".btn--primary", contenedor).addEventListener("click", function () { corregir(); });
+      $(".btn--ghost", contenedor).addEventListener("click", function () { construir(); });
+    }
+
+    function corregir() {
+      var aciertos = 0;
+      preguntas.forEach(function (q, i) {
+        var li = $('.test__q[data-q="' + i + '"]', contenedor);
+        var selec = $(".test__op.is-selected", li);
+        var ops = $$(".test__op", li);
+        if (!selec) { return; }
+        var elegida = parseInt(selec.getAttribute("data-opt"), 10);
+        if (elegida === q.ok) {
+          selec.classList.add("is-correct");
+          aciertos++;
+        } else {
+          selec.classList.add("is-wrong");
+          ops[q.ok].classList.add("is-revelado");
+        }
+        ops.forEach(function (o) { o.disabled = true; });
+      });
+      var fb = $(".feedback", contenedor);
+      if (aciertos === total) {
+        fb.className = "feedback feedback--ok";
+        fb.innerHTML = "<p>¡Perfecto! Has acertado las " + total + " preguntas. " +
+          "Se ha desbloqueado la tabla de amenazas resuelta para descargarla en PDF.</p>";
+        desbloquearSolucionesCiberAme();
+      } else {
+        fb.className = "feedback feedback--bad";
+        fb.innerHTML = "<p>Has acertado " + aciertos + " de " + total + ". Repite el test cuantas veces quieras hasta lograrlo perfecto.</p>";
+      }
+    }
+
+    construir();
+  }
+
+  /* -------------------- SOLUCIONES PDF · CIBERSEGURIDAD -------------------- */
+
+  var CS_AME_OK_EMPAREJADO = false;
+  var CS_SOCIAL_OK_EMPAREJADO = false;
+  var CS_SOCIAL_OK_ESCENARIOS = false;
+  var CS_PROT_OK_CHECKLIST = false;
+  var CS_PROT_OK_ORDEN = false;
+
+  function desbloquearSolucionesCiberAme() {
+    desbloquearPanel("#soluciones-ciber-ame", CLAVE_CIBER_AME);
+  }
+
+  function intentarDesbloquearCiberSocial() {
+    if (CS_SOCIAL_OK_EMPAREJADO && CS_SOCIAL_OK_ESCENARIOS) {
+      desbloquearPanel("#soluciones-ciber-social", CLAVE_CIBER_SOCIAL);
+    }
+  }
+
+  function intentarDesbloquearCiberProt() {
+    if (CS_PROT_OK_CHECKLIST && CS_PROT_OK_ORDEN) {
+      desbloquearPanel("#soluciones-ciber-prot", CLAVE_CIBER_PROT);
+    }
+  }
+
+  function tablaCiberAmeHtml() {
+    var cab = "<thead><tr><th>#</th><th>Amenaza</th><th>Tipo</th><th>Qué hace</th><th>Consecuencia en el puesto sanitario</th></tr></thead>";
+    var filas = "";
+    CS_DECK.forEach(function (d, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td><strong>" + esc(d.nom) + "</strong></td>" +
+        "<td>" + esc(d.tipo) + "</td><td>" + esc(d.funcion) + "</td><td>" + esc(d.tarea) + "</td></tr>";
+    });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>";
+  }
+
+  function tablaCiberSocialHtml() {
+    var cab = "<thead><tr><th>#</th><th>Situación</th><th>Solución</th><th>Por qué</th></tr></thead>";
+    var filas = "";
+    CS_ESCENARIOS.forEach(function (e, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td>" + esc(e.s) + "</td>" +
+        "<td><strong>" + esc(e.ops[e.ok]) + "</strong></td><td>" + esc(e.ex) + "</td></tr>";
+    });
+    var cab2 = "<thead><tr><th>Técnica</th><th>Definición</th></tr></thead>";
+    var filas2 = "";
+    CS_TECNICAS.forEach(function (t) {
+      filas2 += "<tr><td><strong>" + esc(t.a) + "</strong></td><td>" + esc(t.b) + "</td></tr>";
+    });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>" +
+      "<h3>Técnicas de ingeniería social</h3>" +
+      '<div class="table-wrap"><table>' + cab2 + "<tbody>" + filas2 + "</tbody></table></div>";
+  }
+
+  function tablaCiberProtHtml() {
+    var cab = "<thead><tr><th>#</th><th>Comprobación</th><th>Cómo hacerlo</th></tr></thead>";
+    var filas = "";
+    CS_CHECKLIST.forEach(function (c, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td><strong>" + esc(c.t) + "</strong></td><td>" + esc(c.a) + "</td></tr>";
+    });
+    var sec = "";
+    CS_SECUENCIA.forEach(function (s, i) { sec += "<li>" + (i + 1) + ". " + esc(s) + "</li>"; });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>" +
+      "<h3>Orden recomendado ante un correo sospechoso</h3><ol>" + sec + "</ol>";
+  }
+
+  function iniciarSolucionesCiberAme() {
+    var panel = $("#soluciones-ciber-ame");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = "<div class='table-wrap'>" + tablaCiberAmeHtml() + "</div>";
+    $("#btn-pdf-soluciones-ciber-ame").addEventListener("click", function () {
+      abrirImpresion("Malware y amenazas · Tabla de amenazas resuelta", tablaCiberAmeHtml());
+    });
+    $("#btn-cerrar-soluciones-ciber-ame").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_CIBER_AME) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  function iniciarSolucionesCiberSocial() {
+    var panel = $("#soluciones-ciber-social");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = "<div class='table-wrap'>" + tablaCiberSocialHtml() + "</div>";
+    $("#btn-pdf-soluciones-ciber-social").addEventListener("click", function () {
+      abrirImpresion("Ingeniería social y protección de la información · Soluciones resueltas", tablaCiberSocialHtml());
+    });
+    $("#btn-cerrar-soluciones-ciber-social").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_CIBER_SOCIAL) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  function iniciarSolucionesCiberProt() {
+    var panel = $("#soluciones-ciber-prot");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = "<div class='table-wrap'>" + tablaCiberProtHtml() + "</div>";
+    $("#btn-pdf-soluciones-ciber-prot").addEventListener("click", function () {
+      abrirImpresion("Herramientas y buenas prácticas · Soluciones resueltas", tablaCiberProtHtml());
+    });
+    $("#btn-cerrar-soluciones-ciber-prot").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_CIBER_PROT) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
   /* -------------------- INIT -------------------- */
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -1119,5 +1391,64 @@
       );
     }
     if ($("#inventario-soft")) { iniciarInventario($("#inventario-soft"), SW_INVENTARIO, "Inventario de software del puesto de trabajo"); }
+
+    /* --- Bloque práctico · Ciberseguridad --- */
+    if ($("#baraja-ciber")) { iniciarBaraja($("#baraja-ciber"), CS_DECK); }
+    if ($("#empareja-amenazas")) {
+      iniciarEmparejado(
+        $("#empareja-amenazas"),
+        shuffle(CS_MALWARE.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(CS_MALWARE.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false
+      );
+    }
+    if ($("#ponte-a-prueba-ciber")) { iniciarTestCiber($("#ponte-a-prueba-ciber")); }
+    if ($("#soluciones-ciber-ame")) { iniciarSolucionesCiberAme(); }
+    if ($("#escenarios-ciber")) {
+      iniciarEscenarios(
+        $("#escenarios-ciber"),
+        CS_ESCENARIOS,
+        "Todavía no. Piensa qué técnica de ingeniería social se está usando en la situación.",
+        function () { CS_SOCIAL_OK_ESCENARIOS = true; intentarDesbloquearCiberSocial(); }
+      );
+    }
+    if ($("#empareja-tecnicas")) {
+      iniciarEmparejado(
+        $("#empareja-tecnicas"),
+        shuffle(CS_TECNICAS.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(CS_TECNICAS.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false,
+        function () { CS_SOCIAL_OK_EMPAREJADO = true; intentarDesbloquearCiberSocial(); }
+      );
+    }
+    if ($("#soluciones-ciber-social")) { iniciarSolucionesCiberSocial(); }
+    if ($("#empareja-herramientas")) {
+      iniciarEmparejado(
+        $("#empareja-herramientas"),
+        shuffle(CS_HERRAMIENTAS.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(CS_HERRAMIENTAS.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false
+      );
+    }
+    if ($("#checklist-ciber")) {
+      iniciarChecklist(
+        $("#checklist-ciber"),
+        CS_CHECKLIST,
+        "Comprobación completada: el puesto cumple las buenas prácticas de ciberseguridad. Si detectaste alguna brecha, regístrala y avisa a la persona responsable.",
+        function () { CS_PROT_OK_CHECKLIST = true; intentarDesbloquearCiberProt(); }
+      );
+    }
+    if ($("#orden-ciber")) {
+      iniciarOrden(
+        $("#orden-ciber"),
+        CS_SECUENCIA,
+        "Ordena correctamente los seis pasos ante un correo sospechoso.",
+        "¡Correcto! Este es el orden recomendado ante un correo sospechoso.",
+        "Ese paso no corresponde aquí: primero se desconfía y se comprueba antes de actuar. Pulsa «Reiniciar» e inténtalo de nuevo.",
+        function () { CS_PROT_OK_ORDEN = true; intentarDesbloquearCiberProt(); }
+      );
+    }
+    if ($("#inventario-ciber")) { iniciarInventario($("#inventario-ciber"), CS_INVENTARIO, "Comprobación de la seguridad del puesto de trabajo"); }
+    if ($("#soluciones-ciber-prot")) { iniciarSolucionesCiberProt(); }
   });
 })();

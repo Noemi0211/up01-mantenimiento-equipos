@@ -1,0 +1,112 @@
+$CATEGORY: OFI/UP01/CS/04-herramientas-proteccion
+
+::CS04_01_AntivirusDefinicion::El antivirus es…{
+=Un programa diseñado para detectar, bloquear y eliminar amenazas informáticas.
+~Un programa para crear presentaciones.
+~Un periférico de salida.
+~Un tipo de cable de red.
+}
+
+::CS04_02_AntivirusFuncion::¿Cuál es la función principal del antivirus?{
+=Proteger el sistema frente a virus y otros tipos de malware.
+~Acelerar la conexión Wi-Fi.
+~Gestionar las citas de los pacientes.
+~Comprimir los archivos de la oficina.
+}
+
+::CS04_03_AntivirusActualizado::¿Por qué es importante mantener actualizado el antivirus?{
+=Porque las amenazas evolucionan constantemente y requieren nuevas actualizaciones de protección.
+~Porque el equipo gana espacio en disco.
+~Porque mejora la resolución de la pantalla.
+~Porque es obligatorio usar el mismo antivirus en todas las aulas.
+}
+
+::CS04_04_FirewallDefinicion::El cortafuegos (firewall) es…{
+=Un sistema de seguridad que controla las conexiones de red entrantes y salientes.
+~Un programa de hojas de cálculo.
+~Un tipo de memoria RAM.
+~Un lector de tarjetas sanitarias.
+}
+
+::CS04_05_FirewallFuncion::¿Cuál es la función del cortafuegos?{
+=Bloquear accesos no autorizados y proteger los dispositivos conectados a una red.
+~Editar documentos de texto.
+~Formatear el disco duro.
+~Gestionar los permisos de las citas.
+}
+
+::CS04_06_ProtegerRedSanitaria::¿Por qué es importante proteger una red sanitaria?{
+=Porque almacena y transmite información sensible de pacientes y profesionales.
+~Porque así los equipos consumen menos electricidad.
+~Porque mejora la calidad del sonido.
+~Porque acelera la impresión de documentos.
+}
+
+::CS04_07_Antimalware::¿Qué protege el antimalware?{
+=Frente a amenazas avanzadas como spyware o ransomware.
+~Frente a errores de ortografía en los informes.
+~Frente a cortes de luz.
+~Frente a la falta de papel.
+}
+
+::CS04_08_GestorContrasenas::Los gestores de contraseñas sirven para…{
+=Crear y almacenar contraseñas seguras.
+~Editar imágenes médicas.
+~Controlar la memoria RAM.
+~Conectar monitores.
+}
+
+::CS04_09_Cifrado::¿Qué hace el software de cifrado?{
+=Protege la información mediante técnicas criptográficas.
+~Borra los archivos temporales.
+~Configura la resolución de pantalla.
+~Organiza la impresión de listados.
+}
+
+::CS04_10_VPN::¿Para qué sirve una VPN (red privada virtual)?{
+=Para establecer conexiones seguras a través de Internet.
+~Para limpiar el polvo del equipo.
+~Para imprimir en red sin cables.
+~Para aumentar el brillo de la pantalla.
+}
+
+::CS04_11_VPNUso::¿Cuándo conviene utilizar una VPN?{
+=Al acceder a información sensible desde una red pública.
+~Solo cuando el equipo está apagado.
+~Para descargar actualizaciones del escritorio.
+~Cuando se quiere cambiar el idioma del sistema.
+}
+
+::CS04_12_VerdaderoFalsoAntivirusPerfec::Un antivirus actualizado garantiza proteger el sistema frente a cualquier amenaza nunca antes vista.{F}
+
+::CS04_13_VerdaderoFalsoFirewall::El cortafuegos controla las conexiones de red entrantes y salientes.{T}
+
+::CS04_14_NoHerramienta::¿Cuál de las siguientes NO es una herramienta de protección?{
+=El compresor de archivos.
+~El antivirus.
+~El cortafuegos.
+~El antimalware.
+}
+
+::CS04_15_Combinacion::Lo más seguro es…{
+=Combinar varias herramientas (antivirus, cortafuegos, antimalware…) y buenas prácticas.
+~Usar solo el antivirus y no prestar atención a los hábitos.
+~Desinstalar el cortafuegos para ir más rápido.
+~Compartir las contraseñas con la compañera para que nadie se las pierda.
+}
+
+::CS04_16_AntivirusSanidad::En un centro sanitario, el antivirus ayuda a…{
+=Proteger la información clínica y administrativa.
+~Organizar las salas de espera.
+~Subir las persianas.
+~Renovar el material de papelería.
+}
+
+::CS04_17_CifradoDatos::Si enviamos información clínica cifrada, estamos…{
+=Protegiéndola mediante técnicas criptográficas para que no pueda leerse sin autorización.
+~Comprimiéndola para que pese menos.
+~Cambiando su formato a PDF.
+~Duplicándola en el disco.
+}
+
+::CS04_18_VerdaderoFalsoVpnPublica::Usar una VPN es recomendable cuando se maneja información sensible desde una red pública.{T}

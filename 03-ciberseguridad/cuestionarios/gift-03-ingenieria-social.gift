@@ -1,0 +1,131 @@
+$CATEGORY: OFI/UP01/CS/03-ingenieria-social
+
+::CS03_01_Definicion::La ingeniería social es…{
+=Una técnica de ataque basada en la manipulación de las personas para obtener información confidencial o acceso a sistemas.
+~Una técnica de fábrica de componentes electrónicos.
+~Un tipo de cable de red.
+~Un programa de gestión de incidencias.
+}
+
+::CS03_02_Objetivo::En un ataque de ingeniería social, el principal objetivo es…{
+=El error humano.
+~El sistema operativo.
+~El antivirus.
+~El cortafuegos.
+}
+
+::CS03_03_Phishing::¿En qué consiste el phishing?{
+=En el envío de correos, mensajes o páginas web falsas que intentan que el usuario revele información personal o credenciales.
+~En instalar un programa de limpieza del sistema.
+~En reparar los cables de la red local.
+~En actualizar el sistema operativo.
+}
+
+::CS03_04_PhishingObjetivo::¿Qué intenta conseguir un correo de phishing?{
+=Que el usuario revele información personal o credenciales de acceso.
+~Que el usuario cambie su fondo de escritorio.
+~Que el usuario imprima un documento.
+~Que el usuario apague el equipo.
+}
+
+::CS03_05_SpearPhishing::El spear phishing es…{
+=Un phishing dirigido a una persona o colectivo concreto.
+~Un ataque que solo afecta a impresoras.
+~Una técnica de limpieza del disco duro.
+~Un controlador de tarjeta gráfica.
+}
+
+::CS03_06_Whaling::El término whaling se utiliza para referirse al phishing dirigido a…{
+=Cargos directivos o personas relevantes.
+~Los proveedores de material.
+~A usuarios que no usan Internet.
+~A los técnicos de mantenimiento.
+}
+
+::CS03_07_Smishing::La suplantación mediante mensajes de texto (SMS) se denomina…{
+=Smishing.
+~Vishing.
+~Whaling.
+~Pretexting.
+}
+
+::CS03_08_Vishing::La suplantación mediante llamadas telefónicas se denomina…{
+=Vishing.
+~Smishing.
+~Spear phishing.
+~Baiting.
+}
+
+::CS03_09_Pretexting::Inventar una historia para obtener información es…{
+=Pretexting.
+~Baiting.
+~Shoulder surfing.
+~Deepfake.
+}
+
+::CS03_10_Baiting::Ofrecer un beneficio atractivo para engañar al usuario es…{
+=Baiting.
+~Pretexting.
+~Vishing.
+~Smishing.
+}
+
+::CS03_11_Suplantacion::Hacerse pasar por una persona de confianza se denomina…{
+=Suplantación de identidad.
+~Cifrado de archivos.
+~Defragmentación del disco.
+~Visión nocturna.
+}
+
+::CS03_12_ShoulderSurfing::Observar directamente la pantalla o el teclado de otra persona para obtener datos se llama…{
+=Shoulder surfing.
+~Phishing.
+~Ransomware.
+~Backup.
+}
+
+::CS03_13_Deepfake::¿Qué es un deepfake?{
+=Contenido audiovisual falso creado con inteligencia artificial con fines de engaño.
+~Una copia de seguridad automática.
+~Un tipo de impresora multifunción.
+~Un sistema de cifrado de datos.
+}
+
+::CS03_14_PhishingSanidad::Los ciberdelincuentes pueden utilizar el phishing contra el personal sanitario para…{
+=Obtener credenciales de acceso a aplicaciones sanitarias.
+~Mejorar la velocidad del equipo.
+~Organizar las citas de los pacientes.
+~Instalar actualizaciones.
+}
+
+::CS03_15_VerdaderoRemitente::¿Por qué es importante comprobar siempre el remitente de un correo electrónico?{
+=Porque correos fraudulentos pueden hacerse pasar por organizaciones legítimas para obtener información confidencial.
+~Porque los correos legítimos nunca tienen remitente.
+~Porque así se ahorra espacio en el buzón.
+~Porque el remitente determina la resolución de pantalla.
+}
+
+::CS03_16_VerdaderoFalsoTelefono::Las llamadas telefónicas no pueden usarse para ataques de ingeniería social.{F}
+
+::CS03_17_VerdaderoFalsoErrorHumano::La ingeniería social aprovecha la confianza de las personas, no la debilidad de las máquinas.{T}
+
+::CS03_18_NoIngenieriaSocial::¿Cuál de las siguientes NO es una técnica de ingeniería social?{
+=La actualización del antivirus.
+~El pretexting.
+~El baiting.
+~El shoulder surfing.
+}
+
+::CS03_19_MensajeUrgente::Un mensaje que te urge a actuar de inmediato «o perderás tu cuenta» es típico de…{
+=Un intento de phishing o suplantación.
+~Una actualización del sistema.
+~Una tarea de mantenimiento.
+~Un recordatorio de la papelera.
+}
+
+::CS03_20_DefensaPrincipal::La mejor defensa frente a la ingeniería social es…{
+=La formación y el sentido crítico del personal.
+~El tipo de monitor del puesto.
+~La velocidad de la conexión.
+~La marca del teclado.
+}

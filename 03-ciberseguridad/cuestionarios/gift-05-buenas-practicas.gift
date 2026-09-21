@@ -1,0 +1,119 @@
+$CATEGORY: OFI/UP01/CS/05-buenas-practicas
+
+::CS05_01_ContrasenaBase::¿Qué caracteriza a una contraseña segura?{
+=Ser larga y compleja.
+~Ser corta para recordarla mejor.
+~Estar formada solo por números.
+~Ser el mismo nombre del usuario.
+}
+
+::CS05_02_Reutilizar::¿Qué se recomienda sobre las contraseñas?{
+=No reutilizarlas en distintos servicios.
+~Usar la misma para todos los servicios.
+~Apuntarlas en un post-it del monitor.
+~Compartirlas con los compañeros por correo.
+}
+
+::CS05_03_2FA::La autenticación en dos pasos (2FA) consiste en…{
+=Confirmar la identidad con un segundo factor además de la contraseña.
+~Usar dos contraseñas para cada servicio.
+~Tener dos usuarios en el equipo.
+~Cambiar la contraseña dos veces al año.
+}
+
+::CS05_04_NavegacionSegura::¿Qué práctica de navegación es segura?{
+=Verificar la dirección de los sitios web antes de introducir datos.
+~Pulsar cualquier enlace que llegue por correo.
+~Descargar software de cualquier página.
+~Guardar todas las contraseñas en el navegador sin protección.
+}
+
+::CS05_05_FuentesFiables::¿De dónde debe descargarse el software?{
+=Únicamente de fuentes fiables.
+~De cualquier página que aparezca en un anuncio.
+~De enlaces enviados por desconocidos.
+~De mensajes urgentes que invitan a pulsar y descargar.
+}
+
+::CS05_06_EnlacesSospechosos::Ante un enlace sospechoso recibido por correo…{
+=No se accede; se verifica y se avisa si procede.
+~Se pulsa rápido para comprobar si es seguro.
+~Se reenvía a toda la lista de contactos.
+~Se abre únicamente si hay prisa.
+}
+
+::CS05_07_Actualizaciones::¿Qué se recomienda respecto a las actualizaciones?{
+=Mantener actualizado el sistema operativo y las aplicaciones periódicamente.
+~Eliminar las actualizaciones para ahorrar espacio.
+~Actualizar solo las aplicaciones de juegos.
+~Desactivar las actualizaciones por defecto.
+}
+
+::CS05_08_ProteccionDispositivos::Para proteger el acceso físico al equipo…{
+=Se bloquea o se cierra sesión al abandonar el puesto.
+~Se deja la sesión abierta para no tener que iniciarla de nuevo.
+~Se anota la contraseña cerca del equipo.
+~Se comparte la sesión con la compañera contigua.
+}
+
+::CS05_09_USBDesconocido::¿Qué debe hacerse ante un dispositivo USB desconocido?{
+=No conectarlo y avisar a la persona responsable.
+~Conectarlo para revisar su contenido.
+~Conectarlo tras darle un golpecito.
+~Formatearlo directamente sin revisarlo.
+}
+
+::CS05_10_CorreoSeguro::Ante un correo con adjuntos sospechosos…{
+=No se abren y se comprueba el remitente.
+~Se abren para ver qué contienen.
+~Se guardan en una carpeta compartida.
+~Se imprimen para leerlos.
+}
+
+::CS05_11_MensajesUrgentes::¿Por qué debe preocupar un mensaje urgente o alarmista que pide datos?{
+=Porque puede ser un intento de engaño que busca que actuemos sin pensar.
+~Porque siempre es una leyenda urbana inofensiva.
+~Porque el spam nunca llega al correo corporativo.
+~Porque los mensajes legítimos nunca piden datos.
+}
+
+::CS05_12_WifiPublica::¿Qué se recomienda con las redes públicas?{
+=Evitarlas para acceder a información sensible y usar VPN si es necesario.
+~Usarlas siempre para la información más sensible.
+~Ignorar el tipo de red a la que se conecta el equipo.
+~Conectar cualquier dispositivo sin comprobarlo.
+}
+
+::CS05_13_VPNNecesaria::¿Cuándo es necesario utilizar una VPN?{
+=Al acceder a información sensible cuando se usa una red pública.
+~Solo cuando se imprime en red.
+~Cuando se quiere compartir el escritorio.
+~Nunca en un centro sanitario.
+}
+
+::CS05_14_VerdaderoFalsoBloqueo::Bloquear el equipo al salir de la consulta protege la información ante accesos no autorizados.{T}
+
+::CS05_15_VerdaderoFalsoUsb::Conectar un USB encontrado en el pasillo es seguro si el equipo tiene antivirus.{F}
+
+::CS05_16_ConsejoGlobal::¿Cuál resume mejor las buenas prácticas de seguridad digital?{
+=Contraseñas seguras con 2FA, navegación segura, actualizaciones, correo seguro, bloqueo de dispositivos y cuidado de las redes Wi-Fi.
+~Usar el equipo solo cuando es imprescindible.
+~Guardar los archivos en la papelera.
+~Reiniciar el equipo cada mañana.
+}
+
+::CS05_17_PracticaNoRecomendada::¿Cuál de las siguientes prácticas NO es recomendable?{
+=Apuntar la contraseña en un papel pegado al monitor.
+~No reutilizar contraseñas.
+~Activar la autenticación en dos pasos.
+~Comprobar el remitente antes de abrir adjuntos.
+}
+
+::CS05_18_VerdaderoFalsoActualizar::Desactivar las actualizaciones del sistema mejora la seguridad del puesto.{F}
+
+::CS05_19_ProteccionDatosPersonales::La protección de los datos personales en el trabajo administrativo sanitario es…{
+=Un deber profesional para proteger los datos de pacientes y profesionales.
+~Un trámite opcional cuando hay tiempo.
+~Una tarea exclusiva del servicio de mantenimiento.
+~Algo que solo importa en fechas concretas.
+}

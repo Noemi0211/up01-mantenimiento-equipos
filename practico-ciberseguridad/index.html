@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque práctico: ciberseguridad del puesto de trabajo administrativo sanitario. Malware y amenazas, ingeniería social y protección de la información, herramientas y buenas prácticas de seguridad. UP01 Mantenimiento básico de equipos.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque práctico · Ciberseguridad del puesto · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="../02-software/index.html"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="../03-ciberseguridad/index.html" aria-current="page"><span>03</span> Ciberseguridad</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#practico-intro">0 · Cómo funciona este bloque</a>
+          <a class="sidebar__link" href="#actividad-1-malware">1 · Malware y amenazas</a>
+          <a class="sidebar__link" href="#actividad-2-ingenieria-social">2 · Ingeniería social y protección de la información</a>
+          <a class="sidebar__link" href="#actividad-3-proteccion">3 · Herramientas y buenas prácticas</a>
+          <a class="sidebar__link" href="#autoevaluacion">4 · Autoevaluación</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 03 · Ciberseguridad</div>
+          <a class="sidebar__link" href="../03-ciberseguridad/index.html">Teoría de ciberseguridad</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431133" target="_blank" rel="noopener">Cuestionario teórico</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431277" target="_blank" rel="noopener">PR-01.7 · Malware y amenazas</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431343" target="_blank" rel="noopener">PR-01.8 · Ingeniería social</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431355" target="_blank" rel="noopener">PR-01.9 · Herramientas y buenas prácticas</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">UP01 · Mantenimiento básico de equipos · Bloque práctico</div>
+        <h1>Ciberseguridad del puesto de trabajo administrativo sanitario</h1>
+        <p>Aplica lo que ya has estudiado: reconoce el malware y las amenazas, detecta los intentos de ingeniería social, protege la información con las herramientas adecuadas y comprueba que tu puesto sigue buenas prácticas de seguridad.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">Bloque práctico</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 0 · CÓMO FUNCIONA ============ -->
+      <section id="practico-intro">
+        <h2>0 · Cómo funciona este bloque</h2>
+        <p>Ya has estudiado la <strong>teoría de la ciberseguridad</strong> (Bloque 03) y has hecho el cuestionario sobre la ciberseguridad. Aquí no se repite la teoría: solo se <strong>recuerdan brevemente</strong> las ideas necesarias para trabajar.</p>
+        <ul>
+          <li><strong>Malware</strong> = software malicioso diseñado para dañar o infiltrarse en un sistema: virus, troyanos, ransomware, gusanos, spyware y keyloggers.</li>
+          <li><strong>Ingeniería social</strong> = manipulación de las personas para obtener información o acceso: phishing, vishing, smishing, pretexting, baiting, shoulder surfing y deepfakes.</li>
+          <li><strong>Herramientas de protección</strong> = antivirus, cortafuegos (firewall), antimalware, gestores de contraseñas, cifrado, VPN y verificación en dos pasos.</li>
+          <li><strong>Buenas prácticas</strong> = contraseñas seguras, actualizaciones, bloqueo de sesión, cautela con adjuntos, dispositivos USB y redes.</li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> aquí no se memoriza teoría nueva: se practica hasta reconocer las amenazas, detectar el engaño y saber proteger el puesto sanitario.</p>
+        </div>
+
+        <h3>Objetivos del bloque</h3>
+        <ul>
+          <li>Reconocer y clasificar las <strong>amenazas informáticas</strong> (malware e ingeniería social).</li>
+          <li><strong>Detectar situaciones reales</strong> de ingeniería social en el puesto de trabajo.</li>
+          <li>Relacionar cada <strong>herramienta de protección</strong> con su <strong>función</strong>.</li>
+          <li>Aplicar las <strong>buenas prácticas</strong> e identificar el <strong>orden correcto</strong> ante un correo sospechoso.</li>
+          <li><strong>Comprobar la seguridad</strong> de un puesto y generar el informe con los elementos de protección.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Trabajarás las mismas situaciones de un servicio de Documentación y Administración Sanitarias: admisión, consultas, archivo y laboratorio, donde la información de los pacientes es un dato especialmente sensible.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Las actividades se <strong>autocorrigen en esta página</strong> y puedes repetirlas las veces que quieras.</p>
+        </div>
+      </section>
+
+      <!-- ============ 1 · MALWARE Y AMENAZAS ============ -->
+      <section id="actividad-1-malware">
+        <h2>1 · Malware y amenazas</h2>
+        <p>Recordatorio breve: el <strong>malware</strong> es todo software diseñado para dañar o infiltrarse en un sistema. Los más habituales son el <strong>virus</strong> (se adjunta a archivos legítimos), el <strong>troyano</strong> (aparenta ser útil), el <strong>ransomware</strong> (bloquea el acceso y exige un pago), el <strong>gusano</strong> (se propaga solo por la red), el <strong>spyware</strong> (espía sin consentimiento) y el <strong>keylogger</strong> (registra las pulsaciones del teclado).</p>
+
+        <h3>1.1 · Baraja de amenazas</h3>
+        <p>Todas las tarjetas muestran el <strong>nombre</strong> de una amenaza informática: malware o ingeniería social. Haz clic sobre cada tarjeta para voltearla y ver su <strong>tipo</strong>, qué hace y qué puede provocar en un puesto sanitario.</p>
+        <div id="baraja-ciber"></div>
+
+        <h3>1.2 · Relaciona cada amenaza con su descripción</h3>
+        <p>Une cada amenaza con la <strong>descripción</strong> que la define. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-amenazas"></div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> saber solo el nombre de la amenaza no basta: lo importante es <strong>cómo actúa</strong> para poder detectarla en el puesto.</p>
+        </div>
+
+        <h3>1.3 · Ponte a prueba</h3>
+        <p>Autoevaluación de <strong>10 preguntas</strong> generadas al azar. Puedes repetirla <strong>tantas veces como quieras</strong>. Cuando la completes <strong>perfecta</strong>, se desbloqueará la tabla de <strong>amenazas resuelta</strong> para que la <strong>descargues en PDF</strong>.</p>
+        <div id="ponte-a-prueba-ciber"></div>
+
+        <div class="soluciones-panel" id="soluciones-ciber-ame" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Tabla de amenazas resueltas</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-ciber-ame">Descargar tabla en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-ciber-ame">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras practicar en esta página, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431277" target="_blank" rel="noopener"><strong>«PR-01.7 Malware y amenazas»</strong></a> en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431343" target="_blank" rel="noopener"><strong>«PR-01.8 Ingeniería social y protección de la información»</strong></a>.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · INGENIERÍA SOCIAL ============ -->
+      <section id="actividad-2-ingenieria-social">
+        <h2>2 · Ingeniería social y protección de la información</h2>
+        <p>Recordatorio breve: la <strong>ingeniería social</strong> manipula a las personas para obtener información o acceso. Sus técnicas más habituales son el <strong>phishing</strong> (correos falsos), el <strong>vishing</strong> (teléfono), el <strong>smishing</strong> (SMS), el <strong>pretexting</strong> (inventar una historia), el <strong>baiting</strong> (ofrecer un beneficio atractivo), el <strong>shoulder surfing</strong> (observar la pantalla) y los <strong>deepfakes</strong> (vídeos falsos creados con IA).</p>
+
+        <h3>2.1 · Resuelve qué técnica se usa</h3>
+        <p>Te planteamos <strong>situaciones reales</strong> de un puesto sanitario. Decide qué <strong>técnica de ingeniería social</strong> se está utilizando en cada una y comprueba tu respuesta.</p>
+        <div id="escenarios-ciber"></div>
+
+        <h3>2.2 · Une cada técnica con su definición</h3>
+        <p>Ahora cambiamos la mecánica: <strong>empareja</strong> cada técnica con la <strong>definición</strong> que la describe. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-tecnicas"></div>
+
+        <p class="practica__intro">Cuando completes correctamente los 8 escenarios y el emparejado, se desbloquearán las <strong>soluciones en PDF</strong> de la ingeniería social y la protección de la información.</p>
+
+        <div class="soluciones-panel" id="soluciones-ciber-social" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Soluciones · Ingeniería social y protección de la información</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-ciber-social">Descargar soluciones en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-ciber-social">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> detectar el intento de engaño es la defensa más importante del puesto: el atacante no ataca al equipo, ataca a la <strong>persona</strong>.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> cuando domines la actividad, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431343" target="_blank" rel="noopener"><strong>«PR-01.8 Ingeniería social y protección de la información»</strong></a> en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431355" target="_blank" rel="noopener"><strong>«PR-01.9 Herramientas y buenas prácticas de seguridad»</strong></a>.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · HERRAMIENTAS Y BUENAS PRÁCTICAS ============ -->
+      <section id="actividad-3-proteccion">
+        <h2>3 · Herramientas y buenas prácticas de seguridad</h2>
+        <p>Recordatorio breve: para proteger un puesto se combinan <strong>herramientas</strong> (antivirus, cortafuegos, antimalware, gestor de contraseñas, cifrado, VPN, doble verificación) y <strong>buenas prácticas</strong> (contraseñas seguras, actualizaciones, bloqueo de sesión, cautela con adjuntos, USB y redes).</p>
+
+        <h3>3.1 · Relaciona cada herramienta con su función</h3>
+        <p><strong>Empareja</strong> cada herramienta de protección con la <strong>función</strong> que realiza. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-herramientas"></div>
+
+        <h3>3.2 · Checklist de buenas prácticas</h3>
+        <p>Marca uno a uno los pasos de la <strong>comprobación de la seguridad del puesto</strong>. Cuando completes todos, el puesto cumple las <strong>buenas prácticas de ciberseguridad</strong>. Si dudas sobre cómo realizar alguna comprobación, pulsa <strong>«¿Cómo lo compruebo?»</strong> en el paso correspondiente.</p>
+        <div id="checklist-ciber"></div>
+
+        <div class="callout callout--health">
+          <p>La información contenida en historias clínicas, consentimientos y datos de pacientes está especialmente protegida: una brecha de seguridad no solo es un problema técnico, también <strong>legal</strong>. Ante un comportamiento inusual del sistema, se <strong>registra la incidencia</strong> y se avisa a la persona responsable.</p>
+        </div>
+
+        <h3>3.3 · Ordena los pasos ante un correo sospechoso</h3>
+        <p>Coloca los pasos del <strong>protocolo ante un correo sospechoso</strong> en el orden correcto. Pulsa las fichas en orden: 1 → 2 → 3…</p>
+        <div id="orden-ciber"></div>
+
+        <p class="practica__intro">Cuando completes el checklist entero y ordenes correctamente los pasos, se desbloquearán las <strong>soluciones en PDF</strong> de las herramientas y buenas prácticas.</p>
+
+        <div class="soluciones-panel" id="soluciones-ciber-prot" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Soluciones · Herramientas y buenas prácticas de seguridad</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-ciber-prot">Descargar soluciones en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-ciber-prot">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <h3>3.4 · Comprobación de la seguridad del puesto</h3>
+        <p>Una <strong>comprobación de seguridad</strong> registra los <strong>elementos de protección</strong> presentes en un puesto y las <strong>prácticas</strong> que se siguen. Marca los grupos que has comprobado y <strong>genera el informe</strong>: podrás descargarlo en PDF. Este movimiento forma parte del mantenimiento básico del puesto.</p>
+        <div id="inventario-ciber"></div>
+
+        <div class="callout callout--summary">
+          <p>Proteger + comprobar + registrar = un puesto sanitario seguro y un mantenimiento básico responsable de cualquier servicio.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> al terminar, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431355" target="_blank" rel="noopener"><strong>«PR-01.9 Herramientas y buenas prácticas de seguridad»</strong></a> en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. <strong>Con este cuestionario finaliza el bloque práctico.</strong></p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · AUTOEVALUACIÓN ============ -->
+      <section id="autoevaluacion">
+        <h2>4 · Autoevaluación</h2>
+        <p>A continuación encontrarás unas <strong>sencillas actividades de evaluación</strong> en Aules. Su resultado se reflejará automáticamente en la <strong>calificación de la sección práctica sobre la ciberseguridad</strong>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Cuestionario</th><th>Contenidos</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431277" target="_blank" rel="noopener"><strong>PR-01.7</strong> Malware y amenazas</a></td><td>Malware: virus, troyanos, ransomware, gusanos, spyware y keyloggers</td></tr>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431343" target="_blank" rel="noopener"><strong>PR-01.8</strong> Ingeniería social y protección de la información</a></td><td>Técnicas de ingeniería social y detección de engaños</td></tr>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431355" target="_blank" rel="noopener"><strong>PR-01.9</strong> Herramientas y buenas prácticas de seguridad</a></td><td>Herramientas de protección y buenas prácticas</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Practica las veces que necesites en esta página y demuestra tu dominio en los cuestionarios de Aules: ¡tu mejor nota es la que cuenta!</p>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431133" target="_blank" rel="noopener">
+          <small>Anterior</small>
+          ← Cuestionario teórico sobre la ciberseguridad
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431277" target="_blank" rel="noopener">
+          <small>Siguiente</small>
+          PR-01.7 Malware y amenazas →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+  <script src="../js/actividades.js"></script>
+</body>
+</html>
