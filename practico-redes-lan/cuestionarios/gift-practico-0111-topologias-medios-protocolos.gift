@@ -1,0 +1,75 @@
+$CATEGORY: OFI/UP01/PR/01-11-topologias-medios-protocolos
+
+::RLPR0111_01_TopologiaEstrella::En la topología en estrella todos los equipos están conectados…{
+=A un dispositivo central (switch o concentrador)~A un único cable que los atraviesa~A un círculo de conexiones punto a punto~A un satélite
+}
+
+::RLPR0111_02_TopologiaBus::En la topología en bus todos los equipos comparten…{
+=Un único canal o cable central~Un concentrador exclusivo para cada equipo~Una malla de conexiones individuales~El servidor de aplicaciones
+}
+
+::RLPR0111_03_TopologiaAnillo::En la topología en anillo cada equipo está conectado…{
+=Al siguiente, formando un círculo cerrado~A un punto central exclusivo~Directamente a todos los demás~Al router por separado
+}
+
+::RLPR0111_04_TopologiaMalla::En la topología de malla cada equipo está conectado…{
+=Con varios o todos los demás equipos de la red~A un único cable central~Solo al equipo siguiente~A Internet nada más
+}
+
+::RLPR0111_05_TopologiaTipica::¿Qué topología se usa habitualmente en las redes locales actuales de centros sanitarios?{
+=Estrella, con un switch o router central~Bus simple~Anillo~Solo WAN
+}
+
+::RLPR0111_06_VentajaEstrella::Una ventaja de la topología en estrella es que…{
+=Si falla un cable solo se desconecta el equipo de ese cable~Si falla un cable falla toda la red~No necesita ningún dispositivo central~Solo funciona sin cables
+}
+
+::RLPR0111_07_MedioEthernet::El medio de transmisión por cable más habitual en las redes locales es…{
+=El cable de par trenzado (Ethernet)~El cable de alimentación~El cable VGA~El cable de fibra vegetal
+}
+
+::RLPR0111_08_MedioFibra::La fibra óptica se usa para…{
+=Transmitir datos a alta velocidad a largas distancias y sin interferencias~Distribuir la red eléctrica~Conectar el ratón al equipo~Subir la señal de la impresora
+}
+
+::RLPR0111_09_MedioInalambrico::El medio que transmite los datos por ondas, sin cables, es…{
+=Wi-Fi~RJ45~Par trenzado~Fibra óptica
+}
+
+::RLPR0111_10_ConectorAntenna::El conector que se usa en los extremos del cable Ethernet se llama…{
+=RJ45~HDMI~USB-C~Jack de 3,5 mm
+}
+
+::RLPR0111_11_ProtocoloBase::El conjunto de protocolos sobre el que se basa Internet se conoce como…{
+=TCP/IP~DNI~USB~PDF
+}
+
+::RLPR0111_12_ProtocoloWeb::El protocolo que usa el navegador para mostrar las páginas web es…{
+=HTTP o HTTPS~DHCP~FTP~SMTP
+}
+
+::RLPR0111_13_ProtocoloDNS::¿Para qué sirve el protocolo DNS?{
+=Para traducir los nombres de dominio a direcciones IP~Para imprimir documentos en red~Para asignar la contraseña de la red~Para comprimir carpetas
+}
+
+::RLPR0111_14_ProtocoloDHCP::¿Qué hace el protocolo DHCP en una red?{
+=Asigna automáticamente una dirección IP a cada equipo~Cifra las páginas web~Traduce direcciones IP a nombres~Comparte la impresora
+}
+
+::RLPR0111_15_ProtocoloFTP::El protocolo empleado para transferir archivos entre equipos es…{
+=FTP~HDMI~HTTP~RJ45
+}
+
+::RLPR0111_16_AplicacionDHCP::En un centro de salud, el protocolo DHCP permite…{
+=Que cada equipo reciba su configuración de red automáticamente~Que el switch no tenga puertos~Que la red eléctrica sea estable~Que se conecten solo los ordenadores del despacho
+}
+
+::RLPR0111_17_VFEstrella::En la topología en estrella, si falla un cable solo se ve afectado el equipo conectado a ese cable.{T}
+
+::RLPR0111_18_VFBus::En una topología en bus, si el cable central se rompe toda la red deja de funcionar.{T}
+
+::RLPR0111_19_VFEthernet::Wi-Fi y Ethernet son equivalentes: ambas usan cable físico para transmitir datos.{F}
+
+::RLPR0111_20_VFDNS::El protocolo DNS permite navegar escribiendo nombres de dominio en lugar de direcciones IP.{T}
+
+::RLPR0111_21_VFDHCP::Con el protocolo DHCP, la dirección IP de cada equipo se escribe a mano en la configuración.{F}

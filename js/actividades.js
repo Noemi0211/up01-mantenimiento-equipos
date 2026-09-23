@@ -18,6 +18,9 @@
   var CLAVE_CIBER_AME = "up01-practico-ciber-ame-ok";
   var CLAVE_CIBER_SOCIAL = "up01-practico-ciber-social-ok";
   var CLAVE_CIBER_PROT = "up01-practico-ciber-prot-ok";
+  var CLAVE_RL_COMP = "up01-practico-rl-comp-ok";
+  var CLAVE_RL_TOPO = "up01-practico-rl-topo-ok";
+  var CLAVE_RL_CONFIG = "up01-practico-rl-config-ok";
 
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
@@ -361,6 +364,111 @@
     { g: "Seguridad de las cuentas", items: ["Autenticación en dos pasos (2FA)", "Contraseñas largas y complejas", "Sesiones bloqueadas al abandonar el puesto"] },
     { g: "Red y navegación", items: ["Acceso a redes autorizadas del centro", "Uso de VPN cuando es necesario", "Navegación solo desde fuentes fiables"] },
     { g: "Actualizaciones y copias", items: ["Actualizaciones del sistema operativo", "Actualizaciones de aplicaciones", "Copias de seguridad periódicas"] }
+  ];
+
+  /* -------------------- DATOS · REDES LOCALES (LAN) -------------------- */
+
+  var RL_DECK = [
+    { chip: "Equipos", nom: "Ordenadores y dispositivos", tipo: "Equipos de la red", funcion: "Enviar, recibir y procesar información.", tarea: "Puestos de admisión, consultas, archivo y laboratorio conectados a la red." },
+    { chip: "Switch", nom: "Switch", tipo: "Dispositivo de interconexión", funcion: "Conecta varios equipos dentro de la LAN y distribuye la información entre ellos.", tarea: "Interconectar los puestos de un centro de salud en la red interna." },
+    { chip: "Router", nom: "Router", tipo: "Dispositivo de interconexión", funcion: "Conecta la red local con otras redes, especialmente Internet.", tarea: "Dar acceso del centro a servicios corporativos, aplicaciones en línea e Internet." },
+    { chip: "Servidor", nom: "Servidor", tipo: "Equipo de la red", funcion: "Proporciona servicios y centraliza aplicaciones, archivos y copias de seguridad.", tarea: "Almacenar historias clínicas, aplicaciones sanitarias y copias de seguridad." },
+    { chip: "Ethernet", nom: "Cable Ethernet", tipo: "Medio de transmisión", funcion: "Transporta la información por cable entre los equipos.", tarea: "Conexiones por cable de consultas, despachos y salas de archivo." },
+    { chip: "Wi-Fi", nom: "Wi-Fi", tipo: "Medio de transmisión", funcion: "Conecta dispositivos a la red de forma inalámbrica.", tarea: "Movilidad de tablets y portátiles en consultas y salas de espera." },
+    { chip: "Red", nom: "Impresora de red", tipo: "Recurso compartido", funcion: "Permite imprimir desde varios equipos conectados a la red.", tarea: "Impresión compartida de recetas, informes y listados del servicio." },
+    { chip: "NIC", nom: "Tarjeta de red (NIC)", tipo: "Componente del equipo", funcion: "Conecta físicamente el equipo a la red.", tarea: "Conexión del puesto de trabajo al cable o a la red inalámbrica del centro." }
+  ];
+
+  var RL_COMPONENTES = [
+    { a: "Switch", b: "Conectar varios equipos dentro de la red local y distribuir la información" },
+    { a: "Router", b: "Conectar la red local con otras redes, como Internet" },
+    { a: "Servidor", b: "Proporcionar servicios a otros equipos y centralizar recursos" },
+    { a: "Cable Ethernet", b: "Transportar la información por cable entre los equipos" },
+    { a: "Wi-Fi", b: "Conectar dispositivos a la red de forma inalámbrica" },
+    { a: "Impresora de red", b: "Permitir imprimir desde varios equipos de la red" },
+    { a: "Tarjeta de red (NIC)", b: "Conectar físicamente el equipo a la red" },
+    { a: "Ordenadores y dispositivos", b: "Enviar, recibir y procesar información en la red" }
+  ];
+
+  var RL_TEST = [
+    { p: "¿Qué dispositivo conecta varios equipos dentro de una misma red local y distribuye la información entre ellos?", ops: ["El switch", "El router", "El servidor", "La impresora de red"], ok: 0 },
+    { p: "¿Qué dispositivo conecta la red local con otras redes, como Internet?", ops: ["El router", "El switch", "El cable Ethernet", "El escáner"], ok: 0 },
+    { p: "El ordenador especializado que proporciona servicios a otros equipos de la red es…", ops: ["El servidor", "El switch", "El router", "La tarjeta de red"], ok: 0 },
+    { p: "¿Cuál es el medio de transmisión por cable más habitual en las redes locales?", ops: ["El cable de par trenzado (Ethernet)", "El cable de alimentación", "El cable VGA", "La fibra vegetal"], ok: 0 },
+    { p: "La conexión inalámbrica de una red local se denomina…", ops: ["Wi-Fi", "Ethernet", "RJ45", "USB"], ok: 0 },
+    { p: "¿Qué recurso compartido permite imprimir desde varios equipos conectados a la red?", ops: ["La impresora de red", "El monitor", "El teclado", "El lector de tarjetas"], ok: 0 },
+    { p: "La red de un aula, una oficina o un centro sanitario es un ejemplo de red…", ops: ["LAN", "WAN", "MAN", "PAN"], ok: 0 },
+    { p: "Internet es un ejemplo de red…", ops: ["WAN", "PAN", "LAN", "WLAN"], ok: 0 },
+    { p: "La red Wi-Fi de un hospital es un ejemplo de red…", ops: ["WLAN", "PAN", "WAN", "MAN"], ok: 0 },
+    { p: "Los archivos y carpetas, las impresoras y las copias de seguridad compartidas son…", ops: ["Recursos compartidos de la red", "Protocolos de red", "Topologías de red", "Direcciones IP"], ok: 0 }
+  ];
+
+  var RL_ESCENARIOS = [
+    { s: "En el centro de salud todos los puestos se conectan a un switch central desde el que llegan a la red.", ops: ["Estrella", "Bus", "Anillo", "Malla"], ok: 0, ex: "En la topología en estrella todos los equipos se conectan a un dispositivo central (switch o router)." },
+    { s: "Una planta quiere unir dos edificios del hospital a gran velocidad y sin interferencias eléctricas.", ops: ["Fibra óptica", "Wi-Fi", "Cable de par trenzado", "Cable VGA"], ok: 0, ex: "La fibra óptica transmite a alta velocidad, a largas distancias y sin interferencias." },
+    { s: "En un despacho un único cable central une todos los equipos; si ese cable se rompe, caen todos.", ops: ["Bus", "Estrella", "Malla", "Anillo"], ok: 0, ex: "En la topología en bus todos los equipos comparten un único canal central." },
+    { s: "Escribes «aules.gva.es» en el navegador y el equipo necesita convertirlo en una dirección IP.", ops: ["DNS", "DHCP", "FTP", "SMTP"], ok: 0, ex: "El protocolo DNS traduce los nombres de dominio a direcciones IP." },
+    { s: "Al conectar un portátil en la consulta, el equipo recibe automáticamente su dirección IP sin configurarla.", ops: ["DHCP", "HTTP", "DNS", "FTP"], ok: 0, ex: "DHCP asigna automáticamente la configuración IP a cada equipo." },
+    { s: "La intranet del hospital muestra sus páginas en el navegador de los puestos de trabajo.", ops: ["HTTP o HTTPS", "DHCP", "DNS", "FTP"], ok: 0, ex: "HTTP (y su versión segura HTTPS) es el protocolo que usa el navegador para mostrar la web." },
+    { s: "En el laboratorio cada equipo se conecta a varios de los demás para que la red siga activa aunque falle uno.", ops: ["Malla", "Bus", "Estrella", "Anillo"], ok: 0, ex: "En la topología de malla los equipos se conectan entre varios o todos los demás." },
+    { s: "Envías un fichero grande con los resultados del servicio al servidor central mediante un protocolo de transferencia.", ops: ["FTP", "DNS", "DHCP", "SMTP"], ok: 0, ex: "FTP es el protocolo de transferencia de archivos entre equipos." }
+  ];
+
+  var RL_PROTOCOLOS = [
+    { a: "TCP/IP", b: "Conjunto de protocolos base de Internet" },
+    { a: "HTTP/HTTPS", b: "Mostrar las páginas web en el navegador" },
+    { a: "DNS", b: "Traducir los nombres de dominio a direcciones IP" },
+    { a: "DHCP", b: "Asignar automáticamente la configuración IP a los equipos" },
+    { a: "FTP", b: "Transferir archivos entre equipos" },
+    { a: "Ethernet", b: "Reglas para transportar los datos por cable" },
+    { a: "Wi-Fi", b: "Reglas para conectar dispositivos de forma inalámbrica" },
+    { a: "IP", b: "Identificar cada equipo dentro de la red" }
+  ];
+
+  var RL_CONFIG = [
+    { a: "Dirección IP", b: "Identifica a cada equipo dentro de la red" },
+    { a: "Máscara de subred", b: "Indica qué parte de la IP pertenece a la red y cuál al equipo" },
+    { a: "Puerta de enlace (gateway)", b: "Dirección del dispositivo que conecta la red local con otras redes" },
+    { a: "DHCP", b: "Asigna la configuración de red automáticamente" },
+    { a: "DNS", b: "Traduce los nombres de dominio a direcciones IP" },
+    { a: "Tarjeta de red (NIC)", b: "Conecta físicamente el equipo a la red" },
+    { a: "Comando ipconfig", b: "Muestra la configuración IP del equipo" },
+    { a: "Comando ping", b: "Comprueba la conectividad con otro equipo" }
+  ];
+
+  var RL_CHECKLIST = [
+    { t: "Comprueba que el cable de red está bien conectado (o el Wi-Fi activado).",
+      a: "Mira el conector RJ45 de la parte trasera: el piloto del puerto debe estar encendido. En Wi-Fi, revisa la bandeja del sistema y conéctate a la red del centro." },
+    { t: "Verifica que el equipo tiene una dirección IP asignada.",
+      a: "Abre un símbolo del sistema y escribe ipconfig: deben aparecer una dirección IP, una máscara de subred y una puerta de enlace." },
+    { t: "Comprueba el estado de la tarjeta de red en el sistema.",
+      a: "En Configuración → Red e Internet revisa el estado de la tarjeta: debe figurar «conectado» al cable o a la red Wi-Fi." },
+    { t: "Haz ping a la puerta de enlace para comprobar la salida de la red local.",
+      a: "Escribe ping seguido de la dirección de la puerta de enlace: si responde, el equipo puede salir hacia otras redes." },
+    { t: "Haz ping a otro equipo o al servidor del centro.",
+      a: "Prueba la conectividad con el servidor de la historia clínica o con otro puesto: sin respuestas, la información compartida no llega." },
+    { t: "Comprueba que el DNS funciona (acceso por nombre).",
+      a: "Abre el navegador e intenta acceder a una página por su nombre; si falla y el ping funciona, revisa que hay un servidor DNS configurado." },
+    { t: "Confirma que las aplicaciones de red abren y acceden a los datos centrales.",
+      a: "Abre la historia clínica o la aplicación de citas: deben cargar los datos del servidor. Si fallan, registra la incidencia." },
+    { t: "Comprueba la impresora de red y envía una página de prueba.",
+      a: "Revisa que la impresora figura «en línea» en el sistema y envía una página de prueba para confirmar que la red la alcanza." }
+  ];
+
+  var RL_SECUENCIA = [
+    "Comprueba el cable y el piloto del puerto de red (o el estado del Wi-Fi).",
+    "Verifica la configuración IP del equipo con ipconfig.",
+    "Haz ping a la puerta de enlace para comprobar la salida de la red local.",
+    "Haz ping a otro equipo o al servidor del centro.",
+    "Revisa el servidor DNS y prueba a cargar una página por nombre.",
+    "Registra la incidencia y avisa al servicio de mantenimiento si no se resuelve."
+  ];
+
+  var RL_INVENTARIO = [
+    { g: "Dispositivos de red", items: ["Router", "Switch", "Servidor", "Tarjeta de red (NIC)", "Cable Ethernet"] },
+    { g: "Configuración IP", items: ["Dirección IP asignada", "Máscara de subred", "Puerta de enlace (gateway)", "Servidor DNS"] },
+    { g: "Medios de conexión", items: ["Cable RJ45", "Punto Wi-Fi", "Fibra óptica"] },
+    { g: "Servicios y aplicaciones compartidas", items: ["Historia clínica (servidor central)", "Impresora de red", "Carpetas y archivos compartidos", "Copias de seguridad centralizadas"] }
   ];
 
   /* -------------------- BAR AJA -------------------- */
@@ -1311,6 +1419,169 @@
     try { if (localStorage.getItem(CLAVE_CIBER_PROT) === "1") { panel.hidden = false; } } catch (e) {}
   }
 
+  /* -------------------- PONTE A PRUEBA · REDES LOCALES -------------------- */
+
+  function iniciarTestRl(contenedor) {
+    var preguntas = [];
+    var total = 10;
+
+    function construir() {
+      preguntas = shuffle(RL_TEST).slice(0, total);
+      var html = '<ol class="test">';
+      preguntas.forEach(function (q, i) {
+        html += '<li class="test__q" data-q="' + i + '">';
+        html += '<div class="test__prompt"><span>' + esc(q.p) + "</span></div>";
+        html += '<div class="test__opciones">';
+        q.ops.forEach(function (o, j) {
+          html += '<button type="button" class="test__op" data-opt="' + j + '">' + esc(o) + "</button>";
+        });
+        html += "</div></li>";
+      });
+      html += "</ol>";
+      html += '<div class="feedback" aria-live="polite"><p>Selecciona una respuesta en cada pregunta y pulsa «Comprobar respuestas».</p></div>';
+      html += '<div class="practica__intro"><button type="button" class="btn btn--primary">Comprobar respuestas</button> ' +
+        '<button type="button" class="btn btn--ghost">Reintentar (nuevo test)</button></div>';
+      contenedor.innerHTML = html;
+
+      $$(".test__op", contenedor).forEach(function (b) {
+        b.addEventListener("click", function () {
+          var li = b.closest(".test__q");
+          $$(".test__op", li).forEach(function (o) { o.classList.remove("is-selected"); });
+          b.classList.add("is-selected");
+        });
+      });
+
+      $(".btn--primary", contenedor).addEventListener("click", function () { corregir(); });
+      $(".btn--ghost", contenedor).addEventListener("click", function () { construir(); });
+    }
+
+    function corregir() {
+      var aciertos = 0;
+      preguntas.forEach(function (q, i) {
+        var li = $('.test__q[data-q="' + i + '"]', contenedor);
+        var selec = $(".test__op.is-selected", li);
+        var ops = $$(".test__op", li);
+        if (!selec) { return; }
+        var elegida = parseInt(selec.getAttribute("data-opt"), 10);
+        if (elegida === q.ok) {
+          selec.classList.add("is-correct");
+          aciertos++;
+        } else {
+          selec.classList.add("is-wrong");
+          ops[q.ok].classList.add("is-revelado");
+        }
+        ops.forEach(function (o) { o.disabled = true; });
+      });
+      var fb = $(".feedback", contenedor);
+      if (aciertos === total) {
+        fb.className = "feedback feedback--ok";
+        fb.innerHTML = "<p>¡Perfecto! Has acertado las " + total + " preguntas. " +
+          "Se ha desbloqueado la tabla de componentes de red resueltos para descargarla en PDF.</p>";
+        desbloquearSolucionesRlComp();
+      } else {
+        fb.className = "feedback feedback--bad";
+        fb.innerHTML = "<p>Has acertado " + aciertos + " de " + total + ". Repite el test cuantas veces quieras hasta lograrlo perfecto.</p>";
+      }
+    }
+
+    construir();
+  }
+
+  /* -------------------- SOLUCIONES PDF · REDES LOCALES -------------------- */
+
+  var RL_TOPO_OK_ESCENARIOS = false;
+  var RL_TOPO_OK_EMPAREJADO = false;
+  var RL_CONFIG_OK_CHECKLIST = false;
+  var RL_CONFIG_OK_ORDEN = false;
+
+  function desbloquearSolucionesRlComp() {
+    desbloquearPanel("#soluciones-rl-comp", CLAVE_RL_COMP);
+  }
+
+  function intentarDesbloquearRlTop() {
+    if (RL_TOPO_OK_ESCENARIOS && RL_TOPO_OK_EMPAREJADO) {
+      desbloquearPanel("#soluciones-rl-top", CLAVE_RL_TOPO);
+    }
+  }
+
+  function intentarDesbloquearRlConfig() {
+    if (RL_CONFIG_OK_CHECKLIST && RL_CONFIG_OK_ORDEN) {
+      desbloquearPanel("#soluciones-rl-config", CLAVE_RL_CONFIG);
+    }
+  }
+
+  function tablaRlCompHtml() {
+    var cab = "<thead><tr><th>#</th><th>Componente</th><th>Tipo</th><th>Función</th><th>Aplicación en el puesto sanitario</th></tr></thead>";
+    var filas = "";
+    RL_DECK.forEach(function (d, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td><strong>" + esc(d.nom) + "</strong></td>" +
+        "<td>" + esc(d.tipo) + "</td><td>" + esc(d.funcion) + "</td><td>" + esc(d.tarea) + "</td></tr>";
+    });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>";
+  }
+
+  function tablaRlTopHtml() {
+    var cab = "<thead><tr><th>#</th><th>Situación</th><th>Solución</th><th>Por qué</th></tr></thead>";
+    var filas = "";
+    RL_ESCENARIOS.forEach(function (e, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td>" + esc(e.s) + "</td>" +
+        "<td><strong>" + esc(e.ops[e.ok]) + "</strong></td><td>" + esc(e.ex) + "</td></tr>";
+    });
+    var cab2 = "<thead><tr><th>Protocolo</th><th>Función</th></tr></thead>";
+    var filas2 = "";
+    RL_PROTOCOLOS.forEach(function (t) {
+      filas2 += "<tr><td><strong>" + esc(t.a) + "</strong></td><td>" + esc(t.b) + "</td></tr>";
+    });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>" +
+      "<h3>Protocolos de red</h3>" +
+      '<div class="table-wrap"><table>' + cab2 + "<tbody>" + filas2 + "</tbody></table></div>";
+  }
+
+  function tablaRlConfigHtml() {
+    var cab = "<thead><tr><th>#</th><th>Comprobación</th><th>Cómo hacerlo</th></tr></thead>";
+    var filas = "";
+    RL_CHECKLIST.forEach(function (c, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td><strong>" + esc(c.t) + "</strong></td><td>" + esc(c.a) + "</td></tr>";
+    });
+    var sec = "";
+    RL_SECUENCIA.forEach(function (s, i) { sec += "<li>" + (i + 1) + ". " + esc(s) + "</li>"; });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>" +
+      "<h3>Orden recomendado ante un fallo de conexión</h3><ol>" + sec + "</ol>";
+  }
+
+  function iniciarSolucionesRlComp() {
+    var panel = $("#soluciones-rl-comp");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaRlCompHtml();
+    $("#btn-pdf-soluciones-rl-comp").addEventListener("click", function () {
+      abrirImpresion("Conceptos y componentes de una red local · Tabla de componentes resueltos", tablaRlCompHtml());
+    });
+    $("#btn-cerrar-soluciones-rl-comp").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_RL_COMP) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  function iniciarSolucionesRlTop() {
+    var panel = $("#soluciones-rl-top");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaRlTopHtml();
+    $("#btn-pdf-soluciones-rl-top").addEventListener("click", function () {
+      abrirImpresion("Topologías, medios y protocolos de red · Soluciones resueltas", tablaRlTopHtml());
+    });
+    $("#btn-cerrar-soluciones-rl-top").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_RL_TOPO) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  function iniciarSolucionesRlConfig() {
+    var panel = $("#soluciones-rl-config");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaRlConfigHtml();
+    $("#btn-pdf-soluciones-rl-config").addEventListener("click", function () {
+      abrirImpresion("Configuración y puertos de red · Soluciones resueltas", tablaRlConfigHtml());
+    });
+    $("#btn-cerrar-soluciones-rl-config").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_RL_CONFIG) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
   /* -------------------- INIT -------------------- */
 
   document.addEventListener("DOMContentLoaded", function () {
@@ -1450,5 +1721,64 @@
     }
     if ($("#inventario-ciber")) { iniciarInventario($("#inventario-ciber"), CS_INVENTARIO, "Comprobación de la seguridad del puesto de trabajo"); }
     if ($("#soluciones-ciber-prot")) { iniciarSolucionesCiberProt(); }
+
+    /* --- Bloque práctico · Redes locales (LAN) --- */
+    if ($("#baraja-rl")) { iniciarBaraja($("#baraja-rl"), RL_DECK); }
+    if ($("#empareja-componentes")) {
+      iniciarEmparejado(
+        $("#empareja-componentes"),
+        shuffle(RL_COMPONENTES.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(RL_COMPONENTES.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false
+      );
+    }
+    if ($("#ponte-a-prueba-rl")) { iniciarTestRl($("#ponte-a-prueba-rl")); }
+    if ($("#soluciones-rl-comp")) { iniciarSolucionesRlComp(); }
+    if ($("#escenarios-rl")) {
+      iniciarEscenarios(
+        $("#escenarios-rl"),
+        RL_ESCENARIOS,
+        "Todavía no. Piensa qué topología, medio o protocolo interviene en esta situación.",
+        function () { RL_TOPO_OK_ESCENARIOS = true; intentarDesbloquearRlTop(); }
+      );
+    }
+    if ($("#empareja-protocolos")) {
+      iniciarEmparejado(
+        $("#empareja-protocolos"),
+        shuffle(RL_PROTOCOLOS.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(RL_PROTOCOLOS.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false,
+        function () { RL_TOPO_OK_EMPAREJADO = true; intentarDesbloquearRlTop(); }
+      );
+    }
+    if ($("#soluciones-rl-top")) { iniciarSolucionesRlTop(); }
+    if ($("#empareja-config")) {
+      iniciarEmparejado(
+        $("#empareja-config"),
+        shuffle(RL_CONFIG.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(RL_CONFIG.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false
+      );
+    }
+    if ($("#checklist-rl")) {
+      iniciarChecklist(
+        $("#checklist-rl"),
+        RL_CHECKLIST,
+        "Comprobación completada: el puesto queda conectado y operativo dentro de la red del centro. Si detectaste algún fallo, regístralo y avisa al servicio de mantenimiento.",
+        function () { RL_CONFIG_OK_CHECKLIST = true; intentarDesbloquearRlConfig(); }
+      );
+    }
+    if ($("#orden-rl")) {
+      iniciarOrden(
+        $("#orden-rl"),
+        RL_SECUENCIA,
+        "Ordena correctamente los seis pasos ante un fallo de conexión.",
+        "¡Correcto! Este es el orden recomendado ante un fallo de conexión.",
+        "Ese paso no corresponde aquí: primero se comprueba el cable y la configuración. Pulsa «Reiniciar» e inténtalo de nuevo.",
+        function () { RL_CONFIG_OK_ORDEN = true; intentarDesbloquearRlConfig(); }
+      );
+    }
+    if ($("#inventario-rl")) { iniciarInventario($("#inventario-rl"), RL_INVENTARIO, "Inventario de la conexión del puesto de trabajo"); }
+    if ($("#soluciones-rl-config")) { iniciarSolucionesRlConfig(); }
   });
 })();

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque 04. Redes locales (LAN). UP01 Mantenimiento básico de equipos. CFGS Documentación y Administración Sanitarias.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque 04 · Redes locales (LAN) · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="../02-software/index.html"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="../03-ciberseguridad/index.html"><span>03</span> Ciberseguridad</a></li>
+            <li class="sidebar__block"><a href="index.html"><span>04</span> Redes locales (LAN)</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#que-es-lan">1 · ¿Qué es una red local (LAN)?</a>
+          <a class="sidebar__link" href="#componentes-red">2 · Componentes de una red local</a>
+          <a class="sidebar__link" href="#comparticion-recursos">3 · Compartición de recursos</a>
+          <a class="sidebar__link" href="#tipos-redes">4 · Tipos de redes</a>
+          <a class="sidebar__link" href="#mapa-redes">5 · Mapa conceptual</a>
+          <a class="sidebar__link" href="#resumen-bloque">6 · Resumen del bloque</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 04 · Redes locales (LAN)</div>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522903" target="_blank" rel="noopener">Cuestionario teórico</a>
+          <a class="sidebar__link" href="../practico-redes-lan/index.html">Bloque práctico</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522977" target="_blank" rel="noopener">PR-01.10 · Conceptos y componentes</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522984" target="_blank" rel="noopener">PR-01.11 · Topologías, medios y protocolos</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522994" target="_blank" rel="noopener">PR-01.12 · Configuración y puertos de red</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">Bloque 04 · Redes locales (LAN)</div>
+        <h1>Redes locales (LAN)</h1>
+        <p>Conceptos, componentes, compartición de recursos y tipos de redes que hacen posible el intercambio de información en los puestos de trabajo sanitarios.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">UP01 · Mantenimiento básico de equipos</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 1 · ¿QUÉ ES UNA RED LOCAL (LAN)? ============ -->
+      <section id="que-es-lan">
+        <h2>1 · ¿Qué es una red local (LAN)?</h2>
+        <p>Una <strong>red local (LAN, Local Area Network)</strong> es un <strong>conjunto de dispositivos conectados entre sí dentro de una zona limitada</strong>, como un aula, una oficina o un centro sanitario.</p>
+        <p>Su función principal es <strong>permitir que los equipos compartan información, recursos y servicios</strong>.</p>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> LAN = red local. Todos los dispositivos conectados se comunican entre sí y comparten información y recursos dentro de un mismo espacio físico.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Gracias a una red local, los profesionales pueden acceder a historias clínicas, imprimir documentos desde distintos equipos y utilizar aplicaciones compartidas.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es útil que todos los ordenadores de un centro sanitario estén conectados entre sí?</strong> Porque facilita el acceso a la información, el trabajo colaborativo y el uso compartido de recursos.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Una LAN conecta dispositivos en una zona limitada para compartir información, recursos y servicios entre los equipos del centro.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · COMPONENTES DE UNA RED LOCAL ============ -->
+      <section id="componentes-red">
+        <h2>2 · Componentes básicos de una red local</h2>
+        <p>Los principales elementos de una red local son:</p>
+
+        <h3>2.1 · Ordenadores y dispositivos</h3>
+        <ul>
+          <li><strong>Descripción:</strong> son los equipos conectados a la red.</li>
+          <li><strong>Función:</strong> enviar, recibir y procesar información.</li>
+          <li><strong>Ejemplos:</strong> ordenadores, impresoras, escáneres, tablets y servidores.</li>
+        </ul>
+
+        <h3>2.2 · Switch</h3>
+        <ul>
+          <li><strong>Descripción:</strong> dispositivo que <strong>conecta varios equipos dentro de una red local</strong>.</li>
+          <li><strong>Función:</strong> <strong>distribuir la información</strong> entre los dispositivos conectados.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Permite conectar los distintos ordenadores de un centro de salud a la red interna.</p>
+        </div>
+
+        <h3>2.3 · Router</h3>
+        <ul>
+          <li><strong>Descripción:</strong> dispositivo que <strong>conecta una red local con otras redes</strong>, especialmente Internet.</li>
+          <li><strong>Función:</strong> <strong>permitir el acceso a servicios externos</strong>.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Facilita el acceso a aplicaciones corporativas y servicios en línea.</p>
+        </div>
+
+        <h3>2.4 · Cableado Ethernet y Wi-Fi</h3>
+        <ul>
+          <li><strong>Descripción:</strong> <strong>medios utilizados para conectar los dispositivos a la red</strong>.</li>
+          <li><strong>Función:</strong> <strong>transportar la información</strong> entre los equipos.</li>
+          <li><strong>Características:</strong> <strong>Ethernet</strong>, conexión mediante cable; <strong>Wi-Fi</strong>, conexión inalámbrica.</li>
+        </ul>
+
+        <h3>2.5 · Servidor</h3>
+        <ul>
+          <li><strong>Descripción:</strong> <strong>ordenador especializado que proporciona servicios a otros equipos</strong>.</li>
+          <li><strong>Función:</strong> <strong>centralizar aplicaciones, archivos y recursos compartidos</strong>.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Puede almacenar bases de datos clínicas, aplicaciones sanitarias o copias de seguridad.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> switch (conecta equipos dentro de la LAN), router (une la LAN con Internet), Ethernet/Wi-Fi (transportan los datos) y servidor (centraliza servicios) son los componentes esenciales.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué diferencia hay entre el switch y el router?</strong> El switch conecta equipos dentro de la misma red local y distribuye la información entre ellos; el router conecta la red local con otras redes, como Internet.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Una red local necesita equipos conectados (ordenadores, periféricos, servidores), un switch que los interconecte, un router para salir a otras redes y medios físicos o inalámbricos (Ethernet o Wi-Fi) que transporten los datos.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · COMPARTICIÓN DE RECURSOS ============ -->
+      <section id="comparticion-recursos">
+        <h2>3 · Compartición de recursos</h2>
+        <p>Una red local permite <strong>compartir recursos entre los usuarios</strong> de forma segura y eficiente:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Recurso compartido</th><th>Qué permite</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Archivos y carpetas</strong></td><td>Acceder a información almacenada en otros equipos o servidores.</td></tr>
+              <tr><td><strong>Impresoras y escáneres</strong></td><td>Utilizar periféricos desde varios ordenadores de la red.</td></tr>
+              <tr><td><strong>Aplicaciones compartidas</strong></td><td>Trabajar varios usuarios con la misma aplicación o base de datos.</td></tr>
+              <tr><td><strong>Copias de seguridad</strong></td><td>Guardar los datos automáticamente en servidores o dispositivos compartidos.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Permite acceder a historiales clínicos, imprimir documentación desde distintas consultas y compartir información de manera segura.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué problemas podrían surgir si un hospital no dispusiera de una red local?</strong> La información estaría dispersa, sería más difícil compartir recursos y se reduciría la eficiencia del trabajo.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>En una LAN se comparten archivos y carpetas, impresoras y escáneres, aplicaciones y copias de seguridad; en sanidad, esto hace posible trabajar con historiales y documentación de forma centralizada.</p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · TIPOS DE REDES ============ -->
+      <section id="tipos-redes">
+        <h2>4 · Tipos de redes</h2>
+        <p>Las redes pueden clasificarse según el <strong>área geográfica que cubren</strong>:</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Tipo</th><th>Alcance</th><th>Ejemplo</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>PAN</strong></td><td>Personal</td><td>Conexión entre el móvil y el ordenador mediante Bluetooth.</td></tr>
+              <tr><td><strong>LAN</strong></td><td>Local</td><td>Red de un aula, una oficina o un centro sanitario.</td></tr>
+              <tr><td><strong>WLAN</strong></td><td>Local inalámbrica</td><td>Red Wi‑Fi de un hospital o centro de salud.</td></tr>
+              <tr><td><strong>MAN</strong></td><td>Ciudad o área metropolitana</td><td>Red que conecta varios hospitales de una misma ciudad.</td></tr>
+              <tr><td><strong>WAN</strong></td><td>Grandes distancias</td><td>Internet o conexión entre hospitales de distintas provincias.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--health">
+          <ul>
+            <li><strong>PAN:</strong> conexión entre dispositivos personales.</li>
+            <li><strong>LAN:</strong> gestión interna de un centro sanitario.</li>
+            <li><strong>WLAN:</strong> movilidad en consultas y salas de espera.</li>
+            <li><strong>MAN:</strong> comunicación entre centros próximos.</li>
+            <li><strong>WAN:</strong> acceso a servicios y bases de datos regionales o nacionales.</li>
+          </ul>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> PAN &lt; LAN &lt; WLAN &lt; MAN &lt; WAN. Cuanto mayor es el área que cubre la red, mayor es su alcance geográfico.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué tipo de red usaría un centro de salud para conectarse con la sede regional donde se guardan los datos de pacientes?</strong> Una WAN (o una MAN si los centros están en la misma ciudad), porque permite conectar equipos que están a gran distancia.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>PAN (personal), LAN (local), WLAN (local inalámbrica), MAN (ciudad) y WAN (grandes distancias) clasifican las redes según su alcance geográfico.</p>
+        </div>
+      </section>
+
+      <!-- ============ 5 · MAPA CONCEPTUAL ============ -->
+      <section id="mapa-redes">
+        <h2>5 · Mapa conceptual de redes</h2>
+        <p>Así se organiza todo lo estudiado en este bloque:</p>
+        <pre style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;overflow-x:auto;font-size:0.85rem;line-height:1.5;">REDES LOCALES E INTERCAMBIO DE RECURSOS
+├── Red local (LAN)
+│   ├── Conecta dispositivos
+│   ├── Permite compartir recursos
+│   └── Facilita la comunicación
+├── Componentes de una red
+│   ├── Ordenadores y dispositivos
+│   ├── Switch
+│   ├── Router
+│   ├── Servidor
+│   ├── Ethernet
+│   └── Wi-Fi
+├── Recursos compartidos
+│   ├── Archivos y carpetas
+│   ├── Impresoras
+│   ├── Escáneres
+│   ├── Aplicaciones
+│   └── Copias de seguridad
+├── Tipos de redes
+│   ├── PAN
+│   ├── LAN
+│   ├── WLAN
+│   ├── MAN
+│   └── WAN
+├── Aplicaciones en sanidad
+│   ├── Historias clínicas electrónicas
+│   ├── Bases de datos de pacientes
+│   ├── Impresoras compartidas
+│   ├── Aplicaciones corporativas
+│   └── Comunicación entre centros
+└── Objetivo principal
+    ├── Compartir información
+    ├── Compartir recursos
+    ├── Mejorar la colaboración
+    └── Facilitar el acceso a los datos</pre>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> el objetivo de una red local es siempre el mismo: <strong>compartir información y recursos, mejorar la colaboración y facilitar el acceso a los datos</strong>. Repásalo antes del cuestionario final.</p>
+        </div>
+      </section>
+
+      <!-- ============ 6 · RESUMEN DEL BLOQUE ============ -->
+      <section id="resumen-bloque">
+        <h2>6 · Resumen del bloque</h2>
+        <ul>
+          <li>Una <strong>red local (LAN)</strong> conecta dispositivos en una zona limitada para compartir información, recursos y servicios.</li>
+          <li><strong>Componentes básicos:</strong> ordenadores y dispositivos, <strong>switch</strong> (interconecta equipos), <strong>router</strong> (acceso a otras redes e Internet), <strong>Ethernet/Wi‑Fi</strong> (medios de conexión) y <strong>servidor</strong> (centraliza servicios).</li>
+          <li><strong>Recursos compartidos:</strong> archivos y carpetas, impresoras y escáneres, aplicaciones y copias de seguridad.</li>
+          <li><strong>Tipos de redes según su alcance:</strong> <strong>PAN</strong> (personal), <strong>LAN</strong> (local), <strong>WLAN</strong> (inalámbrica), <strong>MAN</strong> (ciudad) y <strong>WAN</strong> (grandes distancias).</li>
+          <li><strong>Objetivo principal:</strong> compartir información y recursos para mejorar la colaboración y el acceso a los datos.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>La red local del centro es el corazón de la gestión diaria: historias clínicas, citas, impresión compartida y comunicación entre consultas dependen de que los equipos estén bien conectados y los recursos se compartan con seguridad.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario final del bloque:</strong> accede a <strong><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522903" target="_blank" rel="noopener">Cuestionario_1_4_Redes Locales (LAN)</a></strong> y contesta a las preguntas relacionadas con estos contenidos. Hazlo tantas veces como quieras antes de que finalice el plazo, se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: <a href="../practico-redes-lan/index.html"><strong>Bloque práctico de redes locales</strong></a>.</p>
+        </div>
+
+        <div class="card-grid">
+          <a class="card" href="../practico-redes-lan/index.html">
+            <div class="card__icon">🌐</div>
+            <h3>Bloque práctico: redes locales del puesto de trabajo</h3>
+            <p>Conceptos y componentes de red, topologías, medios y protocolos, y configuración y puertos de red. Actividades autocorregibles con soluciones descargables.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="../index.html">
+          <small>Anterior</small>
+          ← Presentación de la unidad
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522903" target="_blank" rel="noopener">
+          <small>Siguiente</small>
+          Cuestionario teórico sobre las redes locales →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+</body>
+</html>

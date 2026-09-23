@@ -10,6 +10,9 @@ docs/*
 output/*
 !output/.gitkeep
 
+# ── Solucionarios en PDF de los cuestionarios (no se publican) ──────
+cuestionarios-solucionados/
+
 # ── Sistema / editor ────────────────────────────────────────────────
 Thumbs.db
 Desktop.ini

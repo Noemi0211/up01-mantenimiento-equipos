@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque práctico: redes locales del puesto de trabajo administrativo sanitario. Conceptos y componentes de una red local, topologías, medios y protocolos de red, configuración y puertos de red (IP/conectividad). UP01 Mantenimiento básico de equipos.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque práctico · Redes locales del puesto · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="../02-software/index.html"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="../03-ciberseguridad/index.html"><span>03</span> Ciberseguridad</a></li>
+            <li class="sidebar__block"><a href="../04-redes-lan/index.html" aria-current="page"><span>04</span> Redes locales (LAN)</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#practico-intro">0 · Cómo funciona este bloque</a>
+          <a class="sidebar__link" href="#actividad-1-conceptos">1 · Conceptos y componentes de una red local</a>
+          <a class="sidebar__link" href="#actividad-2-topologias">2 · Topologías, medios y protocolos de red</a>
+          <a class="sidebar__link" href="#actividad-3-configuracion">3 · Configuración y puertos de red</a>
+          <a class="sidebar__link" href="#autoevaluacion">4 · Autoevaluación</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 04 · Redes locales (LAN)</div>
+          <a class="sidebar__link" href="../04-redes-lan/index.html">Teoría de redes locales</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522903" target="_blank" rel="noopener">Cuestionario teórico</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522977" target="_blank" rel="noopener">PR-01.10 · Conceptos y componentes</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522984" target="_blank" rel="noopener">PR-01.11 · Topologías, medios y protocolos</a>
+          <a class="sidebar__link" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522994" target="_blank" rel="noopener">PR-01.12 · Configuración y puertos de red</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">UP01 · Mantenimiento básico de equipos · Bloque práctico</div>
+        <h1>Redes locales del puesto de trabajo administrativo sanitario</h1>
+        <p>Aplica lo que ya has estudiado: reconoce los componentes de la red local, distingue topologías, medios y protocolos, y comprueba y configura la conexión de un puesto (IP y conectividad).</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">Bloque práctico</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 0 · CÓMO FUNCIONA ============ -->
+      <section id="practico-intro">
+        <h2>0 · Cómo funciona este bloque</h2>
+        <p>Ya has estudiado la <strong>teoría de las redes locales (LAN)</strong> (Bloque 04) y has hecho el cuestionario sobre las redes. Aquí no se repite la teoría: solo se <strong>recuerdan brevemente</strong> las ideas necesarias para trabajar.</p>
+        <ul>
+          <li><strong>Red local (LAN)</strong> = conjunto de dispositivos conectados en una zona limitada (centro sanitario, oficina…) que comparten información, recursos y servicios.</li>
+          <li><strong>Componentes</strong> = ordenadores y dispositivos, <strong>switch</strong> (interconecta equipos), <strong>router</strong> (une la LAN con otras redes), <strong>Ethernet / Wi-Fi</strong> (medios) y <strong>servidor</strong> (centraliza servicios).</li>
+          <li><strong>Recursos compartidos</strong> = archivos y carpetas, impresoras y escáneres, aplicaciones y copias de seguridad.</li>
+          <li><strong>Tipos de redes</strong> = PAN (personal), LAN (local), WLAN (local inalámbrica), MAN (ciudad), WAN (grandes distancias).</li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> aquí no se memoriza teoría nueva: se practica hasta identificar los componentes de la red, entender cómo se transmiten los datos y saber comprobar y configurar la conexión de un puesto.</p>
+        </div>
+
+        <h3>Objetivos del bloque</h3>
+        <ul>
+          <li>Reconocer los <strong>componentes de una red local</strong> y su función en el puesto sanitario.</li>
+          <li>Distinguir <strong>topologías, medios y protocolos</strong> de red.</li>
+          <li>Relacionar los <strong>conceptos de configuración</strong> (IP, máscara, DHCP, DNS, puertos).</li>
+          <li><strong>Comprobar la conectividad</strong> de un puesto y resolver fallos de conexión en orden.</li>
+          <li>Generar el <strong>inventario de conexión</strong> de un puesto de trabajo.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Trabajarás las mismas situaciones de un servicio de Documentación y Administración Sanitarias: admisión, consultas, archivo y laboratorio, todos ellos conectados entre sí a través de la red local del centro.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Las actividades se <strong>autocorrigen en esta página</strong> y puedes repetirlas las veces que quieras.</p>
+        </div>
+      </section>
+
+      <!-- ============ 1 · CONCEPTOS Y COMPONENTES ============ -->
+      <section id="actividad-1-conceptos">
+        <h2>1 · Conceptos y componentes de una red local</h2>
+        <p>Recordatorio breve: una <strong>red local (LAN)</strong> conecta dispositivos en una zona limitada. Sus componentes esenciales son los <strong>ordenadores y dispositivos</strong> (envían, reciben y procesan información), el <strong>switch</strong> (conecta equipos dentro de la red y distribuye la información), el <strong>router</strong> (conecta la LAN con otras redes, como Internet), el <strong>servidor</strong> (proporciona servicios a otros equipos) y los <strong>medios de conexión</strong> (cableado <strong>Ethernet</strong> e inalámbrico <strong>Wi-Fi</strong>).</p>
+
+        <h3>1.1 · Baraja de componentes</h3>
+        <p>Todas las tarjetas muestran el <strong>nombre</strong> de un componente de red. Haz clic sobre cada tarjeta para voltearla y ver su <strong>tipo</strong>, su <strong>función</strong> y su <strong>aplicación en un puesto sanitario</strong>.</p>
+        <div id="baraja-rl"></div>
+
+        <h3>1.2 · Relaciona cada componente con su función</h3>
+        <p>Une cada <strong>componente</strong> con la <strong>función</strong> que realiza. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-componentes"></div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> saber el nombre del componente no basta: lo importante es <strong>qué hace en la red</strong> para poder montar y mantener el puesto conectado.</p>
+        </div>
+
+        <h3>1.3 · Ponte a prueba</h3>
+        <p>Autoevaluación de <strong>10 preguntas</strong> generadas al azar sobre conceptos y componentes. Puedes repetirla <strong>tantas veces como quieras</strong>. Cuando la completes <strong>perfecta</strong>, se desbloqueará la tabla de <strong>componentes resuelta</strong> para que la <strong>descargues en PDF</strong>.</p>
+        <div id="ponte-a-prueba-rl"></div>
+
+        <div class="soluciones-panel" id="soluciones-rl-comp" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Tabla de componentes de red resueltos</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-rl-comp">Descargar tabla en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-rl-comp">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> tras practicar en esta página, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522977" target="_blank" rel="noopener"><strong>«PR-01.10 Conceptos y componentes de una red local»</strong></a> en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522984" target="_blank" rel="noopener"><strong>«PR-01.11 Topologías, medios y protocolos de red»</strong></a>.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · TOPOLOGÍAS, MEDIOS Y PROTOCOLOS ============ -->
+      <section id="actividad-2-topologias">
+        <h2>2 · Topologías, medios y protocolos de red</h2>
+        <p>Recordatorio breve: la <strong>topología</strong> es la forma en que se distribuyen los equipos de la red. Las más conocidas son <strong>bus</strong> (un único cable central), <strong>estrella</strong> (todos conectados a un dispositivo central), <strong>anillo</strong> (cada equipo conectado al siguiente) y <strong>malla</strong> (equipos conectados entre varios o todos los demás). Los <strong>medios</strong> transportan los datos: <strong>cable de par trenzado (Ethernet)</strong>, <strong>fibra óptica</strong> (alta velocidad y largas distancias) y <strong>Wi-Fi</strong> (inalámbrico). Los <strong>protocolos</strong> son las reglas de comunicación: <strong>TCP/IP</strong> (base de Internet), <strong>HTTP/HTTPS</strong> (web), <strong>DNS</strong> (traduce nombres a IP), <strong>DHCP</strong> (asigna la configuración automáticamente) y <strong>FTP</strong> (transferencia de archivos).</p>
+
+        <h3>2.1 · Resuelve qué topología, medio o protocolo se usa</h3>
+        <p>Te planteamos <strong>situaciones reales</strong> de un centro sanitario. Decide qué <strong>topología, medio o protocolo</strong> se está utilizando en cada una y comprueba tu respuesta.</p>
+        <div id="escenarios-rl"></div>
+
+        <h3>2.2 · Une cada protocolo con su función</h3>
+        <p>Ahora cambiamos la mecánica: <strong>empareja</strong> cada <strong>protocolo</strong> con la <strong>función</strong> que realiza. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-protocolos"></div>
+
+        <p class="practica__intro">Cuando completes correctamente los 8 escenarios y el emparejado, se desbloquearán las <strong>soluciones en PDF</strong> de las topologías, los medios y los protocolos.</p>
+
+        <div class="soluciones-panel" id="soluciones-rl-top" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Soluciones · Topologías, medios y protocolos de red</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-rl-top">Descargar soluciones en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-rl-top">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> la estrella (con switch o router central) es la topología habitual de los centros actuales, y los protocolos son las «reglas» que hacen posible que los equipos se entiendan.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> cuando domines la actividad, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522984" target="_blank" rel="noopener"><strong>«PR-01.11 Topologías, medios y protocolos de red»</strong></a> en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522994" target="_blank" rel="noopener"><strong>«PR-01.12 Configuración y puertos de red (IP/conectividad)»</strong></a>.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · CONFIGURACIÓN Y PUERTOS DE RED ============ -->
+      <section id="actividad-3-configuracion">
+        <h2>3 · Configuración y puertos de red (IP/conectividad)</h2>
+        <p>Recordatorio breve: la <strong>dirección IP</strong> identifica a cada equipo en la red; la <strong>máscara de subred</strong> indica qué parte pertenece a la red y cuál al equipo; la <strong>puerta de enlace (gateway)</strong> es la salida hacia otras redes. La configuración puede ser <strong>automática (DHCP)</strong> o <strong>manual (IP fija)</strong>. El <strong>DNS</strong> traduce los nombres de dominio a IP. La <strong>tarjeta de red (NIC)</strong> conecta físicamente el equipo y el <strong>puerto RJ45</strong> recibe el cable Ethernet. Para comprobar la conexión se usan comandos como <strong>ipconfig</strong> (ver la configuración) y <strong>ping</strong> (comprobar conectividad con otro equipo).</p>
+
+        <h3>3.1 · Relaciona cada concepto de configuración con su definición</h3>
+        <p><strong>Empareja</strong> cada <strong>concepto de red</strong> con la <strong>definición</strong> que le corresponde. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-config"></div>
+
+        <h3>3.2 · Checklist de conectividad del puesto</h3>
+        <p>Marca uno a uno los pasos de la <strong>comprobación de la conexión de red de un puesto</strong>. Cuando completes todos, el puesto queda <strong>conectado y operativo</strong>. Si dudas sobre cómo realizar alguna comprobación, pulsa <strong>«¿Cómo lo compruebo?»</strong> en el paso correspondiente.</p>
+        <div id="checklist-rl"></div>
+
+        <div class="callout callout--health">
+          <p>Si un puesto «no ve» la historia clínica o no puede imprimir, lo primero es comprobar la conexión: cable, IP y ping. Registrar la incidencia y avisar a mantenimiento si el fallo no se resuelve es parte del mantenimiento básico del puesto.</p>
+        </div>
+
+        <h3>3.3 · Ordena los pasos ante un fallo de conexión</h3>
+        <p>Coloca los pasos del <strong>protocolo ante un fallo de conexión</strong> en el orden correcto. Pulsa las fichas en orden: 1 → 2 → 3…</p>
+        <div id="orden-rl"></div>
+
+        <p class="practica__intro">Cuando completes el checklist entero y ordenes correctamente los pasos, se desbloquearán las <strong>soluciones en PDF</strong> de la configuración y los puertos de red.</p>
+
+        <div class="soluciones-panel" id="soluciones-rl-config" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Soluciones · Configuración y puertos de red (IP/conectividad)</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-rl-config">Descargar soluciones en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-rl-config">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <h3>3.4 · Inventario de la conexión del puesto</h3>
+        <p>Un <strong>inventario de conexión</strong> registra los <strong>dispositivos de red</strong>, la <strong>configuración IP</strong>, los <strong>medios de conexión</strong> y los <strong>servicios</strong> que usa un puesto. Marca los grupos que has comprobado y <strong>genera el informe</strong>: podrás descargarlo en PDF. Este registro forma parte del mantenimiento básico del puesto.</p>
+        <div id="inventario-rl"></div>
+
+        <div class="callout callout--summary">
+          <p>Conectar + comprobar + registrar = un puesto operativo dentro de la red del centro y un mantenimiento básico responsable de cualquier servicio.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> al terminar, realiza el cuestionario <a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522994" target="_blank" rel="noopener"><strong>«PR-01.12 Configuración y puertos de red (IP/conectividad)»</strong></a> en Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. <strong>Con este cuestionario finaliza el bloque práctico.</strong></p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · AUTOEVALUACIÓN ============ -->
+      <section id="autoevaluacion">
+        <h2>4 · Autoevaluación</h2>
+        <p>A continuación encontrarás unas <strong>sencillas actividades de evaluación</strong> en Aules. Su resultado se reflejará automáticamente en la <strong>calificación de la sección práctica sobre las redes locales</strong>.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Cuestionario</th><th>Contenidos</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522977" target="_blank" rel="noopener"><strong>PR-01.10</strong> Conceptos y componentes de una red local</a></td><td>LAN, componentes (switch, router, servidor, Ethernet, Wi-Fi) y recursos compartidos</td></tr>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522984" target="_blank" rel="noopener"><strong>PR-01.11</strong> Topologías, medios y protocolos de red</a></td><td>Topologías, medios de transmisión y protocolos (TCP/IP, HTTP, DNS, DHCP, FTP)</td></tr>
+              <tr><td><a href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522994" target="_blank" rel="noopener"><strong>PR-01.12</strong> Configuración y puertos de red (IP/conectividad)</a></td><td>IP, máscara, puerta de enlace, DHCP, DNS, puertos y comprobación de conectividad</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Practica las veces que necesites en esta página y demuestra tu dominio en los cuestionarios de Aules: ¡tu mejor nota es la que cuenta!</p>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522903" target="_blank" rel="noopener">
+          <small>Anterior</small>
+          ← Cuestionario teórico sobre las redes locales
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522977" target="_blank" rel="noopener">
+          <small>Siguiente</small>
+          PR-01.10 Conceptos y componentes de una red local →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+  <script src="../js/actividades.js"></script>
+</body>
+</html>

@@ -145,6 +145,24 @@ botón **«Siguiente»** que aparece tras terminar un cuestionario pertenece a l
 5. Comprueba el resultado en «Vista previa» o terminando un intento: el botón
    «Siguiente» debe abrir *Bloque práctico software*.
 
+### Si no se reordena el curso (estructura actual en Aules)
+
+Si se prefiere mantener la estructura actual del curso (la teoría de
+ciberseguridad situada justo después del cuestionario de software), el botón
+**«Siguiente»** tras terminar el quiz seguirá apuntando a esa actividad. En ese
+caso, para guiar al alumnado hacia el bloque práctico de software sin cambiar el
+orden:
+
+1. Abre el cuestionario `Cuestionario_1_1_Software` → **Ajustes → Descripción**.
+2. Añade (o sustituye la actual) una nota como esta:
+
+   > **Tras terminar este cuestionario, continúa con el bloque práctico de
+   > software**: [https://noemi0211.github.io/up01-mantenimiento-equipos/practico-software/](https://noemi0211.github.io/up01-mantenimiento-equipos/practico-software/)
+
+3. Guarda los cambios. La descripción aparece en la pantalla previa al intento y
+   orienta al alumnado hacia el siguiente paso, aunque el «Siguiente» de Aules
+   lleve a la teoría de ciberseguridad.
+
 > Importante: todas las actividades del apartado deben vivir en **la misma
 > sección/tema**; si el cuestionario está en una sección y las prácticas en otra,
 > el botón «Siguiente» saltará fuera del apartado.

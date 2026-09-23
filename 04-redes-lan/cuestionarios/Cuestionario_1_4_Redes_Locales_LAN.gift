@@ -1,0 +1,264 @@
+$CATEGORY: OFI/UP01/RL/11-cuestionario-redes-lan
+
+::RL11_01_DefinicionLAN::¿Qué es una red local (LAN)?{
+=Un conjunto de dispositivos conectados entre sí dentro de una zona limitada.
+~Un programa que gestiona los documentos de un centro sanitario.
+~Un dispositivo físico que almacena copias de seguridad.
+~Un servicio de acceso a Internet de pago.
+}
+
+::RL11_02_ZonaLAN::Una red local conecta dispositivos situados en.{
+=Una zona limitada, como un aula, una oficina o un centro sanitario.
+~Cualquier punto del planeta sin límite de distancia.
+~Dos países distintos a través de satélite.
+~Un único ordenador aislado.
+}
+
+::RL11_03_FuncionLAN::La función principal de una red local es.{
+=Permitir que los equipos compartan información, recursos y servicios.
+~Aumentar la velocidad del procesador de cada equipo.
+~Sustituir al sistema operativo de los ordenadores.
+~Eliminar la necesidad de antivirus.
+}
+
+::RL11_04_SanidadLAN::Gracias a una red local, los profesionales de un centro de salud pueden.{
+=Acceder a historias clínicas, imprimir desde distintos equipos y usar aplicaciones compartidas.
+~Trabajar únicamente sin conexión y en papel.
+~Compartir sus contraseñas personales con todo el centro.
+~Desconectar sus equipos de la red por seguridad.
+}
+
+::RL11_05_VF_CompartirRecursos::Una red local permite compartir recursos entre los equipos conectados.{T}
+
+::RL11_06_VF_ZonaGlobal::Una red local (LAN) puede abarcar países de todo el mundo.{F}
+
+::RL11_07_UtilidadConexion::Es útil que todos los ordenadores de un centro sanitario estén conectados entre sí porque.{
+=Facilita el acceso a la información, el trabajo colaborativo y el uso compartido de recursos.
+~Impide que se compartan documentos entre los profesionales.
+~Reduce la necesidad de formación del personal.
+~Aisla cada consulta del resto del centro.
+}
+
+::RL11_08_ComponentesLAN::¿Cuáles son componentes básicos de una red local?{
+=Switch, router, servidor y cableado Ethernet o Wi-Fi.
+~Antivirus, procesador de textos y hoja de cálculo.
+~Teclado, ratón y monitor únicamente.
+~Fuente de alimentación y ventilador.
+}
+
+::RL11_09_DispositivosRed::En una red local, los ordenadores, impresoras, escáneres y tablets son.{
+=Los equipos o dispositivos conectados a la red.
+~Los programas del sistema operativo.
+~Los cables que unen las habitaciones.
+~Los servicios de Internet contratados.
+}
+
+::RL11_10_FuncionDispositivos::La función de los equipos conectados a una red es.{
+=Enviar, recibir y procesar información.
+~Generar corriente eléctrica para la red.
+~Cifrar todas las comunicaciones del centro.
+~Imprimir automáticamente todos los documentos.
+}
+
+::RL11_11_SwitchDescripcion::El switch es el dispositivo que.{
+=Conecta varios equipos dentro de una red local y distribuye la información entre ellos.
+~Conecta la red local con Internet únicamente.
+~Almacena las bases de datos del centro.
+~Traduce documentos entre distintos idiomas.
+}
+
+::RL11_12_SwitchSanidad::En un centro de salud, el switch permite.{
+=Conectar los distintos ordenadores del centro a la red interna.
+~Acceder a Internet sin ningún tipo de control.
+~Imprimir documentos sin red.
+~Guardar copias de seguridad físicas en papel.
+}
+
+::RL11_13_RouterDescripcion::El router es el dispositivo que.{
+=Conecta una red local con otras redes, especialmente Internet.
+~Conecta varios equipos dentro de la misma red local.
+~Almacena los archivos compartidos del centro.
+~Distribuye la información únicamente entre impresoras.
+}
+
+::RL11_14_RouterFuncion::La función principal del router es.{
+=Permitir el acceso a servicios externos desde la red local.
+~Refrigerar los componentes de red.
+~Procesar los documentos de texto.
+~Sustituir al antivirus del equipo.
+}
+
+::RL11_15_RouterSanidad::En el entorno sanitario, el router facilita.{
+=El acceso a aplicaciones corporativas y servicios en línea.
+~La conexión directa de las impresoras sin red.
+~El almacenamiento local de historias clínicas en papel.
+~El apagado automático de los equipos.
+}
+
+::RL11_16_EthernetMedio::La conexión Ethernet se realiza mediante.{
+=Cable.
+~Bluetooth.
+~Infrarrojos.
+~Radiación de microondas únicamente.
+}
+
+::RL11_17_WifiMedio::La conexión Wi-Fi es.{
+=Una conexión inalámbrica.
+~Una conexión exclusivamente por cable.
+~Un tipo de servidor.
+~Un protocolo de copias de seguridad.
+}
+
+::RL11_18_ServidorDescripcion::El servidor es un.{
+=Ordenador especializado que proporciona servicios a otros equipos.
+~Ventilador que refrigera la red.
+~Conmutador que conecta las impresoras.
+~Cable que transporta los datos.
+}
+
+::RL11_19_ServidorFuncion::La función del servidor en una red local es.{
+=Centralizar aplicaciones, archivos y recursos compartidos.
+~Distribuir la corriente eléctrica entre los equipos.
+~Conectar la red local con Internet.
+~Controlar el acceso físico al edificio.
+}
+
+::RL11_20_ServidorSanidad::En un centro sanitario, el servidor puede almacenar.{
+=Bases de datos clínicas, aplicaciones sanitarias y copias de seguridad.
+~Únicamente los documentos en papel de admisión.
+~Las contraseñas de todos los pacientes en texto plano.
+~Los muebles y el material de oficina.
+}
+
+::RL11_21_VF_SwitchInternet::El switch conecta una red local con Internet.{F}
+
+::RL11_22_VF_ServidorServicios::El servidor es un ordenador que proporciona servicios a otros equipos de la red.{T}
+
+::RL11_23_VF_WifiCable::La conexión Wi-Fi necesita siempre un cable de red para funcionar.{F}
+
+::RL11_24_DiferenciaSwitchRouter::La diferencia principal entre switch y router es que.{
+=El switch conecta equipos dentro de la LAN y el router conecta la LAN con otras redes.
+~El router conecta equipos dentro de la LAN y el switch sale a Internet.
+~Son dos nombres para el mismo dispositivo.
+~El switch almacena datos y el router los procesa.
+}
+
+::RL11_25_CompartirRecursos::Una red local permite a los usuarios.{
+=Compartir recursos entre sí.
+~Trabajar siempre sin conexión.
+~Eliminar las copias de seguridad.
+~Aislar cada equipo del resto.
+}
+
+::RL11_26_ArchivosCarpetas::Gracias a la red, los usuarios pueden acceder a..{
+=Información almacenada en otros equipos o servidores.
+~Documentos que están en papel en otra planta.
+~La memoria interna de las impresoras.
+~Archivos que solo existen en Internet.
+}
+
+::RL11_27_PerifericosCompartidos::En una red local, las impresoras y escáneres pueden..{
+=Utilizarse desde varios ordenadores de la red.
+~Usarse únicamente desde un único equipo.
+~Imprimir sin recibir información.
+~Conectarse solo con Bluetooth.
+}
+
+::RL11_28_AplicacionesCompartidas::Trabajar varios usuarios con la misma aplicación o base de datos es posible gracias a..{
+=Las aplicaciones compartidas de la red.
+~El procesador de cada equipo individual.
+~Los cables de alimentación.
+~El antivirus instalado.
+}
+
+::RL11_29_CopiasSeguridad::Las copias de seguridad en una red local pueden..{
+=Guardarse automáticamente en servidores o dispositivos compartidos.
+~Hacerse únicamente de forma manual en papel.
+~Descartarse y no realizarse nunca.
+~Almacenarse solo en los móviles personales.
+}
+
+::RL11_30_SanidadRecursos::Compartir recursos en un centro sanitario permite..{
+=Acceder a historiales clínicos, imprimir documentación desde distintas consultas y compartir información segura.
+~Trabajar más lentamente sin acceso a los datos.
+~Mantener la información dispersa y sin control.
+~Evitar cualquier tipo de colaboración.
+}
+
+::RL11_31_VF_ImpresorasCompartidas::En una red local no se pueden compartir impresoras.{F}
+
+::RL11_32_VF_AccesoUnico::En una red local, cada archivo solo puede estar accesible desde el equipo que lo creó.{F}
+
+::RL11_33_TiposRedes::Las redes se clasifican según el área geográfica que..{
+=Cubren.
+~Consumen.
+~Almacenan.
+~Imprimen.
+}
+
+::RL11_34_PANPersonal::La red personal que conecta el móvil y el ordenador mediante Bluetooth es..{
+=Una PAN.
+~Una WAN.
+~Una MAN.
+~Una red de Internet global.
+}
+
+::RL11_35_LANLocal::La red de un aula, una oficina o un centro sanitario es una..{
+=LAN.
+~PAN.
+~WAN.
+~MAN.
+}
+
+::RL11_36_WLANInalambrica::La red Wi-Fi de un hospital o centro de salud es una..{
+=WLAN.
+~WAN.
+~PAN.
+~MAN.
+}
+
+::RL11_37_MANCiudad::La red que conecta varios hospitales de una misma ciudad es una..{
+=MAN.
+~PAN.
+~WLAN.
+~Red personal.
+}
+
+::RL11_38_WANGrandesDistancias::La red que abarca grandes distancias, como Internet, es una..{
+=WAN.
+~LAN.
+~PAN.
+~WLAN.
+}
+
+::RL11_39_SanidadWAN::Para acceder a servicios y bases de datos regionales o nacionales se utiliza una..{
+=WAN.
+~PAN.
+~LAN local únicamente.
+~Conexión Bluetooth.
+}
+
+::RL11_40_NombreAcronimoLAN::Las siglas LAN significan..{
+=Local Area Network.
+~Large Access Network.
+~Local Automatic Node.
+~Linked Application Network.
+}
+
+::RL11_41_VF_CiudadMAN::La MAN cubre un área metropolitana, como una ciudad.{T}
+
+::RL11_42_VF_WANMayorAlcance::La WAN es la red de mayor alcance geográfico.{T}
+
+::RL11_43_RedInalambricaSiglas::¿Qué red local es inalámbrica?{
+=WLAN.
+~LAN por cable únicamente.
+~MAN.
+~PAN siempre con cable.
+}
+
+::RL11_44_SanidadWLAN::La movilidad en consultas y salas de espera de un centro sanitario se consigue con una..{
+=WLAN.
+~WAN nacional.
+~PAN solo del ordenador.
+~Red sin ningún dispositivo conectado.
+}

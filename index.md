@@ -26,7 +26,19 @@ Cada apartado consta de tres bloques independientes: **teoría**, **cuestionario
 - 🧩 [**Cuestionario teórico sobre el software**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11402081) — Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
 - 🧰 [**Prácticas del apartado**](practico-software/index.html) — Actividades autocorregibles: identificación de software y hardware, el sistema operativo y sus funciones, y personalización del sistema, con soluciones en PDF.
 
-> 💡 **Idea clave:** los apartados **Ciberseguridad, Redes locales (LAN) y Acceso a Internet** se publicarán de forma progresiva con el mismo esquema: **teoría · cuestionario · prácticas**.
+### Apartado 03 · Ciberseguridad
+
+- 📘 [**Teoría del apartado**](03-ciberseguridad/index.html) — Elementos de ciberseguridad: qué es, malware, ingeniería social, herramientas de protección y buenas prácticas en el puesto de trabajo.
+- 🧩 [**Cuestionario teórico sobre la ciberseguridad**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11431133) — Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
+- 🧰 [**Prácticas del apartado**](practico-ciberseguridad/index.html) — Actividades autocorregibles: malware y amenazas, ingeniería social y protección de la información, y herramientas y buenas prácticas de seguridad, con soluciones en PDF.
+
+### Apartado 04 · Redes locales (LAN)
+
+- 📘 [**Teoría del apartado**](04-redes-lan/index.html) — Qué es una red local, componentes (switch, router, servidor, Ethernet, Wi-Fi), compartición de recursos y tipos de redes según su alcance.
+- 🧩 [**Cuestionario teórico sobre las redes locales**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522903) — Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
+- 🧰 [**Prácticas del apartado**](practico-redes-lan/index.html) — Actividades autocorregibles: conceptos y componentes de red, topologías, medios y protocolos, y configuración y puertos de red, con soluciones en PDF.
+
+> 💡 **Idea clave:** el apartado **Acceso a Internet** se publicará de forma progresiva con el mismo esquema: **teoría · cuestionario · prácticas**.
 
 ## Guía curricular
 

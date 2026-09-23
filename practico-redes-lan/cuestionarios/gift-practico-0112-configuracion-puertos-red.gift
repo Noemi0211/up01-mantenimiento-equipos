@@ -1,0 +1,61 @@
+$CATEGORY: OFI/UP01/PR/01-12-configuracion-puertos-red
+
+::RLPR0112_01_DireccionIP::La dirección IP de un equipo sirve para…{
+=Identificarlo dentro de la red~Imprimirlo en documentos~Aumentar la velocidad de la CPU~Guardar contraseñas
+}
+
+::RLPR0112_02_MascaraSubred::¿Para qué se usa la máscara de subred?{
+=Para indicar qué parte de la IP pertenece a la red y qué parte al equipo~Para ocultar la contraseña~Para dar forma al cable Ethernet~Para ajustar el color del monitor
+}
+
+::RLPR0112_03_PuertaEnlace::La puerta de enlace (gateway) es…{
+=La dirección del dispositivo que conecta la red local con otras redes~El hueco por donde entra el cable~La contraseña del router~La carpeta compartida
+}
+
+::RLPR0112_04_DHCPConfig::Para que la red asigne automáticamente la configuración IP a cada equipo se usa…{
+=DHCP~DNS~FTP~SMTP
+}
+
+::RLPR0112_05_IPFija::Una dirección IP fija (estática)…{
+=Se configura manualmente y no cambia por sí sola~La asigna el servidor al azar cada hora~Se borra al apagar el equipo~Es igual en todos los equipos
+}
+
+::RLPR0112_06_TarjetaRed::El componente que conecta físicamente el equipo a la red es…{
+=La tarjeta de red (NIC)~El ventilador~La memoria RAM~El altavoz
+}
+
+::RLPR0112_07_PuertoFisico::El puerto físico donde se conecta el cable Ethernet en el equipo es…{
+=RJ45~HDMI~USB-B~Jack de audio
+}
+
+::RLPR0112_08_PuertoLogico::Un puerto lógico de la red es…{
+=Un número que identifica un servicio o aplicación (por ejemplo, el puerto 80 para la web)~Un conector físico de la torre~El hueco de la impresora~Un tipo de cable
+}
+
+::RLPR0112_09_DNSConfig::La dirección del servidor DNS en la configuración del equipo sirve para…{
+=Resolver los nombres de dominio y convertirlos en direcciones IP~Imprimir en cola~Aumentar la memoria RAM~Apagar el equipo
+}
+
+::RLPR0112_10_ipconfig::¿Qué comando permite ver la configuración IP del equipo (dirección, máscara y puerta de enlace)?{
+=ipconfig~ping~dir~copy
+}
+
+::RLPR0112_11_ping::¿Para qué se usa el comando ping?{
+=Para comprobar si hay conectividad con otro equipo de la red~Para borrar archivos temporales~Para cambiar la contraseña~Para abrir el navegador
+}
+
+::RLPR0112_12_IPprivada::La dirección IP 192.168.1.10 es un ejemplo típico de…{
+=IP privada de una red local~IP pública de Internet~Dirección MAC~Nombre de dominio
+}
+
+::RLPR0112_13_VFIP::La dirección IP identifica a cada equipo dentro de la red y puede ser privada (red local) o pública (Internet).{T}
+
+::RLPR0112_14_VFManual::Si no hay servidor DHCP, cada equipo puede configurarse de forma manual con una IP fija.{T}
+
+::RLPR0112_15_VFping::El comando ping sirve para imprimir la tabla de rutas de toda la red.{F}
+
+::RLPR0112_16_VFGateway::La puerta de enlace permite que un equipo de la red local salga a redes externas como Internet.{T}
+
+::RLPR0112_17_VFRJ45::El puerto RJ45 se usa para conectar el equipo a una red inalámbrica.{F}
+
+::RLPR0112_18_VFDNS::Gracias al protocolo DNS no es necesario memorizar las direcciones IP para navegar por Internet.{T}

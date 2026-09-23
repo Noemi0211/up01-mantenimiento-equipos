@@ -1,0 +1,69 @@
+$CATEGORY: OFI/UP01/PR/01-10-conceptos-y-componentes
+
+::RLPR0110_01_DefinicionLAN::Una red local (LAN, Local Area Network) es…{
+=Un conjunto de dispositivos conectados entre sí dentro de una zona limitada, como un centro sanitario~Una red que conecta ciudades enteras~Un único ordenador con varios discos~Un programa de gestión de citas
+}
+
+::RLPR0110_02_ObjetivoLAN::¿Cuál es la función principal de una red local?{
+=Permitir que los equipos compartan información, recursos y servicios~Guardar las contraseñas del centro~Instalar el sistema operativo~Proteger el equipo de los virus por sí sola
+}
+
+::RLPR0110_03_Switch::¿Qué dispositivo conecta varios equipos dentro de una misma red local y distribuye la información entre ellos?{
+=El switch~El router~El servidor~La impresora de red
+}
+
+::RLPR0110_04_Router::¿Qué dispositivo conecta la red local con otras redes, especialmente Internet?{
+=El router~El switch~El cable Ethernet~El escáner
+}
+
+::RLPR0110_05_Ethernet::El cableado Ethernet sirve para…{
+=Conectar los dispositivos a la red por cable~Conectar el monitor al equipo~Imprimir documentos en red~Cargar la batería del portátil
+}
+
+::RLPR0110_06_Wifi::La conexión inalámbrica de una red local se denomina…{
+=Wi-Fi~Ethernet~RJ45~USB
+}
+
+::RLPR0110_07_Servidor::Un servidor en una red local es…{
+=Un ordenador especializado que proporciona servicios a otros equipos~Un dispositivo que distribuye la señal eléctrica~Una tarjeta de memoria~Un tipo de impresora
+}
+
+::RLPR0110_08_OrdenadoresDispositivos::Los ordenadores, impresoras, escáneres, tablets y servidores conectados a la red forman…{
+=Los equipos y dispositivos de la red~Los protocolos de red~Los medios de transmisión~Las topologías de red
+}
+
+::RLPR0110_09_CompartirRecursos::¿Qué permite compartir una red local?{
+=Archivos y carpetas, impresoras, escáneres, aplicaciones y copias de seguridad~Solo la contraseña de la sala de servidores~Solo la música de los equipos~Los accesos directos del escritorio
+}
+
+::RLPR0110_10_PerifericosRed::En una red local, ¿qué función cumplen las impresoras y los escáneres?{
+=Ser recursos compartidos que varios equipos pueden utilizar~Mostrar vídeo desde el puesto~Actuar como protocolos de red~Sustituir al switch
+}
+
+::RLPR0110_11_AlcanceLAN::La red de un aula, una oficina o un centro sanitario es un ejemplo de red…{
+=LAN~MAN~WAN~PAN
+}
+
+::RLPR0110_12_AlcancePAN::La red que conecta dispositivos personales como el móvil y el ordenador mediante Bluetooth es…{
+=PAN~LAN~MAN~WAN
+}
+
+::RLPR0110_13_AlcanceWAN::Internet es un ejemplo de red…{
+=WAN~PAN~LAN~WLAN
+}
+
+::RLPR0110_14_AlcanceWLAN::La red Wi-Fi de un hospital es un ejemplo de red…{
+=WLAN~PAN~MAN~WAN
+}
+
+::RLPR0110_15_VFLAN::Una LAN conecta dispositivos dentro de una misma zona limitada, como un centro sanitario.{T}
+
+::RLPR0110_16_VFRouter::El router conecta equipos dentro de la misma red local para distribuir la información entre ellos.{F}
+
+::RLPR0110_17_VFWifi::Wi-Fi es una conexión inalámbrica que permite conectar dispositivos a la red sin cables.{T}
+
+::RLPR0110_18_VFServidor::El servidor es un ordenador que proporciona servicios a otros equipos de la red, como guardar archivos compartidos.{T}
+
+::RLPR0110_19_VFCompartir::En una red local cada equipo debe tener su propia impresora porque los periféricos no se pueden compartir.{F}
+
+::RLPR0110_20_VFTiposRedes::La red WLAN cubre un área geográfica mayor que la WAN.{F}
