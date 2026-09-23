@@ -1,0 +1,93 @@
+$CATEGORY: OFI/UP01/PR/01-13-acceso-internet
+
+::PR13_Pregunta_01::¿Cuál es la red mundial que conecta millones de dispositivos para compartir información, comunicarse y acceder a servicios digitales?{
+=Internet
+~El sistema operativo
+~El antivirus
+~La tarjeta de red
+}
+
+::PR13_Pregunta_02::En un puesto fijo donde se necesita una conexión estable y rápida, la forma de conexión más adecuada es...{
+=La conexión por cable (Ethernet)
+~La red móvil 4G
+~Una red Wi-Fi pública
+~El Bluetooth
+}
+
+::PR13_Pregunta_03::La conexión inalámbrica que utiliza ondas de radio y facilita la movilidad se denomina...{
+=Wi-Fi
+~Ethernet
+~4G
+~HDMI
+}
+
+::PR13_Pregunta_04::La conexión que requiere una tarjeta SIM y permite acceder a Internet desde prácticamente cualquier lugar es...{
+=La red móvil (4G/5G)
+~El cable de red
+~La fibra óptica
+~El puerto USB
+}
+
+::PR13_Pregunta_05::Antes de enviar datos por una página web debes comprobar que esta utiliza...{
+=HTTPS
+~FTP
+~SMTP
+~DHCP
+}
+
+::PR13_Pregunta_06::El elemento que crea un túnel cifrado para conexiones remotas seguras es...{
+=La VPN
+~El router
+~La impresora de red
+~El cable Ethernet
+}
+
+::PR13_Pregunta_07::El programa que detecta y elimina virus y programas maliciosos al navegar por Internet es...{
+=El antivirus
+~El procesador de textos
+~El navegador web
+~El servidor
+}
+
+::PR13_Pregunta_08::El dispositivo que conecta la red local del centro con Internet es...{
+=El router
+~El switch
+~El escáner
+~El ventilador del equipo
+}
+
+::PR13_Pregunta_09::Ante una falta de conexión, lo primero que debes hacer es...{
+=Comprobar el cable de red y el estado del Wi-Fi (y que el router esté encendido)
+~Formatear el disco duro
+~Reinstalar el sistema operativo
+~Cambiar el monitor
+}
+
+::PR13_Pregunta_10::Si la conexión es lenta y hay muchas aplicaciones abiertas, la solución básica es...{
+=Cerrar aplicaciones innecesarias
+~Apagar el cortafuegos
+~Desinstalar el antivirus
+~Aumentar el brillo de la pantalla
+}
+
+::PR13_Pregunta_11::Para resolver un acceso restringido a una aplicación debes...{
+=Verificar el usuario y la contraseña y consultar con el personal responsable de sistemas
+~Reiniciar la impresora
+~Cambiar el fondo de pantalla
+~Tirar el equipo a la basura
+}
+
+::PR13_Pregunta_12::El comando que muestra la configuración IP de un equipo para comprobar la conexión es...{
+=ipconfig
+~ping
+~format
+~del
+}
+
+::PR13_Pregunta_13::La conexión Wi-Fi es más estable que la conexión por cable (Ethernet).{F}
+
+::PR13_Pregunta_14::Debes evitar las redes Wi-Fi públicas cuando manejes información sanitaria sensible.{T}
+
+::PR13_Pregunta_15::Mantener el sistema operativo actualizado protege el equipo cuando se navega por Internet.{T}
+
+::PR13_Pregunta_16::Si el router está apagado, es posible que se pierda la conexión a Internet del puesto.{T}

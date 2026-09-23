@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque práctico: acceso a Internet y conexión del puesto de trabajo administrativo sanitario. Internet y sus funciones, formas de conexión (Ethernet, Wi-Fi, red móvil), seguridad en el acceso y problemas frecuentes de conexión. UP01 Mantenimiento básico de equipos.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque práctico · Acceso a Internet y conexión del puesto · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="../02-software/index.html"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="../03-ciberseguridad/index.html"><span>03</span> Ciberseguridad</a></li>
+            <li class="sidebar__block"><a href="../04-redes-lan/index.html"><span>04</span> Redes locales (LAN)</a></li>
+            <li class="sidebar__block"><a href="../05-acceso-internet/index.html" aria-current="page"><span>05</span> Acceso a Internet</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#practico-intro">0 · Cómo funciona este bloque</a>
+          <a class="sidebar__link" href="#actividad-1-conexion">1 · Conexión a Internet y uso seguro desde el puesto</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 05 · Acceso a Internet</div>
+          <a class="sidebar__link" href="../05-acceso-internet/index.html">Teoría de acceso a Internet</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">UP01 · Mantenimiento básico de equipos · Bloque práctico</div>
+        <h1>Acceso a Internet y conexión del puesto de trabajo administrativo sanitario</h1>
+        <p>Aplica lo que ya has estudiado: reconoce qué es Internet y sus funciones, distingue las formas de conexión, aplica medidas de seguridad al navegar y resuelve los fallos frecuentes de conexión de un puesto.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">Bloque práctico</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 0 · CÓMO FUNCIONA ============ -->
+      <section id="practico-intro">
+        <h2>0 · Cómo funciona este bloque</h2>
+        <p>Ya has estudiado la <strong>teoría del acceso a Internet</strong> (Bloque 05) y has hecho el cuestionario sobre los contenidos. Aquí no se repite la teoría: solo se <strong>recuerdan brevemente</strong> las ideas necesarias para trabajar.</p>
+        <ul>
+          <li><strong>Internet</strong> = red mundial que conecta millones de dispositivos para buscar información, comunicarse y acceder a servicios digitales.</li>
+          <li><strong>Formas de conexión:</strong> <strong>Ethernet</strong> (cable, estable y rápida), <strong>Wi-Fi</strong> (inalámbrica, facilita la movilidad) y <strong>red móvil 4G/5G</strong> (telefonía móvil, desde casi cualquier lugar).</li>
+          <li><strong>Seguridad en el acceso:</strong> redes protegidas, <strong>HTTPS</strong> y sitios fiables, antivirus y cortafuegos, protección de datos y <strong>VPN</strong> para conexiones remotas seguras.</li>
+          <li><strong>Problemas frecuentes:</strong> <strong>falta de conexión</strong> (cable, Wi-Fi o router), <strong>conexión lenta</strong> (saturación o cobertura) y <strong>acceso restringido</strong> (permisos o autenticación).</li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> aquí no se memoriza teoría nueva: se practica hasta identificar qué es Internet y sus funciones, distinguir las formas de conexión, aplicar medidas de seguridad al navegar y resolver los fallos de conexión habituales de un puesto.</p>
+        </div>
+
+        <h3>Objetivos del bloque</h3>
+        <ul>
+          <li>Reconocer <strong>qué es Internet</strong> y qué permite en el puesto sanitario.</li>
+          <li>Distinguir las <strong>formas de conexión</strong> (cable, Wi-Fi y red móvil) y elegir la adecuada.</li>
+          <li>Aplicar <strong>medidas de seguridad</strong> al navegar: redes seguras, HTTPS, antivirus y VPN.</li>
+          <li>Detectar los <strong>fallos frecuentes de conexión</strong> y aplicar las soluciones básicas en orden.</li>
+          <li>Generar el <strong>inventario de conexión</strong> de un puesto de trabajo.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Trabajarás las mismas situaciones de un servicio de Documentación y Administración Sanitarias: historia clínica, aplicaciones corporativas, correo profesional y telemedicina dependen de que el puesto tenga un acceso a Internet estable y seguro.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Las actividades se <strong>autocorrigen en esta página</strong> y puedes repetirlas las veces que quieras. Dispones de <strong>una única actividad práctica</strong> y de <strong>un único cuestionario en Aules</strong> (PR-01.13) que evalúa todo el bloque.</p>
+        </div>
+      </section>
+
+      <!-- ============ 1 · CONEXIÓN A INTERNET Y USO SEGURO ============ -->
+      <section id="actividad-1-conexion">
+        <h2>1 · Conexión a Internet y uso seguro desde el puesto</h2>
+        <p>Recordatorio breve: <strong>Internet</strong> es una <strong>red mundial</strong> que conecta millones de dispositivos. Podemos conectarnos <strong>por cable (Ethernet)</strong> —la más estable y rápida, típica de los puestos fijos—, de forma <strong>inalámbrica (Wi-Fi)</strong> —que facilita la movilidad pero puede verse afectada por interferencias— o mediante la <strong>red móvil (4G/5G)</strong> —desde prácticamente cualquier lugar con una tarjeta SIM—. Para hacerlo con seguridad usamos <strong>redes protegidas</strong>, páginas con <strong>HTTPS</strong>, el sistema operativo actualizado con <strong>antivirus y cortafuegos</strong>, y una <strong>VPN</strong> si trabajamos desde fuera del centro.</p>
+
+        <h3>1.1 · Baraja de conceptos</h3>
+        <p>Todas las tarjetas muestran el <strong>nombre</strong> de un concepto del acceso a Internet. Haz clic sobre cada tarjeta para voltearla y ver su <strong>tipo</strong>, su <strong>función</strong> y su <strong>aplicación en un puesto sanitario</strong>.</p>
+        <div id="baraja-int"></div>
+
+        <h3>1.2 · Relaciona cada elemento con su función</h3>
+        <p>Une cada <strong>elemento o medida de seguridad</strong> con la <strong>función</strong> que realiza. Selecciona un elemento de la izquierda y pulsa su pareja de la derecha.</p>
+        <div id="empareja-int"></div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> conocer el nombre del elemento no basta: lo importante es <strong>qué papel juega</strong> (conectar, proteger o resolver) para elegirlo correctamente en cada situación del puesto.</p>
+        </div>
+
+        <h3>1.3 · Ponte a prueba</h3>
+        <p>Autoevaluación de <strong>10 preguntas</strong> generadas al azar sobre Internet, las formas de conexión y la seguridad en el acceso. Puedes repetirla <strong>tantas veces como quieras</strong>. Cuando la completes <strong>perfecta</strong>, se desbloqueará la tabla de <strong>conceptos resueltos</strong> para que la <strong>descargues en PDF</strong>.</p>
+        <div id="ponte-a-prueba-int"></div>
+
+        <div class="soluciones-panel" id="soluciones-int-conex" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Tabla de conceptos del acceso a Internet resuelta</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-int-conex">Descargar tabla en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-int-conex">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <h3>1.4 · Resuelve las situaciones de conexión</h3>
+        <p>Te planteamos <strong>situaciones reales</strong> de un centro sanitario. Decide <strong>qué forma de conexión, medida de seguridad o solución</strong> aplica en cada una y comprueba tu respuesta.</p>
+        <div id="escenarios-int"></div>
+
+        <div class="callout callout--health">
+          <p>La conexión del puesto no es un asunto técnico aislado: de ella dependen la admisión, la historia clínica, el correo profesional y la telemedicina. Saber aplicar la solución justa ahorra tiempo y evita cortes del servicio.</p>
+        </div>
+
+        <h3>1.5 · Checklist de comprobación de la conexión del puesto</h3>
+        <p>Marca uno a uno los pasos de la <strong>comprobación de la conexión a Internet de un puesto</strong>. Cuando completes todos, el puesto queda <strong>conectado y operativo</strong>. Si dudas sobre cómo realizar alguna comprobación, pulsa <strong>«¿Cómo lo compruebo?»</strong> en el paso correspondiente.</p>
+        <div id="checklist-int"></div>
+
+        <h3>1.6 · Ordena los pasos ante un fallo de conexión</h3>
+        <p>Coloca los pasos del <strong>protocolo ante un fallo de conexión</strong> en el orden correcto. Pulsa las fichas en orden: 1 → 2 → 3…</p>
+        <div id="orden-int"></div>
+
+        <p class="practica__intro">Cuando completes los 6 escenarios, el checklist entero y ordenes correctamente los pasos, se desbloquearán las <strong>soluciones en PDF</strong> de los problemas frecuentes de conexión.</p>
+
+        <div class="soluciones-panel" id="soluciones-int-fallos" hidden>
+          <div class="soluciones-panel__cab">
+            <h3>Soluciones · Problemas frecuentes de conexión</h3>
+            <div>
+              <button type="button" class="btn btn--primary" id="btn-pdf-soluciones-int-fallos">Descargar soluciones en PDF</button>
+              <button type="button" class="btn btn--ghost" id="btn-cerrar-soluciones-int-fallos">Cerrar</button>
+            </div>
+          </div>
+          <div class="soluciones-panel__cuerpo"></div>
+        </div>
+
+        <h3>1.7 · Inventario de la conexión del puesto</h3>
+        <p>Un <strong>inventario de conexión</strong> registra los <strong>dispositivos y medios</strong>, la <strong>configuración de red</strong>, las <strong>medidas de seguridad</strong> y los <strong>servicios</strong> que usa un puesto. Marca los grupos que has comprobado y <strong>genera el informe</strong>: podrás descargarlo en PDF. Este registro forma parte del mantenimiento básico del puesto.</p>
+        <div id="inventario-int"></div>
+
+        <div class="callout callout--summary">
+          <p>Conectar + proteger + comprobar + registrar = un puesto con acceso a Internet seguro y un mantenimiento básico responsable de cualquier servicio.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario en Aules:</strong> al terminar, realiza el cuestionario <strong>«PR-01.13 Acceso a Internet y conexión del puesto»</strong> en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. <strong>Con este cuestionario finaliza el bloque práctico.</strong></p>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="../05-acceso-internet/index.html">
+          <small>Anterior</small>
+          ← Teoría de acceso a Internet
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="../index.html">
+          <small>Siguiente</small>
+          Fin de la unidad · Volver a la presentación →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+  <script src="../js/actividades.js"></script>
+</body>
+</html>

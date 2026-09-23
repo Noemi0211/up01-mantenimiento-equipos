@@ -21,6 +21,8 @@
   var CLAVE_RL_COMP = "up01-practico-rl-comp-ok";
   var CLAVE_RL_TOPO = "up01-practico-rl-topo-ok";
   var CLAVE_RL_CONFIG = "up01-practico-rl-config-ok";
+  var CLAVE_INT_CONEX = "up01-practico-int-conex-ok";
+  var CLAVE_INT_FALLOS = "up01-practico-int-fallos-ok";
 
   function $(s, r) { return (r || document).querySelector(s); }
   function $$(s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); }
@@ -469,6 +471,91 @@
     { g: "Configuración IP", items: ["Dirección IP asignada", "Máscara de subred", "Puerta de enlace (gateway)", "Servidor DNS"] },
     { g: "Medios de conexión", items: ["Cable RJ45", "Punto Wi-Fi", "Fibra óptica"] },
     { g: "Servicios y aplicaciones compartidas", items: ["Historia clínica (servidor central)", "Impresora de red", "Carpetas y archivos compartidos", "Copias de seguridad centralizadas"] }
+  ];
+
+  /* -------------------- ACCESO A INTERNET · DATOS -------------------- */
+
+  var INT_DECK = [
+    { chip: "Internet", nom: "Internet", tipo: "Red mundial", funcion: "Conectar millones de dispositivos para compartir información, comunicarse y acceder a servicios digitales.", tarea: "Acceso a aplicaciones corporativas, trámites sanitarios y comunicación entre centros." },
+    { chip: "Ethernet", nom: "Cable Ethernet", tipo: "Forma de conexión", funcion: "Conexión por cable: estable, rápida y con poca interferencia.", tarea: "Puestos fijos de admisión, consulta y archivo." },
+    { chip: "Wi-Fi", nom: "Wi-Fi", tipo: "Forma de conexión", funcion: "Conexión inalámbrica por ondas de radio que facilita la movilidad.", tarea: "Portátiles y tabletas de los profesionales en consultas y salas." },
+    { chip: "Móvil", nom: "Red móvil (4G/5G)", tipo: "Forma de conexión", funcion: "Acceso a Internet a través de la red de telefonía móvil.", tarea: "Dispositivos móviles corporativos y situaciones con movilidad." },
+    { chip: "Router", nom: "Router", tipo: "Dispositivo de red", funcion: "Conecta la red local del centro con Internet.", tarea: "Dar salida a Internet a todos los puestos del centro." },
+    { chip: "HTTPS", nom: "HTTPS", tipo: "Seguridad en la navegación", funcion: "Protege la comunicación entre el navegador y el sitio web.", tarea: "Trámites y aplicaciones en línea con datos sensibles del centro." },
+    { chip: "VPN", nom: "VPN", tipo: "Herramienta de seguridad", funcion: "Crea un túnel cifrado para conexiones remotas seguras.", tarea: "Acceso remoto seguro del personal cuando trabaja fuera del centro." },
+    { chip: "Antivirus", nom: "Antivirus", tipo: "Programa de seguridad", funcion: "Detecta y elimina virus y programas maliciosos.", tarea: "Proteger los puestos que navegan por Internet." }
+  ];
+
+  var INT_CONEXION = [
+    { a: "Ethernet", b: "Conexión por cable estable y de alta velocidad" },
+    { a: "Wi-Fi", b: "Conexión inalámbrica que facilita la movilidad" },
+    { a: "Red móvil (4G/5G)", b: "Acceso a Internet mediante la red de telefonía móvil" },
+    { a: "HTTPS", b: "Comunicación cifrada y segura en el navegador" },
+    { a: "VPN", b: "Conexión remota segura a través de un túnel cifrado" },
+    { a: "Antivirus", b: "Detecta y elimina programas maliciosos" },
+    { a: "Cortafuegos", b: "Filtra el tráfico de red para bloquear accesos no deseados" },
+    { a: "Redes protegidas", b: "Evitan las intercepciones al manejar información sensible" }
+  ];
+
+  var INT_TEST = [
+    { p: "¿Qué es Internet?", ops: ["Una red mundial que conecta millones de dispositivos", "Un programa de ofimática", "Un tipo de memoria del equipo", "Un periférico de salida"], ok: 0 },
+    { p: "¿Cuál de las siguientes es una función de Internet?", ops: ["Buscar información, comunicarse y usar servicios en línea", "Imprimir sin necesidad de conexión", "Almacenar archivos solo en local", "Fabricar componentes electrónicos"], ok: 0 },
+    { p: "La conexión más estable y rápida para un puesto fijo es…", ops: ["Ethernet (por cable)", "Una red Wi-Fi pública", "La red móvil 4G", "El Bluetooth"], ok: 0 },
+    { p: "La conexión inalámbrica que utiliza ondas de radio es…", ops: ["Wi-Fi", "Ethernet", "USB", "HDMI"], ok: 0 },
+    { p: "La conexión que se realiza a través de la red de telefonía móvil es…", ops: ["Red móvil 4G/5G", "Fibra óptica", "RJ45", "VGA"], ok: 0 },
+    { p: "Antes de enviar datos por una página web debes comprobar que utiliza…", ops: ["HTTPS", "FTP", "SMTP", "DHCP"], ok: 0 },
+    { p: "Para acceder de forma segura a la red del centro desde fuera, se utiliza una…", ops: ["VPN", "Red Wi-Fi pública", "Un pendrive", "Una impresora de red"], ok: 0 },
+    { p: "Un puesto no tiene conexión y el cable está bien conectado. ¿Qué compruebas primero?", ops: ["El estado del Wi-Fi y que el router esté encendido", "El monitor", "La impresora", "La resolución de pantalla"], ok: 0 },
+    { p: "Si la conexión es lenta por muchas aplicaciones abiertas, lo correcto es…", ops: ["Cerrar aplicaciones innecesarias", "Apagar el antivirus", "Desinstalar el navegador", "Aumentar el brillo de la pantalla"], ok: 0 },
+    { p: "Ante un acceso restringido a una aplicación, la solución básica es…", ops: ["Verificar usuario y contraseña y consultar con sistemas", "Formatear el equipo", "Cambiar de puesto", "Desenchufar el cable"], ok: 0 }
+  ];
+
+  var INT_ESCENARIOS = [
+    { s: "En el centro una página de trámite pide datos sensibles y quieres enviarlos con seguridad.", ops: ["Comprobar que la página utiliza HTTPS", "Usar una red Wi-Fi pública", "Apagar el antivirus", "Compartir la contraseña"], ok: 0, ex: "HTTPS cifra la comunicación del navegador con el sitio web; es imprescindible al enviar datos sensibles." },
+    { s: "Una profesional del centro trabaja desde casa y necesita acceder con seguridad a la red del servicio.", ops: ["Usar una VPN", "Usar una red Wi-Fi pública", "Desactivar el cortafuegos", "Enviar los datos por correo personal"], ok: 0, ex: "La VPN crea un túnel cifrado entre el equipo y la red del centro para conexiones remotas seguras." },
+    { s: "Un puesto fijo de admisión necesita la conexión más estable y rápida posible para trabajar.", ops: ["Conexión por cable (Ethernet)", "Wi-Fi público", "Red móvil 4G", "Bluetooth"], ok: 0, ex: "El cable Ethernet ofrece más estabilidad, velocidad y menos interferencias, ideal para puestos fijos." },
+    { s: "Las tabletas del servicio necesitan conectarse sin cables para moverlas por las consultas.", ops: ["Wi-Fi", "Cable Ethernet", "Fibra óptica", "VGA"], ok: 0, ex: "La conexión Wi-Fi es inalámbrica y facilita la movilidad de tabletas y portátiles." },
+    { s: "Un profesional fuera del centro necesita consultar datos con su móvil corporativo.", ops: ["Red móvil (4G/5G)", "Cable Ethernet", "Cortafuegos", "Un pendrive"], ok: 0, ex: "La red móvil 4G/5G permite acceder a Internet desde prácticamente cualquier lugar con la tarjeta SIM." },
+    { s: "En un puesto no hay conexión y se ha descubierto el cable desconectado del router.", ops: ["Comprobar el cable y volver a conectarlo", "Formatear el disco", "Cambiar el monitor", "Pedir otro equipo"], ok: 0, ex: "Ante una falta de conexión, lo primero es comprobar el cableado y el estado del Wi-Fi y el router." }
+  ];
+
+  var INT_CHECKLIST = [
+    { t: "Comprueba el cable de red (o el estado del Wi-Fi).",
+      a: "Mira el conector Ethernet de la parte trasera (el piloto debe estar encendido) o, en Wi-Fi, revisa la bandeja del sistema para comprobar que estás conectado a una red segura." },
+    { t: "Verifica la configuración IP del equipo.",
+      a: "Abre un símbolo del sistema y escribe ipconfig: deben aparecer una dirección IP, una máscara de subred y una puerta de enlace." },
+    { t: "Haz ping a la puerta de enlace para comprobar la salida hacia Internet.",
+      a: "Escribe ping seguido de la dirección de la puerta de enlace: si responde, el equipo puede salir hacia otras redes." },
+    { t: "Comprueba el DNS accediendo a una página por su nombre.",
+      a: "Abre el navegador e intenta cargar una página conocida por su nombre; si falla y el ping funciona, revisa que hay un servidor DNS configurado." },
+    { t: "Comprueba que el navegador utiliza HTTPS en los trámites y aplicaciones.",
+      a: "Revisa la barra de direcciones: las páginas que manejan datos sensibles deben usar https:// y mostrar el candado de seguridad." },
+    { t: "Confirma que las aplicaciones corporativas cargan sus datos.",
+      a: "Abre la historia clínica o la aplicación de citas: deben cargar los datos desde el servidor. Si fallan, registra la incidencia." },
+    { t: "Registra la incidencia y avisa a sistemas si el fallo persiste.",
+      a: "Anota el puesto, la hora y el problema y comunícalo al personal responsable de sistemas para su resolución." }
+  ];
+
+  var INT_SECUENCIA = [
+    "Comprueba el cable de red y el piloto del puerto (o el estado del Wi-Fi).",
+    "Verifica la configuración IP del equipo con ipconfig.",
+    "Haz ping a la puerta de enlace para comprobar la salida hacia Internet.",
+    "Comprueba el DNS abriendo una página por su nombre.",
+    "Reinicia el router o el punto de acceso y cierra aplicaciones innecesarias si la conexión sigue lenta.",
+    "Registra la incidencia y avisa al servicio de sistemas si el fallo no se resuelve."
+  ];
+
+  var INT_PROBLEMAS = [
+    { p: "Falta de conexión", causas: ["Cable desconectado", "Wi-Fi desactivado", "Router apagado"], soluciones: ["Comprobar las conexiones", "Reiniciar los dispositivos", "Verificar la configuración de red"] },
+    { p: "Conexión lenta", causas: ["Saturación de la red", "Muchas aplicaciones abiertas", "Cobertura deficiente"], soluciones: ["Cerrar aplicaciones innecesarias", "Acercarse al punto de acceso Wi-Fi", "Utilizar conexión por cable si es posible"] },
+    { p: "Acceso restringido", causas: ["Falta de permisos", "Configuración incorrecta", "Problemas de autenticación"], soluciones: ["Verificar usuario y contraseña", "Consultar con el personal responsable de sistemas"] }
+  ];
+
+  var INT_INVENTARIO = [
+    { g: "Dispositivos y medios de conexión", items: ["Router", "Switch", "Cable Ethernet", "Punto Wi-Fi / red móvil"] },
+    { g: "Configuración de red", items: ["Dirección IP (ipconfig)", "Máscara de subred", "Puerta de enlace (gateway)", "Servidor DNS"] },
+    { g: "Seguridad del acceso", items: ["HTTPS en los trámites", "Red protegida con contraseña", "VPN (fuera del centro)", "Antivirus y cortafuegos"] },
+    { g: "Servicios y aplicaciones", items: ["Historia clínica electrónica", "Aplicaciones corporativas", "Correo profesional", "Telemedicina"] }
   ];
 
   /* -------------------- BAR AJA -------------------- */
@@ -1487,7 +1574,137 @@
     construir();
   }
 
-  /* -------------------- SOLUCIONES PDF · REDES LOCALES -------------------- */
+  /* -------------------- PONTE A PRUEBA · ACCESO A INTERNET -------------------- */
+
+  function iniciarTestInt(contenedor) {
+    var preguntas = [];
+    var total = 10;
+
+    function construir() {
+      preguntas = shuffle(INT_TEST).slice(0, total);
+      var html = '<ol class="test">';
+      preguntas.forEach(function (q, i) {
+        html += '<li class="test__q" data-q="' + i + '">';
+        html += '<div class="test__prompt"><span>' + esc(q.p) + "</span></div>";
+        html += '<div class="test__opciones">';
+        q.ops.forEach(function (o, j) {
+          html += '<button type="button" class="test__op" data-opt="' + j + '">' + esc(o) + "</button>";
+        });
+        html += "</div></li>";
+      });
+      html += "</ol>";
+      html += '<div class="feedback" aria-live="polite"><p>Selecciona una respuesta en cada pregunta y pulsa «Comprobar respuestas».</p></div>';
+      html += '<div class="practica__intro"><button type="button" class="btn btn--primary">Comprobar respuestas</button> ' +
+        '<button type="button" class="btn btn--ghost">Reintentar (nuevo test)</button></div>';
+      contenedor.innerHTML = html;
+
+      $$(".test__op", contenedor).forEach(function (b) {
+        b.addEventListener("click", function () {
+          var li = b.closest(".test__q");
+          $$(".test__op", li).forEach(function (o) { o.classList.remove("is-selected"); });
+          b.classList.add("is-selected");
+        });
+      });
+
+      $(".btn--primary", contenedor).addEventListener("click", function () { corregir(); });
+      $(".btn--ghost", contenedor).addEventListener("click", function () { construir(); });
+    }
+
+    function corregir() {
+      var aciertos = 0;
+      preguntas.forEach(function (q, i) {
+        var li = $('.test__q[data-q="' + i + '"]', contenedor);
+        var selec = $(".test__op.is-selected", li);
+        var ops = $$(".test__op", li);
+        if (!selec) { return; }
+        var elegida = parseInt(selec.getAttribute("data-opt"), 10);
+        if (elegida === q.ok) {
+          selec.classList.add("is-correct");
+          aciertos++;
+        } else {
+          selec.classList.add("is-wrong");
+          ops[q.ok].classList.add("is-revelado");
+        }
+        ops.forEach(function (o) { o.disabled = true; });
+      });
+      var fb = $(".feedback", contenedor);
+      if (aciertos === total) {
+        fb.className = "feedback feedback--ok";
+        fb.innerHTML = "<p>¡Perfecto! Has acertado las " + total + " preguntas. " +
+          "Se ha desbloqueado la tabla de conceptos del acceso a Internet resueltos para descargarla en PDF.</p>";
+        desbloquearSolucionesIntConex();
+      } else {
+        fb.className = "feedback feedback--bad";
+        fb.innerHTML = "<p>Has acertado " + aciertos + " de " + total + ". Repite el test cuantas veces quieras hasta lograrlo perfecto.</p>";
+      }
+    }
+
+    construir();
+  }
+
+  /* -------------------- SOLUCIONES PDF · ACCESO A INTERNET -------------------- */
+
+  var INT_FALLOS_OK_ESCENARIOS = false;
+  var INT_FALLOS_OK_CHECKLIST = false;
+  var INT_FALLOS_OK_ORDEN = false;
+
+  function desbloquearSolucionesIntConex() {
+    desbloquearPanel("#soluciones-int-conex", CLAVE_INT_CONEX);
+  }
+
+  function intentarDesbloquearIntFallos() {
+    if (INT_FALLOS_OK_ESCENARIOS && INT_FALLOS_OK_CHECKLIST && INT_FALLOS_OK_ORDEN) {
+      desbloquearPanel("#soluciones-int-fallos", CLAVE_INT_FALLOS);
+    }
+  }
+
+  function tablaIntConexHtml() {
+    var cab = "<thead><tr><th>#</th><th>Concepto</th><th>Tipo</th><th>Función</th><th>Aplicación en el puesto sanitario</th></tr></thead>";
+    var filas = "";
+    INT_DECK.forEach(function (d, i) {
+      filas += "<tr><td>" + (i + 1) + "</td><td><strong>" + esc(d.nom) + "</strong></td>" +
+        "<td>" + esc(d.tipo) + "</td><td>" + esc(d.funcion) + "</td><td>" + esc(d.tarea) + "</td></tr>";
+    });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>";
+  }
+
+  function tablaIntFallosHtml() {
+    var cab = "<thead><tr><th>Problema</th><th>Posibles causas</th><th>Soluciones básicas</th></tr></thead>";
+    var filas = "";
+    INT_PROBLEMAS.forEach(function (pr) {
+      filas += "<tr><td><strong>" + esc(pr.p) + "</strong></td>" +
+        "<td>" + esc(pr.causas.join(", ")) + "</td>" +
+        "<td>" + esc(pr.soluciones.join(", ")) + "</td></tr>";
+    });
+    var sec = "";
+    INT_SECUENCIA.forEach(function (s, i) { sec += "<li>" + (i + 1) + ". " + esc(s) + "</li>"; });
+    return '<div class="table-wrap"><table>' + cab + "<tbody>" + filas + "</tbody></table></div>" +
+      "<h3>Orden recomendado ante un fallo de conexión</h3><ol>" + sec + "</ol>";
+  }
+
+  function iniciarSolucionesIntConex() {
+    var panel = $("#soluciones-int-conex");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaIntConexHtml();
+    $("#btn-pdf-soluciones-int-conex").addEventListener("click", function () {
+      abrirImpresion("Acceso a Internet · Tabla de conceptos resuelta", tablaIntConexHtml());
+    });
+    $("#btn-cerrar-soluciones-int-conex").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_INT_CONEX) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  function iniciarSolucionesIntFallos() {
+    var panel = $("#soluciones-int-fallos");
+    if (!panel) { return; }
+    $(".soluciones-panel__cuerpo", panel).innerHTML = tablaIntFallosHtml();
+    $("#btn-pdf-soluciones-int-fallos").addEventListener("click", function () {
+      abrirImpresion("Acceso a Internet · Problemas frecuentes de conexión · Soluciones resueltas", tablaIntFallosHtml());
+    });
+    $("#btn-cerrar-soluciones-int-fallos").addEventListener("click", function () { panel.hidden = true; });
+    try { if (localStorage.getItem(CLAVE_INT_FALLOS) === "1") { panel.hidden = false; } } catch (e) {}
+  }
+
+  /* -------------------- INIT -------------------- */
 
   var RL_TOPO_OK_ESCENARIOS = false;
   var RL_TOPO_OK_EMPAREJADO = false;
@@ -1780,5 +1997,46 @@
     }
     if ($("#inventario-rl")) { iniciarInventario($("#inventario-rl"), RL_INVENTARIO, "Inventario de la conexión del puesto de trabajo"); }
     if ($("#soluciones-rl-config")) { iniciarSolucionesRlConfig(); }
+
+    /* --- Bloque práctico · Acceso a Internet --- */
+    if ($("#baraja-int")) { iniciarBaraja($("#baraja-int"), INT_DECK); }
+    if ($("#empareja-int")) {
+      iniciarEmparejado(
+        $("#empareja-int"),
+        shuffle(INT_CONEXION.map(function (t, i) { return { id: i, texto: t.a }; })),
+        shuffle(INT_CONEXION.map(function (t, i) { return { id: i, texto: t.b }; })),
+        false
+      );
+    }
+    if ($("#ponte-a-prueba-int")) { iniciarTestInt($("#ponte-a-prueba-int")); }
+    if ($("#soluciones-int-conex")) { iniciarSolucionesIntConex(); }
+    if ($("#escenarios-int")) {
+      iniciarEscenarios(
+        $("#escenarios-int"),
+        INT_ESCENARIOS,
+        "Todavía no. Piensa qué forma de conexión, medida de seguridad o solución aplica en esta situación.",
+        function () { INT_FALLOS_OK_ESCENARIOS = true; intentarDesbloquearIntFallos(); }
+      );
+    }
+    if ($("#checklist-int")) {
+      iniciarChecklist(
+        $("#checklist-int"),
+        INT_CHECKLIST,
+        "Comprobación completada: el puesto queda conectado y puede navegar con seguridad por Internet. Si detectaste algún problema, regístralo y avisa al servicio de sistemas.",
+        function () { INT_FALLOS_OK_CHECKLIST = true; intentarDesbloquearIntFallos(); }
+      );
+    }
+    if ($("#orden-int")) {
+      iniciarOrden(
+        $("#orden-int"),
+        INT_SECUENCIA,
+        "Ordena correctamente los seis pasos ante un fallo de conexión.",
+        "¡Correcto! Este es el orden recomendado ante un fallo de conexión.",
+        "Ese paso no corresponde aquí: primero se comprueba el cable y la configuración. Pulsa «Reiniciar» e inténtalo de nuevo.",
+        function () { INT_FALLOS_OK_ORDEN = true; intentarDesbloquearIntFallos(); }
+      );
+    }
+    if ($("#inventario-int")) { iniciarInventario($("#inventario-int"), INT_INVENTARIO, "Inventario de la conexión a Internet del puesto de trabajo"); }
+    if ($("#soluciones-int-fallos")) { iniciarSolucionesIntFallos(); }
   });
 })();

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bloque 05. Acceso a Internet. UP01 Mantenimiento básico de equipos. CFGS Documentación y Administración Sanitarias.">
+  <meta name="author" content="Noemí Celaya Mingot">
+  <meta name="license" content="CC BY-NC-SA 4.0">
+  <title>Bloque 05 · Acceso a Internet · UP01</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/estilos.css">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A1F2E'/%3E%3Ctext x='16' y='21' font-family='Syne,sans-serif' font-size='14' font-weight='700' fill='%234ECCA3' text-anchor='middle'%3EUP%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <!-- ================= CABECERA FIJA ================= -->
+  <header class="header">
+    <div class="header__brand">
+      <button class="header__menu-btn" id="btnMenu" aria-label="Abrir menú" aria-expanded="false" aria-controls="sidebar">☰</button>
+      <a href="../index.html">
+        <span class="header__logo">UP</span>
+        <span class="header__title">
+          UP01 · Mantenimiento básico de equipos
+          <small>OFIMÁTICA · CFGS Documentación y Administración Sanitarias</small>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= MENÚ LATERAL FIJO ================= -->
+    <aside class="sidebar" id="sidebar" aria-label="Menú de navegación">
+      <nav>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartados del curso</div>
+          <ul class="sidebar__blocks">
+            <li class="sidebar__block"><a href="../01-hardware/index.html"><span>01</span> Hardware</a></li>
+            <li class="sidebar__block"><a href="../02-software/index.html"><span>02</span> Software</a></li>
+            <li class="sidebar__block"><a href="../03-ciberseguridad/index.html"><span>03</span> Ciberseguridad</a></li>
+            <li class="sidebar__block"><a href="../04-redes-lan/index.html"><span>04</span> Redes locales (LAN)</a></li>
+            <li class="sidebar__block"><a href="index.html"><span>05</span> Acceso a Internet</a></li>
+          </ul>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Guía curricular</div>
+          <a class="sidebar__link" href="../00-introduccion-elementos-curriculares/index.html">Introducción y elementos curriculares</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">En esta página</div>
+          <a class="sidebar__link" href="#que-es-internet">1 · ¿Qué es Internet?</a>
+          <a class="sidebar__link" href="#formas-conexion">2 · Formas de conexión a Internet</a>
+          <a class="sidebar__link" href="#seguridad-acceso">3 · Seguridad en el acceso a Internet</a>
+          <a class="sidebar__link" href="#problemas-conexion">4 · Problemas frecuentes de conexión</a>
+          <a class="sidebar__link" href="#mapa-internet">5 · Mapa conceptual</a>
+          <a class="sidebar__link" href="#resumen-bloque">6 · Resumen del bloque</a>
+        </div>
+        <div class="sidebar__section">
+          <div class="sidebar__label">Apartado 05 · Acceso a Internet</div>
+          <a class="sidebar__link" href="../practico-acceso-internet/index.html">Bloque práctico</a>
+        </div>
+      </nav>
+      <div class="sidebar__footer">
+        Material para el módulo de Ofimática.<br>
+        Creado por Noemí Celaya Mingot con ayuda de la IA.<br>
+        Licencia CC BY-NC-SA 4.0
+      </div>
+    </aside>
+
+    <!-- ================= CONTENIDO PRINCIPAL ================= -->
+    <main class="main" id="main">
+
+      <!-- TOC AUTOMÁTICO -->
+      <div class="toc" id="toc-automatico"></div>
+
+      <section class="hero">
+        <div class="hero__kicker">Bloque 05 · Acceso a Internet</div>
+        <h1>Acceso a Internet</h1>
+        <p>Qué es Internet, las formas de conexión, la seguridad en el acceso y los problemas frecuentes de conexión en los puestos de trabajo sanitarios.</p>
+        <div class="hero__badges">
+          <span class="hero__badge">Ofimática</span>
+          <span class="hero__badge">UP01 · Mantenimiento básico de equipos</span>
+          <span class="hero__badge">CFGS Documentación y Administración Sanitarias</span>
+        </div>
+      </section>
+
+      <!-- ============ 1 · ¿QUÉ ES INTERNET? ============ -->
+      <section id="que-es-internet">
+        <h2>1 · ¿Qué es Internet?</h2>
+        <p><strong>Internet</strong> es una <strong>red mundial que conecta millones de dispositivos</strong> y permite compartir información, comunicarse y acceder a servicios digitales.</p>
+        <p>Sus <strong>funciones principales</strong> son:</p>
+        <ul>
+          <li><strong>Buscar información.</strong></li>
+          <li><strong>Comunicarse</strong> con otras personas.</li>
+          <li>Utilizar <strong>aplicaciones y servicios en línea</strong>.</li>
+          <li><strong>Compartir archivos y recursos.</strong></li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> Internet = red mundial de dispositivos. Conecta equipos de todo el planeta para buscar información, comunicarse, usar servicios en línea y compartir archivos.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Permite acceder a <strong>aplicaciones corporativas</strong>, realizar <strong>trámites sanitarios</strong>, consultar <strong>información profesional</strong> y comunicarse con <strong>otros centros</strong>.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué es importante disponer de acceso a Internet en un centro sanitario?</strong> Porque muchas aplicaciones y servicios necesarios para la actividad diaria funcionan a través de Internet.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Internet es una red mundial que conecta millones de dispositivos para compartir información, comunicarse y acceder a servicios digitales; en sanidad, muchas aplicaciones de la actividad diaria funcionan a través de ella.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 · FORMAS DE CONEXIÓN ============ -->
+      <section id="formas-conexion">
+        <h2>2 · Formas de conexión a Internet</h2>
+        <p>Existen diferentes formas de conectar un dispositivo a Internet.</p>
+
+        <h3>2.1 · Conexión por cable (Ethernet)</h3>
+        <ul>
+          <li><strong>Descripción:</strong> conexión realizada mediante <strong>cable de red</strong>.</li>
+          <li><strong>Características:</strong> mayor <strong>estabilidad</strong>, <strong>menor interferencia</strong> y <strong>alta velocidad</strong> de transmisión.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Habitual en <strong>puestos fijos</strong> de trabajo donde se requiere una conexión estable y segura.</p>
+        </div>
+
+        <h3>2.2 · Conexión Wi-Fi</h3>
+        <ul>
+          <li><strong>Descripción:</strong> conexión <strong>inalámbrica</strong> que utiliza <strong>ondas de radio</strong>.</li>
+          <li><strong>Características:</strong>
+            <ul>
+              <li>Facilita la <strong>movilidad</strong>.</li>
+              <li>No necesita <strong>cableado físico</strong>.</li>
+              <li>Puede verse afectada por <strong>interferencias</strong>.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Se utiliza en <strong>portátiles, tabletas y dispositivos móviles</strong> usados por los profesionales sanitarios.</p>
+        </div>
+
+        <h3>2.3 · Conexión mediante red móvil (4G/5G)</h3>
+        <ul>
+          <li><strong>Descripción:</strong> conexión a través de la <strong>red de telefonía móvil</strong>.</li>
+          <li><strong>Características:</strong>
+            <ul>
+              <li>Permite acceder a Internet desde <strong>prácticamente cualquier lugar</strong>.</li>
+              <li>Requiere una <strong>tarjeta SIM</strong> o un dispositivo compatible.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Utilizada en <strong>dispositivos móviles corporativos</strong> y en situaciones que requieren movilidad.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> Ethernet = cable estable y rápido en puestos fijos; Wi-Fi = inalámbrica y móvil, pero sensible a interferencias; red móvil 4G/5G = acceso desde casi cualquier lugar mediante la telefonía móvil.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Qué ventaja e inconveniente principales tiene la conexión Wi-Fi frente al cable?</strong> Ventaja: facilita la movilidad y no necesita cableado. Inconveniente: puede verse afectada por interferencias y ser menos estable que el cable.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Hay tres formas habituales de conectarse a Internet: por cable (Ethernet), de forma inalámbrica (Wi-Fi) o mediante la red móvil (4G/5G); cada una se elige según las necesidades de estabilidad, velocidad y movilidad del puesto.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 · SEGURIDAD EN EL ACCESO ============ -->
+      <section id="seguridad-acceso">
+        <h2>3 · Seguridad en el acceso a Internet</h2>
+        <p>La conexión a Internet debe realizarse de forma <strong>segura</strong> para proteger la información y los dispositivos.</p>
+
+        <h3>3.1 · Redes seguras</h3>
+        <ul>
+          <li><strong>Evitar redes Wi-Fi públicas</strong> cuando se maneje información sensible.</li>
+          <li>Utilizar <strong>redes protegidas mediante contraseña</strong>.</li>
+        </ul>
+
+        <h3>3.2 · Navegación segura</h3>
+        <ul>
+          <li>Comprobar que la página utiliza <strong>HTTPS</strong>.</li>
+          <li>Acceder únicamente a <strong>sitios web fiables</strong>.</li>
+        </ul>
+
+        <h3>3.3 · Protección del equipo</h3>
+        <ul>
+          <li>Mantener <strong>actualizado el sistema operativo</strong>.</li>
+          <li>Utilizar <strong>antivirus</strong> y <strong>cortafuegos</strong>.</li>
+        </ul>
+
+        <h3>3.4 · Protección de datos</h3>
+        <ul>
+          <li><strong>No compartir información confidencial</strong> en sitios no autorizados.</li>
+          <li><strong>Respetar las normas de protección de datos</strong>.</li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> acceso seguro = redes protegidas + HTTPS + equipo actualizado con antivirus y cortafuegos + cuidado con los datos. Cuando trabajes fuera del centro, usa una <strong>VPN</strong> para crear una conexión remota cifrada.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>Es especialmente importante para garantizar la <strong>confidencialidad de los datos de pacientes y profesionales</strong>.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>¿Por qué debemos evitar utilizar redes Wi-Fi públicas para acceder a información sanitaria?</strong> Porque otras personas podrían interceptar la información transmitida.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Para conectarse a Internet con seguridad hay que usar redes protegidas, navegar solo por sitios fiables con HTTPS, mantener el equipo actualizado con antivirus y cortafuegos y proteger los datos personales y sanitarios.</p>
+        </div>
+      </section>
+
+      <!-- ============ 4 · PROBLEMAS FRECUENTES DE CONEXIÓN ============ -->
+      <section id="problemas-conexion">
+        <h2>4 · Problemas frecuentes de conexión</h2>
+        <p>Los problemas de conexión más habituales y sus soluciones básicas son:</p>
+
+        <h3>4.1 · Falta de conexión</h3>
+        <ul>
+          <li><strong>Posibles causas:</strong> cable desconectado, Wi-Fi desactivado o router apagado.</li>
+          <li><strong>Soluciones básicas:</strong>
+            <ul>
+              <li>Comprobar las conexiones.</li>
+              <li>Reiniciar los dispositivos.</li>
+              <li>Verificar la configuración de red.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>4.2 · Conexión lenta</h3>
+        <ul>
+          <li><strong>Posibles causas:</strong> saturación de la red, muchas aplicaciones abiertas o cobertura deficiente.</li>
+          <li><strong>Soluciones básicas:</strong>
+            <ul>
+              <li>Cerrar aplicaciones innecesarias.</li>
+              <li>Acercarse al punto de acceso Wi-Fi.</li>
+              <li>Utilizar conexión por cable si es posible.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>4.3 · Acceso restringido</h3>
+        <ul>
+          <li><strong>Posibles causas:</strong> falta de permisos, configuración incorrecta o problemas de autenticación.</li>
+          <li><strong>Soluciones básicas:</strong>
+            <ul>
+              <li>Verificar usuario y contraseña.</li>
+              <li>Consultar con el personal responsable de sistemas.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> ante cualquier problema de conexión, sigue un orden lógico: comprobar el cable y el estado del Wi-Fi (o la red móvil), verificar la configuración IP, comprobar la salida hacia Internet y, si el fallo persiste, registrar la incidencia y avisar a sistemas.</p>
+        </div>
+
+        <div class="callout callout--health">
+          <p>El servicio de admisión, la consulta de la historia clínica o la citación dependen de la conexión del puesto; saber identificar el fallo ahorra tiempo y evita que se pierdan trámites.</p>
+        </div>
+
+        <div class="callout callout--reflect">
+          <p><strong>Si en un puesto no hay conexión y el cable está bien conectado, ¿qué comprobarías a continuación?</strong> El estado del Wi-Fi, la configuración IP (ipconfig), la puerta de enlace y el router; si nada funciona, registrar la incidencia y avisar al servicio de sistemas.</p>
+        </div>
+
+        <div class="callout callout--summary">
+          <p>Los problemas de conexión más comunes son la falta de conexión (cable, Wi-Fi o router), la conexión lenta (saturación, aplicaciones abiertas o cobertura) y el acceso restringido (permisos o autenticación); todos tienen soluciones básicas que pueden aplicarse desde el puesto.</p>
+        </div>
+      </section>
+
+      <!-- ============ 5 · MAPA CONCEPTUAL ============ -->
+      <section id="mapa-internet">
+        <h2>5 · Mapa conceptual del acceso a Internet</h2>
+        <p>Así se organiza todo lo estudiado en este bloque:</p>
+        <pre style="background:#fff;border:1px solid var(--border);border-radius:var(--radius);padding:1.2rem;overflow-x:auto;font-size:0.85rem;line-height:1.5;">ACCESO A INTERNET
+├── ¿Qué es Internet?
+│   ├── Red mundial de dispositivos
+│   ├── Comunicación
+│   ├── Intercambio de información
+│   └── Acceso a servicios digitales
+├── Formas de conexión
+│   ├── Ethernet (cable)
+│   ├── Wi-Fi
+│   └── Red móvil
+│       ├── 4G
+│       └── 5G
+├── Seguridad en Internet
+│   ├── Redes seguras
+│   ├── Navegación HTTPS
+│   ├── Antivirus
+│   ├── Cortafuegos
+│   ├── Protección de datos
+│   └── VPN
+├── Problemas frecuentes
+│   ├── Falta de conexión
+│   ├── Conexión lenta
+│   └── Acceso restringido
+├── Aplicaciones en sanidad
+│   ├── Historia clínica electrónica
+│   ├── Aplicaciones corporativas
+│   ├── Correo profesional
+│   ├── Telemedicina
+│   └── Comunicación entre centros
+└── Objetivo principal
+    ├── Acceder a la información
+    ├── Compartir recursos
+    ├── Comunicarse
+    └── Trabajar de forma segura</pre>
+
+        <div class="callout callout--key">
+          <p><strong>💡 Idea clave:</strong> el acceso a Internet permite <strong>acceder a la información, compartir recursos, comunicarse y trabajar de forma segura</strong> en el entorno sanitario. Repásalo antes del cuestionario final.</p>
+        </div>
+      </section>
+
+      <!-- ============ 6 · RESUMEN DEL BLOQUE ============ -->
+      <section id="resumen-bloque">
+        <h2>6 · Resumen del bloque</h2>
+        <ul>
+          <li><strong>Internet</strong> es una red mundial que conecta millones de dispositivos para buscar información, comunicarse, usar servicios en línea y compartir archivos.</li>
+          <li><strong>Formas de conexión:</strong> <strong>Ethernet</strong> (cable, estable y rápida), <strong>Wi-Fi</strong> (inalámbrica, facilita la movilidad) y <strong>red móvil 4G/5G</strong> (telefonía móvil, desde casi cualquier lugar).</li>
+          <li><strong>Seguridad en el acceso:</strong> redes protegidas, <strong>HTTPS</strong> y sitios fiables, sistema operativo actualizado con <strong>antivirus y cortafuegos</strong>, <strong>protección de datos</strong> y <strong>VPN</strong> para conexiones remotas seguras.</li>
+          <li><strong>Problemas frecuentes:</strong> <strong>falta de conexión</strong> (cable, Wi-Fi o router), <strong>conexión lenta</strong> (saturación o cobertura) y <strong>acceso restringido</strong> (permisos o autenticación).</li>
+          <li><strong>Aplicaciones en sanidad:</strong> historia clínica electrónica, aplicaciones corporativas, correo profesional, telemedicina y comunicación entre centros.</li>
+        </ul>
+
+        <div class="callout callout--health">
+          <p>Desde la historia clínica hasta la telemedicina, todo el trabajo diario del centro depende de un acceso a Internet estable y seguro; conocer las formas de conexión, la seguridad y los fallos habituales permite mantenerlo operativo.</p>
+        </div>
+
+        <div class="callout callout--key">
+          <p><strong>🧩 Cuestionario final del bloque:</strong> en la plataforma Aules se publicará el cuestionario <strong>Cuestionario_1_5_Acceso_Internet</strong> con las preguntas relacionadas con estos contenidos. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando esté disponible, continúa con el siguiente elemento: <a href="../practico-acceso-internet/index.html"><strong>Bloque práctico de acceso a Internet</strong></a>.</p>
+        </div>
+
+        <div class="card-grid">
+          <a class="card" href="../practico-acceso-internet/index.html">
+            <div class="card__icon">🌐</div>
+            <h3>Bloque práctico: Internet y la conexión del puesto de trabajo</h3>
+            <p>Formas de conexión, seguridad en el acceso y fallos frecuentes de conexión. Actividades autocorregibles con soluciones descargables.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- ============ NAVEGACIÓN PAGINADA ============ -->
+      <nav class="page-nav">
+        <a class="page-nav__item" href="../index.html">
+          <small>Anterior</small>
+          ← Presentación de la unidad
+        </a>
+        <a class="page-nav__item page-nav__item--next" href="../practico-acceso-internet/index.html">
+          <small>Siguiente</small>
+          Bloque práctico de acceso a Internet →
+        </a>
+      </nav>
+
+    </main>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Material para el módulo de Ofimática. Creado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0</p>
+    <p style="margin-top:0.3rem; font-size:0.78rem; opacity:0.7">
+      Ofimática · UP01 Mantenimiento básico de equipos · CFGS Documentación y Administración Sanitarias
+    </p>
+  </footer>
+
+  <button class="backtotop" id="btnTop" aria-label="Volver arriba">↑</button>
+
+  <script src="../js/navegacion.js"></script>
+</body>
+</html>

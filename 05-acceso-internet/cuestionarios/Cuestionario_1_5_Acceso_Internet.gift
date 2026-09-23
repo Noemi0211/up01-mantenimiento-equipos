@@ -1,0 +1,124 @@
+$CATEGORY: OFI/UP01/INT/11-cuestionario-acceso-internet
+
+::Pregunta_01::¿Qué es Internet?{
+=Una red mundial que conecta millones de dispositivos para compartir información, comunicarse y acceder a servicios digitales
+~Un programa de ofimática instalado en todos los ordenadores
+~Un tipo de memoria del equipo
+~Un periférico de salida
+}
+
+::Pregunta_02::¿Cuál de las siguientes es una función de Internet?{
+=Buscar información, comunicarse y utilizar aplicaciones y servicios en línea
+~Imprimir documentos sin necesidad de conexión
+~Almacenar archivos únicamente en el equipo local
+~Fabricar componentes electrónicos
+}
+
+::Pregunta_03::En el entorno sanitario, Internet permite...{
+=Acceder a aplicaciones corporativas y realizar trámites sanitarios
+~Sustituir al sistema operativo del puesto
+~Eliminar la necesidad de los servidores
+~Imprimir en cualquier impresora sin configuración
+}
+
+::Pregunta_04::La conexión por cable (Ethernet) se caracteriza por...{
+=Mayor estabilidad, menor interferencia y alta velocidad de transmisión
+~Depender de la cobertura de telefonía móvil
+~No necesitar cableado físico
+~Verse afectada por las interferencias de las ondas de radio
+}
+
+::Pregunta_05::La conexión Wi-Fi...{
+=Es inalámbrica, utiliza ondas de radio y facilita la movilidad
+~Requiere una tarjeta SIM
+~Es el tipo de conexión más estable
+~Solo funciona en puestos fijos mediante cable
+}
+
+::Pregunta_06::La conexión mediante red móvil (4G/5G)...{
+=Permite acceder a Internet desde prácticamente cualquier lugar
+~Requiere conexión por cable de red
+~Solo funciona dentro de redes Wi-Fi públicas
+~No necesita tarjeta SIM ni dispositivo compatible
+}
+
+::Pregunta_07::En un puesto fijo donde se necesita una conexión estable y segura, la conexión más habitual es...{
+=La conexión por cable (Ethernet)
+~La red móvil 4G/5G
+~Una red Wi-Fi pública
+~El Bluetooth
+}
+
+::Pregunta_08::Para navegar y enviar datos de forma segura, la página web debe utilizar...{
+=HTTPS
+~FTP
+~SMTP
+~DHCP
+}
+
+::Pregunta_09::Para proteger la información sensible debes evitar...{
+=Las redes Wi-Fi públicas
+~Las redes protegidas con contraseña
+~Las conexiones por cable
+~Los sitios web fiables
+}
+
+::Pregunta_10::¿Qué medidas protegen el equipo frente a las amenazas al navegar por Internet?{
+=Mantener el sistema operativo actualizado y usar antivirus y cortafuegos
+~Desactivar el antivirus para que la red vaya más rápida
+~Usar siempre la misma contraseña sencilla
+~Conectarse a cualquier red Wi-Fi sin comprobar su origen
+}
+
+::Pregunta_11::No compartir información confidencial en sitios no autorizados forma parte de...{
+=La protección de datos
+~La velocidad de la conexión
+~La configuración del router
+~El mantenimiento del hardware
+}
+
+::Pregunta_12::Una VPN sirve para...{
+=Crear una conexión remota segura y cifrada
+~Acelerar la impresión de documentos
+~Sustituir al antivirus
+~Configurar el monitor
+}
+
+::Pregunta_13::Ante una falta de conexión, lo primero que debes comprobar es...{
+=El cable de red y que el Wi-Fi esté activado, además del router
+~Cambiar de sistema operativo
+~Reinstalar el navegador
+~Formatear el disco duro
+}
+
+::Pregunta_14::Cuando la conexión es lenta y hay muchas aplicaciones abiertas, la solución básica es...{
+=Cerrar aplicaciones innecesarias y acercarse al punto de acceso
+~Apagar la tarjeta gráfica
+~Desinstalar el antivirus
+~Aumentar la resolución de la pantalla
+}
+
+::Pregunta_15::Un acceso restringido suele deberse a...{
+=Falta de permisos, configuración incorrecta o problemas de autenticación
+~Un monitor apagado
+~Falta de tinta en la impresora
+~Exceso de memoria RAM
+}
+
+::Pregunta_16::Internet es una red mundial que conecta millones de dispositivos en todo el planeta.{T}
+
+::Pregunta_17::Compartir archivos y recursos es una de las funciones de Internet.{T}
+
+::Pregunta_18::La conexión por cable Ethernet ofrece menor estabilidad que la conexión Wi-Fi.{F}
+
+::Pregunta_19::La conexión mediante red móvil (4G/5G) requiere una tarjeta SIM o un dispositivo compatible.{T}
+
+::Pregunta_20::La conexión Wi-Fi puede verse afectada por interferencias.{T}
+
+::Pregunta_21::Debes evitar usar redes Wi-Fi públicas cuando manejes información sanitaria sensible.{T}
+
+::Pregunta_22::Mantener el sistema operativo actualizado es una medida de protección del equipo.{T}
+
+::Pregunta_23::Para resolver un acceso restringido puedes verificar el usuario y la contraseña y consultar con el personal responsable de sistemas.{T}
+
+::Pregunta_24::El router apagado nunca es la causa de una falta de conexión.{F}

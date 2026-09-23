@@ -20,21 +20,23 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 | 3 | 02 · Software | ✅ COMPLETADA (teoría `02-software/` + 5 bancos GIFT + guía Aules + inventario · SIN imágenes, no hay archivos en la fuente · `.page-nav` → Cuestionario teórico SW · **bloque práctico `practico-software/` COMPLETADO** con 3 bancos GIFT `PR-01.4…PR-01.6` + guía Aules + inventario) |
 | 4 | 03 · Ciberseguridad | ✅ COMPLETADA (teoría `03-ciberseguridad/` + 7 bancos GIFT (5 apartados + `Cuestionario_1_3_Ciberseguridad` + examen final) + guía Aules + inventario · SIN imágenes en la fuente, mapa conceptual reconstruido como diagrama HTML/CSS · `.page-nav` → Cuestionario teórico CS · **bloque práctico `practico-ciberseguridad/` COMPLETADO** con 3 bancos GIFT `PR-01.7…PR-01.9` + guía Aules + inventario) |
 | 5 | 04 · Redes locales (LAN) | ✅ COMPLETADA (teoría `04-redes-lan/` + banco GIFT consolidado `Cuestionario_1_4_Redes_Locales_LAN` (44 preguntas, categoría `OFI/UP01/RL/11-cuestionario-redes-lan`) + guía Aules + inventario · SIN imágenes en la fuente · `.page-nav` → Cuestionario teórico RL (`11522903`) · **bloque práctico `practico-redes-lan/` COMPLETADO** con 3 bancos GIFT `PR-01.10…PR-01.12` + guía Aules + inventario + widgets propios en `js/actividades.js` (`#baraja-rl`, `#empareja-componentes`, `#ponte-a-prueba-rl`/RL_TEST, `#escenarios-rl`, `#empareja-protocolos`, `#empareja-config`, `#checklist-rl`, `#orden-rl`, `#inventario-rl` y paneles `#soluciones-rl-comp/-top/-config` con claves `up01-practico-rl-{comp,topo,config}-ok`) |
-| 6 | 05 · Acceso a Internet | ⏳ PENDIENTE |
+| 6 | 05 · Acceso a Internet | ✅ COMPLETADA (teoría `05-acceso-internet/` + banco GIFT `Cuestionario_1_5_Acceso_Internet` (24 preguntas, categoría `OFI/UP01/INT/11-cuestionario-acceso-internet`) + guía Aules + inventario · SIN imágenes en la fuente, mapa conceptual reconstruido como diagrama HTML/CSS · **bloque práctico `practico-acceso-internet/` COMPLETADO** con UN solo quiz práctico `PR-01.13` (banco `gift-practico-0113-acceso-internet.gift`, 16 preguntas, categoría `OFI/UP01/PR/01-13-acceso-internet`) + guía Aules + inventario + widgets propios en `js/actividades.js` (`#baraja-int`, `#empareja-int`, `#ponte-a-prueba-int`, `#escenarios-int`, `#checklist-int`, `#orden-int`, `#inventario-int` y paneles `#soluciones-int-conex/-fallos` con claves `up01-practico-int-{conex,fallos}-ok`) · IDs Aules PENDIENTES de creación por la profesora) |
 
 **Regla de fases:** se genera UN bloque por fase. Al terminar una fase, detener la generación y esperar instrucciones del usuario.
 
-> **Próximo paso (punto de reanudación, 23-09-2026):** la Fase 5 (04 · Redes locales
-> (LAN), teoría + bloque práctico) está **COMPLETADA, commiteada y publicada** en
-> `origin/main` (ver `git log --oneline`). Los IDs de Aules RL son **definitivos**:
-> `11522903` teoría, `11522977` PR-01.10,
-> `11522984` PR-01.11, `11522994` PR-01.12. La siguiente fase pendiente es la
-> **Fase 6 · 05 · Acceso a Internet**: extraer el texto del PDF (apartado 6),
-> redactar `05-acceso-internet/index.md` + `index.html` + inventario, crear los
-> bancos GIFT (categoría `OFI/UP01/INT/…`), el bloque práctico `practico-acceso-internet/`
-> con widgets en `js/actividades.js`, y conectar portada/sidebar/`.page-nav`
-> siguiendo la «Plantilla de apartado» (§14). Confirmar con la profesora los IDs de
-> Aules y la numeración `PR-0X.x` antes de enlazar.
+> **Próximo paso (punto de reanudación, 23-09-2026):** la Fase 6 (05 · Acceso a
+> Internet, teoría + bloque práctico con UN quiz PR-01.13) está **generada y
+> validada** (GIFT 24+16 preguntas OK; `check-html.js`: 12 HTML / 0 problemas)
+> **pero sin commit**: falta el commit + push para publicar los enlaces de teoría
+> (`05-acceso-internet/`) y de práctica (`practico-acceso-internet/`) y
+> entregárselos a la profesora para que cree los cuestionarios en Aules
+> (`Cuestionario_1_5_Acceso_Internet` teórico + `PR-01.13` práctico). Cuando la
+> profesora confirme los IDs de Aules, insertar los enlaces finales en:
+> `05-acceso-internet/index.html` (+ `index.md`), `practico-acceso-internet/index.html`
+> (+ `index.md`), portada `index.html`, sidebars de todas las páginas (apartado 05 y
+> secciones «Apartado 05») y `.page-nav` de teoría/práctica. Hasta entonces los
+> quizzes se mencionan por su **nombre** (sin hipervínculo) y el `.page-nav` de la
+> teoría enlaza el bloque práctico y el del práctico enlaza la portada (interim).
 >
 > **Recordatorio de flujo:** antes de terminar cada fase, re-ejecutar las
 > utilidades de validación (en `C:\Users\Usuario\AppData\Local\Temp\opencode\pdf-extract`):
@@ -87,8 +89,8 @@ Apuntes 26-27/
 - Widgets interactivos del bloque práctico: `.baraja`/`.flash` (tarjetas volteables), `.match` (emparejados), `.test` (autoevaluación), `.escenario`, `.checklist`, `.orden`, `.inventario` y `.soluciones-panel`. Estilos en `css/estilos.css`.
 - `js/navegacion.js` — menú móvil, scroll-spy, TOC automático, volver arriba, **lightbox de imágenes** y protección ligera contra copia (bloquea `copy`/`cut`/clic derecho/arrastre/selección; permite `input`/`textarea`).
 - **Lightbox:** se inicializa una sola vez por delegación de eventos en `document` (así cubre también las imágenes generadas dinámicamente por `actividades.js`). Amplía cualquier `<img>` salvo las que estén **dentro de un `<button>` o de `.baraja`**, para no interferir con la baraja que se voltea, los emparejados ni las opciones de los tests. Cierre con ✕, clic en el fondo o `Esc`. Cursor `zoom-in` en `.image-figure img`, `.image-card img`, `.test__prompt img` y `.soluciones-panel img`.
-- `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`… y los contenedores del bloque práctico de software: `#baraja-soft`, `#empareja-funciones`, `#ponte-a-prueba-soft`, `#escenarios-soft`, `#empareja-apps`, `#checklist-soft`, `#orden-soft`, `#inventario-soft`, `#soluciones-soft-rec/-so/-config`; y los del bloque práctico de ciberseguridad: `#baraja-ciber`, `#empareja-amenazas`, `#ponte-a-prueba-ciber`, `#empareja-tecnicas`, `#escenarios-ciber`, `#empareja-herramientas`, `#checklist-ciber`, `#orden-ciber`, `#inventario-ciber` y los paneles `#soluciones-ciber-ame/-social/-prot`; y los del bloque práctico de redes locales: `#baraja-rl`, `#empareja-componentes`, `#ponte-a-prueba-rl`, `#escenarios-rl`, `#empareja-protocolos`, `#empareja-config`, `#checklist-rl`, `#orden-rl`, `#inventario-rl` y los paneles `#soluciones-rl-comp/-top/-config`). Solo se ejecuta en la página que los incluye. Los widgets HW están **parametrizados** (`iniciarBaraja(contenedor, deck)`, `iniciarEscenarios(contenedor, datos, msjBad, onCompletos)`, `iniciarChecklist(contenedor, datos, msjOk, onCompletos)`, `iniciarOrden(contenedor, datos, msjIntro, msjOk, msjFallo, onCompletos)`, `iniciarInventario(contenedor, datos, tituloPdf)`); SW añade `iniciarTestSoft` (modos delim/tipo/función/tarea), CS añade `iniciarTestCiber` y RL añade `iniciarTestRl` (test de 10 preguntas de `CS_TEST` / `RL_TEST`). La baraja admite frontal de imagen o de texto (`.baraja__cara--txt` + `.baraja__chip`). Los PDF que se desbloquean al completar una actividad perfecta (tablas resueltas, puertos, verificación e inventario) se generan con `abrirImpresion(título, html)`: ventana de impresión con cabecera (título + «UP01 · Mantenimiento básico de equipos · Bloque práctico» + fecha), tablas con `thead` repetido y salto de página controlado, y la leyenda al pie: **«Material para el aula de Ofimática generado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0»**.
-- La tabla de respuestas resueltas se desbloquea con un test perfecto; el panel de soluciones de puertos (`#soluciones-puertos`) con escenarios y emparejado perfectos; el de verificación (`#soluciones-verificacion`) con checklist y orden perfectos. Cada desbloqueo se guarda en `localStorage` (`up01-practico-{rec,puertos,verificacion}-ok`). Software: `up01-practico-soft-{rec,so,config}-ok` (rec → test perfecto; so → escenarios + emparejado; config → checklist + orden). Ciberseguridad: `up01-practico-ciber-{ame,social,prot}-ok` (ame → test perfecto; social → escenarios + emparejado; prot → checklist + orden). Redes locales: `up01-practico-rl-{comp,topo,config}-ok` (comp → test perfecto; topo → escenarios + emparejado; config → checklist + orden).
+- `js/actividades.js` — actividades autocorregibles del bloque práctico (inicializa por contenedor: `#baraja`, `#empareja-tareas`, `#empareja-puertos`, `#ponte-a-prueba`, `#soluciones-panel`, `#escenarios`, `#checkbox`, `#orden`, `#inventario`… y los contenedores del bloque práctico de software: `#baraja-soft`, `#empareja-funciones`, `#ponte-a-prueba-soft`, `#escenarios-soft`, `#empareja-apps`, `#checklist-soft`, `#orden-soft`, `#inventario-soft`, `#soluciones-soft-rec/-so/-config`; y los del bloque práctico de ciberseguridad: `#baraja-ciber`, `#empareja-amenazas`, `#ponte-a-prueba-ciber`, `#empareja-tecnicas`, `#escenarios-ciber`, `#empareja-herramientas`, `#checklist-ciber`, `#orden-ciber`, `#inventario-ciber` y los paneles `#soluciones-ciber-ame/-social/-prot`; y los del bloque práctico de redes locales: `#baraja-rl`, `#empareja-componentes`, `#ponte-a-prueba-rl`, `#escenarios-rl`, `#empareja-protocolos`, `#empareja-config`, `#checklist-rl`, `#orden-rl`, `#inventario-rl` y los paneles `#soluciones-rl-comp/-top/-config`; y los del bloque práctico de acceso a Internet: `#baraja-int`, `#empareja-int`, `#ponte-a-prueba-int`, `#escenarios-int`, `#checklist-int`, `#orden-int`, `#inventario-int` y los paneles `#soluciones-int-conex/-fallos`). Solo se ejecuta en la página que los incluye. Los widgets HW están **parametrizados** (`iniciarBaraja(contenedor, deck)`, `iniciarEscenarios(contenedor, datos, msjBad, onCompletos)`, `iniciarChecklist(contenedor, datos, msjOk, onCompletos)`, `iniciarOrden(contenedor, datos, msjIntro, msjOk, msjFallo, onCompletos)`, `iniciarInventario(contenedor, datos, tituloPdf)`); SW añade `iniciarTestSoft` (modos delim/tipo/función/tarea), CS añade `iniciarTestCiber` y RL añade `iniciarTestRl` (test de 10 preguntas de `CS_TEST` / `RL_TEST`). La baraja admite frontal de imagen o de texto (`.baraja__cara--txt` + `.baraja__chip`). Los PDF que se desbloquean al completar una actividad perfecta (tablas resueltas, puertos, verificación e inventario) se generan con `abrirImpresion(título, html)`: ventana de impresión con cabecera (título + «UP01 · Mantenimiento básico de equipos · Bloque práctico» + fecha), tablas con `thead` repetido y salto de página controlado, y la leyenda al pie: **«Material para el aula de Ofimática generado por Noemí Celaya Mingot con ayuda de la IA. Licencia CC BY-NC-SA 4.0»**.
+- La tabla de respuestas resueltas se desbloquea con un test perfecto; el panel de soluciones de puertos (`#soluciones-puertos`) con escenarios y emparejado perfectos; el de verificación (`#soluciones-verificacion`) con checklist y orden perfectos. Cada desbloqueo se guarda en `localStorage` (`up01-practico-{rec,puertos,verificacion}-ok`). Software: `up01-practico-soft-{rec,so,config}-ok` (rec → test perfecto; so → escenarios + emparejado; config → checklist + orden). Ciberseguridad: `up01-practico-ciber-{ame,social,prot}-ok` (ame → test perfecto; social → escenarios + emparejado; prot → checklist + orden). Redes locales: `up01-practico-rl-{comp,topo,config}-ok` (comp → test perfecto; topo → escenarios + emparejado; config → checklist + orden). Acceso a Internet: `up01-practico-int-{conex,fallos}-ok` (conex → test perfecto; fallos → escenarios + checklist + orden).
 - **Botones `.btn--ghost` sobre fondos oscuros:** en `.callout--key` y `.soluciones-panel__cab` (fondo `--ink`), el `btn--ghost` por defecto tiene texto `--ink` y sería invisible («caja vacía»). Estos contextos deben llevar estilos propios: texto blanco, borde translúcido `rgba(255,255,255,0.4)` y hover con fondo `rgba(255,255,255,0.12)`.
 - `templates/plantilla-base.html` — marcadores `[[TITULO_PAGINA]]`, `[[CONTENIDO]]`, `[[NAV_INTERNA]]`, `[[URL_RAIZ]]`.
 
@@ -230,14 +232,15 @@ images/
 | 02 · Software (teoría + prácticas) | 1 nueva | `mapa-software.png` (mapa mental) integrado al final del bloque teórico (`software/mapa-software.png`, figura `.image-figure--wide`); la baraja del práctico es **solo de software** (frontal de texto `.chip`); las 5 imágenes de `images/hardware/` (monitor, teclado, cpu, memoria-ram, hdd) solo se usan en miniatura en la tabla de respuestas resueltas en PDF |
 | 03 · Ciberseguridad (teoría + prácticas) | 0 | Sin archivos de imagen en la fuente; el mapa conceptual se reconstruyó como **diagrama HTML/CSS** al final del bloque teórico (`03-ciberseguridad/index.html`); todas las actividades del práctico son **de texto** (baraja `.baraja__cara--txt`, emparejados, escenarios, test, checklist, orden e inventario) |
 | 04 · Redes locales (LAN) (teoría + prácticas) | 0 | Sin archivos de imagen en la fuente; la teoría y el bloque práctico se construyeron **solo de texto** (categoría `redes/` vacía, con `.gitkeep`) |
+| 05 · Acceso a Internet (teoría + prácticas) | 0 | Sin archivos de imagen en la fuente; la teoría y el bloque práctico se construyeron **solo de texto** (categoría `internet/` vacía, con `.gitkeep`) y el mapa conceptual de la teoría es un diagrama HTML/CSS |
 
 ### Imágenes pendientes
 
 - Internet: sin archivos disponibles en la carpeta fuente; se integrarán cuando
-  se genere ese bloque (categoría `internet/`). Los bloques de ciberseguridad y de
-  redes locales ya están publicados **sin imágenes** (0 archivos disponibles): el
-  primero con el mapa conceptual reconstruido como diagrama HTML/CSS en
-  `03-ciberseguridad/index.html`, y el segundo construido solo de texto.
+  se genere ese bloque (categoría `internet/`). Los bloques de ciberseguridad, de
+  redes locales y de acceso a Internet ya están publicados **sin imágenes** (0
+  archivos disponibles): los tres con el mapa conceptual reconstruido como diagrama
+  HTML/CSS (o solo de texto) y las actividades del práctico de texto.
 - No existe imagen real de «portada del módulo»; la presentación del bloque 00 usa
   la imagen general del sistema informático.
 
@@ -284,6 +287,10 @@ con los enlaces `.page-nav` (Anterior/Siguiente) del final de cada página.
 | PR-01.10 Conceptos y componentes de una red local (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522977` |
 | PR-01.11 Topologías, medios y protocolos de red (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522984` |
 | PR-01.12 Configuración y puertos de red (IP/conectividad) (Bloque práctico) | Quiz | `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11522994` |
+| Teoría de acceso a Internet (enlace «Bloque 05 · Acceso a Internet») | URL | `05-acceso-internet/index.html` (GitHub Pages) |
+| Cuestionario teórico sobre el acceso a Internet | Quiz | Pendiente de crear en Aules (`Cuestionario_1_5_Acceso_Internet`) |
+| Prácticas de acceso a Internet (Bloque práctico) | URL | `practico-acceso-internet/index.html` (GitHub Pages) |
+| PR-01.13 Acceso a Internet y conexión del puesto (Bloque práctico) | Quiz | Pendiente de crear en Aules (`PR-01.13`) |
 
 ### Estructura por apartados (teoría · cuestionario · prácticas)
 
@@ -296,10 +303,14 @@ en Aules, además del recorrido secuencial con «Siguiente» dentro del sitio:
 | 02 · Software | `02-software/index.html` (GitHub Pages) | `11402081` | `practico-software/index.html` (GitHub Pages) (+ quizzes PR-01.4…6) |
 | 03 · Ciberseguridad | `03-ciberseguridad/index.html` (GitHub Pages) | `11431133` | `practico-ciberseguridad/index.html` (GitHub Pages) (+ quizzes PR-01.7…9) |
 | 04 · Redes locales (LAN) | `04-redes-lan/index.html` (GitHub Pages) | `11522903` | `practico-redes-lan/index.html` (GitHub Pages) (+ quizzes PR-01.10…12) |
+| 05 · Acceso a Internet | `05-acceso-internet/index.html` (GitHub Pages) | pendiente (`Cuestionario_1_5_Acceso_Internet`) | `practico-acceso-internet/index.html` (GitHub Pages) (+ quiz PR-01.13) |
 
 La portada (`index.html`) solo muestra los apartados publicados como 3 tarjetas
 (teoría · cuestionario · prácticas). El bloque 00 (Introducción y elementos
 curriculares) queda como «Guía curricular», fuera del recorrido del alumnado.
+Para el apartado 05 (sin IDs de Aules aún) la portada publica **2 tarjetas** (teoría
+y prácticas): la tarjeta del cuestionario enlaza temporalmente la teoría y se
+sustituirá por el quiz de Aules cuando la profesora lo cree.
 
 **Orden de las actividades en Aules (apartado Hardware):**
 
@@ -414,13 +425,14 @@ diferenciada en Aules y encadenados con «Siguiente» dentro del sitio:
 - **practico-ciberseguridad (Prácticas):** «Anterior» → Cuestionario teórico sobre la ciberseguridad (Aules `11431133`) · «Siguiente» → PR-01.7 (Aules `11431277`). Cada actividad enlaza **solo su propio** «Cuestionario en Aules» y un enlace «siguiente elemento» al quiz siguiente (PR-01.7 → PR-01.8 → PR-01.9); la autoevaluación enlaza PR-01.7…9 y su sidebar incluye la sección «Apartado 03 · Ciberseguridad». Widgets con contenedores propios (`#baraja-ciber`, `#empareja-amenazas`, `#ponte-a-prueba-ciber`, `#escenarios-ciber`, `#empareja-tecnicas`, `#empareja-herramientas`, `#checklist-ciber`, `#orden-ciber`, `#inventario-ciber` y los paneles `#soluciones-ciber-ame/-social/-prot`) con claves de desbloqueo `up01-practico-ciber-{ame,social,prot}-ok`; la baraja es **solo de texto** (`.baraja__cara--txt`).
 - **04 · Redes locales (LAN):** «Anterior» → Portada · «Siguiente» → Cuestionario teórico sobre las redes locales (Aules `11522903`). Su sidebar incluye la sección «Apartado 04 · Redes locales (LAN)» (cuestionario teórico, bloque práctico y PR-01.10…12). La teoría añade en su «Cuestionario final del bloque» el enlace «continúa con el Bloque práctico de redes locales». Sin imágenes: el bloque se construyó de texto.
 - **practico-redes-lan (Prácticas):** «Anterior» → Cuestionario teórico sobre las redes locales (Aules `11522903`) · «Siguiente» → PR-01.10 (Aules `11522977`). Cada actividad enlaza **solo su propio** «Cuestionario en Aules» y un enlace «siguiente elemento» al quiz siguiente (PR-01.10 → PR-01.11 → PR-01.12); la autoevaluación enlaza PR-01.10…12 y su sidebar incluye la sección «Apartado 04 · Redes locales (LAN)». Widgets con contenedores propios (`#baraja-rl`, `#empareja-componentes`, `#ponte-a-prueba-rl`/`RL_TEST`, `#escenarios-rl`, `#empareja-protocolos`, `#empareja-config`, `#checklist-rl`, `#orden-rl`, `#inventario-rl` y los paneles `#soluciones-rl-comp/-top/-config`) con claves de desbloqueo `up01-practico-rl-{comp,topo,config}-ok`; test propio `iniciarTestRl` (paralelo a `iniciarTestCiber`) y la baraja es **solo de texto** (`.baraja__cara--txt` + `.chip`).
+- **05 · Acceso a Internet:** «Anterior» → Portada · «Siguiente» → (interim) Bloque práctico de acceso a Internet; cuando la profesora cree el quiz teórico, el Siguiente pasará a ser el «Cuestionario teórico sobre el acceso a Internet» (`Cuestionario_1_5_Acceso_Internet`). Su sidebar incluye la sección «Apartado 05 · Acceso a Internet» (teoría y bloque práctico; cuestionario teórico y PR-01.13 previstos). Sin imágenes: el bloque se construyó de texto y el mapa conceptual es un diagrama HTML/CSS al final de la teoría.
+- **practico-acceso-internet (Prácticas):** «Anterior» → (interim) Teoría de acceso a Internet (será el Cuestionario teórico) · «Siguiente» → (interim) Portada «Fin de la unidad · Volver a la presentación →» (será PR-01.13). Una **única actividad** enlaza su «Cuestionario en Aules» (`PR-01.13 Acceso a Internet y conexión del puesto`, pendiente de ID) y su sidebar incluye la sección «Apartado 05 · Acceso a Internet». Widgets con contenedores propios (`#baraja-int`, `#empareja-int`, `#ponte-a-prueba-int`/`INT_TEST`, `#escenarios-int`, `#checklist-int`, `#orden-int`, `#inventario-int` y los paneles `#soluciones-int-conex/-fallos`) con claves de desbloqueo `up01-practico-int-{conex,fallos}-ok` (conex → test perfecto de `iniciarTestInt`; fallos → escenarios + checklist + orden); la baraja es **solo de texto** (`.baraja__cara--txt` + `.chip`). A diferencia de los bloques anteriores, **solo hay un quiz práctico** (PR-01.13), decisión docente de 23-09-2026.
 
 ### Regla para futuros bloques
 
 > Seguir la **«Plantilla de apartado»** definida arriba (3 elementos: teoría · cuestionario · prácticas).
 
-- Cada nuevo apartado (Acceso a Internet)
-  replicará el **mismo formato que 01-hardware/02-software**: teoría con aviso
+- Cada nuevo apartado replicará el **mismo formato que 01-hardware/02-software**: teoría con aviso
   único «Cuestionario final» al final del bloque enlazando la actividad
   `Cuestionario_1_1_<Bloque>` (sin avisos por apartado), bloque práctico
   `practico-<bloque>/` con aviso «Cuestionario en Aules» por actividad, 3
