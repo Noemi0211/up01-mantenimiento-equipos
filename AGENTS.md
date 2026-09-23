@@ -25,18 +25,21 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 **Regla de fases:** se genera UN bloque por fase. Al terminar una fase, detener la generación y esperar instrucciones del usuario.
 
 > **Próximo paso (punto de reanudación, 23-09-2026):** la Fase 6 (05 · Acceso a
-> Internet, teoría + bloque práctico con UN quiz PR-01.13) está **generada y
-> validada** (GIFT 24+16 preguntas OK; `check-html.js`: 12 HTML / 0 problemas)
-> **pero sin commit**: falta el commit + push para publicar los enlaces de teoría
-> (`05-acceso-internet/`) y de práctica (`practico-acceso-internet/`) y
-> entregárselos a la profesora para que cree los cuestionarios en Aules
-> (`Cuestionario_1_5_Acceso_Internet` teórico + `PR-01.13` práctico). Cuando la
-> profesora confirme los IDs de Aules, insertar los enlaces finales en:
+> Internet, teoría + bloque práctico con UN quiz PR-01.13) está **COMPLETADA,
+> commiteada y publicada** en `origin/main` (commit `c751866`; ver `git log --oneline`).
+> URLs entregadas a la profesora: teoría
+> `https://noemi0211.github.io/up01-mantenimiento-equipos/05-acceso-internet/` y
+> prácticas `https://noemi0211.github.io/up01-mantenimiento-equipos/practico-acceso-internet/`.
+> **Lo único pendiente:** cuando la profesora cree los cuestionarios en Aules
+> (`Cuestionario_1_5_Acceso_Internet` teórico + `PR-01.13` práctico) y confirme sus
+> IDs, insertar los enlaces finales en:
 > `05-acceso-internet/index.html` (+ `index.md`), `practico-acceso-internet/index.html`
-> (+ `index.md`), portada `index.html`, sidebars de todas las páginas (apartado 05 y
-> secciones «Apartado 05») y `.page-nav` de teoría/práctica. Hasta entonces los
-> quizzes se mencionan por su **nombre** (sin hipervínculo) y el `.page-nav` de la
-> teoría enlaza el bloque práctico y el del práctico enlaza la portada (interim).
+> (+ `index.md`), portada `index.html` (+ `index.md`, tarjeta del cuestionario),
+> sidebars de todas las páginas (secciones «Apartado 05»), `.page-nav` de
+> teoría/práctica, `practico-acceso-internet/cuestionarios/instrucciones-aules.md`
+> y este AGENTS.md. Hasta entonces los quizzes se mencionan por su **nombre** (sin
+> hipervínculo) y el `.page-nav` de la teoría enlaza el bloque práctico y el del
+> práctico enlaza la portada (interim).
 >
 > **Recordatorio de flujo:** antes de terminar cada fase, re-ejecutar las
 > utilidades de validación (en `C:\Users\Usuario\AppData\Local\Temp\opencode\pdf-extract`):
