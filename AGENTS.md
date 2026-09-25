@@ -21,21 +21,30 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 | 4 | 03 · Ciberseguridad | ✅ COMPLETADA (teoría `03-ciberseguridad/` + 7 bancos GIFT (5 apartados + `Cuestionario_1_3_Ciberseguridad` + examen final) + guía Aules + inventario · SIN imágenes en la fuente, mapa conceptual reconstruido como diagrama HTML/CSS · `.page-nav` → Cuestionario teórico CS · **bloque práctico `practico-ciberseguridad/` COMPLETADO** con 3 bancos GIFT `PR-01.7…PR-01.9` + guía Aules + inventario) |
 | 5 | 04 · Redes locales (LAN) | ✅ COMPLETADA (teoría `04-redes-lan/` + banco GIFT consolidado `Cuestionario_1_4_Redes_Locales_LAN` (44 preguntas, categoría `OFI/UP01/RL/11-cuestionario-redes-lan`) + guía Aules + inventario · SIN imágenes en la fuente · `.page-nav` → Cuestionario teórico RL (`11522903`) · **bloque práctico `practico-redes-lan/` COMPLETADO** con 3 bancos GIFT `PR-01.10…PR-01.12` + guía Aules + inventario + widgets propios en `js/actividades.js` (`#baraja-rl`, `#empareja-componentes`, `#ponte-a-prueba-rl`/RL_TEST, `#escenarios-rl`, `#empareja-protocolos`, `#empareja-config`, `#checklist-rl`, `#orden-rl`, `#inventario-rl` y paneles `#soluciones-rl-comp/-top/-config` con claves `up01-practico-rl-{comp,topo,config}-ok`) |
 | 6 | 05 · Acceso a Internet | ✅ COMPLETADA (teoría `05-acceso-internet/` + banco GIFT `Cuestionario_1_5_Acceso_Internet` (24 preguntas, categoría `OFI/UP01/INT/11-cuestionario-acceso-internet`) + guía Aules + inventario · SIN imágenes en la fuente, mapa conceptual reconstruido como diagrama HTML/CSS · **bloque práctico `practico-acceso-internet/` COMPLETADO** con UN solo quiz práctico `PR-01.13` (banco `gift-practico-0113-acceso-internet.gift`, 16 preguntas, categoría `OFI/UP01/PR/01-13-acceso-internet`) + guía Aules + inventario + widgets propios en `js/actividades.js` (`#baraja-int`, `#empareja-int`, `#ponte-a-prueba-int`, `#escenarios-int`, `#checklist-int`, `#orden-int`, `#inventario-int` y paneles `#soluciones-int-conex/-fallos` con claves `up01-practico-int-{conex,fallos}-ok`) · IDs Aules confirmados: cuestionario teórico `11565413` y PR-01.13 `11565452`) |
+| 7 | Evaluación · Aules | ⏳ PENDIENTE: definir selección de cuestionarios, ponderaciones, criterios, fechas y configuración de calificación |
 
 **Regla de fases:** se genera UN bloque por fase. Al terminar una fase, detener la generación y esperar instrucciones del usuario.
 
-> **Punto de reanudación (25-09-2026):** la Fase 6 (05 · Acceso a Internet,
-> teoría + bloque práctico con UN quiz PR-01.13) está **COMPLETADA, commiteada y
-> publicada** en `origin/main` (commit `c751866`; ver `git log --oneline`).
-> URLs entregadas a la profesora: teoría
+> **Punto de reanudación (25-09-2026):** la fase de formación (Fases 1–6) está
+> **COMPLETADA, commiteada y publicada** en `origin/main` (ver `git log --oneline`).
+> Las URLs entregadas a la profesora para el último bloque son:
 > `https://noemi0211.github.io/up01-mantenimiento-equipos/05-acceso-internet/` y
-> prácticas `https://noemi0211.github.io/up01-mantenimiento-equipos/practico-acceso-internet/`.
+> `https://noemi0211.github.io/up01-mantenimiento-equipos/practico-acceso-internet/`.
 > **IDs de Aules confirmados e integrados:** cuestionario teórico
 > `Cuestionario_1_5_Acceso_Internet` (`11565413`) y PR-01.13
 > `PR-01.13 Acceso a Internet y conexión del puesto` (`11565452`).
 > Los enlaces definitivos ya están aplicados en las páginas de teoría y prácticas,
-> portada, sidebars, navegación `.page-nav` y guías de Aules. No queda pendiente
-> ninguna acción de contenido para esta fase.
+> portada, sidebars, navegación `.page-nav` y guías de Aules.
+>
+> **Solucionarios docentes:** en `cuestionarios-solucionados/` hay 18 PDF verificados
+> con las preguntas y respuestas correctas; los seis correspondientes a los bloques
+> 04 y 05 se generaron también en esta fecha. La carpeta está excluida por
+> `.gitignore` y se conserva localmente; no se publica en GitHub Pages.
+>
+> **Siguiente fase:** evaluación. Queda por definir y configurar en Aules la
+> selección de cuestionarios, las ponderaciones, los criterios, las fechas de cierre,
+> la nota final y el tratamiento de la puntuación formative. No queda pendiente
+> ninguna acción de contenido web de formación.
 >
 > **Recordatorio de flujo:** antes de terminar cada fase, re-ejecutar las
 > utilidades de validación (en `C:\Users\Usuario\AppData\Local\Temp\opencode\pdf-extract`):
@@ -47,6 +56,7 @@ Destino: **GitHub Pages** · acceso desde **Moodle/Aules** · mantenimiento desd
 - Repo público: `Noemi0211/up01-mantenimiento-equipos` · rama `main` · GitHub Pages:
   `https://noemi0211.github.io/up01-mantenimiento-equipos/`
 - El PDF fuente y `Documentos base/` (PNG originales BY-NC-SA, ≈55 MB) están excluidos del repo (`.gitignore`); solo se publican las copias normalizadas de `images/`.
+- `cuestionarios-solucionados/` contiene los solucionarios PDF para revisión docente; se conserva localmente y no se publica ni se incluye en los pushes.
 - Solo commit/push cuando el usuario lo pida explícitamente.
 - El historial de commits está en GitHub; este documento no mantiene el SHA del último commit (usar `git log --oneline`).
 - Tras el push, GitHub Pages tarda un par de minutos en regenerarse; si el usuario no ve cambios, avisar de recargar con Ctrl+F5.
