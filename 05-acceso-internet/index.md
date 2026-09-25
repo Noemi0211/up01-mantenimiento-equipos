@@ -194,7 +194,7 @@ ACCESO A INTERNET
 
 > 🏥 **Aplicación en entornos sanitarios:** desde la historia clínica hasta la telemedicina, todo el trabajo diario del centro depende de un acceso a Internet estable y seguro; conocer las formas de conexión, la seguridad y los fallos habituales permite mantenerlo operativo.
 
-> 🧩 **Cuestionario final del bloque:** en la plataforma Aules se publicará el cuestionario **Cuestionario_1_5_Acceso_Internet** con las preguntas relacionadas con estos contenidos. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando esté disponible, continúa con el siguiente elemento: [**Bloque práctico de acceso a Internet**](../practico-acceso-internet/index.html).
+> 🧩 **Cuestionario final del bloque:** accede al cuestionario [**Cuestionario_1_5_Acceso_Internet**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11565413) y contesta a las preguntas relacionadas con estos contenidos. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. Cuando lo hayas completado, continúa con el siguiente elemento: [**Bloque práctico de acceso a Internet**](../practico-acceso-internet/index.html).
 
 > 🧰 **Bloque práctico:** cuando completes el cuestionario, trabaja el [**Bloque práctico: Internet y conexión del puesto de trabajo administrativo sanitario**](../practico-acceso-internet/index.html): formas de conexión, seguridad en el acceso y fallos frecuentes de conexión, con actividades autocorregibles y soluciones descargables.
 

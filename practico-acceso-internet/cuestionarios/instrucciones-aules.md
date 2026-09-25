@@ -14,12 +14,11 @@ Curso: Ofimática · CFGS Documentación y Administración Sanitarias · UP01 Ma
 El archivo empieza con `$CATEGORY: OFI/UP01/PR/01-13-acceso-internet`, de modo que
 Moodle crea la categoría al importar.
 
-> **ID pendiente:** el quiz **PR-01.13** está **pendiente de creación** en Aules.
-> Cuando exista, actualizar los enlaces del sitio web con su ID real:
-> `practico-acceso-internet/index.html` (+ `index.md`) aviso «Cuestionario en
-> Aules» y `.page-nav`, `05-acceso-internet/index.html` (+ `index.md`), portada
-> `index.html`, sidebars de todas las páginas y AGENTS.md. Hasta entonces la web
-> se publica **sin enlaces al quiz** (solo mención textual).
+> **ID confirmado:** el quiz **PR-01.13 · Acceso a Internet y conexión del puesto**
+> está publicado en Aules con el ID `11565452`:
+> `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11565452`. Los enlaces del
+> sitio web están actualizados en el bloque teórico, el bloque práctico, la
+> portada, los sidebars y la navegación `.page-nav`.
 
 **IMPORTANTE — una sola actividad práctica:** decisión docente (23-09-2026): este
 bloque tiene **una única actividad práctica** y, por tanto, **un único quiz
@@ -71,8 +70,8 @@ recibe un conjunto distinto.
 ## 5 · Recordatorio en el HTML
 
 En la **única actividad** del bloque práctico la web muestra el aviso
-«🧩 Cuestionario en Aules» enlazando el quiz **PR-01.13** (pendiente de enlace
-hasta tener su ID). No se incrustan preguntas en el HTML.
+«🧩 Cuestionario en Aules» enlazando el quiz **PR-01.13 · Acceso a Internet y
+conexión del puesto**. No se incrustan preguntas en el HTML.
 
 ---
 
@@ -84,9 +83,9 @@ misma sección/tema:
 | # | Actividad | Tipo |
 |---|---|---|
 | 1 | Teoría de acceso a Internet → `https://noemi0211.github.io/up01-mantenimiento-equipos/05-acceso-internet/` | URL |
-| 2 | Cuestionario teórico sobre el acceso a Internet (`Cuestionario_1_5_Acceso_Internet`) | Cuestionario |
+| 2 | Cuestionario teórico sobre el acceso a Internet (`Cuestionario_1_5_Acceso_Internet`, ID `11565413`) | Cuestionario |
 | 3 | Prácticas de acceso a Internet → `https://noemi0211.github.io/up01-mantenimiento-equipos/practico-acceso-internet/` | URL |
-| 4 | PR-01.13 Acceso a Internet y conexión del puesto | Cuestionario |
+| 4 | PR-01.13 Acceso a Internet y conexión del puesto (ID `11565452`) | Cuestionario |
 
 > Con **PR-01.13 finaliza la unidad** `Cuestionario_1_1_*`/bloque UP01 (es la
 > última actividad del bloque práctico). No hay actividad siguiente dentro del

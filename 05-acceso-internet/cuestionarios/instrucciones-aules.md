@@ -15,13 +15,12 @@ El archivo empieza con la línea `$CATEGORY: OFI/UP01/INT/11-cuestionario-acceso
 que sitúa las preguntas en la categoría correspondiente del banco de preguntas (se
 crea automáticamente al importar).
 
-> **Cuestionario teórico del bloque (INT-11):** está **pendiente de creación** en
-> Aules. Cuando exista la actividad Quiz **«Cuestionario_1_5_Acceso_Internet»** y
-> su ID real, actualizar los enlaces de la web: `05-acceso-internet/index.html`
-> (+ `index.md`) «Cuestionario final del bloque», portada `index.html`, sidebar
-> de todas las páginas (apartado 05 y sección «Apartado 05»), `.page-nav` de la
-> teoría y de las prácticas, y `practico-acceso-internet/cuestionarios/instrucciones-aules.md`.
-> Hasta entonces la web se publica **sin enlaces al quiz** (solo mención textual).
+> **Cuestionario teórico del bloque (INT-11):** está publicado en Aules como
+> actividad Quiz **«Cuestionario_1_5_Acceso_Internet»**, con ID `11565413`:
+> `https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11565413`. Los enlaces de la
+> web están actualizados en las páginas del bloque, la portada, los sidebars y
+> la navegación `.page-nav`. La guía del bloque práctico está en
+> `practico-acceso-internet/cuestionarios/instrucciones-aules.md`.
 
 ### Bancos del bloque práctico
 
@@ -101,7 +100,7 @@ Con esto:
 ## 5 · Recordatorio en el HTML
 
 En el bloque teórico **no** se añade aviso de cuestionario por apartado; solo el
-«Cuestionario final del bloque» al final menciona `Cuestionario_1_5_Acceso_Internet`.
+«Cuestionario final del bloque» al final enlaza `Cuestionario_1_5_Acceso_Internet`.
 En el **bloque práctico** (`practico-acceso-internet/`) sí se inserta el aviso
 «🧩 Cuestionario en Aules» en cada actividad, enlazando su quiz PR. No se incrustan
 preguntas en el HTML: todo el banco vive en Moodle.
@@ -122,9 +121,9 @@ botón **«Siguiente»** que aparece tras terminar un cuestionario pertenece a l
    | # | Actividad | Tipo |
    |---|---|---|
    | 1 | Teoría de acceso a Internet → `https://noemi0211.github.io/up01-mantenimiento-equipos/05-acceso-internet/` | URL |
-   | 2 | Cuestionario teórico sobre el acceso a Internet (`Cuestionario_1_5_Acceso_Internet`) | Cuestionario |
+   | 2 | Cuestionario teórico sobre el acceso a Internet (`Cuestionario_1_5_Acceso_Internet`, ID `11565413`) | Cuestionario |
    | 3 | Prácticas de acceso a Internet → `https://noemi0211.github.io/up01-mantenimiento-equipos/practico-acceso-internet/` | URL |
-   | 4 | PR-01.13 Acceso a Internet y conexión del puesto | Cuestionario |
+   | 4 | PR-01.13 Acceso a Internet y conexión del puesto (ID `11565452`) | Cuestionario |
 
 > Este bloque práctico tiene **una sola actividad** y, por tanto, **un solo quiz
 > práctico (PR-01.13)**; no hay PR-01.14 ni PR-01.15 (decisión docente, 23-09-2026).

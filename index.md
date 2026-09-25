@@ -41,7 +41,7 @@ Cada apartado consta de tres bloques independientes: **teoría**, **cuestionario
 ### Apartado 05 · Acceso a Internet
 
 - 📘 [**Teoría del apartado**](05-acceso-internet/index.html) — Qué es Internet, formas de conexión (Ethernet, Wi-Fi y red móvil), seguridad en el acceso y problemas frecuentes de conexión.
-- 🧩 [**Cuestionario teórico sobre el acceso a Internet**](05-acceso-internet/index.html) — Se publicará en Aules como actividad «Cuestionario_1_5_Acceso_Internet» (pendiente de ID).
+- 🧩 [**Cuestionario teórico sobre el acceso a Internet**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11565413) — Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota.
 - 🧰 [**Prácticas del apartado**](practico-acceso-internet/index.html) — Actividades autocorregibles: internet y sus funciones, formas de conexión, seguridad en el acceso y fallos frecuentes de conexión, con soluciones en PDF.
 
 ## Guía curricular

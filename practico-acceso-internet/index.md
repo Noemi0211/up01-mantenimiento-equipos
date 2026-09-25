@@ -7,9 +7,9 @@ CFGS Documentación y Administración Sanitarias
 
 ## 0 · Cómo funciona este bloque
 
-Ya has estudiado la **teoría del acceso a Internet** (Bloque 05) y has hecho el
-cuestionario sobre los contenidos. Aquí no se repite la teoría: solo se
-**recuerdan brevemente** las ideas necesarias para trabajar.
+Ya has estudiado la **teoría del acceso a Internet** (Bloque 05). Aquí no se repite
+la teoría: solo se **recuerdan brevemente** las ideas necesarias para trabajar. El
+cuestionario teórico se completa en [Aules](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11565413).
 
 - **Internet** = red mundial que conecta millones de dispositivos para buscar información, comunicarse y acceder a servicios digitales.
 - **Formas de conexión:** **Ethernet** (cable, estable y rápida), **Wi-Fi** (inalámbrica, facilita la movilidad) y **red móvil 4G/5G** (telefonía móvil, desde casi cualquier lugar).
@@ -108,7 +108,7 @@ Un **inventario de conexión** registra los **dispositivos y medios**, la **conf
 
 > 📌 Conectar + proteger + comprobar + registrar = un puesto con acceso a Internet seguro y un mantenimiento básico responsable de cualquier servicio.
 
-> 🧩 **Cuestionario en Aules:** al terminar, realiza el cuestionario **«PR-01.13 Acceso a Internet y conexión del puesto»** en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. **Con este cuestionario finaliza el bloque práctico.**
+> 🧩 **Cuestionario en Aules:** al terminar, realiza el cuestionario [**«PR-01.13 Acceso a Internet y conexión del puesto»**](https://aules.edu.gva.es/fp/mod/quiz/view.php?id=11565452) en la plataforma Aules. Puedes intentarlo tantas veces como quieras antes de que finalice el plazo y se guardará tu mejor nota. **Con este cuestionario finaliza el bloque práctico.**
 
 ---
 
